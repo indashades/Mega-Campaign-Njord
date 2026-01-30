@@ -1,0 +1,17 @@
+owner = WOL
+controller = WOL
+capital = "Wolgast"
+is_city = yes
+culture = old_pommeranian
+religion = catholic
+trade_goods = salt
+hre = yes
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = WOL
+add_permanent_claim = MKL
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

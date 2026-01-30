@@ -1,0 +1,7 @@
+dependency = {
+	subject_type = mongol_brother_realm
+	first = REB
+	second = REB
+	start_date = x
+	end_date = x
+}

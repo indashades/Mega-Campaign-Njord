@@ -1,0 +1,122 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 211 230 211 }
+revolutionary_colors = { 13 0 13 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	spy_ideas
+	trade_ideas
+	innovativeness_ideas
+	economic_ideas
+	quantity_ideas
+}
+historical_units = {
+	anglofrench_line
+	french_caracolle
+	french_dragoon
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_frederickian
+	prussian_uhlan
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Abd al-Azim #0" = 0
+	"Abu Husayan #1" = 10
+	"Abu Mansur al-Nizar #1" = 10
+	"Ahmad #1" = 10
+	"Amaury #1" = 10
+	"Amay #0" = 0
+	"Baudouin #4" = 10
+	"Blanca #0" = -1
+	"Clemente #1" = 10
+	"Clotaire #0" = 0
+	"Domawuj #0" = 0
+	"Elazar #0" = 0
+	"Faisal #1" = 10
+	"Garbai #0" = 0
+	"Ghazi #1" = 10
+	"Godefroy #1" = 10
+	"Hamdan #0" = 0
+	"Iftikhar #1" = 10
+	"Il-Ghazi #1" = 10
+	"Isa #1" = 10
+	"Kettilmund #0" = 0
+	"Melisende #1" = -1
+	"Muhammad #1" = 10
+	"Ortok #1" = 10
+	"Qahtaba #1" = 10
+	"Salil #1" = 10
+	"Shabib #1" = 10
+	"Sokman #1" = 10
+	"Zala #0" = -1
+	"al-Hasan #1" = 10
+}
+leader_names = {
+	"Arenberg"
+	"Bragadin"
+	"Crispo"
+	"Doria"
+	"Douglas"
+	"Duncan"
+	"Fadrigue"
+	"Hagedorn"
+	"Le Tellier"
+	"Lusignans"
+	"Maxwell"
+	"Melissinos"
+	"Minucci"
+	"Paleologi Montferrato"
+	"Pallavicini"
+	"Paradisi"
+	"Petrucci"
+	"Pico"
+	"Pignatelli"
+	"Plethon"
+	"Rendis"
+	"Saraceno"
+	"Sauerzapff"
+	"Schrüder"
+	"Selkirk"
+	"Stichsenstein"
+	"Sulerzycki"
+	"Tocco"
+	"dalla Rosa"
+	"de La Barthe"
+	"de La Ferrandie"
+	"de La Galissonière"
+	"de La Mothe"
+	"de La Motte d'Airan"
+	"de La Porte"
+	"de Lhéry"
+	"de Luynes"
+	"della Rovere"
+	"di Paesana"
+}
+ship_names = {
+	"Absolution"
+	"Avenger"
+	"Baldwin's Gate"
+	"Crusader"
+	"God Will Know His Own"
+	"Guardian"
+	"Hammer of God"
+	"Paladin"
+	"Pilgrim"
+	"Purifier"
+	"The Cleansing"
+	"The Faithful"
+	"The Grail"
+	"The Holy Cross"
+	"The Rapture"
+	"The Scourge"
+	"True Believer"
+	"Vindicator"
+}

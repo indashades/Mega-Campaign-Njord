@@ -1,0 +1,146 @@
+pte_protect_religious_bretheren_war_goal = {
+	type = take_province
+
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		allowed_provinces = {
+			has_owner_religion = no
+			religion = ROOT
+			is_city = yes
+		}
+
+		peace_options = {
+			pte_protect_religious_bretheren
+			po_change_religion
+		}
+	}
+
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = PTE_PROTECT_RELIGIOUS_BRETHEREN_WAR_NAME
+}
+
+pte_liberation_war_goal = {
+	type = superiority
+
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1.25
+		peace_cost_factor = 0.5
+
+		peace_options = {
+			po_release_annexed
+			po_release_vassals
+			po_revoke_cores
+			po_return_cores
+		}
+	}
+
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1.25
+		peace_cost_factor = 0.5
+
+		peace_options = {
+			po_release_annexed
+			po_release_vassals
+			po_revoke_cores
+			po_return_cores
+		}
+	}
+
+	war_name = PTE_LIBERATION_WAR_NAME
+}
+
+pte_anti_coalition_war_goal = {
+	type = superiority
+
+	attacker = {
+		badboy_factor = 0.75
+		prestige_factor = 1.25
+		peace_cost_factor = 0.75
+
+		allowed_provinces = {
+			always = yes
+		}
+
+		country_desc = PTE_ANTI_COALITION_WAR_GOAL_COUNTRY_DESC
+		prov_desc = ALL_PROVS
+
+		peace_options = {
+			po_demand_provinces
+			pte_army_disarmament
+			pte_destabilize_nation
+			pte_fleet_disarmament
+			po_release_vassals
+			po_release_annexed
+			po_return_cores
+			po_revoke_cores
+			po_gold
+			po_concede_defeat
+			po_humiliate
+		}
+	}
+
+	defender = {
+		badboy_factor = 0.1
+		prestige_factor = 1
+		peace_cost_factor = 0.75
+
+		allowed_provinces = {
+			is_core = FROM
+		}
+
+		prov_desc = ALL_CORES
+
+		peace_options = {
+			po_release_vassals
+			po_release_annexed
+			po_return_cores
+			po_demand_provinces
+			po_revoke_cores
+			po_gold
+			po_concede_defeat
+		}
+	}
+
+	war_name = PTE_ANTI_COALITION_WAR_NAME
+}
+
+pte_force_convert_heathen_war_goal = {
+	type = superiority
+
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_change_religion
+		}
+	}
+
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+			po_change_religion
+		}
+	}
+
+	war_name = CRUSADE_WAR_NAME
+}

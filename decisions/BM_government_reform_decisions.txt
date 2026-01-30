@@ -1,0 +1,71 @@
+country_decisions = {
+
+	BM_modernize_hesse_monarchy = {
+		color = {
+			0 170 255
+		}
+		potential = {
+			OR = {
+				tag = HES
+				has_reform = hessian_militarized_monarchy_reform
+			}
+		}
+		allow = {
+			OR = {
+				mil = 5
+				monthly_mil = 14
+			}
+			OR = {
+				army_professionalism = 0.5
+				army_tradition = 100
+			}
+			mil_tech = 10
+			mil_power = 300
+		}
+		effect = {
+			add_mil_power = -300
+			add_government_reform = hessian_modern_militarized_monarchy_reform
+		}
+	}	
+
+	BM_form_portugese_empire = {
+		color = {
+			235 250 0
+		}
+		major = yes
+		potential = {
+			OR = {
+				tag = POR
+				has_reform = portuguese_monarchy_reform
+			}
+		}
+		allow = {
+			has_subject_of_type = colony
+			total_own_and_non_tributary_subject_development = 1000
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50
+				colonial_region = colonial_brazil
+				is_city = yes
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_country_flag = BM_has_enacted_golden_age
+					}
+					clr_country_flag = BM_has_enacted_golden_age
+				}
+				else = {
+					add_country_modifier = {
+						name = BM_in_economic_golden_era
+						duration = 9125
+					}
+				}
+			}
+			custom_tooltip = BM_free_second_golden_age_or_start_free_new_one_TT
+			add_government_reform = portuguese_empire_reform
+		}
+	}
+
+}

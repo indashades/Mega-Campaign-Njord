@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 2
+technology_group = indian
+religion = sunni
+primary_culture = dynamic-avadhi-persian-culture-num1
+capital = 2059
+religious_school = hanafi_school
+1444.11.11= {
+	monarch = {
+		name = "Ferdows"
+		dynasty = "Behrouzid"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1426.6.23
+		religion = sunni
+		culture = dynamic-avadhi-persian-culture-num1
+	}
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Damayanti"
+		dynasty = "Gahadvala"
+		adm = 3
+		dip = 3
+		mil = 3
+		country_of_origin = ODH
+		birth_date = 1424.12.16
+		death_date = 1484.12.16
+		female = yes
+		religion = sunni
+		culture = avadhi
+	}
+	add_queen_personality = cruel_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Jahandar"
+		monarch_name = "Jahandar"
+		dynasty = "Behrouzid"
+		adm = 6
+		dip = 5
+		mil = 6
+		birth_date = 1412.6.22
+		death_date = 1477.6.22
+		claim = 89
+		religion = sunni
+		culture = persian
+	}
+	add_heir_personality = lawgiver_personality
+	add_heir_personality = strict_personality
+}
+1444.11.11= {
+	add_prestige = 73
+	add_treasury = 0
+}

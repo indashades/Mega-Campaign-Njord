@@ -1,8 +1,8 @@
 #4238 - Liegnitz (Liegnitz+Schweidnitz+Jauer+Glatz+Neisse+Münsterberg)
 
 #Coal
-owner = CRI
-controller = CRI
+owner = Z4H
+controller = Z4H
 culture = ruthenian
 religion = orthodox
 capital = "Kodak"
@@ -12,7 +12,7 @@ base_tax = 1
 base_production = 1
 is_city = yes 
 base_manpower = 1
-add_core = CRI
+add_core = Z4H
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

@@ -1,0 +1,36 @@
+government = monarchy
+add_government_reform = arch_monarchy_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = saxon
+capital = 2971
+1444.11.11= {
+	monarch = {
+		name = "(Regency Council)"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1.1.1
+		regent = yes
+		religion = catholic
+		culture = saxon
+	}
+	heir = {
+		name = "Berta"
+		dynasty = "Welf"
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 1431.5.3
+		death_date = 1496.5.3
+		female = yes
+		claim = 89
+		religion = catholic
+		culture = saxon
+	}
+}
+1444.11.11= {
+	add_prestige = 68
+	add_treasury = 79
+}

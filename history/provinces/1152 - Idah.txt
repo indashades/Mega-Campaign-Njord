@@ -1,0 +1,17 @@
+owner = OYO
+controller = OYO
+capital = "Idah"
+is_city = yes
+culture = nupe
+religion = sunni
+trade_goods = ivory
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = NUP
+add_core = OYO
+add_core = Z03
+discovered_by = sub_saharan
+native_size = 50
+native_ferocity = 4
+native_hostileness = 9

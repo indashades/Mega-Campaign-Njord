@@ -1,0 +1,803 @@
+﻿l_english:
+ #COSSACK MECHANICS
+ BM_fleeing_serfs_tt: "One of our bordering provinces will recieve §G1§! manpower Development"
+ BM_settling_serfs_mod: "Settling Serfs"
+
+
+ #SHOGUNATE
+ BM_custom_mechanic_event.1.t: "Ronin Exiles"
+ BM_custom_mechanic_event.1.d: "After the expelling of Ronin from the various major cities across Japan, the roaming Samurai has formed a masterless army seeking a Clan willing to take them in. Inviting them would provide is with an ample army for our Daimyo."
+ BM_custom_mechanic_event.1.a: "Take these exiles in under our banner!"
+
+ BM_shogun_every_daimyo_sword_hunt2_tt: "\nFor every §YDaimyo§! subject we will receive §G+5.0%§! Yearly Manpower. \n"
+ BM_shogun_every_daimyo_sword_hunt_tt: "For §Y10§! years every §YDaimyo§! subject will receive: \nLand Force Limit Modifier: §R-15.0%§!\n"
+
+ BM_shogun_every_daimyo_sankin_kotai_tt: "\nFor every §YDaimyo§! subject both us and our §YDaimyos§! will receive: §G+1.0§! Prestige. \n \nFor §Y10§! years every §YDaimyo§! subject will receive: \nMonthly Autonomy Change: §R+0.05%§! \n"
+
+ BM_shogun_every_daimyo_expel_ronin2_tt: "\nEvery §YDaimyo§! subject will receive get §G+1§! £adm£, £dip£ or £mil£ development in their capital. \nFor every §YDaimyo§! subject both us and our §YDaimyos§! will receive: §G+1.0§! Army Tradition. "
+
+
+
+ #PRUSSIA
+ frederick_wilhelm_reforms_prussia:0 "Frederick Wilhelm's Reforms"
+ frederick_wilhelm_reforms_prussia_desc:0 "Frederick the Great reorganized the Prussian Economy by establishing additional protections for religious minorities, a national bank, tax reforms, and industrial investments. As a direct result from these policies and reforms, many religious immigrants, fleeing from persecution and war, came into Prussia. These immigrants formed large communities and settled in the less developed parts of the nation, helping boost the industrial output and contributing to the urbanisation that started forming around this time."
+ mechanic_enables_immigrant_settlements_yes: "Every province with §Y20§! Development will gain: \n Construction Cost: §G-15.0%§! \n Governing Cost: §G-10.0%§!"
+
+ BM_immigrant_settlements:0 "Urbanized Settlements"
+ desc_BM_immigrant_settlements:0 ""
+
+
+ kreditwerk_reform: "Reformed Kreditwerk"
+ kreditwerk_reform_desc: "In the 16th century, the Margraves of Brandenburg had become highly dependent and on several occasions highly indebted on the estates (counts, lords, knights and towns). To combat this, the Kreditwerk was established as an independent institution, not controlled by by the elector or the Großer Ausschuß 'Great Committee' of the estates. This institution was tasked with managing the the Margraviates taxation, finances and liabilities and became central to reforming the Margraviates, and later on, Prussias, economy."
+
+ mechanic_upgrade_promote_burghers_bookkeeping_yes: "The '§YPromote Burghers Bookkeeping§!' privilege will no longer cost Absolutism and also grant: \n Interest Per Annum: §G-0.25§! \n Yearly Inflation Reduction: §G+0.05%! \n"
+
+ mechanic_upgrade_control_over_monetary_policy_yes: "The '§YCommercial Advisory Board§!' privilege will no longer cost absolutism or increase Stability Cost."
+
+ order_of_the_swan_reform:0  "Order of the Swan"
+ order_of_the_swan_reform_desc:0 "The Order of the Swan has been a great success across our realm. By opening up the order to our neighbours we can increase the prestige of the Order and attract devout soldiers from all around the Christian world."
+
+
+ #AUSTRIA
+ albertine_line_reform: "Albertine Line"
+ albertine_line_reform_desc: "As our family holds most of the Austrian Heartlands, we shall never have to look far for potential heirs or willings oldiers. Just as when the Albertine line died in 1457, we took over our cousin's crown, and our cousins are more then willing to continue carrying our banner should our strength run short."
+
+
+ imperial_inquisition_reform: "The Imperial Inquisition"
+ imperial_inquisition_reform_desc: "To fight the Heretical spread of dissidence against the Catholic church we shall institute the Imperial Inquisition to hunt down these lost souls."
+
+
+ reorganize_the_imperial_army: "Re-Organize the Imperial Army"
+ reorganize_the_imperial_army_desc: "The age of seasonal warfare is ending, disbanding armies by winter and recruting new ones for the spring campaign is too costly in the age where disciplined soldiers with pike- and shot form the backbone of armies. Furthermore, during these multi-seasonal wars, why should we bear the burden to pay for the armies our enemies forces us to raise? 'When the army marches, the enemy pays!'"
+
+ mechanic_enables_reorganize_the_imperial_army_yes: "During peacetime we will receive the same benefits of '§YRaise War Taxes§!' without costing £mil£"
+ BM_hab_reorganize_the_imperial_army_triggered_modifier: "Peacetime Mobilization"
+ BM_hab_reorganize_the_imperial_army_triggered_modifier_desc: ""
+
+
+ declario_ferdinandei_reform: "Declaratio Ferdinandei"
+ declario_ferdinandei_reform_desc: "The principle known as 'Ferdinand's Declaration' excempted knights and some cities from the requirements of religious uniformity. This allowed for a few mixed cities and towns where Catholics and Lutherans could live together. It also protected the authority of the princely families, knights, and nobles who had converted. This would overall lessen the blow that the Protestant Reformation had done to the Imperial Authority to the Emperor, at least within the realm of [Root.Getname]."
+
+
+ diverse_estates_reform: "Diverse Estates"
+ diverse_estates_reform_desc: "Having to keep the Hungarian, German and Bohemian estates all loyal to the [Root.GetAdjective] cause is a challenge. Our experience in juggling them, placating them with gold, words and threats has left us with an experience diplomatic corps that are well versed in how to best sweeten our deals."
+ mechanic_enable_diverse_estates_reform_yes: "Completing Agendas will reward a random §YCzech§!, §YHungarian§! or §YGerman§! province with §G1§! £adm£, £dip£ or £mil£ development."
+
+
+
+
+
+ #POLAND
+ szlachta_authority_reform: "Szlachta Authority"
+ szlachta_authority_reform_desc: "By granting the Szlachta additional power and influence, we can ensure their complacency, both in serving our forces as well as reducing the likelyhood that they start trouble."
+
+ re_enforce_magdeburg_rights_reform: "Magdeburg Rights"
+ re_enforce_magdeburg_rights_reform_desc: "While similar conflict among the social classes could be found across all of Europe, nowhere was the nobility as dominant at the time as in Poland, and later the Polish-Lithuanian Commonwealth. Much debate has been made between historians as to which processes affected this development, since until the wars and crises of the mid-17th century the cities and centers of important trade of the Commonwealth had not markedly lagged behind in size and wealth compared their western counterparts. The Commonwealth did have numerous towns and cities, commonly founded on 'Magdeburg Rights'."
+
+
+ BM_magdeburg_rights: "Magdeburg Rights"
+ desc_BM_magdeburg_rights: ""
+ mechanic_enables_town_rights_yes: "Provinces with either a §YCenter of Trade Level 2§!, an §YEstuary§!, or §Y25§! Development will receive '§YMagdeburg Rights§!' granting: \nLocal Development Cost: §G-10.0%§! \nLocal Goods Produced Modifier: §G+10.0%§! \nLocal Trade Power Modifier: §G+10.0%§!"
+
+
+
+
+
+
+ #SWEDEN
+ office_of_lord_regent_reform: "Office of Lord Regent"
+ office_of_lord_regent_reform_desc: "The Lord Regent was a position held to the head governor of the highly autonomous Kingdom of Sweden. Danish Kings often tried to abolish or weaken this position, only to be met with fierce resistance or independence wars to restore Swedish Autonomy."
+
+
+ house_of_knights_reform: "House of Knights"
+ house_of_knights_reform_desc: "The Swedish Hereditary Nobility was established following Eric the 14th's formalization of nobility. By 1626 the House of Knights represented the nobility and maintained their records and geneology. Following the practice of ennobling officers instead of paying them, many houses of lesser nobility can trace their lineage back through this system, registered in the House of Knights."
+ mechanic_BM_house_of_knights_yes: "On §YMonarch Ascensions§!, we will gain a supplemantary §GRuler Modifier§!"
+
+
+ the_red_book_reform: "Swedish Church Ordinance"
+ the_red_book_reform_desc: "The 'Swedish Church Ordinance' were a set of Swedish reformations of Lutherianism that allowed some catholic practices as well as allow catholic orders to grow again by taking on new novices."
+
+
+ the_judicature_ordinance_reform: "The Judicature Ordinance"
+ the_judicature_ordinance_reform_desc: "The Judicature Ordinance established the Supreme Court. Later additions relaxed the process of appeal somewhat by restoring the king's authority and giving him the exclusive right to administer death sentences. The continuance of the local jury and a culture of respecting the law allowed for protected civil liberties."
+
+
+ parliamentary_order_reform: "Parliamentary Order"
+ parliamentary_order_reform_desc: "The Parliamentary Order set up the Parliament of Sweden, where the four represented estates, the nobles, clergy, burghers and peasants, could work together to propose new laws to increase the prosperity of the nation."
+ mechanic_enables_peasant_estate_yes: "Enables the Peasants Estate."
+
+
+ gustavan_artillery_reform: "Gustavan Artillery"
+ gustavan_artillery_reform_desc: "Field artillery has long been a static emplacement for firing before the battle starts. Let us use lighter pieces on the battlefield itself for additional firepower and mobility, let us shred the Imperial Tercios to pieces!"
+
+ mechanic_BM_gustavan_artillery_reform_yes: "Winning Fort Sieges grants §G5%§! Yearly Manpower per Fort Level."
+
+
+
+
+
+
+ #BOHEMIA
+
+ vladislavs_provincial_establishment_reform: "Vladislav's Provincial Establishment"
+ vladislavs_provincial_establishment_reform_desc: "Written during the Bohemian Wars, this code of laws was the first to wholly encompass and implement Bohemian state laws. Most of the 554 articles of the code pertainted to the privileges of the nobility, which limited the monarchs influence and jurisdiction and placed the nobles above cities in legal matters."
+ mechanic_enable_vladislavs_provincial_establishment_yes: "\nCompleting Agendas from the Nobility will grant §G+1§! Stability or §G50§! £adm£"
+
+ restored_land_establishment_reform: "Bohemian Crown Supremacy"
+ restored_land_establishment_reform_desc: "Following the end of the civil war over the Czech rebels on White Mountain, the King of Bohemia and Margrave of Moravia issued decrees to restore law and order as well as the supremacy of the Bohemian Crown. Furthermore, the legal status of the Nobility was depricated to it being secondary in rank after the Clergy in state assemblies."
+
+
+ german_aristocracy_reform: "German Aristocracy"
+ german_aristocracy_reform_desc: "Following centuries of Luxembourger and Habsburger reign as well as being firmly placed inside the confines of the Holy Roman Empire, the German language and heritages were commonplace in the courts of the Bohemian Kings. This policy greatly increased the loyalty with German nobles who would often be closely intertwined with their Czech counterparts."
+
+
+
+
+
+
+
+
+ #HESSE
+ hessian_militarized_monarchy_reform: "Hessian Militarized Monarchy"
+ hessian_militarized_monarchy_reform_desc: "The Duchy of Hesse needs no undisciplined, greedy foreign mercenaries to defend her, she needs only her own men. We have militarized our state to a degree that one out of every seven men is in the army, and he will fight for his homeland, not the filling of his pocket."
+
+ hessian_modern_militarized_monarchy_reform: "Enlightened Hessian Military State"
+ hessian_modern_militarized_monarchy_reform_desc: "Friedrich of Cassel's Reforms, based on Prussian Militarism from his experience serving in their army, has transformed Hesse into the most militarized state in Europe. Our enemies fear us and our people prosper from our victories."
+
+
+ hessian_elite_jaegers_reform: "Elite Jägers"
+ hessian_elite_jaegers_reform_desc: "The Hessian Jäger (Sharpshooter) is armed with three things: ruthlessness, discipline and his büchse. This ruthlessness is greatly benefician to us, though their equipment is quite expensive."
+
+
+ found_the_rothschilds_reform: "Support the Rothschild Dynasty"
+ found_the_rothschilds_reform_desc: "Our Hoffaktor (Court Jew) is a talented man, and his abilities would be wasted with the limitations of a lowborn. Let us raise him to nobility and empower his family so they can help us further. Perhaps they will make a real name of themselves someday."
+
+ hessian_military_complex_reform: "Military Industrial-Complex"
+ hessian_military_complex_reform_desc: "The income from our trooops' expeditions in foreign lands will go to turning Hesse into a rich home for the returning men. By focusing on building a proper industry around our armies we will surely make our nation prosper."
+ mechanic_enables_military_exports_yes: "§YBarracks§! and §YTraining Fields§! gives §G+7.5%§! / §G+15.0%§! Production Efficiency \n§YRegimental Camps§! and §YConscription Centers§! gives §G+15.0%§! / §G+30.0%§! Local Defensiveness \n§YSoldiers Households§! gives §G-15.0%§! Local Regimental Cost"
+ BM_military_exports_barracks_modifier: "Industrialised Barracks"
+ BM_military_exports_training_fields_modifier: "Industrialized Training Fields"
+ BM_military_exports_regimental_camp_modifier: "Industrialized Regimental Camps"
+ BM_military_exports_conscription_center_modifier: "Industrialized Conscription Center"
+ BM_military_exports_soldiers_households_modifier: "Industrialized Soldiers Household"
+
+
+
+
+
+
+
+
+ #DENMARK
+ constitutio_valdemariana_reform: "Valdemars Constitution"
+ constitutio_valdemariana_reform_desc: "The 'Constitutio Valdemariana' was a compromise of the nobles of Schleswig and Holstein between the Danish King stating that they would not be allowed to unite under one singular individual. The Danish King often circumvented this by appointing their heir as co-ruler of the powerful duchy which would prove useful in training Danish heirs for the rule of the Kalmar Union and increase Danish influence over Schleswig-Holstein."
+
+ mechanic_enable_valdemar_constitution_yes: "The '§YNobility Integration Policy§!' privilege will now also give: \nManpower in Accepted Culture Provinces: §G+10.0%§!"
+
+
+ commoner_officials_reform: "Commoner Officials"
+ commoner_officials_reform_desc: "King John of Denmark focused on expanding his royal power through the acquisition of funds by promoting merchants and commoners as officials and councillors. Not only did they prove to do just as good of a job as the Nobles, but were also much cheaper and less prone to corruption."
+
+
+ snaphaner_reform: "Employ the Snaphaener"
+ snaphaner_reform_desc: "Snaphanerne (The Quickshots) were Scanians, sometimes Swedish speaking danes and other times Danish speaking swedes, who often refused foreign conquest from both Sweden and Denmark. Their fiery spirit for sovereignty will make them serve as excellent riflemen in our armies."
+
+
+ strenghten_the_haeren_reform: "Strenghten the Hæren"
+ strenghten_the_haeren_reform_desc: "The Hæren, also known as the Royal Danish army, was founded in 1614 in the wake of the Kalmar War. It was designed to maintain Denmark's sovereignty, prevent conflicts,boost Denmark's position as a great power and protect her foreign interests. By extending the draft of men for our army and sailors for our navy to our subjects, and not just Danes, we can encourage more to join ranks in the defense of Denmark."
+
+
+ king_and_duke_reform: "Danish Bill of Rights"
+ king_and_duke_reform_desc: "For most of its existence, Denmark has had large and numerous subjects. Due to this, the Danish monarchy has had to tend to the needs of their subjects to ensure comittment and loyalty. By drafting and promoting a Danish bill of rights that applies to all our subjects, they will see us as a benevolent protector, rather than a tyrant, because no other great power will respect their rights in the same as us and will seek to dominate them."
+ mechanic_enable_king_and_duke_reform_yes: "'§YPersonal Unions§!' will receive §YDanish Bill of Rights§! granting: \nGoods Produced Modifier: §G+15.0%§! \nManpower In Primary Culture Provinces: §G+20.0%§!"
+ BM_king_and_duke_subject_modifier: "Danish Bill of Rights"
+
+ christian_four_merchantile_reform: "Christian's Mercantile Reforms"
+ christian_four_merchantile_reform_desc: "To re-assert claims over Iceland and Greenland, as well as expand the reach of danish mercantile power, Christian IV instituted major mercantile reforms, increasing the sound toll, promoting northern exploration voyaged and granting monopolies and privileges to traders that sailed for the Orient."
+
+
+ danske_besiddelser_reform: "Danske Besiddelser"
+ danske_besiddelser_reform_desc: "Our possessions abroad are very important to our economy and we must focus on expanding and regulating them. By appointing governors to our colonies and granting more autonomy to merchants in trading regions, we can maximize revenues and minimize expenditure."
+ mechanic_enable_danish_mercantilism_yes: "For every §G10.0%§! Mercantilism we get §G1.5%§! Trade Efficiency up to a maximum of §G15.0%§! Trade Efficiency."
+
+ Home_Market_1: "Mercantilist Efficiency"
+ Home_Market_2: "Mercantilist Efficiency"
+ Home_Market_3: "Mercantilist Efficiency"
+ Home_Market_4: "Mercantilist Efficiency"
+ Home_Market_5: "Mercantilist Efficiency"
+ Home_Market_6: "Mercantilist Efficiency"
+ Home_Market_7: "Mercantilist Efficiency"
+ Home_Market_8: "Mercantilist Efficiency"
+ Home_Market_9: "Mercantilist Efficiency"
+ Home_Market_10: "Mercantilist Efficiency"
+
+ abolish_the_haandfaestning_reform: "Abolish the Haanfaestning"
+ abolish_the_haandfaestning_reform_desc: "For centuries the Danish kings have had to accept limits to their power and often struggled over each and every issue with the nobility. My hands shall no longer be bound by such obstactles. My rule is my own and any noble or clergical influence shall no longer be accepted. My reign and my heirs are no longer submit to signing this humiliating document."
+
+
+
+
+
+
+
+
+
+
+ #FLORENCE
+ florentine_republic: "The Florentine Republic"
+ florentine_republic_desc: "We normally think of a Republic as a government where everyone votes for representatives who will represent their interests to the government (think of the United States pledge of allegiance: "and to the republic for which it stands..."). However, Florence was a Republic in the sense that there was a constitution which limited the power of the nobility (as well as laborers) and ensured that no one person or group could have complete political control (so it was far from our ideal of everyone voting, in fact a very small percentage of the population had the vote). Political power resided in the hands of middle-class merchants, a few wealthy families (such as the Medici, important art patrons who would later rule Florence) and the powerful guilds."
+
+
+ #CORRUPTION MECHANICS
+ ## Mechanics:
+ ability_corruption_mechanic: "Corruption Acceptance"
+ corruption_mechanic_power: "Corruption Acceptance"
+ corruption_mechanic_power_desc: "Corruption Acceptance is a measure of how much corruption is accepted in your government. \nIt interacts with corruption and negates many of its modifiers fully or partially. \n--------------\n"
+ corruption_mechanic_reassure_election_standards: "Reassure Election Standards"
+ corruption_mechanic_reassure_election_standards_desc: ""
+ corruption_mechanic_encourage_corruption: "Encourage Corruption"
+ corruption_mechanic_encourage_corruption_desc: ""
+ corruption_mechanic_grant_political_favor: "Grant Political Favor"
+ corruption_mechanic_grant_political_favor_desc: ""
+ corruption_mechanic_punish_corruption: "Condemn Corruption"
+ corruption_mechanic_punish_corruption_desc: ""
+ corruption_mechanic_cooldown_desc: "'§YReassure Election Standards§!' or '§YGrant Political Favor§!'"
+
+ ## Power Modifiers:
+ monthly_corruption_mechanic_power: "Monthly Corruption Acceptance Gain"
+ corruption_mechanic_power_gain_modifier: "Corruption Acceptance Gain Modifier"
+
+ ## Modifiers:
+ corruption_mechanic_reassure_election_standards_modifier: "Reassured Election Standards"
+ corruption_mechanic_grant_political_favor_adm_modifier: "Administrative Political Favor"
+ corruption_mechanic_grant_political_favor_dip_modifier: "Diplomatic Political Favor"
+ corruption_mechanic_grant_political_favor_mil_modifier: "Military Political Favor"
+
+ ## Tooltips:
+ corruption_mechanic_encourage_corruption_tt: "Our §YCorruption§! is higher than our §YCorruption Acceptance§! (measured in steps of §Y10§!)"
+ corruption_mechanic_punish_corruption_tt: "Our §YCorruption Acceptance§! is higher than our §YCorruption§! (measured in steps of §Y10§!)"
+ corruption_mechanic_grant_political_favor_tt: "\nCan choose one of the following modifiers for §Y10 years§!: \n§YAdministrative Political Favor§!: \n    [country_admin_power]: §G+1§! \n    [advisor_cost]: §G-15.0%§! \n    [build_cost]: §G-10.0%§! \n\n§YDiplomatic Political Favor§!: \n    [country_diplomatic_power]: §G+1§! \n    [diplomatic_reputation]: §G+1.00§! \n    [improve_relation_modifier]: §G+15.0%§! \n\n§YMilitary Political Favor§!: \n    [country_military_power]: §G+1§! \n    [land_morale]: §G+10.0%§! \n    [land_maintenance_modifier]: §G-10.0%§!"
+
+ ## Events:
+ corruption_mechanic_events.EVTNAME1: "Grant Political Favor"
+ corruption_mechanic_events.EVTDESC1: "[Root.Monarch.GetName] has agreed to grant one of [Root.Monarch.GetHerHis] close friends a political favor. But what favor shall be granted?"
+ corruption_mechanic_events1.EVTOPT1: "Grant an Administrative Favor."
+ corruption_mechanic_events1.EVTOPT2: "Grant a Diplomatic Favor."
+ corruption_mechanic_events1.EVTOPT3: "Grant a Military Favor."
+
+
+
+
+
+
+
+
+ #PORTUGAL
+ portuguese_cortes_reform: "Portugese Cortes"
+ portuguese_cortes_reform_desc: "The Cortes was an assembly of representatives of the nobles, clergy and bourgeoisie. Much alike a the various forms of parliaments in Europe at the time, it was used by the Portugese Monarchy to sway influence over the estates and make sure their concerns were heard. It was often tradition that the Portugese King would rely on small assemblies of notables, and only summoned the full Cortes on extraordinary occasions."
+
+ mechanic_enables_cortes_yes:0 "The '§YSupremacy over the Crown§!' Nobility Privilege will now grant an event every §Y20§! years that grant rewards depending on our choices."
+
+ portuguese_empire_reform: "Portuguese Empire"
+ portuguese_empire_reform_desc: "A strong monarch rules this Empire with the support of it's subjects. The nobility, clergy and the commoners all bend their knee to the King. In return the King chooses what is best for our nation and it's people. We shall lead the civilizing mission in our territories and beyondm we shall encompass racial tolerance and humanism towards our subjects unlike Empires that rely on racial segragation to properly function. Such has been noted in Brazil with our rapid expansion in the South American colony and it's rapid development making it our most important colony, we must tread carefully for it's loss can cause a devastating blow on our national integrity and economy. Our colonies provide the raw materials needed to further develop our trade and economy. As such we shall expand our hold in Africa and expand into the deepest lands of Brazil. These characteristics are the bases of the Portugues Empire which shall show the world our glory and pride."
+ BM_form_portugese_empire_title:0 "Declare the Portugese Empire"
+ BM_form_portugese_empire_desc:0 "We have cemented our dominant rule in across the world, all the way from Rio de Janeiro to Macau. Every corner of the Empire is considered an integral part of our borders and it's citizens are all Portugese subjects whether they speak another language or have different customs. Under the flag of Portugal, we are all Portugese, we are all citizens of the same Empire."
+ Kingdom_Of_Brazil:0 "Kingdom of Brazil"
+ desc_Kingdom_Of_Brazil:0 ""
+ mechanic_enables_kingdom_of_brazil_yes:0 "Our colonial subject in @BRA §YBrazil§! will receive: \n£sea_land_forcelimit_modifier£ Land Force Limit Modifier: §G+100.0%§!"
+ 
+ BM_free_second_golden_age_or_start_free_new_one_TT:0 "If we have had or are currently in a §YGolden Age§!, you will be able to start a second one. \nIf you have not yet had one, you will receive one for free."
+
+ ## EVENTS:
+ BM_government_reforms.7.t: "The Cortes of [GetYear]"
+ BM_government_reforms.7.d: "The King has summoned the annual Cortes, how should he spend his time?"
+ BM_government_reforms.7.a: "Listen to the burghers"
+ BM_government_reforms.7.b: "Debate the nobles"
+ BM_government_reforms.7.c: "Convince the clergy"
+
+ BM_government_reforms.8.t: "Call of the Cortes"
+ BM_government_reforms.8.d: "Let us hear the call of the Cortes and see what they have to say."
+ BM_government_reforms.8.a: "Lets play some politics."
+ BM_government_reforms.8.b: "let them rot."
+
+ ### MODIFIERS:
+ Cortes_Navy: "Naval Concessions"
+ Cortes_Trade: "Promoted Trade"
+ Cortes_Goods: "Streamlined Production"
+ Cortes_Manpower: "Extra Recruits"
+ Cortes_Morale: "Hightened Spritis"
+ Cortes_Discipline: "Tougher Drills"
+ Cortes_Piety: "Special Ceremonies"
+
+
+ portugese_marines_reform: "Portugese Fuzileiros"
+ portugese_marines_reform_desc: "Traditionally, whilst the army was levied and professionaly trained, the sailors were often forcefully drafted and put into service of the navy. But as Portugals establishes herself across the world, the need for better land-to-sea coordination is precient and highly skilled sailors become a must to crew our warships. By letting sailors undergo a formal military training it will not only help with providing us crews for our ship, it will also make our marines much more skilled."
+
+ BM_portugese_marines_modifier: "Portugese 'Fuzileiros'"
+ BM_portugese_marines_barracks_modifier: "'Fuzileiros' Barracks"
+ BM_portugese_marines_training_fields_modifier: "'Fuzileiros' Training Fields"
+
+ mechanic_enable_portugese_marines_yes: "Fuzileiros: §YBarracks§! and §YTraining Fields§! gives §G+25.0%§! / §G+50.0%§! Local Sailors Modifier"
+
+
+ casa_de_india_reform: "Casa da India"
+ casa_de_india_reform_desc: "Originally established to oversee the Iberian and Moroccan trade routes, the Casa da India now helps manage the west indies, the gold mines of africa, and the far eastern provinces, providing us with many profitable routes of trade."
+
+
+
+ #SAVOY
+ savoia_reform: "I Savoia"
+ savoia_reform_desc: "At the career peka of Amedeo VIII 'the peaceful' in 1430, the Savoy domain had expanded its territories to encompass Romandie, across the alps into Piedmont and Nizza. Not only did Savoy boast an impressing geographical height, but also a tightly weaven diplomatic network capable of taming both the Kingdom of France and the Holy Roman Empire. To fully centralize the newly acquired territories a first body of general laws were enacted. With them came a uniform sanctioned for all the Savoy states."
+
+ kingdom_of_sardinia_reform: "Union Perfetta"
+ kingdom_of_sardinia_reform_desc: "The perfect fusion refers to the political and administrative union between the Kingdom of Sardinia and the mainland states owned by the Savoy, including Piedmont, the Duchy of Savoy, Nice, the fiefs of the Ligurian Apennines and the former Republic of Genoa. With this also came a similar Acts of Union that the British would come to enact as well."
+
+
+
+ milizia_nationale_reform: "Milizia Nationale"
+ milizia_nationale_reform_desc: "Who fights better? A foreigner fighting for his pockets, loyal only to his Condottiero Captain and however much money we can give him, or a soldier fighting for his prince, land and family! Let us rely on the strength of our own arms, our own sons and our own banners instead."
+
+
+
+
+ #FRANCE
+ blood_tax_reform: "Blood Tax"
+ blood_tax_reform_desc: "The Nobility is not only the most important estate in France due to its power and influence, but also due to its responsibility to pay their dues to the King. But this tax is not payed in gold or goods, but in the form of soldiers and knights. By emphasising on this responsibility we can squeeze more manpower out of our subjects."
+ mechanic_enables_blood_tax_yes: "Blood Tax: §YVassals§!, §YMarches§! and §YAppanages§! gain §G+25.0%§! Manpower Modifier and §G-15.0%§! Regiment Cost."
+ BM_subject_blood_tax: "Blood Tax"
+
+
+ noblesse_d_epee_reform: "Noblesse d'epee"
+ noblesse_d_epee_reform_desc: "As with officer of the sword, the expression "noble of the sword" derives from the right of such noblemen to bear a sword, which reflected their duty of knightly service to their feudal overlord. In later centuries, a nobleman of the sword was not recognized as such unless his family had held this status for at least four generations. The Nobles of the Sword also provided non-military services to the king, holding positions in all branches of government."
+ mechanic_enables_officers_of_the_sword_yes: "Officers of the Sword: §G+1§! Prestige if you have over 50 Army Tradition."
+ BM_officers_of_the_sword: "Officers of the Sword"
+ BM_officers_of_the_sword_desc: ""
+
+ generalites_reform: "Generalites"
+ generalites_reform_desc: "In an attempt to reform the old feudal system that had been deeply entrenched in French society, the 'Généralités' were created to divide France into new districts and regions. Their function helped France to further centralize its power at the hands of the state as well as allowed the 'receveurs royaux', the royal collectors, to more efficiently tax and manage the new districts."
+
+ bourgeoisie_aristocracy_reform: "Bourgeoisie Aristocracy"
+ bourgeoisie_aristocracy_reform_desc: "In the wake of the Hundred Years War and the great plague that followed, many noble estates fell into decline or died out, many others were pawned or sold to the rising bourgeoisie aristocracy, who are eager to expand their influence with noble titles rather then just with personal fortunes."
+ mechanic_BM_french_buff_merchant_guild_financial_aid_yes: "The '§YBourgeoisie Financial Aid§!' Privilege will now also get §G+15.0%§! Provincial Trade Power Modifier."
+
+ parisian_court_reform: "Parisian Court"
+ parisian_court_reform_desc: "Let us fill our court with the best France has to offer; proper Parisians. For there is no more well-mannered and cultured than the elites of Paris. It is why ambassadors, heralds and diplomats all around Europe don't use their own language to communicate, but ours instead. It is a matter of prestige that we continue to capitalise on the 'Lingua Franca'."
+ mechanic_enables_french_court_yes: "French Court: §G+1§! Prestige while you employ §Y3§! Francien Advisors."
+ french_court: "French Court"
+ desc_french_court: "[Root.GetBurghersName] Financial Demand now also grants: §G+15.0%§! Provincial Trade Power Modifier."
+
+ society_of_agriculture_reform: "Society of Agriculture and Finances"
+ society_of_agriculture_reform_desc: "The controller of finances has always been a unpopular position of government. Not only were your task enormous of single-handledly managing the French economy, but any alterations to fiscal or economic policy that wasn't supported by the States General or the King were forbidden. However, Henri Bertin managed to not only reverse France's steadily declining economy, but also radically reform several aspects. Issuing a decree permitting the circulation of grain, livestock and other rural goods without taxes, the export of grain, and the establishment of several 'zones' whose sole purpose was to grow food for the French people allowed France to regain its economic competitiveness in global trade whilst stimulating its local markets and feeding its people. All this laid the basis for the 'Society of Agriculture' and the 'Agricultural Committee' that would continue France's successful economic growth until the French Revolution."
+ mechanic_enables_society_of_agriculture_yes: "Society of Agriculture: §G+2.0§! Trade Power and §G+40.0%§! Production Efficiency in §YGrain§! provinces. \n§G+25.0%§! Production Efficiency in §YLivestock§! and §YWine§! provinces."
+ society_of_agriculture_grain: "Society of Agriculture"
+ desc_society_of_agriculture_grain: ""
+ society_of_agriculture_wine_livestock: "Society of Agriculture"
+ desc_society_of_agriculture_wine_livestock: ""
+
+
+
+ #CASTILLE / ARAGON / SPAIN
+ kingdom_of_castille_and_leon: "Kingdom of Castille and Leon"
+ kingdom_of_castille_and_leon_desc: "The Kingdom of Castille and Leon was a union between the two realms during the Reconquista. However, the kings and queens of Castille and Leon would often struggle to rein in the powerful nobles and militant orders that had laid the basis for the kingdom."
+ mechanic_enable_militant_orders_yes: "Militant Orders: As long as we are in the §YAge of Discovery§! or §YAge of Reformation§! we will gain §G+25.0%§! Manpower Recovery Speed and §G+1.0§! Army Tradition while at war with §Yheretics§! or §Yheathens§!."
+
+ jinetes_reform: "Crusader Orders"
+ jinetes_reform_desc: "The Crusader Orders that formed during the times of the Reconquista has proven to be a powerful but very useful ally against the Muslims. Employing 'Jinetes', meaning genitour, a lightly armoured but highly mobile horseman, developed as a response to the mounted horse archers of the Moors, they have proven themselves an important role of our forces. By enobling some of them and granting them access to integrate into the nobility we can make sure we weaken the influence of our factionalist nobles whilst still gaining the manpower we desperately need."
+ BM_militant_orders: "Militant Orders"
+ BM_militant_orders_desc: ""
+
+
+
+ #NAPLES / SICILY
+ kingdom_of_sicily_reform: "Kingdom of Sicily"
+ kingdom_of_sicily_reform_desc: "The traditions and laws of the Normans were used as the foundation for the Kingdom of Sicily, further strengthened under the German Hohenstaufen dynasty into a highly centralized monarchy. This has come at the cost of greatly alienating the nobles against us however."
+ # Sicilian Kingdom Mechanic
+ ## Mechanic
+ ability_sicilian_kingdom_mechanic: "Sicilian Kingdom"
+ sicilian_kingdom_adm_power: "Encourage City Living Progress"
+ sicilian_kingdom_adm_power_gain_modifier: "Encourage City Living Progress Gain Modifier"
+ monthly_sicilian_kingdom_adm_power: ""
+ sicilian_kingdom_dip_power: "Sicilian Defence Progress"
+ sicilian_kingdom_dip_power_gain_modifier: "Sicilian Defence Progress Gain Modifier"
+ monthly_sicilian_kingdom_dip_power: ""
+ sicilian_kingdom_mil_power: "Centralization Progress"
+ sicilian_kingdom_mil_power_gain_modifier: "Sicilian Centralization Gain Modifier"
+ monthly_sicilian_kingdom_mil_power: ""
+
+ sicilian_kingdom_encouraged_city_living: "Encourage City Living"
+ sicilian_kingdom_encouraged_city_living_desc: ""
+ sicilian_kingdom_sicilian_defence: "Sicilian Defence"
+ sicilian_kingdom_sicilian_defence_desc: ""
+ sicilian_kingdom_centralization: "Centralization"
+ sicilian_kingdom_centralization_desc: ""
+
+ sicilian_kingdom_encouraged_city_living_modifier: "Encourage City Living"
+ desc_sicilian_kingdom_encouraged_city_living_modifier: ""
+ sicilian_kingdom_sicilian_defence_modifier: "Sicilian Defence"
+ desc_sicilian_kingdom_sicilian_defence_modifier: ""
+
+ sicilian_kingdom_sicilian_defence_tt: "The owned provinces in the areas of §Y[121.GetAreaName]§!, §Y[124.GetAreaName]§!, §Y[125.GetAreaName]§!, §Y[123.GetAreaName]§!, §Y[122.GetAreaName]§! will gain:\n"
+
+
+ angevin_nobles_reform: "Confirm Angevin Nobles"
+ angevin_nobles_reform_desc: "The French Kings on Anjoy decided to grant privileges to the noblemen of the Kingdom, greatly increasing their influence over the judicial system. This helped secure the nobilities loyalties after French Conquest of the Kingdom over the Hohenstaufer Germans."
+
+ neapolitan_renaissance_reform: "Neapolitan Renaissance"
+ neapolitan_renaissance_reform_desc: "During the renaissance, the Kingdom of Sicily and Naples truly flourished. The Royal Court filled with many great inventors, artists and humanists. The cities would come to massively develop and rival the northern italian cities. Let us truly embrace the renaissance and let it flow throughout the entirety of the Kingdom."
+
+ theatines_reform: "Theatines"
+ theatines_reform_desc: "In reaction to the Catholic reforms of the 15th and 16th century, the 'Theatines' founded communities all over the italian peninsula, especially in the more traditional south. These communities would, upon taking vows to povery, obedience and chastity, be granted papal blessings and mend the relations between the Papal States and the Neapolitans."
+ mechanic_enables_mary_of_the_purity_yes: "Theatine Purity: §G-0.05§! Yearly Corruption for every Tolerance of the True Faith over §Y5§!, up to a maximum of §G-0.2§!."
+ GE_Mary_Of_The_Purity_1: "Theatine Purity"
+ GE_Mary_Of_The_Purity_2: "Theatine Purity"
+ GE_Mary_Of_The_Purity_3: "Theatine Purity"
+ GE_Mary_Of_The_Purity_4: "Theatine Purity"
+
+ nunziatella_reform: "La Nunziatella"
+ nunziatella_reform_desc: "The 'reale Accademia Miliare' is an educational institute with the purpose of educating and training the various generals, captains and military command of the Kingdom. Taking great inspiration from the Ferrarese King Alfonso I, the academy places a great emphasis on the employment of cannons, artillery and siege equipment to maximize their potential in various fields."
+ mechanic_enables_artillery_academia_yes: "Academy of Artillery: §G+1§!£shock£Artillery Shock while Army Tradition is at §Y75§! or higher."
+ BM_academy_of_artillery: "Academy of Artillery"
+ BM_academy_of_artillery_desc: ""
+
+ parliament_of_sicily_reform: "Parramentu Sicilianu"
+ parliament_of_sicily_reform_desc: "The sovereignty of the Kingdom of Sicily was assured to the long-lived parliamentary tradition based in Palermo. The Sicilian parliament is considered one of the oldest in the world and will continue to guarantee that, even if our Kingdom falls to outside influence, the Sicilians will always remain free."
+
+ customs_house_of_apena_sheep_reform: "Customs House of Apena"
+ customs_house_of_apena_sheep_reform_desc: "Originally a Aragonese institution, the Custom House was a way of organizing the rural, and often highly autonomous, pastorial south. This policy, which forced the shepherds to winter in specifically designated grazing grounds, ensured that they always remained in a firm grasp and could be kept a close eye on. It also ensured that additional meat and whool would reach the cities and merchant as well as helping to define exact territorial and city borders within the Kingdom."
+ mechanic_enables_customs_house_yes: "Customs House: §G+25.0%§! Goods Produced and §G-25.0%§! Governing Cost in provinces with §YWool§!, §YLivestock§! or §YCloth§!"
+ GE_Customs_House: "Customs House"
+ desc_GE_Customs_House: ""
+
+ constitution_of_melfi_reform: "Constitution of Melfi"
+ constitution_of_melfi_reform_desc: "The ancient constitution of Melfi has kept our Kingdom prosperous and our monarchs powerful throughout the ages. Originally based on the customs and laws of the Norman kings, and later expanded upon by the German Emperors before being the inception of Spanish rule, these documents have stood the test of time and will continue to form the bedrock of our future!"
+ mechanic_enables_liber_augustalis_yes: "Liber Augustalis: §G+5.0%§! All Estate Loyalty Equilibrium while Legitimacy is over §Y90§!."
+ BM_melfi_constitution: "Liber Augustalis"
+ BM_melfi_constitution_desc: ""
+
+
+ # ENGLAND
+ abolish_bastard_feudalism_reform: "Abolish Bastard Feudalism"
+ abolish_bastard_feudalism_reform_desc: "Bastard Feudalism was centred around not the financial aspect, the sums involved were mostly negligible, but on the concept of services in exchange for good favour. In a society governed on a personal basis, service to a lord was the best way to obtain favour in the form of offices, grants, title and pardons. Lords would retain administrators and lawyers, as well as recruit local gentry into their affinities. By offering money instead of land, lords could afford to retain more followers, granting them much power over English politics and over the English countryside. In return for becoming retainers, the gentry would expect to rely on their lord's influence in local and national politics. This practice was known as "maintenance". During good times with a prestigious and stable King, this system would promote stability, but under a weak king, such as Henry VI , the rivalries of the would often spill over from the courtroom to armed confrontations, leading to civil war and a undermined royal authority."
+
+
+ #PERSIAN
+ turkic_qasilbash_heirs_reform: "Turkic Qizilbash Heirs"
+ turkic_qasilbash_heirs_reform_desc: "The heirs of the Turkoman Qizilbash military forces are excellent stock for the noble positions of power in our lands. Their military background and fanatic devotion to the Shi'ite cause is sure to serve us well."
+ mechanic_enables_qizilbash_company_yes: "Qizilbash Riders: Gain access to the zealous '§YQizilbash§!' Mercenary Company."
+ merc_local_qizilbash_company: "Qizilbash Riders"
+
+ tajik_administration_reform: "Tajik Administration"
+ tajik_administration_reform_desc: "The Turko-Persian Iranian state was build by the Turkoman Qizilbash forces, but it was ruled by the ancient Persian traditions. The legacy of Persia managing to time and time again be born from the ruins of other empires by efficiently administrating and integrating foreign and domestic cultures is legendary."
+
+
+ foreign_ghulams_reform: "Ghilman Ghulams"
+ foreign_ghulams_reform_desc: "The Caucasian wars brought in many slaves and captives. Let us promote them to powerful positions to create a third force alongside the Turkic military and the Persian administration to balance them and solidify the royal power."
+
+
+ ghulam_governates_reform: "Ghilman Governates"
+ ghulam_governates_reform_desc: "By granting the Ghilman posts as governors, the Shah was able to reduce the influence of the Persian noble and clergical influences on his reign, and solidify his rule."
+ mechanic_enables_ghulam_governors_yes: "Ghilman Governors: Unlocks the '§YGhilman Governors§!' Privilege for the Ghilman which grants up to §G-0.05§! Monthly Autonomy Change and §G+25.0%§! Governing Capacity Modifier depending on land ownership."
+ estate_ghulams_governor_positions: "Governor Positions"
+ estate_ghulams_governor_positions_desc: "The Ghilman have proven more reliable and less corrupt then the local persian nobility, and as such we shall send several of our chosen Ghilman to work as governors in highly corrupt and unruly states."
+
+ armenian_silk_traders_reform: "Armenian Silk Traders"
+ armenian_silk_traders_reform_desc: "By resettling many of the trade centers on the silk road with captive Armenians Abbas secured both the pacification of the region, as well as the repopulation and prosperity of the silk road, because as we all know, the silk must flow."
+ mechanic_enables_silk_traders_yes: "Armenian Silk Traders: As long as we are trading in Silk we will gain §G+15%§! Trade Efficiency. \n \nThe '§YCaucasus Traders§!' Privilege for the Ghilman no longer decreases Burgher loyalty, influence nor Max Absolutism."
+ BM_silk_traders: "Armenian Silk Traders"
+ estate_ghulams_trade_privileges: "Caucasus Traders"
+ estate_ghulams_trade_privileges_desc: "Having loyal traders that serve the monarch rather then themselves is an excellent way of ensuring the royal treasury doesn't run out of funds."
+
+ principle_of_fiqh_reform: "Principle of Fiqh"
+ principle_of_fiqh_reform_desc: "By dividing the powers of civil and criminal justice we can ensure that civil matters are handled by the imams and judges of law, following the Islamic Sharia Law. While the Criminal Law is executed by our local governors in the name of the Shah, granting the people the freedom to be judged under the true faith, but making sure that criminal justice remains a powerful tool in the hands of the Shah to maintain order and secure his power."
+
+
+ #MUSCOVITE RUSSIAN
+ muscovite_manorialism_reform: "Muscovite Manorialism"
+ muscovite_manorialism_reform_desc: "By settling loyal veterans into the crown lands we can establish a system of administrators that serve the crown rather then local princes or guilts."
+
+
+
+ #ARAGON
+ ARA_crown_of_aragon: "Crown of Aragon"
+ ARA_crown_of_aragon_desc: "The Crown of Aragon was a monarchy comprised of a dozen Kingdoms; The Kingdom of Aragon, Majorca, Sardinia, Sicily, Naples, as well as the Principalities of Catalonia and Andorra, the Duchy of Athens, Neopatria, The City of Valencia and the County of Gevaudan and Provence. This extreme fragmentary state of the Crown of Aragon has led to a complex web of systems, laws, practices and networks that has made the feudal order rather decentralized."
+ mechanic_BM_enable_crown_of_aragon_yes: "Crown of Aragon: The areas of §YAragon§!, §YCatalonia§!, §YValencia§!, §YSardinia§! and §YSicily§! will receive unique bonuses."
+ BM_crown_of_aragon_aragon_area_modifier: "Kingdom of Aragon"
+ BM_crown_of_aragon_catalonia_area_modifier: "Principality of Catalonia"
+ BM_crown_of_aragon_valencia_area_modifier: "City of Valenica"
+ BM_crown_of_aragon_corsica_sardinia_area_modifier: "Kingdom of Sardinia"
+ BM_crown_of_aragon_sicily_area_modifier: "Kingdom of Sicily"
+
+
+ #AFRICAN
+ kingdom_of_gao_reform: "Kingdom of Gao"
+ kingdom_of_gao_reform_desc: "Hailing from the powerful city of Goa, we have grown strong and thrown off the Malian overlordship, and are ready to claim the Niger Valley as our own."
+
+ slave_farmer_reform: "Slave Farmers"
+ slave_farmer_reform_desc: "Victims of war and raids are put to work in newly established villages. Trough the granting privileges to the slaveholders we can increase their productivity and allow them to expand their slave settlements."
+ BM_slave_settlements_modifier: "Slave settlements"
+ desc_BM_slave_settlements_modifier: ""
+ mechanic_BM_enable_slave_settlements_yes: "Slave Settlements: Provinces with §YGrain§!, §YLivestock§! or §YSlaves§! gains '§YSlave Settlements§!' modifier granting §R+1§! Unrest, §G+10.0%§! Goods Produced Modifier and §R-40.0%§! Tax Modifier."
+
+ kinsmen_governors_reform: "Kinsmen Governors"
+ kinsmen_governors_reform_desc: "Through the use of our kinsmen as governors rather then unrelated nobles, we can ensure their loyalty to the monarch."
+
+ slave_soldiers_reform: "Slave Soldiers"
+ slave_soldiers_reform_desc: "By training and arming groups of slaves and making them function as a standing army we can ensure that our forces are better trained and will ensure we can rely on our soldiers without being dependent on tribal or noble troops!"
+
+ farba_system_reform: "Farba System"
+ farba_system_reform_desc: "A 'Farba', or great commander, was an honorary title worn by the Malian commander that accompanied the vassal kings of the Mali Empire. By leaving the civilian rule over a province in the hands of the natives and keeping the military control in the hands of a Malian loyalist, uprisings could be crushed before they gained momentum."
+
+ farari_commanders_reform: "Farari Commanders"
+ farari_commanders_reform_desc: "Farari, or brave men, were cavalry captains that led a company of cavalry and directed several companies of infantrymen during campaigns and battles. These infantrymen, led by a 'Kele-koun', or war-heads, were freemen equipped by their local custom or by their commander in case of poverty."
+ farari_commanders_modifier: "Farari Commanders"
+ desc_farari_commanders_modifier: ""
+
+
+
+ #INDIAN NEPAL BENGAL VIJAYANAGAR ETC
+ gorkha_kingdom_reform: "Gorkha Kingdom"
+ gorkha_kingdom_reform_desc: "Our mountain kingdom blending the military might of the Gorkhali and Rajput military power will ensure our search for natural resources will be swift and our neighbors will cower as we rise."
+
+ maharajadhiraja_reform: "Mugarajadiraja"
+ maharajadhiraja_reform_desc: "Meaning "great king of kings" it is a symbol of our superiority over the other states around us and our desire to be the ruler of all who oppose us."
+
+ chhetri_clans_reform: "Chhetri Clans"
+ chhetri_clans_reform_desc: "TO-DO"
+
+ #UNSPECIFIED / COMMON
+
+ industrialized_farming_practices_reform: "Industrialized Farming Practices"
+ industrialized_farming_practices_reform_desc: "With the help of state subsidies and the employment of Imperial Surveyors across our Empire, we can most efficiently reorganize our farmlands into Imperial Farm Estates. These Estates will be owned directly by our Heavenly Emperor, governed by our most trusted vassals, and further industrialized to achieve agricultural outputs enough to feed our Empire."
+
+ tariffs_and_trading_reform: "Closed Haijin Economy"
+ tariffs_and_trading_reform_desc: "Foreign merchants cannot be trusted to not destabilising our markets to further enrichen themselves. By completely closing our ports and towns off from foreign leeches and instead focusing on internal trade we can further embolden our own production and economy."
+
+ magnate_law_reform: "Magnate Law"
+ magnate_law_reform_desc: "By granting the magnates privileges for their domains, we can leverage the burden of keeping the peasants in check to the nobles."
+ mechanic_enables_magnate_law_yes: "Magnate Law: Unlock the '§YMagnate Law§!' privilege for the Nobility, granting up to §G-3.0§! National Unrest based on Nobility Land Ownership as well as §G-50.0%§! War Taxes Cost."
+
+ estate_nobles_magnate_law_privilege: "Magnate Law"
+ estate_nobles_magnate_law_privilege_desc: "Through the granting of local autonomy we can please and pacify the nobility to the point of them solving most of local issues, disputes and revolts on their own."
+
+ imperial_knights_reform: "Invite Imperial Knights"
+ imperial_knights_reform_desc: "The Reichsritters, 'Imperial Knights', were the lower nobility of the Holy Roman Empire, holding little land, but often serving in the imperial army as sergeants or captains. By inviting them to move into our lands through the granting of privileges, we can employ these seasoned Knights into our army."
+ mechanic_enables_imperial_knights_yes: "Imperial Knights: Gain access to the '§YImperial Knights§!' Mercenary Company."
+ merc_local_imperial_knights_company: "Imperial Knights"
+
+ franconian_salic_law_reform: "Salic Law"
+ franconian_salic_law_reform_desc: "The Duchy of Franconia has been destroyed by the Salian Law, where brothers fought over inheritance and the royal power got divided into nothingness. Yet, the nobility prospered, and could provide us a great source of strength as long as we can keep them under control unlike our predecessors."
+
+ guild_dominance_reform: "Guild Dominance"
+ guild_dominance_reform_desc: "The various merchant, craftsmen, artisan and financial guilds across the Low Countries has always held a lot of power. By granting them access to the government through official channels we will be able to let our guilds expand their influence and expertise across our country."
+
+ korps_mariniers_reform: "Korps Mariniers"
+ korps_mariniers_reform_desc: ""
+
+ last_expedition_reform: "The Last Expedition"
+ last_expedition_reform_desc: ""
+
+ lumiere_admin_reform_reform: "The Painters & Writers Guild"
+ lumiere_admin_reform_desc: ""
+
+
+ magnate_govenors_reform: "Magnate Governors"
+ magnate_govenors_reform_desc: "By dividing our land in regions dominated by powerful nobles, we can use them to function as lord paramounts, capably organizing the regions making it much easier to hold control over vast lands."
+ mechanic_enables_serfdom_yes: "Serfdom: Unlocks the '§YSerdom§!' privilege for the Nobility, granting §G+15.0%§! Governing Capacity Modifier but §R-50.0%§! Tax Modifier based on Nobility Land Ownership."
+ estate_nobles_establish_serfdom: "Establish Serfdom"
+ estate_nobles_establish_serfdom_desc: "By establishing serfdom we can ensure that peasants remain fixed on our land, making it easier to manage them. Though this will also grant our Nobility the rights to tax the peasantry as they wish."
+
+ office_of_vitztum_reform: "Office of Vitztum"
+ office_of_vitztum_reform_desc: "The Office of Vitztum was the office of the most important advisors to the Bavarian dukes. These advisors, called Vitztums, had the role of acting as deputy duke in newly conquered lands until the territories could be fully integrated into the royal administration."
+
+
+ lithuania_law_reform: "Casimir's Code"
+ lithuania_law_reform_desc: "The lands of Lithuania are a diverse mix of religions, cultures, laws and customs. By creating a set of common laws that applies equally to all people regardless of culture or religion, we can further strengthen our hold over the region as well as curb robber barons and getting rid of corrupt local laws."
+
+ arch_monarchy_reform: "Arch-Monarchy"
+ arch_monarchy_reform_desc: "Our monarch rules over multiple semi-sovereign lands, obtained through either cunning, conquest, or inheritance, bringing glory to all under their occupation. Though often difficult to administer, there lies no better path to prestige."
+
+ granadan_iqta_reform: "Granadan Iqta"
+ granadan_iqta_reform_desc: "Its excellent position at the crossroads of the Atlantic and the Mediterranean trade networks makes Granada a key hub of commerce. The Catalonian and Genoese traders have long brought goods to our harbors, and our massive population is skilled in the labors of herding, fishing and craftmanship. The silk and textile goods from our lands has been a key part of our economy. With the downfall of the Taifa emirates, many skilled craftsman have fled the Christian conquistadores... right into our open arms."
+
+ duchy_of_luxembourg_reform: "Duchy of Lëtzebuerg"
+ duchy_of_luxembourg_reform_desc: "Created by the Holy Roman Emperor in 1354, the county of Letzebuerg was elevated to the status of a duchy, empowering Wenceslaus of Luxembourg by absorbing neighbouring margraviates and counties, growing in both size and prestige. The new duchy would later give rise to multiple emperors!"
+
+ growth_signoria_reform: "The Signoria"
+ growth_signoria_reform_desc: "With the older power structures slowly dissolving in party strive and civil discord, many of our citizens look at strong men to restore order and disarm the feuding parties, by formalizing this position we'll be able to stabilize our realm in times of need."
+
+ support_borghese_reform: "Support the Borghese"
+ support_borghese_reform_desc: "A new and remarkable society has been emerging, a rich and expanding semi-aristocratic class, the borghese, interested in the urban institutions and republican government, by using this interest, we can stabilize our governing bodies, and resist monarchic influences."
+
+ akritai_privileges_reform: "Akritai Privileges"
+ akritai_privileges_reform_desc: "The Akritai were army units guarding the Empire's eastern border, facing the Muslim states of the Middle East. These units would be granted land on the border by the Emperor which they would then proceed to cultivate and live off as well as guard it against outside threats."
+ GE_Fortified_Settlement: "Akritai Forts"
+ desc_GE_Fortified_Settlement: ""
+ mechanic_enables_fortified_settlements_yes: "Akritai Forts: §G-5%§! Development Cost and §G+15.0%§! Manpower Modifier in states with forts."
+
+ council_of_sheikhs_reform: "Council of Sheikhs"
+ council_of_sheikhs_reform_desc: "Since the days of the Almohad dynasty, The Caliph has held a council of sheikhs of the tribes and peoples under his hegemony, we should re-intstate this council in order to fill our need for troops and control."
+
+ arch_marshal_reform: "Arch-Marshal Of The Empire"
+ arch_marshal_reform_desc: "We are the Arch-Marshal of the Holy Roman Empire, and our ferocity will make everyone know why we hold and deserve this office!"
+ mechanic_BM_buffed_increased_levies_yes: "Increased Levies Nobles Privilege will gain §G-15.0%§! Regiment Cost and §G-1.0§! Yearly Army Tradition Decay."
+
+ clans_of_ireland_reform: "Clans of Ireland"
+ clans_of_ireland_reform_desc: "The Irish nobility is not the same as the nobles of Western Europe. The 'nobility' is instead powerful clansmen who hold local power and sway over various villages, towns and infuential families. By granting them more influence and power we will be able to rally the many Clans to our ranks."
+
+ nationalized_cetas_reform: "Nationalized Cetas"
+ nationalized_cetas_reform_desc: "The Shishmanov family showed us that even in death, Bulgaria could terrorize a nation, we should arrange for the prestigious Noble families to train hadjuks just as skillful as the ceta so that if any enemy decides to siege Bulgaria, they're met with fierce resistance."
+ nationalized_cetas_reform_upgraded: "Nationalized Cetas"
+ nationalized_cetas_reform_upgraded_desc: "The Shishmanov family showed us that even in death, Bulgaria could terrorize a nation, we should arrange for the prestigious Noble families to train hadjuks just as skillful as the ceta so that if any enemy decides to siege Bulgaria, they're met with fierce resistance."
+
+ krums_code_reform: "Krum's Code"
+ krums_code_reform_desc: "While we admire our Christian and Slavic culture, the history of Bulgaria is much more confusing than that, we were once ruled by Khans, one particular Khan, Krum, created the first Bulgarian Written Law,  abiding by his code, we would give subsidies to beggars and state protection to the poor, while severely punishing the criminals of Bulgaria."
+ krums_code_reform_upgraded: "Krum's Code"
+ krums_code_reform_upgraded_desc: "While we admire our Christian and Slavic culture, the history of Bulgaria is much more confusing than that, we were once ruled by Khans, one particular Khan, Krum, created the first Bulgarian Written Law,  abiding by his code, we would give subsidies to beggars and state protection to the poor, while severely punishing the criminals of Bulgaria."
+
+ mechanic_enables_codified_law_yes: "Codified Law: §G-2§! Unrest in provinces under 50% Autonomy."
+
+ riksradet_norway_reform: "Riksradet of Norway"
+ riksradet_norway_reform_desc: "To govern such a wide and rural country, as well as act as our countries Representatives in absence of our Monarch, The Riksradet functioned as a council of the powerful lords and bishops. Throughout the ages the autonomy and power of the Riksradet was being eroded by the Danish monarchs."
+
+ regional_kasbah_reform: "Regional Kasbahs"
+ regional_kasbah_reform_desc: "Traditionally we have used Kasbahs as a way to protect our settlements from rivals looking to plunder them. As the demand for our exotic produce has grown amongst foreign traders so has it grown amongst bandits and raiders in the region, this has made harvesting these resources inefficient due to raiding. We can work against this threat by establishing a regional system of walled citadels within important hubs of trade."
+ mechanic_enables_caravanserai_yes: "Fortified Kasbahs: §G+5§! Trade power and §G-10.0%§! Development Cost in Centers of Trade with Forts."
+ GE_Caravanserai: "Kasbah"
+ desc_GE_Caravanserai: ""
+
+ kingdom_of_cities_reform: "Kingdom of Cities"
+ kingdom_of_cities_reform_desc: "With Arabia being so short on towns and farms, the city of Hormuz conquered many of the Arabian coastal cities and islands to create a wide web of small territories spread over a large area. This caused the administrative centers to be very easy to identify and control."
+
+ tatar_mercenaries_reform: "Tatar Mercenaries"
+ tatar_mercenaries_reform_desc: "By setting up tatar mercenary captains, we can use them to attract strong and loyal mercenaries in times of war."
+
+ diamond_of_the_earth_reform: "Diamond of the Earth"
+ diamond_of_the_earth_reform_desc: "Our city has such splendor that is is known as the 'Diamond of the Earth' far and wide, and it brings many people and pride to our nation."
+ mechanic_enables_foreign_artists_yes: "Foreign Artists: §G+0.1§! Prestige per Merchant. Up to a maximum of §G1§! Prestige."
+ Foreign_Artists_1: "Foreign Artists"
+ Foreign_Artists_2: "Foreign Artists"
+ Foreign_Artists_3: "Foreign Artists"
+ Foreign_Artists_4: "Foreign Artists"
+ Foreign_Artists_5: "Foreign Artists"
+ Foreign_Artists_6: "Foreign Artists"
+ Foreign_Artists_7: "Foreign Artists"
+ Foreign_Artists_8: "Foreign Artists"
+ Foreign_Artists_9: "Foreign Artists"
+ Foreign_Artists_10: "Foreign Artists"
+
+ customs_duties_reform: "Customs Duties"
+ customs_duties_reform_desc: "Through having a wide web of imports we can ensure trade will keep coming in and that our share of these incomes reaches our coffers!, while we can not forget our mainland allies, so let us grant them an exception."
+
+ integrate_moneyloaners_reform: "Integrate Moneyloaners"
+ integrate_moneyloaners_reform_desc: "By incorporating branches of powerful banking houses, we can play them off of each other and guarentee better deals when we require funds."
+ mechanic_BM_buff_merchant_guild_financial_aid_yes: "§YBurghers: Ask For Contribution§! decision now grants §G+1§! merchantilism."
+
+ dhimmi_nobles_reform: "Dhimmi Nobles"
+ dhimmi_nobles_reform_desc: "By allowing the Dhimmi class to hold noble titles, we can use their influence to both keep the dhimmi loyal, as well as levying taxes for such privileges."
+ mechanic_BM_buff_promote_the_dhimmi_nobles_yes: "The '§YPromote the Dhimmi Nobles§!' privilege will no longer grant §R-5.0%§! Ulema or Nobility loyalty and will also grant §G+15.0%§! National Tax Modifier."
+
+ mamluk_privileges_reform: "Mamluk Privileges"
+ mamluk_privileges_reform_desc: "The foreign born pseudo-nobility that dominated the mamluk sultanate were distinguished from their egyptian lessers through a multitude of laws and privileges. Such as the right to bear arms or to rise to the higher civic positions."
+
+ support_samurai_reform: "Support Samurai"
+ support_samurai_reform_desc: "Samurai are hereditary warrior-elites who are disciplined in both the battlefield and the court. While we rule over them as daimyos, their loyalty can be fickle if not rewarded properly. Offering privileges to these hardy men will greatly satisfy them—and guarantee their aid in times of need."
+
+ mint_towns_reform: "Mint Towns"
+ mint_towns_reform_desc: "Mint Towns were considered the backbone of the economy of the Bengal Sultanate. These towns were usually important centers of trade or provincial capitals at which Taka coins were produced, hence the name Mint Towns. These coins depicted the status of the Bengali economy, the urban and administrative centers of the country, and were generally used as a form of currency. These towns were scattered all across the Bengali realm and played a pivotal role in its production of Taka coins and in administrating the growing kingdom."
+ mechanic_enables_mint_towns_yes: "Mint Towns: Provinces with at least §T20§! Development will gain §G-25.0%§! State Maintenance and §G+10.0%§! Production Efficiency."
+
+
+ timurid_prince: "Timurid Prince"
+ timurid_prince_desc: "A semi-autonomous subject ruled by one of the many Timurid Princes, governing the lands of the greater Timurid Empire. This autonomy allowed the Prince to organize his own armies, foster his own supporters to the throne, and scheme to usurp the Timurid Emperor with little pushback."
+
+
+ tai_and_ahom_reform: "Tai and Ahom"
+ tai_and_ahom_reform_desc: "In the early 13th century, Sukaphaa, a Tai prince from Mong Mao, fled his homeland due to political intrigue and threats to his life, journeying westward with a small but loyal group of followers. They eventually settled in the Brahmaputra Valley, where they established the kingdom of Ahom, later known as Assam. Sukaphaa introduced the region's disjointed tribes to advanced agricultural techniques, coinage, and stone constructions, creating the groundwork for a centralized feudal kingship that stabilized the region. Although the Tai-Ahom was a minority, their expertise in rice farming and governance earned them a dominant position, revered as "fire-bringers" for their transformative impact. This small Tai group formed the kingdoms elite, wielding their knowledge as a tool of control while the local Vedic population made up the majority of society. Over the next two centuries the process of Ahomisation began to blend the Tai and Vedic cultures. Sanskrit script replaced the Tai alphabet, and a cultural fusion took root - Tai customs shaped the court and nobility, while Vedic traditions dominated religious life and festivals. This melding of traditions creates the Assamese culture, a unique synthesis of Tai martial bureaucracy and Vedic spirituality, marking the Ahom kingdom as a harmonious blend of influences from Tibet and India."
+
+ sanskritization_reform: "Sanskritization"
+ sanskritization_reform_desc: "As we embrace the Sanskrit Scriptures, our religious identity also evolve. The Hindu faith will begin to supplant our traditional beliefs. This process of adaption will enrich our cultural heritage, allowing us to preserve our unique identity while absorbing the spiritual and cultural depth of the Vedic world."
+
+ shakti_the_supreme_deity_reform: "The Supreme Deity"
+ shakti_the_supreme_deity_reform_desc: "Our state considers Shakti as the most prominent out of the Vedic deities. The Brahmins regularly preach of the divinity of the Devi and her several forms. To please the wrathful incarnation of Shakti, Maa Kaali, regular offerings of livestock must be performed before the commencement of any military campaign. This practice has instilled both respect- making mercenaries and blood-for-hire pledge their services to us- and fear for our state among anyone who dare oppose us."
+
+ independence_reform: "Independence"
+ independence_reform_desc: "The key virtue of the Swiss Confederacy is its firm belief in independence and self governance, as such we will endure and recover as many times as is needed."
+ mechanic_BM_swiss_fighting_defensive_wars_yes: "\nDuring Defensive Wars we will receive: \nMax Hostile Attrition §G+1.00§! \nFort Defense: §G+15.0%§!"
+ BM_swiss_fighting_defensive_wars: "Spirit of Helvetica"
+
+ confederation_of_cantons_reform: "Confederation of Cantons"
+ confederation_of_cantons_reform_desc: "The local control organized by individual cantons means that problems are fixed locally, lands can be developed locally, and each region is responsible for its own fortifications, leading them to make the best use of their natural resources and advantages."
+ mechanic_BM_enables_mountain_towns_yes: "Mountain Towns:\nAll hills, highlands and mountains will have their development cost malus halved."
+
+ #JAPANESE REFORMS / JAPAN REFORMS
+ kyoho_reforms_reform: "Kyouhou Reforms"
+ kyoho_reforms_reform_desc: "The Kyouhou reforms were a series of reforms across feudal Japan that included an emphasis on frugality as well as the consolidation of merchant guilds to create a more powerful control over trade and taxation."
+ mechanic_BM_buff_merchant_guild_commercial_advisory_board_yes: "The '§YCommercial Advisory Board§!' privilege will grant up to §G+25.0%§! Merchant Trade Power Modifier scaling with influence."
+
+ metsuke_system_reform: "Metsuke Ninjas"
+ metsuke_system_reform_desc: "The Shogun wields massive power, but it hangs on a delicate balance, if our Daimyos sense that our authority is even slightly questionable, they will seize the opportunity to overthrow us. Therefore, it is vital we maintain a system of constant surveillance and intelligence gathering, so we are always able to act before the strike."
+ mechanic_BM_buff_spymaster_advisor_yes: "Spymaster advisors will now grant §G-5.0%§! Annexations Relations Impact per Diplomatic skill."
+
+ ashigaru_generals_reform: "Ashigaru Generals"
+ ashigaru_generals_reform_desc: "After many decades of war, the might of one skilled Samurai Lord, while formidable, pales in comparison to the organized armies equipped with matchlock firearms- tanegashimas. Their efficiency lied on their strict formation and ability to stand still during enemy fire while delivering shot themselves. By modernizing our firearms and equipping our soldiers with our own matchlock firearms, we can bolster the might of our army several times over."
+
+ reestablish_the_kuge_reform: "Re-establish the Kuge"
+ reestablish_the_kuge_reform_desc: "With the rise of the Buke, warriors who swore loyalty to the Shogunate, the Kuge were relegated to lower-class positions or even abandoned entirely. This class of court officials, art patrons and skilled diplomats and commoners who are especially adept in the know-how of ruling a country. The way of the warrior may be honourable, but a country that knows only war will inevitable end in war. Let us re-establish the Kuge back into our administration."
+
+
+ #PAPACY BUFF
+ mechanic_BM_church_sanctuaries_buff_yes: "The '§YChurch Sanctuaries§!' privilege will now also grant §G+10.0§! Prestige when building §YChurches§! or §YCathedrals§!."
+
+ # Crusade Mechanic:
+ # Reforms:
+ mission_to_crusade_reform: "Mission to Crusade"
+ mission_to_crusade_reform_desc: "Our holy God-given mission is to fight the infidels and reconquer the Holy Land for the true faith!"
+
+ # Tooltips:
+ mission_to_crusade_reform_tt: "Does NOT have §YTerm Elections§!"
+
+ ## Mechanics:
+ ability_crusade_power_mechanic: "Crusade Power"
+ crusade_power: "Crusade Power"
+ crusade_power_desc: "Crusade Power is a measure of how efficient and effective our fight against heretics and infidels is going. \n\nCrusade Power is gained by the following actions: \n   - Win a War against a Heretic: §G+20.00§! \n   - Win a War against a Heathen: §G+25.00§! [Root.crusade_power_mechanic_gain_from_winning_war_against_crusade_target] \n   - Force Convert a Country by War: §G+20.00§! \n   - Force Convert your Subject: §G+5.00§! \n\nCrusade Power is lost by the following actions: \n   - Lose a War against a Heretic: §R-25.00§! \n   - Lose a War against a Heathen: §R-35.00§! [Root.crusade_power_mechanic_gain_from_losing_war_against_crusade_target] \n   - Be Force Converted by War: §R-25.00§! \n\nThis is not affected by separate peaces, only when you as the war leader make peace with another war leader. Force converting a country will replace the gain from winning a war against them, you will not gain both. \n--------------\n"
+
+ ## Power Modifiers:
+ monthly_crusade_power: "Monthly Crusade Power Gain"
+ crusade_power_gain_modifier: "Crusade Power Gain Modifier"
+
+ ## Tooltips:
+ crusade_power_at_100_tt: "The monthly decay is negated until our §YCrusade Power§! falls under §Y100.00§!."
+
+ ## Customizable Localization:
+ string_crusade_power_gain_from_winning_war_against_crusade_target: "\n   - Win a War against the Crusade Target: §G+35.00§!"
+ string_crusade_power_gain_from_losing_war_against_crusade_target: "\n   - Lose a War against the Crusade Target: §R-50.00§!"
+
+
+ #RAJPUT
+ guhilawat_reform: "Guhilawat"
+ guhilawat_reform_desc: "The Rathore dynasty has instituted a national martial code that has become a cultural obsession, demanding every man to perform his military duty with fervor. Despite being a small state, we have expanded our dynastic reach through diplomacy, fraternizing with Muslims, Hindus, Buddhists, Indians, Persians, Tibetans, and Europeans, creating a safety net that deters potential invaders. Our victories are not just due to our soldiers' skill or our army's composition but also our meticulous preparation. Scouts and spies are crucial, finding favorable battlefields, water sources, food, and medical care. Our spies sabotage enemy supply lines and gather critical information, understanding the enemy intimately to ensure victory."
+
+
+ # Legitimation through Represenation Mechanic:
+ legitimation_through_representation_reform: "Legitimation through Representation"
+ legitimation_through_representation_reform_desc: "To legitimize their status and claim to power, rulers must demonstrate them. This can be done by military might, but not exclusively. Art, music and especially architecture are also means the rulers can use for their representative purposes."
+ ## Mechanics:
+ ability_legitimation_through_representation_mechanic: "Power Representation"
+ legitimation_through_representation_power: "Power Representation"
+ legitimation_through_representation_power_desc: "Power Representation - for example through art, music or architecture - is important to demonstrate the status and the ruler's claim to power. However, it is also very expensive to maintain. \n\nThe §YPower Represenation§! will decay faster, the higher it is and can be increased by spending power and money through court actions.\n\n"
+ legitimation_through_representation_mechanic_obtain_new_paintings: "Obtain New Paintings"
+ legitimation_through_representation_mechanic_obtain_new_paintings_desc: ""
+ legitimation_through_representation_mechanic_host_a_court_festival: "Host a Court Festival"
+ legitimation_through_representation_mechanic_host_a_court_festival_desc: ""
+ legitimation_through_representation_mechanic_perform_an_opera: "Perform an Opera"
+ legitimation_through_representation_mechanic_perform_an_opera_desc: ""
+ legitimation_through_representation_mechanic_renovate_the_palace: "Renovate the Palace"
+ legitimation_through_representation_mechanic_renovate_the_palace_desc: "§gRenovating the Palace is a costly and time consuming way to increase the ruler's Power Representation value. It will not grant an instant reward, but increase the Power Representation over time.§!\n\n"
+
+ ## Power Modifiers:
+ monthly_legitimation_through_representation_power: "Monthly Power Representation Change"
+ legitimation_through_representation_power_gain_modifier: "Power Representation Change Modifier"
+
+ ## Modifiers:
+ legitimation_through_representation_mechanic_renovate_the_palace_modifier: "Renovation of the Palace"
+
+ #Peasants:
+ Peasant_Council: "Peasants Council"
+ desc_Peasant_Council: ""
+
+ peasant_council_reform: "Council of 48"
+ peasant_council_reform_desc: "Our nation is not governed by feudal lords or bishops, but by the council of our best and brightest, so unlike the more organized nations, we are in no need of frequent elections to have excellent governance."
+
+ peasant_militia_reform: "Peasant Militia"
+ peasant_militia_reform_desc: "Our marshes are deep, our roads small and fortified. Any who dare cross them will find no rabble of farmers, but a well-trained and well-organized peasant militia. Their formation and use of the land hinders any attempts at bombardment or flanking. 'Wohr di, Goor, de Buur, de kump!'"
+
+ mechanic_enables_bear_arms_yes: "Right to Bear Arms: Unlocks the '§YRight to Bear Arms§!' Privilege for the Peasants, which allows us to increase our Infantry Combat Ability."
+
+  #TROIA TROY TROJAN
+ MEGA_trojan_kingdom:0 "Trojan Kingdom"
+ MEGA_trojan_kingdom_desc:0 "Our Kingdom is as glorious as the Trojans of old!"
+
+ MEGA_troy_may_recruit_mamluks:0 "Elite Mamluk Guard"
+
+ MEGA_elite_trojan_guards:0 "Expand the Elite Mamluk Guard"
+ MEGA_elite_trojan_guards_desc:0 "By expanding our elite guard and integrating them back into our military as officers and educators of war we can make sure each and every one of our soldiers are expertly drilled by the best of the best."

@@ -1,0 +1,128 @@
+Namespace = FEE_Bohemia_Events
+#Jay DoubleU
+
+#Lessons of the Hussite Wars
+country_event = {
+	id = FEE_Bohemia_Events.9
+	title = FEE_Bohemia_Events.9.T
+	desc = FEE_Bohemia_Events.9.D
+	picture = MILITARY_CAMP_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		NOT = { is_year = 1490 }
+ 	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.9.OPT1 #Excellent
+
+		add_mil_power = 100
+		add_country_modifier = {
+			name = fee_boh_hussite_ingenuity
+			duration = 5475
+		}
+	}
+}
+
+#Thaler Coinage
+country_event = {
+	id = FEE_Bohemia_Events.11
+	title = FEE_Bohemia_Events.11.T
+	desc = FEE_Bohemia_Events.11.D
+	picture = ECONOMY_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		is_part_of_hre = yes
+		owns_core_province = 2967
+		is_year = 1500
+		NOT = { is_year = 1550 }
+ 	}
+
+	mean_time_to_happen = {
+		months = 200
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.11.OPT1 #Wonderful news!
+
+		2967 = {
+			add_base_production = 2
+		}
+		give_estate_land_share_large = { estate = estate_nobles }
+		add_innovativeness_or_monarch_power = {
+			amount = 3
+			adm = 30
+			dip = 30
+			mil = 30
+		}
+		add_country_modifier = {
+			name = boh_coinage_pioneer
+			duration = 7300
+		}
+		custom_tooltip = fee_boh_thaler_princes_tt
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				add_country_modifier = {
+					name = fee_boh_thaler
+					duration = 7300
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.11.OPT2 #Yes yes, very nice, but what's in it for me?
+
+		add_years_of_income = 1
+		add_prestige = -10
+		add_country_modifier = {
+			name = fee_boh_greedy_rulership
+			duration = 7300
+		}
+	}
+}
+
+#Sack of Prague
+country_event = {
+	id = FEE_Bohemia_Events.13
+	title = FEE_Bohemia_Events.13.T
+	desc = FEE_Bohemia_Events.13.D
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 266
+		any_country = {
+			OR = {
+				culture = saxon
+				culture = prussian
+			}
+			controls = 266
+		}
+ 	}
+
+	option = {
+		name = FEE_Bohemia_Events.13.OPT1 #Will we ever recover?
+
+		266 = {
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
+			add_devastation = 50
+		}
+	}
+}

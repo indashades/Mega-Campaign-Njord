@@ -1,0 +1,96 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 173 176 113 }
+revolutionary_colors = { 8 5 8 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	offensive_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_tercio
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_drill
+	prussian_frederickian
+	prussian_uhlan
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adelheid #1" = -1
+	"Aliken #0" = -1
+	"Arnold #1" = 10
+	"Asbjörn #0" = 0
+	"Bartolomeus #0" = 0
+	"Benoît #0" = 0
+	"Bibai #0" = 0
+	"Bouvin #1" = 10
+	"Dietrich #4" = 10
+	"Eilward #0" = 0
+	"Emma #0" = -1
+	"Friedrich #1" = 10
+	"Furuzan #0" = -1
+	"Haziga #0" = -1
+	"Heinrich #2" = 10
+	"Hupold #0" = 0
+	"Ide #0" = -1
+	"Karl #1" = 10
+	"Katrien #0" = -1
+	"Ludewijn #0" = 0
+	"Meginhard #1" = 10
+	"Milobrat #0" = 0
+	"Otto #4" = 10
+	"Robrecht #1" = 10
+	"Rutger #2" = 10
+	"Yasar #0" = 0
+	"Yonefij #0" = -1
+}
+leader_names = {
+	"Angenendt"
+	"Becker"
+	"Becking"
+	"Contze"
+	"Cronenberg"
+	"Dennessen"
+	"Derksen"
+	"Engelbronner"
+	"Holler"
+	"Jenster"
+	"Kroeger"
+	"Meurs"
+	"Nagel"
+	"Rundt"
+	"Sinsteden"
+	"Van Gelder"
+	"von Beinom"
+	"von Oven"
+}
+ship_names = {
+	"Adolf von Kleve"
+	"Agnes"
+	"Arnold I von Kleve"
+	"Arnold II von Kleve"
+	"Dietrich von Kleve"
+	"Elisabeth"
+	"Gerhard von Kleve"
+	"Johann I von Kleve"
+	"Johann II von Kleve"
+	"Margarete"
+	"Mathilde"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+}

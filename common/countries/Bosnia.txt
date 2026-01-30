@@ -1,0 +1,84 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 240 167 130 }
+revolutionary_colors = { 13 0 8 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	trade_ideas
+	diplomatic_ideas
+	religious_ideas
+	economic_ideas
+	quantity_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	ottoman_lancer
+	ottoman_new_model
+	ottoman_nizami_cedid
+	ottoman_reformed_janissary
+	ottoman_reformed_spahi
+	ottoman_sekban
+	ottoman_toprakli_dragoon
+	ottoman_toprakli_hit_and_run
+	slavic_stradioti
+}
+monarch_names = {
+	"Andrija #0" = 0
+	"Bertalan #1" = 10
+	"Boric #1" = 10
+	"Béla #1" = 10
+	"Ekaterina #0" = -1
+	"Ferenc #0" = 0
+	"Géza #0" = 0
+	"János #0" = 0
+	"József #2" = 10
+	"Kulin #1" = 10
+	"Margaréta #1" = -1
+	"Mihailo #0" = 0
+	"Nenad #0" = 0
+	"Péter #0" = 0
+	"Uskrsimir #0" = 0
+	"Weichart #0" = 0
+	"Wernhard #0" = 0
+}
+leader_names = {
+	"Babonic"
+	"Balsic"
+	"Branivojevic"
+	"Dragisic"
+	"Gradascevic"
+	"Hrvatinic"
+	"Isakovic"
+	"Kosaca"
+	"Kotromanic"
+	"Nelipic"
+	"Pavlovic"
+	"Radinovic"
+	"Sankovic"
+	"Santic"
+	"Sokolovic"
+	"Subic"
+	"Tvrtkovic"
+	"Vukasin"
+	"Vukcic"
+	"Vukovic"
+}
+ship_names = {
+	"Bosna"
+	"Bosni"
+	"Dalmacija"
+	"Gazi Husrev-beg"
+	"Kotromanici"
+	"Kulin ban"
+	"Miljacka"
+	"Sarajevo"
+	"Stjepan II"
+	"Tvrtko I"
+}

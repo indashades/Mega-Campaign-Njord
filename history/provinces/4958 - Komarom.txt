@@ -1,17 +1,17 @@
 #1772 - Pozsony
 
-owner = HUN
-controller = HUN
+owner = Z2B
+controller = Z2B
 culture = hungarian
 religion = catholic
 capital = "Komárom"
 trade_goods = naval_supplies
-hre = no
+hre = yes
 base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = HUN
+add_core = Z2B
 add_core = SLO
 discovered_by = western
 discovered_by = eastern

@@ -1,0 +1,89 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 39 108 140 }
+revolutionary_colors = { 5 14 0 }
+historical_idea_groups = {
+	religious_ideas
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	maritime_ideas
+	diplomatic_ideas
+	quality_ideas
+	economic_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	ottoman_lancer
+	ottoman_new_model
+	ottoman_nizami_cedid
+	ottoman_reformed_janissary
+	ottoman_reformed_spahi
+	ottoman_sekban
+	ottoman_toprakli_dragoon
+	ottoman_toprakli_hit_and_run
+	slavic_stradioti
+}
+monarch_names = {
+	"Budimir #0" = 0
+	"Desa #1" = 10
+	"Dionysia #0" = -1
+	"Djordje #2" = 10
+	"Dobroslav #1" = 10
+	"Dragija #0" = 0
+	"Ebbon #0" = 0
+	"Georgios #0" = 0
+	"Gradinja #1" = 10
+	"Grubesa #1" = 10
+	"Iliya #0" = 0
+	"Jovan #1" = 10
+	"Kocapar #1" = 10
+	"Konstantin #1" = 10
+	"Kosmin #0" = 0
+	"Luka #1" = 10
+	"Martin #0" = 0
+	"Mihajlo #2" = 10
+	"Radoslav #1" = 10
+	"Vladimir #1" = 10
+	"Vojislav #1" = 10
+	"Xene #0" = -1
+}
+leader_names = {
+	"Balsic"
+	"Baulica"
+	"Berici"
+	"Bivolici"
+	"Boljevic"
+	"Buca"
+	"Crnojevic"
+	"Drago"
+	"Grblji"
+	"Komanin"
+	"Kornecanin"
+	"Kosaca"
+	"Lukovici"
+	"Martinovitci"
+	"Njegos"
+	"Pastrovici"
+	"Petrovici"
+	"Radari"
+	"Srdjici"
+	"Sundecic"
+}
+ship_names = {
+	"Balsa I"
+	"Cetinje"
+	"Crna Gora"
+	"Duklja"
+	"Jadransko more"
+	"Jovan Vladimir"
+	"Mihajlo I"
+	"Podgorica"
+	"Vojislavljevic"
+	"Zeta"
+}

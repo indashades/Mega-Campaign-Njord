@@ -1,0 +1,26 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 120 140 140 }
+monarch_names = {
+	"Agbarjin #0" = 0
+	"Amgalan #1" = 10
+	"Bair #1" = 10
+	"Bashiila #1" = 10
+	"Bayan #0" = 0
+	"Bek #0" = 0
+	"Bidia #0" = 0
+	"Checheyigen #1" = -1
+	"Damba #1" = 10
+	"Gulçiçek #0" = -1
+	"Jagambu #0" = 0
+	"Jakha Gambhu #0" = 0
+	"Khermen #0" = 0
+	"Khulan #0" = -1
+	"Kokochu #0" = 0
+	"Oljaitu #1" = 10
+	"Osor #1" = 10
+	"Oyiradai #1" = 10
+	"Shono #1" = 10
+	"Yeshinhorlo #1" = 10
+	"Zorikto #0" = 0
+}

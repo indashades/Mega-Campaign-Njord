@@ -1,17 +1,17 @@
 #154 - Hont (Hont + Bars + Ersekujvar)
 
-owner = HUN
-controller = HUN
+owner = Z64
+controller = Z64
 culture = hungarian
 religion = catholic
 capital = "Csongrád"
 trade_goods = livestock
-hre = no
+hre = yes
 base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = HUN
+add_core = Z64
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

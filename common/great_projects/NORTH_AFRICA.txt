@@ -1,0 +1,675 @@
+luxor = {
+	start = 4319
+	date = 01.01.1 #1400 BC. Damn.
+	time = { months = 120 }
+	build_cost = 2500
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			local_development_cost = -0.15
+			trade_goods_size_modifier = 0.15
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			monthly_splendor = 0.5
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 5
+					}
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { 
+			local_development_cost = -0.25
+		}
+		area_modifier = { 
+			trade_goods_size_modifier = 0.15
+		}
+		region_modifier = { }
+		country_modifiers = {
+			yearly_absolutism = 0.5
+			monthly_splendor = 1
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 10
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { 
+			local_development_cost = -0.5
+		}
+		area_modifier = { 
+			trade_goods_size_modifier = 0.25
+		}
+		region_modifier = { }
+		country_modifiers = {
+			yearly_absolutism = 1
+			monthly_splendor = 2
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 15
+					}
+				}
+			}
+		}
+	}
+}
+
+sphinx = {
+	start = 361
+	date = 01.01.1 #Lol. Lmao even.
+	time = { months = 120 }
+	build_cost = 2500
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			prestige = 0.25
+			diplomatic_upkeep = 1
+		}
+		on_upgraded = {
+			owner = {
+				add_splendor = 200
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			prestige = 0.5
+			diplomatic_upkeep = 2
+		}
+		on_upgraded = {
+			owner = {
+				add_splendor = 400
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			prestige = 1
+			diplomatic_upkeep = 2
+			monarch_diplomatic_power = 1
+		}
+		on_upgraded = {
+			owner = {
+				add_splendor = 600
+			}
+		}
+	}
+}
+
+marcus_aurelius_arch = {
+	start = 354 #Tripolitania, Libya.
+	date = 01.01.150 #2nd century AD.
+	time = { months = 120 }
+	build_cost = 800
+	starting_tier = 1 #Well-preserved and culturally influential.
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = {
+			local_manpower_modifier = 0.15
+		}
+		region_modifier = { }
+		country_modifiers = {
+			army_tradition_decay = -0.005
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 5
+					}
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = {
+			local_manpower_modifier = 0.25
+		}
+		region_modifier = { }
+		country_modifiers = {
+			army_tradition_decay = -0.01
+			prestige_from_land = 0.25
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 10
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 3200 }
+		province_modifiers = { }
+		area_modifier = {
+			local_manpower_modifier = 0.33
+		}
+		region_modifier = { }
+		country_modifiers = {
+			army_tradition_decay = -0.01
+			prestige_from_land = 0.5
+			army_tradition_from_battle = 0.25
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 15
+					}
+				}
+			}
+		}
+	}
+}
+
+fu_pharos_alexandria = { #lighthouse
+	start = 358 #Al Iskandariyya in Egypt.
+	date = 01.01.1
+	time = { months = 0 }
+	build_cost = 0
+	starting_tier = 0 #GG.
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			province_trade_power_value = 5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			trade_range_modifier = 0.1
+			global_ship_trade_power = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			province_trade_power_value = 10
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			trade_range_modifier = 0.25
+			global_ship_trade_power = 0.1
+			navy_tradition = 0.5
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			province_trade_power_value = 15
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			trade_range_modifier = 0.33
+			global_ship_trade_power = 0.15
+			navy_tradition = 1
+		}
+		on_upgraded = { }
+	}
+}
+
+fu_library_alexandria = {
+	start = 358 #Alexandria.
+	date = 01.01.1
+	time = { months = 0 }
+	build_cost = 0
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			institution_growth = 3
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			embracement_cost = -0.1
+		}
+		on_upgraded = { 
+			owner = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			institution_growth = 6
+		}
+		area_modifier = { }
+		region_modifier = { 
+		}
+		country_modifiers = {
+			embracement_cost = -0.1
+		}
+		on_upgraded = { 
+			owner = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+			}
+			add_or_upgrade_university_building = yes
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			institution_growth = 6
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			technology_cost = -0.05
+			embracement_cost = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+			}
+			add_or_upgrade_university_building = yes
+		}
+	}
+}
+
+kasbah_marrakesh = {
+	start = 344 #Marrakech in Morocco.
+	date = 01.01.1193 #Estimated.
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 2
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_development_cost = -0.1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			land_maintenance_modifier = -0.05
+			reinforce_cost_modifier = -0.05
+		}
+		on_upgraded = { 
+			owner = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_development_cost = -0.2
+			local_production_efficiency = 0.15
+		}
+		region_modifier = { }
+		country_modifiers = {
+			land_maintenance_modifier = -0.1
+			reinforce_cost_modifier = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_development_cost = -0.3
+			local_production_efficiency = 0.25
+		}
+		region_modifier = { }
+		country_modifiers = {
+			land_maintenance_modifier = -0.15
+			reinforce_cost_modifier = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+			}
+		}
+	}
+}
+
+fu_kasbah_of_tunis = {
+	start = 341
+	date = 01.01.796
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			allowed_num_of_buildings = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.05
+			local_has_galleass = yes
+		}
+		region_modifier = { }
+		country_modifiers = {
+			has_galleass = yes
+		}
+		on_upgraded = {
+			add_or_upgrade_shipyard_building = yes
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			allowed_num_of_buildings = 2
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+			local_has_galleass = yes
+		}
+		region_modifier = { }
+		country_modifiers = {
+			has_galleass = yes
+			allowed_galleass_fraction = 0.05
+		}
+		on_upgraded = {
+			add_or_upgrade_shipyard_building = yes
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			allowed_num_of_buildings = 3
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+			local_has_galleass = yes
+		}
+		region_modifier = { }
+		country_modifiers = {
+			has_galleass = yes
+			allowed_galleass_fraction = 0.1
+		}
+		on_upgraded = {
+			add_or_upgrade_shipyard_building = yes
+		}
+	}
+}
+
+madghacen = {
+	start = 340 #Technically Aures, but it's a wasteland province in this game. I opted for Qusantinah/Constantine.
+	date = 01.01.1 #300 BC.
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture = berber
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture = berber
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture = berber
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			same_culture_advisor_cost = -0.05
+			cavalry_power = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			same_culture_advisor_cost = -0.1
+			nobles_influence_modifier = 0.05
+			cavalry_power = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			same_culture_advisor_cost = -0.15
+			nobles_influence_modifier = 0.1
+			cavalry_power = 0.1
+		}
+		on_upgraded = { }
+	}
+}

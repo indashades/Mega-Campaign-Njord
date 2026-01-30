@@ -1,0 +1,19 @@
+owner = Z07
+controller = Z07
+capital = "Tsetserleg"
+is_city = yes
+culture = khalkha
+religion = mahayana
+trade_goods = fur
+fort_15th = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = KLK
+add_core = Z07
+add_core = Z0K
+discovered_by = chinese
+discovered_by = nomad_group
+latent_trade_goods = {
+	coal
+}

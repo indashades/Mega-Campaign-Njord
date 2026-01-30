@@ -1,0 +1,210 @@
+#Burgundian events
+
+namespace = FEE_Burgundy_Events
+
+#Philip the Good parleys with Emperor Frederick III
+country_event = {
+	id = FEE_Burgundy_Events.1
+	title = FEE_Burgundy_Events.1.T
+	desc = FEE_Burgundy_Events.1.D
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BUR
+		is_at_war = no
+		stability = 3
+		west_burgundy_area = {
+			type = all
+			owned_by = ROOT
+		}
+		bourgogne_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = FEE_Burgundy_Events.1.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_opinion = {
+			who = FRA
+			modifier = fee_bur_king_of_loth
+		}
+		add_opinion = {
+			who = SWI
+			modifier = fee_bur_king_of_loth
+		}
+		add_opinion = {
+			who = SAV
+			modifier = fee_bur_king_of_loth
+		}
+	}
+
+	option = {
+		name = FEE_Burgundy_Events.1.OPT2
+
+		add_opinion = {
+			who = emperor
+			modifier = fee_bur_king_of_loth_hab
+		}
+	}
+}
+
+#A Burgundian feast?
+country_event = {
+	id = FEE_Burgundy_Events.2
+	title = FEE_Burgundy_Events.2.T
+	desc = FEE_Burgundy_Events.2.D
+	picture = FEAST_eventPicture
+
+	fire_only_once = no
+
+	trigger = {
+		tag = BUR
+		NOT = { is_year = 1480 }
+	}
+
+	mean_time_to_happen = {
+		months = 180
+	}
+
+	# Option A: Host a grand feast!
+	option = {
+		name = FEE_Burgundy_Events.2.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_years_of_income = -0.1
+		add_prestige_or_monarch_power = { amount = 20 }
+		if = {
+			limit = { has_dlc = "Mandate of Heaven" }
+			add_splendor = 100
+		}
+		else = {
+			add_dip_power = 50
+		}
+	}
+
+	# Option B: We can wait...
+	option = {
+		name = FEE_Burgundy_Events.2.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_prestige = -5
+	}
+}
+
+#Mary of Guelders
+country_event = {
+	id = FEE_Burgundy_Events.3
+	title = FEE_Burgundy_Events.3.T
+	desc = FEE_Burgundy_Events.3.D
+	picture = MARY_OF_GUELDERS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BUR
+			tag = GEL
+			tag = SCO
+		}
+		is_year = 1451
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			tag = BUR
+		}
+	}
+
+	# Option A: She should be an advisor!
+	option = {
+		name = FEE_Burgundy_Events.3.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		# Gains level 2 female stateman advisor Maria van Gelre of Dutch culture and state religion
+		define_advisor = {
+			type = statesman
+			culture = dutch
+			religion = root
+			skill = 2
+			name = "Maria van Gelre"
+			female = yes
+		}
+	}
+
+	# Option B: We can learn from her
+	option = {
+		name = FEE_Burgundy_Events.3.OPT2
+		ai_chance = {
+			factor = 30
+		}
+
+		add_dip_power = 50
+	}
+
+	# Option C: How nice
+	option = {
+		name = FEE_Burgundy_Events.3.OPT3
+		ai_chance = {
+			factor = 20
+		}
+
+		add_prestige_or_monarch_power = { amount = 10 }
+	}
+}
+
+# Georges Chastellain
+country_event = {
+	id = FEE_Burgundy_Events.4
+	title = FEE_Burgundy_Events.4.T
+	desc = FEE_Burgundy_Events.4.D
+	picture = GEORGES_CHASTELLAIN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BUR
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	# Option A: His histories will record our deeds for our posterity forever
+	option = {
+		name = FEE_Burgundy_Events.4.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		change_government_reform_progress = 100
+		define_advisor = {
+			type = artist
+			culture = flemish
+			religion = root
+			skill = 2
+			name = "Georges Chastellain"
+			female = no
+			discount = yes
+			location = 1865 # Aalst in Ghent (Flanders)
+		}
+	}
+}

@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = albanian
+capital = 4175
+1444.11.11= {
+	monarch = {
+		name = "Cezar"
+		dynasty = "Kryethi"
+		adm = 4
+		dip = 5
+		mil = 3
+		birth_date = 1405.9.25
+		religion = orthodox
+		culture = albanian
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = kind_hearted_personality
+	queen = {
+		name = "Nikoletta"
+		dynasty = "Koresis"
+		adm = 3
+		dip = 3
+		mil = 5
+		country_of_origin = ALB
+		birth_date = 1397.7.9
+		death_date = 1457.7.9
+		female = yes
+		religion = orthodox
+		culture = greek
+	}
+	add_queen_personality = drunkard_personality
+	add_queen_personality = expansionist_personality
+	heir = {
+		name = "Vrana"
+		monarch_name = "Vrana"
+		dynasty = "Kryethi"
+		adm = 6
+		dip = 4
+		mil = 5
+		birth_date = 1429.12.23
+		death_date = 1494.12.23
+		claim = 89
+		religion = orthodox
+		culture = albanian
+	}
+	add_heir_personality = free_thinker_personality
+	add_heir_personality = kind_hearted_personality
+}
+1444.11.11= {
+	add_prestige = 82
+	add_treasury = 64
+}

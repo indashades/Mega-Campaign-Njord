@@ -1,7 +1,7 @@
 #317 - Bursa
 
-owner = KAR
-controller = KAR
+owner = RUM
+controller = RUM
 culture = turkish
 religion = sunni
 capital = "Nigde"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = KAR
+add_core = RUM
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

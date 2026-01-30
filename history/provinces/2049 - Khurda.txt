@@ -1,0 +1,16 @@
+owner = ORI
+controller = ORI
+capital = "Khurda"
+is_city = yes
+culture = oriya
+religion = hinduism
+trade_goods = grain
+base_tax = 4
+base_production = 1
+base_manpower = 2
+add_core = ORI
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = nomad_group
+discovered_by = ottoman

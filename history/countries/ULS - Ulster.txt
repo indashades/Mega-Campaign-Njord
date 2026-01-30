@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = converted_dynamic_faith_170
+primary_culture = dynamic-normand-culture-num1
+capital = 373
+1444.11.11= {
+	monarch = {
+		name = "Olcán"
+		dynasty = "ua Baoigheallain"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1398.7.22
+		religion = converted_dynamic_faith_170
+		culture = dynamic-normand-culture-num1
+	}
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = tolerant_personality
+	queen = {
+		name = "Effie"
+		dynasty = "Somhairle"
+		adm = 4
+		dip = 4
+		mil = 4
+		country_of_origin = ULS
+		birth_date = 1411.10.9
+		death_date = 1471.10.9
+		female = yes
+		religion = catholic
+		culture = dynamic-scottish-culture-num1
+	}
+	add_queen_personality = silver_tongue_personality
+	add_queen_personality = strict_personality
+	heir = {
+		name = "Matilda"
+		monarch_name = "Matilda"
+		dynasty = "ua Baoigheallain"
+		adm = 0
+		dip = 0
+		mil = 0
+		birth_date = 1442.2.24
+		death_date = 1507.2.24
+		female = yes
+		claim = 89
+		religion = converted_dynamic_faith_170
+		culture = dynamic-normand-culture-num1
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 82
+	add_treasury = 52
+}

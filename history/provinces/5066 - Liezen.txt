@@ -1,8 +1,8 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Liezen
-add_core = BYZ
-owner = BYZ
-controller = BYZ
+add_core = SLZ
+owner = SLZ
+controller = SLZ
 culture = austrian
 religion = catholic
 hre = yes

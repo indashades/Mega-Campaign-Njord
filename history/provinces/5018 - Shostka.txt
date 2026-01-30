@@ -1,8 +1,8 @@
 #4238 - Liegnitz (Liegnitz+Schweidnitz+Jauer+Glatz+Neisse+Münsterberg)
 
 #Coal
-owner = LIT
-controller = LIT
+owner = CRI
+controller = CRI
 culture = ruthenian
 religion = orthodox
 capital = "Shostka"

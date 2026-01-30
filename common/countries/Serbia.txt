@@ -1,0 +1,99 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 166 72 57 }
+revolutionary_colors = { 13 0 5 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	trade_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	quality_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	ottoman_lancer
+	ottoman_new_model
+	ottoman_nizami_cedid
+	ottoman_reformed_janissary
+	ottoman_reformed_spahi
+	ottoman_sekban
+	ottoman_toprakli_dragoon
+	ottoman_toprakli_hit_and_run
+	slavic_stradioti
+}
+monarch_names = {
+	"Akakios #0" = 0
+	"Augusta #0" = -1
+	"Bajan #0" = 0
+	"Belos #1" = 10
+	"Boleslav #0" = 0
+	"Caslav #1" = 10
+	"Desa #1" = 10
+	"Dragos #1" = 10
+	"Elaiodora #0" = -1
+	"Epiphania #0" = -1
+	"Eugenia #0" = -1
+	"Gennadios #0" = 0
+	"Gjergj #0" = 0
+	"Golem #0" = 0
+	"Ioustinos #0" = 0
+	"Konstantin #1" = 10
+	"Kosmas #0" = 0
+	"Manuel #0" = 0
+	"Martin #1" = 10
+	"Maximos #1" = 10
+	"Mikel #0" = 0
+	"Mutimir #1" = 10
+	"Pavel #1" = 10
+	"Petar #1" = 10
+	"Prokopios #0" = 0
+	"Prosigoj #1" = 10
+	"Prvoslav #1" = 10
+	"Pyrros #0" = 0
+	"Radoslav #1" = 10
+	"Stefan #1" = 10
+	"Theoktiste #0" = -1
+	"Tihomir #1" = 10
+	"Uros #2" = 10
+	"Valerios #0" = 0
+	"Visarion #1" = 10
+	"Vlastimir #1" = 10
+	"Vojislav #1" = 10
+	"Vojnomir #0" = 0
+	"Vukan #2" = 10
+	"Zaharije #1" = 10
+}
+leader_names = {
+	"Bojovic"
+	"Drascovic"
+	"Gingic"
+	"Hracovec"
+	"Jovanovic"
+	"Lazarevic"
+	"Marcovic"
+	"Obilic"
+	"Obrenovic"
+	"Pertrovic"
+	"Postek"
+	"Putnik"
+}
+ship_names = {
+	"Bosnia"
+	"Duklja"
+	"Milutin"
+	"Pagania"
+	"Raska"
+	"Stefan Dusan"
+	"Stefan Nemanja"
+	"Stefan Prvovencani"
+	"Travunia"
+	"Zahumlje"
+}

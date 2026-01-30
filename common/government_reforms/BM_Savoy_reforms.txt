@@ -1,0 +1,54 @@
+savoia_reform = {
+	icon = savoy_savoia
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			is_or_was_tag = { tag = SAV }
+			have_had_reform = savoia_reform
+		}
+	}
+	trigger = {
+		OR = {
+			is_or_was_tag = { tag = SAV }
+			have_had_reform = savoia_reform
+		}
+	}
+	modifiers = {
+		diplomatic_reputation = 1
+		ae_impact = -0.05
+		development_cost_in_primary_culture = -0.05
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+kingdom_of_sardinia_reform = {
+	icon = kingdom_of_sardinia
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			primary_culture = sardinian
+			primary_culture = piedmontese
+			have_had_reform = kingdom_of_sardinia_reform
+		}
+	}
+	trigger = {
+		is_or_was_tag = { tag = SPI }
+		OR = {
+			primary_culture = sardinian
+			primary_culture = piedmontese
+			have_had_reform = kingdom_of_sardinia_reform
+		}
+	}
+	modifiers = {
+		max_absolutism = 10
+		state_maintenance_modifier = -0.15
+		development_cost_in_primary_culture = -0.1
+	}
+	ai = {
+		factor = 100
+	}
+}

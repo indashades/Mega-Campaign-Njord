@@ -1,0 +1,3353 @@
+dura-europos = {
+	start = 2314 #Rahba.
+	date = 01.01.1
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			stability_cost_modifier = -0.1
+			num_accepted_cultures = 1
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			stability_cost_modifier = -0.15
+			num_accepted_cultures = 1
+			manpower_in_accepted_culture_provinces = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			stability_cost_modifier = -0.25
+			num_accepted_cultures = 2
+			manpower_in_accepted_culture_provinces = 0.1
+		}
+		on_upgraded = { }
+	}
+}
+
+carian = {
+	start = 319 #Mentesha.
+	date = 01.01.1
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture = greek
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture = greek
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture = greek
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			merc_maintenance_modifier = -0.1
+			mercenary_manpower = 0.1
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			merc_maintenance_modifier = -0.15
+			mercenary_manpower = 0.15
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			merc_maintenance_modifier = -0.2
+			merc_leader_army_tradition = 0.25
+			mercenary_manpower = 0.2
+		}
+		on_upgraded = { }
+	}
+}
+
+painted_churches = { #of Troodos.
+	start = 321 #Nicosia in Cyprus.
+	date = 01.01.1050
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { 
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_development_cost = -0.15
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			yearly_patriarch_authority = 0.001
+			sailors_recovery_speed = 0.05
+		}
+		on_upgraded = { 
+			add_or_upgrade_tax_building = yes
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_development_cost = -0.2
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			yearly_patriarch_authority = 0.002
+			sailors_recovery_speed = 0.1
+			sailor_maintenance_modifer = -0.1
+		}
+		on_upgraded = { 
+			add_or_upgrade_tax_building = yes
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_development_cost = -0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			yearly_patriarch_authority = 0.003
+			sailors_recovery_speed = 0.15
+			sailor_maintenance_modifer = -0.2
+		}
+		on_upgraded = { 
+			add_or_upgrade_tax_building = yes
+		}
+	}
+}
+
+stanthony = {
+	start = 2315 #as-Suways.
+	date = 01.01.300
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { 
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			local_development_cost = -0.1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			yearly_patriarch_authority = 0.001
+			missionary_maintenance_cost = -0.1
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 1200 }
+		province_modifiers = {
+			local_development_cost = -0.2
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			yearly_patriarch_authority = 0.002
+			missionary_maintenance_cost = -0.15
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_development_cost = -0.3
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			yearly_patriarch_authority = 0.003
+			missionary_maintenance_cost = -0.25
+			discipline = 0.025
+		}
+		on_upgraded = {
+			add_province_triggered_modifier = religious_center
+		}
+	}
+}
+
+sumela = {
+	start = 330 #Trebizond/Trapezous.
+	date = 01.01.386
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		AND = {
+			province_is_or_accepts_religion_group = {
+				religion_group = christian
+			}
+			province_is_or_accepts_culture = yes
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		AND = {
+			province_is_or_accepts_religion_group = {
+				religion_group = christian
+			}
+			province_is_or_accepts_culture = yes
+		}
+	}
+	can_upgrade_trigger = {
+		AND = {
+			province_is_or_accepts_religion_group = {
+				religion_group = christian
+			}
+			province_is_or_accepts_culture = yes
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			religious_unity = 0.15
+		}
+		on_upgraded = {
+			add_or_upgrade_production_building = yes
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			religious_unity = 0.25
+			build_time = -0.05
+			build_cost = -0.05
+		}
+		on_upgraded = {
+			add_or_upgrade_production_building = yes
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			religious_unity = 0.33
+			build_time = -0.1
+			build_cost = -0.1
+		}
+		on_upgraded = {
+			add_or_upgrade_production_building = yes
+		}
+	}
+}
+
+saint_thaddeus = {
+	start = 4304 #Khoy.
+	date = 01.01.239
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+		}
+		has_owner_religion = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+		}
+		has_owner_religion = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+		}
+		has_owner_religion = yes
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_monthly_devastation = -0.15
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			missionary_maintenance_cost = -0.15
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_monthly_devastation = -0.25
+		}
+		area_modifier = {
+			local_development_cost = -0.2
+		}
+		region_modifier = { }
+		country_modifiers = {
+			missionary_maintenance_cost = -0.25
+			tolerance_heretic = 1
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 2000 }
+		province_modifiers = {
+			local_monthly_devastation = -0.33
+		}
+		area_modifier = {
+			local_development_cost = -0.3
+		}
+		region_modifier = { }
+		country_modifiers = {
+			development_cost_in_primary_culture = -0.05
+			missionary_maintenance_cost = -0.33
+			tolerance_heretic = 1
+		}
+		on_upgraded = { }
+	}
+}
+
+gelati = {
+	start = 422 #Kutaisi, Imereti.
+	date = 01.01.1130
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		has_owner_accepted_culture = yes
+		OR = {
+			culture_group = byzantine
+			culture_group = caucasian
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		has_owner_accepted_culture = yes
+		OR = {
+			culture_group = byzantine
+			culture_group = caucasian
+		}
+	}
+	can_upgrade_trigger = {
+		has_owner_accepted_culture = yes
+		OR = {
+			culture_group = byzantine
+			culture_group = caucasian
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_development_cost = -0.1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			army_tradition = 0.25
+		}
+		on_upgraded = {	
+			add_or_upgrade_tax_building = yes
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_development_cost = -0.15
+		}
+		region_modifier = { }
+		country_modifiers = {
+			army_tradition = 0.5
+			adm_tech_cost_modifier = -0.05
+			tolerance_own = 0.5
+		}
+		on_upgraded = {	
+			add_or_upgrade_tax_building = yes
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_development_cost = -0.2
+		}
+		region_modifier = { }
+		country_modifiers = {
+			army_tradition = 1
+			adm_tech_cost_modifier = -0.1
+			tolerance_own = 1
+		}
+		on_upgraded = {	
+			add_or_upgrade_tax_building = yes
+		}
+	}
+}
+
+vardzia = {
+	start = 2204 #Lomsia in Samtskhe (aka the hardest thing to pronounce for anglophones).
+	date = 01.01.1180
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		has_owner_accepted_culture = yes
+		OR = {
+			culture_group = byzantine
+			culture_group = caucasian
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		has_owner_accepted_culture = yes
+		OR = {
+			culture_group = byzantine
+			culture_group = caucasian
+		}
+	}
+	can_upgrade_trigger = {
+		has_owner_accepted_culture = yes
+		OR = {
+			culture_group = byzantine
+			culture_group = caucasian
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			local_hostile_attrition = 1
+			local_defensiveness = 0.15
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			recover_army_morale_speed = 0.05
+		}
+		on_upgraded = {
+			add_or_upgrade_forcelimit_building = yes
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { 
+			local_defensiveness = 0.25
+		}
+		area_modifier = {
+			local_hostile_attrition = 1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			recover_army_morale_speed = 0.1
+			land_morale = 0.05
+		}
+		on_upgraded = {
+			add_or_upgrade_forcelimit_building = yes
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { 
+			local_defensiveness = 0.33
+		}
+		area_modifier = {
+			local_hostile_attrition = 2
+			max_hostile_attrition = 1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			recover_army_morale_speed = 0.1
+			morale_damage_received = -0.05
+			land_morale = 0.05
+		}
+		on_upgraded = {
+			add_or_upgrade_forcelimit_building = yes
+		}
+	}
+}
+
+me_grand_palace = {
+	start = 446
+	date = 1320.01.01
+	time = {
+		months = 120
+	}
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 2
+	type = monument
+	build_trigger = {
+		owner = {
+			government_rank = 3
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owner = {
+			government_rank = 3
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			government_rank = 3
+		}
+	}
+	keep_trigger = {
+	}
+	
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		
+		}
+		area_modifier = {
+			local_tax_modifier = 0.15
+		}
+		country_modifiers = {
+			legitimacy = 0.25
+			devotion = 0.25
+			republican_tradition = 0.1
+			meritocracy = 0.25	#For completion's sake
+			horde_unity = 0.25
+			reduced_liberty_desire = 5
+		}
+		on_upgraded = {
+			owner = {
+				every_subject_country = {
+					add_liberty_desire = -10
+				}
+			}
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_tax_modifier = 0.25
+		}
+		country_modifiers = {
+			legitimacy = 0.5
+			devotion = 0.5
+			republican_tradition = 0.2
+			meritocracy = 0.5	#For completion's sake
+			horde_unity = 0.5
+			reduced_liberty_desire = 10
+		}
+		on_upgraded = {
+			owner = {
+				every_subject_country = {
+					add_liberty_desire = -15
+				}
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_tax_modifier = 0.33
+		}
+		region_modifier = { }
+		country_modifiers = {
+			legitimacy = 1
+			devotion = 1
+			republican_tradition = 0.3
+			meritocracy = 1	#For completion's sake
+			horde_unity = 1
+			reduced_liberty_desire = 15
+			governing_capacity_modifier = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				every_subject_country = {
+					add_liberty_desire = -20
+				}
+			}
+		}
+	}
+}
+
+me_skull_pyramid = {
+	start = 446
+	date = 1360.01.01
+	time = {
+		months = 120
+	}
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 3
+	type = monument
+	build_trigger = {
+		owner = {
+			tag = ILK
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owner = {
+			tag = ILK
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			tag = ILK
+		}
+	}
+	keep_trigger = { }
+	
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		
+		}
+		area_modifier = {
+			local_governing_cost = -0.25
+		}
+		country_modifiers = {
+			global_unrest = -0.5
+			shock_damage = 0.05
+		}
+		on_upgraded = {
+
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_governing_cost = -0.5
+		}
+		country_modifiers = {
+			global_unrest = -1
+			shock_damage = 0.05
+			raze_power_gain = 0.1
+		}
+		on_upgraded = {
+
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_governing_cost = -0.75
+		}
+		region_modifier = { }
+		country_modifiers = {
+			global_unrest = -1
+			shock_damage = 0.1
+			raze_power_gain = 0.2
+			cavalry_power = 0.1
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+al_mustansiriya = {
+	start = 410 #Baghdad.
+	date = 01.01.1227
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			institution_spread_from_true_faith = 0.1
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			institution_spread_from_true_faith = 0.15
+			advisor_pool = 1
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			institution_spread_from_true_faith = 0.25
+			technology_cost = -0.05
+			advisor_pool = 2
+		}
+		on_upgraded = { }
+	}
+}
+
+ctesiphon = {
+	start = 2312 #Technically untrue, but better for gameplay.
+	date = 01.01.1
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		owner = {
+			government_rank = 3
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owner = {
+			government_rank = 3
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			government_rank = 3
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			adm_advisor_cost = -0.1
+			monthly_splendor = 0.5
+			cavalry_cost = -0.1
+		}
+		conditional_modifier = {
+			trigger = { 
+				owner = {
+					cavalry_fraction = 0.15
+				}
+			}
+			modifier = { 
+				cavalry_shock = 0.15
+			}
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			adm_advisor_cost = -0.15
+			monthly_splendor = 1
+			cavalry_cost = -0.15
+		}
+		conditional_modifier = {
+			trigger = { 
+				owner = {
+					cavalry_fraction = 0.25
+				}
+			}
+			modifier = { 
+				cavalry_shock = 0.25
+			}
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			adm_advisor_cost = -0.2
+			monthly_splendor = 2
+			cavalry_cost = -0.2
+		}
+		conditional_modifier = {
+			trigger = { 
+				owner = {
+					cavalry_fraction = 0.33
+				}
+			}
+			modifier = { 
+				cavalry_shock = 0.5
+			}
+		}
+		on_upgraded = { }
+	}
+}
+
+krak_des_chevaliers = { #Christian monument in the Middle East. Don't feel like making a new file specifically for this type of monument. It is fairly unique, and can't be used alongside Masyaf.
+	start = 378 #Trablos/Tarabulus al-Sham in Syria.
+	date = 01.01.1141
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			papal_influence = 0.5
+			cavalry_power = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = inquisitor
+					culture = ROOT
+					religion = catholic
+					skill = 3
+					cost_multiplier = 0.75
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.33
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			papal_influence = 1
+			cavalry_power = 0.1
+			enforce_religion_cost = -0.25
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = inquisitor
+					culture = ROOT
+					religion = catholic
+					skill = 3
+					cost_multiplier = 0.75
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			papal_influence = 2
+			cavalry_power = 0.15
+			enforce_religion_cost = -0.33
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = inquisitor
+					culture = ROOT
+					religion = catholic
+					skill = 3
+					cost_multiplier = 0.75
+				}
+			}
+		}
+	}
+}
+
+masyaf = {
+	start = 378 #Trablos/Tarabulus al-Sham in Syria.
+	date = 01.01.1141 #Real date unknown.
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.15
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			spy_offence = 0.15
+			global_spy_defence = 0.15
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = spymaster
+					culture = al_suryah_arabic
+					skill = 3
+					cost_multiplier = 0.75
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			spy_offence = 0.25
+			global_spy_defence = 0.25
+			leader_land_manuever = 1
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = spymaster
+					culture = al_suryah_arabic
+					skill = 3
+					cost_multiplier = 0.5
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			spy_offence = 0.33
+			global_spy_defence = 0.33
+			leader_land_manuever = 1
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = spymaster
+					culture = al_suryah_arabic
+					skill = 3
+					cost_multiplier = 0.25
+				}
+			}
+		}
+	}
+}
+
+fu_ishtar_gate = {
+	start = 2311 #Samawat in Basra.
+	date = 01.01.1 #6th Century BC.
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = yes
+	move_days_per_unit_distance = 6
+	build_trigger = {
+		owner = {
+			government_rank = 3
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owner = {
+			government_rank = 3
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			government_rank = 3
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			vassal_income = 0.1
+			min_autonomy_in_territories = -0.05
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			vassal_income = 0.15
+			min_autonomy_in_territories = -0.05
+			diplomatic_upkeep = 1
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			vassal_income = 0.2
+			min_autonomy_in_territories = -0.1
+			diplomatic_upkeep = 2
+		}
+		on_upgraded = { }
+	}
+}
+
+bazaar_tabriz = {
+	start = 416 #Tabriz, Tabriz in Tabriz, Tabriz.
+	date = 01.01.1 #No one knows.
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			province_trade_power_value = 5
+			trade_goods_size = 1
+			local_production_efficiency = 0.15
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = trader
+					culture = ROOT
+					religion = ROOT
+					skill = 3
+					cost_multiplier = 0.75
+				}
+			}
+		}
+		conditional_modifier = {
+			trigger = { 
+				trading_bonus = {
+					trade_goods = silk
+					value = yes
+				}
+			}
+			modifier = { 
+				trade_steering = 0.05
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			province_trade_power_value = 10
+			trade_goods_size = 2
+			local_production_efficiency = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = trader
+					culture = ROOT
+					religion = ROOT
+					skill = 3
+					cost_multiplier = 0.5
+				}
+			}
+		}
+		conditional_modifier = {
+			trigger = { 
+				trading_bonus = {
+					trade_goods = silk
+					value = yes
+				}
+			}
+			modifier = { 
+				trade_steering = 0.1
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			province_trade_power_value = 15
+			trade_goods_size = 3
+			local_production_efficiency = 0.33
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = trader
+					culture = ROOT
+					religion = ROOT
+					skill = 3
+					cost_multiplier = 0.25
+				}
+			}
+		}
+		conditional_modifier = {
+			trigger = { 
+				trading_bonus = {
+					trade_goods = silk
+					value = yes
+				}
+			}
+			modifier = { 
+				trade_steering = 0.15
+			}
+		}
+	}
+}
+
+fu_sari_markets = {
+	start = 4341
+	date = 01.01.1
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture_group = iranian
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = iranian
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = iranian
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			province_trade_power_value = 5
+			trade_value_modifier = 0.1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			global_trade_power = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			province_trade_power_value = 10
+			trade_value_modifier = 0.15
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			global_trade_power = 0.1
+			trade_efficiency = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			province_trade_power_value = 15
+			trade_value_modifier = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			global_trade_power = 0.15
+			trade_efficiency = 0.05
+		}
+		on_upgraded = { }
+	}
+}
+
+umayyad_mosque = {
+	start = 382 #Damascus/Dimashq in Syria.
+	date = 01.01.715
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_tax_modifier = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			monthly_piety_accelerator = 0.001
+			manpower_in_true_faith_provinces = 0.05
+		}
+		on_upgraded = { 
+			owner = {
+				add_estate_loyalty = {
+					estate = all
+					loyalty = 5
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 1800 }
+		province_modifiers = { }
+		area_modifier = {
+			local_tax_modifier = 0.25
+		}
+		region_modifier = { }
+		country_modifiers = {
+			monthly_piety_accelerator = 0.002
+			manpower_in_true_faith_provinces = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = all
+					loyalty = 10
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 3600 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_tax_modifier = 0.5
+		}
+		region_modifier = { }
+		country_modifiers = {
+			monthly_piety_accelerator = 0.003
+			manpower_in_true_faith_provinces = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = all
+					loyalty = 15
+				}
+			}
+		}
+	}
+}
+
+al-azm = {
+	start = 382 #Damascus/Dimashq in Syria.
+	date = 01.01.1749
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			local_development_cost = -0.1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			administrative_efficiency = 0.025
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = statesman
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.75
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			administrative_efficiency = 0.05
+			advisor_pool = 1
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = statesman
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.5
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = {
+			local_development_cost = -0.2
+		}
+		region_modifier = { }
+		country_modifiers = {
+			administrative_efficiency = 0.05
+			free_policy = 1
+			advisor_pool = 1
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = statesman
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.25
+				}
+			}
+		}
+	}
+}
+
+sheikh_safi = {
+	start = 424 #Ardabil in Shirvan.
+	date = 01.01.1334
+	time = { months = 120 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0	}
+		cost_to_upgrade = {	factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_manpower_modifier = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			monarch_lifespan = 0.05
+			qizilbash_loyalty_modifier = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = {
+			local_manpower_modifier = 0.25
+		}
+		region_modifier = { }
+		country_modifiers = {
+			monarch_lifespan = 0.1
+			qizilbash_loyalty_modifier = 0.1
+			qizilbash_influence_modifier = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_manpower_modifier = 0.33
+		}
+		region_modifier = {}
+		country_modifiers = {
+			monarch_lifespan = 0.15
+			qizilbash_loyalty_modifier = 0.15
+			qizilbash_influence_modifier = 0.1
+		}
+		on_upgraded = { }
+	}
+}
+
+shibam_hadramawt = {
+	start = 2343 #Kathiri in Hadramut, Yemen.
+	date = 01.01.250
+	time = { months = 120 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		culture = yemeni_culture
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture = yemeni_culture
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture = yemeni_culture
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0	}
+		cost_to_upgrade = {	factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_friendly_movement_speed = 0.25
+			local_defensiveness = 0.15 #Built to protect against Bedouin raids.
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			adm_tech_cost_modifier = -0.05
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.25 #Built to protect against Bedouin raids.
+		}
+		area_modifier = { 
+			local_friendly_movement_speed = 0.25
+		}
+		region_modifier = { }
+		country_modifiers = {
+			build_cost = -0.05
+			adm_tech_cost_modifier = -0.05
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.33 #Built to protect against Bedouin raids.
+		}
+		area_modifier = { }
+		region_modifier = {
+			local_friendly_movement_speed = 0.25
+		}
+		country_modifiers = {
+			build_time = -0.1
+			build_cost = -0.1
+			adm_tech_cost_modifier = -0.1
+		}
+		on_upgraded = { }
+	}
+}
+
+behistun = {
+	start = 2210 #Kirmanshah in Luristan.
+	date = 01.01.1 #Date unknown.
+	time = { months = 120 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		AND = {
+			owner = {
+				is_great_power = yes
+			}
+			culture_group = iranian
+			province_is_or_accepts_culture = yes
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		AND = {
+			owner = {
+				is_great_power = yes
+			}
+			culture_group = iranian
+			province_is_or_accepts_culture = yes
+		}
+	}
+	can_upgrade_trigger = {
+		AND = {
+			owner = {
+				is_great_power = yes
+			}
+			culture_group = iranian
+			province_is_or_accepts_culture = yes
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0	}
+		cost_to_upgrade = {	factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			move_capital_cost_modifier = -0.15
+			harsh_treatment_cost = -0.25
+		}
+		on_upgraded = { 
+			owner = {
+				add_prestige_or_monarch_power = { amount = 15 }
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			move_capital_cost_modifier = -0.25
+			harsh_treatment_cost = -0.33
+		}
+		on_upgraded = {
+			owner = {
+				add_prestige_or_monarch_power = { amount = 25 }
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			move_capital_cost_modifier = -0.5
+			harsh_treatment_cost = -0.5
+			morale_damage = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				add_prestige_or_monarch_power = { amount = 50 }
+			}
+		}
+	}
+}
+
+fu_ali_qapu = {
+	start = 429 #Isfahan/Esfahan/Esteban.
+	date = 01.01.1597
+	time = { months = 120 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+		AND = {
+			owner = {
+				government_rank = 3
+			}
+			culture_group = iranian
+			province_is_or_accepts_culture = yes
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		AND = {
+			owner = {
+				government_rank = 3
+			}
+			culture_group = iranian
+			province_is_or_accepts_culture = yes
+		}
+	}
+	can_upgrade_trigger = {
+		AND = {
+			owner = {
+				government_rank = 3
+			}
+			culture_group = iranian
+			province_is_or_accepts_culture = yes
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0	}
+		cost_to_upgrade = {	factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_has_qizilbash = yes
+		}
+		region_modifier = { }
+		country_modifiers = {
+			has_qizilbash = yes
+			allowed_qizilbash_fraction = 0.05
+			governing_capacity = 50
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = statesman
+					culture = persian
+					skill = 3
+					cost_multiplier = 0.75
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_has_qizilbash = yes
+		}
+		region_modifier = { }
+		country_modifiers = {
+			has_qizilbash = yes
+			allowed_qizilbash_fraction = 0.1
+			governing_capacity = 100
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = statesman
+					culture = persian
+					skill = 3
+					cost_multiplier = 0.5
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_has_qizilbash = yes
+		}
+		region_modifier = { }
+		country_modifiers = {
+			has_qizilbash = yes
+			allowed_qizilbash_fraction = 0.15
+			governing_capacity = 150
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = statesman
+					culture = persian
+					skill = 3
+					cost_multiplier = 0.25
+				}
+			}
+		}
+	}
+}
+
+alkarak_castle = {
+	start = 380 #Al Karak/Al Kerak in Transjordan.
+	date = 01.01.1142
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = {
+			local_hostile_attrition = 1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			governing_capacity = 50
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.33
+		}
+		area_modifier = {
+			local_hostile_attrition = 2
+			max_hostile_attrition = 1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			governing_capacity = 100
+			land_morale = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.5
+		}
+		area_modifier = {
+			local_hostile_attrition = 3
+			max_hostile_attrition = 2
+		}
+		region_modifier = { }
+		country_modifiers = {
+			governing_capacity = 150
+			land_morale = 0.1
+		}
+		on_upgraded = { }
+	}
+}
+
+me_ulugh_beg_observatory = {
+	start = 454
+	date = 01.01.1420 #Destroyed in 1449. Yikes.
+	time = { months = 120 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	build_trigger = {
+		OR = {
+			culture_group = altaic
+			culture_group = iranian
+		}
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { 
+		OR = {
+			culture_group = altaic
+			culture_group = iranian
+		}
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture_group = altaic
+			culture_group = iranian
+		}
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		
+		}
+		area_modifier = { }
+		country_modifiers = {
+			innovativeness_gain = 0.1
+			institution_spread_from_true_faith = 0.1
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					OR = {
+						ruler_has_personality = scholar_personality
+						full_idea_group = innovativeness_ideas
+					}
+				}
+			}
+			
+			modifier = {
+				advisor_cost = -0.05
+			}
+		}
+		on_upgraded = {
+			owner = {
+				add_innovativeness_or_monarch_power = { amount = 2 }
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+		}
+		area_modifier = { }
+		country_modifiers = {
+			innovativeness_gain = 0.15
+			institution_spread_from_true_faith = 0.15
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					OR = {
+						ruler_has_personality = scholar_personality
+						full_idea_group = innovativeness_ideas
+					}
+				}
+			}
+			
+			modifier = {
+				advisor_cost = -0.1
+				embracement_cost = -0.05
+			}
+		}
+		on_upgraded = {
+			owner = {
+				add_innovativeness_or_monarch_power = { amount = 4 }
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+		}
+		area_modifier = { }
+		
+		country_modifiers = {
+			innovativeness_gain = 0.2
+			institution_spread_from_true_faith = 0.25
+		}
+		
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					OR = {
+						ruler_has_personality = scholar_personality
+						full_idea_group = innovativeness_ideas
+					}
+				}
+			}
+			
+			modifier = {
+				advisor_cost = -0.15
+				embracement_cost = -0.1
+			}
+		}
+		
+		on_upgraded = {
+			owner = {
+				add_innovativeness_or_monarch_power = { amount = 6 }
+			}
+		}
+	}
+}
+
+tomb_timur = {
+	start = 454
+	date = 01.01.1404
+	time = { months = 0 }
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 1
+	type = canal
+	build_trigger = {
+		OR = {
+			culture_group = altaic
+			culture_group = iranian
+		}
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		OR = {
+			culture_group = altaic
+			culture_group = iranian
+		}
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture_group = altaic
+			culture_group = iranian
+		}
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			regiment_recruit_speed = -0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			power_projection_from_insults = 0.25
+			prestige_from_land = 0.15
+			manpower_recovery_speed = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				if = {
+					limit = { has_estate = estate_nobles }
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 5
+					}
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { 
+			regiment_recruit_speed = -0.25
+		}
+		region_modifier = { }
+		country_modifiers = {
+			power_projection_from_insults = 0.33
+			prestige_from_land = 0.25
+			manpower_recovery_speed = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				if = {
+					limit = { has_estate = estate_nobles }
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 10
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { 
+			regiment_recruit_speed = -0.33
+		}
+		region_modifier = { }
+		country_modifiers = {
+			power_projection_from_insults = 0.5
+			prestige_from_land = 0.33
+			manpower_recovery_speed = 0.15
+		}
+		on_upgraded = {
+			owner = {
+				if = {
+					limit = { has_estate = estate_nobles }
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 15
+					}
+				}
+			}
+		}
+	}
+}
+
+yazd_windcatchers = {
+	start = 433
+	date = 01.01.1 #Idk lol.
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture_group = iranian
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = iranian
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = iranian
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_development_cost = -0.1
+			local_governing_cost = -0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			merc_maintenance_modifier = -0.1
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_development_cost = -0.2
+		}
+		area_modifier = { 
+			local_governing_cost = -0.5
+		}
+		region_modifier = { }
+		country_modifiers = {
+			merc_maintenance_modifier = -0.15
+			merc_leader_army_tradition = 0.15
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_development_cost = -0.3
+			local_governing_cost = -1
+		}
+		area_modifier = { 
+			local_governing_cost = -0.75
+		}
+		region_modifier = { }
+		country_modifiers = {
+			merc_maintenance_modifier = -0.2
+			merc_leader_army_tradition = 0.25
+			mercenary_manpower = 0.15
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+herat = { #Qala Iktyaruddin.
+	start = 446 #Herat, Khorasan.
+	date = 01.01.1 #330 BC!
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_garrison_size = 0.15
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			fire_damage_received = -0.05
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 5
+					}
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.33
+			local_garrison_size = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			fire_damage_received = -0.05
+			monarch_military_power = 1
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 10
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.5
+			local_garrison_size = 0.33
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			fire_damage_received = -0.05
+			monarch_military_power = 1
+			military_tactics = 0.1
+		}
+		on_upgraded = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				owner = { 
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 15
+					}
+				}
+			}
+		}
+	}
+}
+
+hasankeyf = {
+	start = 4295 #Hisn Kayfa.
+	date = 01.01.1
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 2
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		has_owner_accepted_culture = yes
+		OR = {
+			culture_group = iranian
+			culture_group = turko_semitic
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		has_owner_accepted_culture = yes
+		OR = {
+			culture_group = iranian
+			culture_group = turko_semitic
+		}
+	}
+	can_upgrade_trigger = {
+		has_owner_accepted_culture = yes
+		OR = {
+			culture_group = iranian
+			culture_group = turko_semitic
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.15
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			siege_ability = 0.05
+		}
+		on_upgraded = { 
+			owner = {
+				change_ruler_stat = {
+					type = mil
+					amount = 1
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			discipline = 0.025
+			siege_ability = 0.1
+		}
+		on_upgraded = { 
+			owner = {
+				change_ruler_stat = {
+					type = mil
+					amount = 1
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.33
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			siege_ability = 0.15
+			discipline = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				change_ruler_stat = {
+					type = mil
+					amount = 1
+				}
+			}
+		}
+	}
+}
+
+fu_blue_mosque = {
+	start = 416 #Tabriz.
+	date = 01.01.1465
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_tax_modifier = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			global_heretic_missionary_strength = 0.005
+			tolerance_own = 0.5
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_tax_modifier = 0.33
+		}
+		region_modifier = { }
+		country_modifiers = {
+			global_heretic_missionary_strength = 0.01
+			tolerance_own = 0.5
+			global_tax_modifier = 0.1
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { 
+			local_tax_modifier = 0.5
+		}
+		region_modifier = { }
+		country_modifiers = {
+			global_heretic_missionary_strength = 0.02
+			tolerance_own = 1
+			global_tax_modifier = 0.15
+		}
+		on_upgraded = { }
+	}
+}
+
+ghazni = {
+	start = 448 #Gazni.
+	date = 01.01.962
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.15
+			local_garrison_size = 0.15
+		}
+		area_modifier = { }
+		region_modifier = {
+			supply_limit_modifier = 0.25
+		}
+		country_modifiers = { 
+			global_supply_limit_modifier = 0.1
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_garrison_size = 0.25
+		}
+		area_modifier = { }
+		region_modifier = {
+			supply_limit_modifier = 0.33
+		}
+		country_modifiers = {
+			army_tradition_decay = -0.005
+			global_supply_limit_modifier = 0.15
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.33
+			local_garrison_size = 0.33
+		}
+		area_modifier = { }
+		region_modifier = {
+			supply_limit_modifier = 0.5
+		}
+		country_modifiers = {
+			global_supply_limit_modifier = 0.25
+			army_tradition_decay = -0.01
+			land_attrition = -0.1
+		}
+		on_upgraded = { }
+	}
+}
+
+alamut = {
+	start = 2215 #Qazvin.
+	date = 01.01.865
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.15
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			discovered_relations_impact = -0.15
+			global_spy_defence = 0.15
+			spy_action_cost_modifier = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = spymaster
+					culture = ROOT
+					skill = 3
+					cost_multiplier = 0.25
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			discovered_relations_impact = -0.25
+			global_spy_defence = 0.25
+			spy_action_cost_modifier = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = spymaster
+					culture = ROOT
+					skill = 3
+					cost_multiplier = 0.25
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_defensiveness = 0.33
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			discovered_relations_impact = -0.33
+			global_spy_defence = 0.33
+			spy_action_cost_modifier = -0.25
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = spymaster
+					culture = ROOT
+					skill = 3
+					cost_multiplier = 0.25
+				}
+			}
+		}
+	}
+}
+
+fu_hormuz_toll = {
+	start = 2999
+	date = 01.01.1
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { }
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			province_trade_power_value = 5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			embargo_efficiency = 0.15
+			transport_cost = -0.15
+		}
+		on_upgraded = {
+			owner = {
+				add_mercantilism_or_monarch_power = { amount = 2 }
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			province_trade_power_value = 10
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			embargo_efficiency = 0.25
+			transport_cost = -0.25
+			leader_naval_manuever = 1
+		}
+		on_upgraded = {
+			owner = {
+				add_mercantilism_or_monarch_power = { amount = 4 }
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			province_trade_power_value = 15
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			embargo_efficiency = 0.33
+			transport_cost = -0.33
+			leader_naval_manuever = 1
+			siege_blockade_progress = 1
+		}
+		on_upgraded = {
+			owner = {
+				add_mercantilism_or_monarch_power = { amount = 6 }
+			}
+		}
+	}
+}
+
+fu_isfahan_city = { #Khaju Bridge.
+	start = 429
+	date = 01.01.1650
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture_group = iranian
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = iranian
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = iranian
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			tax_income = 12
+			local_monthly_devastation = -0.15
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			expand_infrastructure_cost_modifier = -0.1
+		}
+		on_upgraded = { 
+			owner = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			tax_income = 24
+		}
+		area_modifier = {
+			local_monthly_devastation = -0.15
+		}
+		region_modifier = { }
+		country_modifiers = {
+			expand_infrastructure_cost_modifier = -0.15
+		}
+		on_upgraded = { 
+			owner = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			tax_income = 48
+		}
+		area_modifier = { 
+			local_monthly_devastation = -0.25
+		}
+		region_modifier = { }
+		country_modifiers = {
+			expand_infrastructure_cost_modifier = -0.25
+		}
+		on_upgraded = {
+			owner = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+			}
+		}
+	}
+}
+
+troy = {
+	start = 2296
+	date = 01.01.1
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		owned_by = Z43
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owned_by = Z43
+	}
+	can_upgrade_trigger = {
+		owned_by = Z43
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			fort_level = 1
+			local_defensiveness = 0.1
+			local_fort_maintenance_modifier = -0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			fort_level = 1
+			local_defensiveness = 0.20
+			local_fort_maintenance_modifier = -1
+			local_garrison_size = 0.1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			prestige = 0.5
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			fort_level = 2
+			local_defender_dice_roll_bonus = 1
+			local_development_cost = -0.2
+		}
+		area_modifier = {
+			local_defensiveness = 0.2
+			local_fort_maintenance_modifier = -1
+			local_garrison_size = 0.15
+		}
+		region_modifier = { }
+		country_modifiers = {
+			prestige = 1
+		}
+		on_upgraded = { }
+	}
+}

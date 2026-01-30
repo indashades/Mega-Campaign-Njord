@@ -1,0 +1,13 @@
+owner = Z8G
+controller = Z8G
+capital = "Douentza"
+is_city = yes
+culture = mali
+religion = catholic
+trade_goods = ivory
+base_tax = 1
+base_production = 2
+base_manpower = 1
+add_core = Z8G
+add_permanent_claim = GUR
+discovered_by = sub_saharan

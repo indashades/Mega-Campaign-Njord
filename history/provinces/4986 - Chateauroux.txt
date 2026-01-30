@@ -1,18 +1,18 @@
 # 179 Berry
 
-owner = FRA
-controller = FRA
+owner = Z5Z
+controller = Z5Z
 capital = "Chateauroux"
 is_city = yes
 culture = cosmopolitan_french
 religion = catholic
-hre = no
+hre = yes
 base_tax = 2
 base_production = 2
 trade_goods = wine
 base_manpower = 1
 add_core = BER
-add_core = FRA
+add_core = Z5Z
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

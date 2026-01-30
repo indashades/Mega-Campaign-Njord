@@ -1,0 +1,16 @@
+owner = MEI
+controller = MEI
+capital = "Plauen"
+is_city = yes
+culture = saxon
+religion = catholic
+trade_goods = wool
+hre = yes
+base_tax = 7
+base_production = 4
+base_manpower = 6
+add_core = MEI
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

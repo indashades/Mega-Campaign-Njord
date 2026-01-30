@@ -1,0 +1,139 @@
+estate_church_muslim_turuq = {
+	icon = privilege_recruit_minister
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = -0.05
+	is_valid = {
+		religion_group = muslim
+	}
+	can_select = {
+		NOT = {
+			has_estate_privilege = estate_church_clerical_ministers 
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_church_muslim_turuq_tt
+		hidden_effect = {
+			
+		}
+	}
+	on_revoked = {
+		hidden_effect = {
+			
+		}
+	}
+	benefits = {
+		monthly_piety = -0.002
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = { piety = -0.5 }
+		}
+		modifier = {
+			morale_damage = 0.1
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+estate_burghers_promote_mercantilism = {
+	icon = privilege_mercantilism
+	land_share = 0
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.10
+	loyalty = -0.05
+	is_valid = {
+	}
+	on_granted = {
+		custom_tooltip = show_mercantile_bonuses
+	}
+
+	benefits = {
+		mercantilism_cost = -0.1
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			mercantilism = 20
+			has_dlc = "Dharma"
+		}
+		modifier = {
+			center_of_trade_upgrade_cost = -0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			mercantilism = 20
+			NOT = { has_dlc = "Dharma" }
+		}
+		modifier = {
+			production_efficiency = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			mercantilism = 40
+		}
+		modifier = {
+			development_cost = -0.05 
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			mercantilism = 60
+		}
+		modifier = {
+			colonists = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			mercantilism = 80
+		}
+		modifier = {
+			global_trade_goods_size_modifier = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = MEGA_buffed_promote_mercantilism_flag
+		}
+		modifier = {
+			max_absolutism = 5
+			burghers_influence_modifier = -0.1
+			burghers_loyalty_modifier = 0.05
+			production_efficiency = 0.1
+		}
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 2
+			mercantilism = 20
+		}
+		modifier = {
+			factor = 2
+			mercantilism = 40
+		}
+		modifier = {
+			factor = 2
+			mercantilism = 60
+		}
+		modifier = {
+			factor = 2
+			mercantilism = 80
+		}
+		modifier = {
+			factor = 0
+			estate_influence = {
+				estate = estate_burghers
+				influence = 70
+			}
+		}
+	}
+}

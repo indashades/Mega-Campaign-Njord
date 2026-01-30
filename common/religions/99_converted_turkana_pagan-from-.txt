@@ -1,0 +1,37 @@
+converted_turkana_pagan = {
+	converted_turkana_pagan = {
+		color = { 171 88 8 }
+		icon =  179
+		country = {
+ 
+		discipline = 0.05
+	
+
+		state_maintenance_modifier = -0.25
+	
+
+		diplomatic_reputation = 1
+	
+
+		heir_chance = 1
+	
+}
+		country_as_secondary = {
+ 
+		discipline = 0.025
+	
+
+		state_maintenance_modifier = -0.25
+	
+}
+		province = {
+ 
+		local_missionary_strength = -0.02
+	
+
+		local_missionary_strength = 0.02
+	
+}
+	}
+}
+

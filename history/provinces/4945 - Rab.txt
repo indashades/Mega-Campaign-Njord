@@ -1,17 +1,17 @@
 #154 - Hont (Hont + Bars + Ersekujvar)
 
-owner = HUN
-controller = HUN
+owner = Z2B
+controller = Z2B
 culture = hungarian
 religion = catholic
 capital = "Gyõr"
 trade_goods = livestock
-hre = no
+hre = yes
 base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = HUN
+add_core = Z2B
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

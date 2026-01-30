@@ -1,0 +1,14 @@
+owner = Z3Z
+controller = Z3Z
+capital = "Rovaniemi"
+is_city = yes
+culture = sapmi
+religion = catholic
+trade_goods = fur
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = Z3Z
+add_core = SMI
+discovered_by = eastern
+discovered_by = western

@@ -1,0 +1,20 @@
+owner = Z6Q
+controller = Z6Q
+capital = "Cambray"
+is_city = yes
+culture = wallonian
+religion = catholic
+trade_goods = grain
+hre = yes
+base_tax = 5
+base_production = 4
+base_manpower = 2
+add_core = Z6Q
+add_core = Z7I
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+latent_trade_goods = {
+	coal
+}

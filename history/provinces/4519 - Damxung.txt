@@ -1,0 +1,14 @@
+owner = UTS
+controller = UTS
+capital = "Damxung"
+is_city = yes
+culture = dynamic-tibetan-culture-num3
+religion = bon_reformed
+trade_goods = wool
+base_tax = 3
+base_production = 2
+base_manpower = 1
+add_core = UTS
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

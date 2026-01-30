@@ -1,0 +1,17 @@
+owner = ESX
+controller = ESX
+capital = "Chelmsford"
+is_city = yes
+culture = english
+religion = catholic
+trade_goods = cloth
+hre = yes
+base_tax = 5
+base_production = 3
+base_manpower = 4
+add_core = ENG
+add_core = ESX
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

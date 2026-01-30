@@ -1,0 +1,14 @@
+owner = ETH
+controller = ETH
+capital = "Anderaccha"
+is_city = yes
+culture = sidamo
+religion = sunni
+trade_goods = gold
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = ETH
+add_permanent_claim = DAM
+discovered_by = east_african
+discovered_by = muslim

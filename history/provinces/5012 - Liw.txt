@@ -1,10 +1,11 @@
 
-owner = MAZ
-controller = MAZ
+owner = Z38
+controller = Z38
+add_core = Z38
 add_core = MAZ
 culture = polish
 religion = catholic
-hre = no
+hre = yes
 base_tax = 2 
 base_production = 2
 trade_goods = wool

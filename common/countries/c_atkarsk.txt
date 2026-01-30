@@ -1,0 +1,20 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 95 65 74 }
+monarch_names = {
+	"Akhtiyar #0" = 0
+	"Akparas #0" = 0
+	"Biyar #1" = 10
+	"Ertekin #1" = 10
+	"Illiger #0" = 0
+	"Iprakhim #1" = 10
+	"Khassan #0" = 0
+	"Kutlug #1" = 10
+	"Situlla #0" = 0
+	"S0likhkha #0" = -1
+	"Upa #0" = 0
+	"Valis #1" = 10
+	"Varpines #1" = -1
+	"Yakkup #0" = 0
+	"0htimer #1" = 10
+}

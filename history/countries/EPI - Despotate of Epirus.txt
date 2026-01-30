@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = greek
+capital = 4699
+1444.11.11= {
+	monarch = {
+		name = "Anthimos"
+		dynasty = "Hexaklinites"
+		adm = 2
+		dip = 6
+		mil = 0
+		birth_date = 1387.4.6
+		religion = orthodox
+		culture = greek
+	}
+	add_ruler_personality = embezzler_personality
+	add_ruler_personality = secretive_personality
+	queen = {
+		name = "Bistrina"
+		dynasty = "Nemanjic"
+		adm = 3
+		dip = 6
+		mil = 4
+		country_of_origin = EPI
+		birth_date = 1407.10.15
+		death_date = 1467.10.15
+		female = yes
+		religion = orthodox
+		culture = serbian
+	}
+	add_queen_personality = industrious_personality
+	add_queen_personality = intricate_web_weaver_personality
+	heir = {
+		name = "Theodoros"
+		monarch_name = "Theodoros"
+		dynasty = "Vatatzes"
+		adm = 6
+		dip = 6
+		mil = 4
+		birth_date = 1400.1.28
+		death_date = 1465.1.28
+		claim = 89
+		religion = orthodox
+		culture = greek
+	}
+	add_heir_personality = drunkard_personality
+	add_heir_personality = silver_tongue_personality
+}
+1444.11.11= {
+	add_prestige = 72
+	add_treasury = 56
+}

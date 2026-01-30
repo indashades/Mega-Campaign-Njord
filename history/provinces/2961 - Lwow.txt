@@ -1,0 +1,26 @@
+owner = Z2C
+controller = Z2C
+capital = "Lwów"
+is_city = yes
+culture = ruthenian
+religion = mahayana
+trade_goods = dyes
+base_tax = 5
+base_production = 4
+base_manpower = 4
+extra_cost = 8
+center_of_trade = 1
+add_core = Z2C
+discovered_by = AST
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = KAZ
+discovered_by = QAS
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+latent_trade_goods = {
+	coal
+}
+hre = yes

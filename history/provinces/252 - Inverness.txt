@@ -1,0 +1,17 @@
+owner = SCO
+controller = SCO
+capital = "Inverness"
+is_city = yes
+culture = dynamic-scottish-culture-num1
+religion = converted_dynamic_faith_170
+trade_goods = wool
+hre = yes
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = SCO
+add_permanent_claim = HSC
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

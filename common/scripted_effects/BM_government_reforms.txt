@@ -1,0 +1,758 @@
+BM_immigrant_settlements_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_immigrant_settlements
+			}
+			development = 20
+		}
+		add_province_modifier = {
+			name = BM_immigrant_settlements
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = BM_immigrant_settlements
+	}
+}
+
+#Province effect - used for buildings
+update_improved_military_buildings_modifier = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = enables_military_exports }
+		}
+		hidden_effect = {
+			remove_province_modifier = BM_military_exports_barracks_modifier
+			remove_province_modifier = BM_military_exports_training_fields_modifier
+			remove_province_modifier = BM_military_exports_regimental_camp_modifier
+			remove_province_modifier = BM_military_exports_conscription_center_modifier
+			remove_province_modifier = BM_military_exports_soldiers_households_modifier
+			if = {
+				limit = { has_building = barracks }
+				add_province_modifier = {
+					name = BM_military_exports_barracks_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = { has_building = training_fields }
+				add_province_modifier = {
+					name = BM_military_exports_training_fields_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = { has_building = regimental_camp }
+				add_province_modifier = {
+					name = BM_military_exports_regimental_camp_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = { has_building = conscription_center }
+				add_province_modifier = {
+					name = BM_military_exports_conscription_center_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = { has_building = soldier_households }
+				add_province_modifier = {
+					name = BM_military_exports_soldiers_households_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_government_attribute = enable_portugese_marines }
+		}
+		hidden_effect = {
+			remove_province_modifier = BM_portugese_marines_barracks_modifier
+			remove_province_modifier = BM_portugese_marines_training_fields_modifier
+			if = {
+				limit = { has_building = barracks }
+				add_province_modifier = {
+					name = BM_portugese_marines_barracks_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = { has_building = training_fields }
+				add_province_modifier = {
+					name = BM_portugese_marines_training_fields_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+
+BM_enable_slave_settlements_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = BM_enable_slave_settlements
+			}
+			OR = {
+				trade_goods = slaves
+				trade_goods = livestock
+				trade_goods = grain
+			}
+		}
+		add_province_modifier = {
+			name = BM_slave_settlements_modifier # +1 Unrest, +10% Goods produced, -40% Tax modifier
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = BM_slave_settlements_modifier
+	}
+}
+
+BM_magedburg_rights_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_town_rights
+			}
+			superregion = eastern_europe_superregion
+			OR = {
+				province_has_center_of_trade_of_level = 2
+				has_river_estuary_trigger = yes
+				development = 25
+			}
+		}
+		add_province_modifier = {
+			name = BM_magdeburg_rights
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = BM_magdeburg_rights
+	}
+}
+
+BM_grant_manpower_from_besieging_fort = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_government_attribute = BM_gustavan_artillery_reform
+				}
+			}
+		}
+		if = {
+			limit = { FROM = { fort_level = 1 } }
+			ROOT = { add_yearly_manpower = 0.05 }
+		}
+		if = {
+			limit = { FROM = { fort_level = 2 } }
+			ROOT = { add_yearly_manpower = 0.05 }
+		}
+		if = {
+			limit = { FROM = { fort_level = 3 } }
+			ROOT = { add_yearly_manpower = 0.05 }
+		}
+		if = {
+			limit = { FROM = { fort_level = 4 } }
+			ROOT = { add_yearly_manpower = 0.05 }
+		}
+		if = {
+			limit = { FROM = { fort_level = 5 } }
+			ROOT = { add_yearly_manpower = 0.05 }
+		}
+		if = {
+			limit = { FROM = { fort_level = 6 } }
+			ROOT = { add_yearly_manpower = 0.05 }
+		}
+		if = {
+			limit = { FROM = { fort_level = 7 } }
+			ROOT = { add_yearly_manpower = 0.05 }
+		}
+		if = {
+			limit = { FROM = { fort_level = 8 } }
+			ROOT = { add_yearly_manpower = 0.05 }
+		}
+		if = {
+			limit = { FROM = { fort_level = 9 } }
+			ROOT = { add_yearly_manpower = 0.05 }
+		}
+		if = {
+			limit = { FROM = { fort_level = 10 } }
+			ROOT = { add_yearly_manpower = 0.05 }
+		}
+	}
+}
+
+
+BM_house_of_knights_effect = {
+	if = {
+		limit = {
+			has_government_attribute = BM_house_of_knights
+		}
+		random_list = {
+			20 = { 
+				country_event = {
+					id = BM_government_reforms.1
+				}
+			}
+			20 = { 
+				country_event = {
+					id = BM_government_reforms.2
+				}
+			}
+			20 = { 
+				country_event = {
+					id = BM_government_reforms.3
+				}
+			}
+			20 = { 
+				country_event = {
+					id = BM_government_reforms.4
+				}
+			}
+			20 = { 
+				country_event = {
+					id = BM_government_reforms.5
+				}
+			}
+		}
+	}
+}
+
+
+ge_country_french_court_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_french_court 
+			employed_advisor = {
+				category = ADM
+				culture = ROOT
+			}
+			employed_advisor = {
+				category = DIP
+				culture = ROOT
+			}
+			employed_advisor = {
+				category = MIL
+				culture = ROOT
+			}
+		}
+		add_country_modifier = {
+			name = "french_court"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = french_court
+	}
+}
+
+ge_society_of_agriculture_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_society_of_agriculture
+			}
+			trade_goods = grain
+		}
+		add_province_modifier = {
+			name = society_of_agriculture_grain
+			duration = -1
+		}
+		remove_province_modifier = society_of_agriculture_wine_livestock
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_society_of_agriculture
+			}
+			OR = {
+				trade_goods = wine
+				trade_goods = livestock
+			}
+		}
+		add_province_modifier = {
+			name = society_of_agriculture_wine_livestock
+			duration = -1
+		}
+		remove_province_modifier = society_of_agriculture_grain
+	}
+	else = {
+		remove_province_modifier = society_of_agriculture_grain
+		remove_province_modifier = society_of_agriculture_wine_livestock
+	}
+}
+
+ge_on_monthly_pulse_effect = {
+	if = {
+		limit = {
+			OR = {
+				has_government_attribute = enables_mary_of_the_purity
+				AND = {
+					NOT = { has_government_attribute = enables_mary_of_the_purity }
+					OR = {
+						has_country_modifier = GE_Mary_Of_The_Purity_1
+						has_country_modifier = GE_Mary_Of_The_Purity_2
+						has_country_modifier = GE_Mary_Of_The_Purity_3
+						has_country_modifier = GE_Mary_Of_The_Purity_4
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BM_government_reforms.9
+				days = 2
+			}
+		}
+	}
+}
+
+ge_customs_house_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_customs_house
+			}
+			OR = {
+				trade_goods = cloth
+				trade_goods = livestock
+				trade_goods = wool
+			}
+		}
+		add_province_modifier = {
+			name = GE_Customs_House
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Customs_House
+	}
+}
+
+
+ge_fortified_settlements_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_fortified_settlements
+			}
+			any_province_in_state = {
+				has_fort_building_trigger = yes
+			}
+		}
+		add_province_modifier = {
+			name = GE_Fortified_Settlement
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Fortified_Settlement
+	}
+}
+
+
+ge_caravanserai_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_caravanserai
+			}
+			province_has_center_of_trade_of_level = 1
+			has_fort_building_trigger = yes
+		}
+		add_province_modifier = {
+			name = GE_Caravanserai
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = GE_Caravanserai
+	}
+}
+
+
+ge_mint_towns_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_mint_towns
+			}
+			development = 20
+		}
+		add_province_modifier = {
+			name = Mint_Towns
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = Mint_Towns
+	}
+}
+
+
+BM_enables_mountain_towns_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = BM_enables_mountain_towns
+			}
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = mountain
+			}
+		}
+		if = {
+			limit = { 
+				has_terrain = hills
+			}
+			add_province_modifier = {
+				name = BM_mountain_town_hill_modifier
+				duration = -1
+			}
+		}
+		if = {
+			limit = { 
+				has_terrain = highlands
+			}
+			add_province_modifier = {
+				name = BM_mountain_town_highlands_modifier
+				duration = -1
+			}
+		}
+		if = {
+			limit = { 
+				has_terrain = mountain
+			}
+			add_province_modifier = {
+				name = BM_mountain_town_mountain_modifier
+				duration = -1
+			}
+		}
+	}
+	else = {
+		remove_province_modifier = BM_mountain_town_hill_modifier
+		remove_province_modifier = BM_mountain_town_highlands_modifier
+		remove_province_modifier = BM_mountain_town_mountain_modifier
+	}
+}
+
+
+BM_enable_crown_of_aragon_province_update = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = BM_enable_crown_of_aragon
+			}
+		}
+		every_owned_province = {
+			limit = { 
+				area = aragon_area
+			}
+			add_province_modifier = {
+				name = BM_crown_of_aragon_aragon_area_modifier
+				duration = -1
+			}
+		}
+		every_owned_province = {
+			limit = { 
+				area = catalonia_area
+			}
+			add_province_modifier = {
+				name = BM_crown_of_aragon_catalonia_area_modifier
+				duration = -1
+			}
+		}
+		every_owned_province = {
+			limit = { 
+				area = valencia_area
+			}
+			add_province_modifier = {
+				name = BM_crown_of_aragon_valencia_area_modifier
+				duration = -1
+			}
+		}
+		every_owned_province = {
+			limit = { 
+				area = corsica_sardinia_area
+			}
+			add_province_modifier = {
+				name = BM_crown_of_aragon_corsica_sardinia_area_modifier
+				duration = -1
+			}
+		}
+		every_owned_province = {
+			limit = { 
+				OR = {
+					area = western_sicily_area
+					area = sicily_area
+				}
+			}
+			add_province_modifier = {
+				name = BM_crown_of_aragon_sicily_area_modifier
+				duration = -1
+			}
+		}
+	}
+	else = {
+		remove_province_modifier = BM_crown_of_aragon_aragon_area_modifier
+		remove_province_modifier = BM_crown_of_aragon_catalonia_area_modifier
+		remove_province_modifier = BM_crown_of_aragon_valencia_area_modifier
+		remove_province_modifier = BM_crown_of_aragon_corsica_sardinia_area_modifier
+		remove_province_modifier = BM_crown_of_aragon_sicily_area_modifier
+	}
+}
+
+ge_on_main_war_won_effect = {
+	if = {
+		limit = {
+			has_government_mechanic = crusade_power_mechanic
+		}
+		if = {
+			limit = {
+				religion = catholic
+				FROM = {
+					is_crusade_target = yes
+				}
+			}
+			add_government_power = {
+				mechanic_type = crusade_power_mechanic
+				power_type = crusade_power
+				value = 35
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { religion_group = FROM }
+			}
+			add_government_power = {
+				mechanic_type = crusade_power_mechanic
+				power_type = crusade_power
+				value = 25
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { religion = FROM }
+			}
+			add_government_power = {
+				mechanic_type = crusade_power_mechanic
+				power_type = crusade_power
+				value = 20
+			}
+		}
+	}
+	if = {
+		limit = {
+			FROM = {
+				has_government_mechanic = crusade_power_mechanic
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+				}
+				is_crusade_target = yes
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = crusade_power_mechanic
+					power_type = crusade_power
+					value = -50
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { religion_group = FROM }
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = crusade_power_mechanic
+					power_type = crusade_power
+					value = -35
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { religion = FROM }
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = crusade_power_mechanic
+					power_type = crusade_power
+					value = -25
+				}
+			}
+		}
+	}
+}
+
+ge_on_force_conversion_effect = {
+	if = {
+		limit = {
+			war_with = FROM
+			OR = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = FROM
+				}
+				is_in_war = {
+					attacker_leader = FROM
+					defender_leader = ROOT
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government_mechanic = crusade_power_mechanic
+			}
+			add_government_power = {
+				mechanic_type = crusade_power_mechanic
+				power_type = crusade_power
+				value = -25
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_government_mechanic = crusade_power_mechanic
+				}
+			}
+			FROM = {
+				add_government_power = {
+					mechanic_type = crusade_power_mechanic
+					power_type = crusade_power
+					value = 20
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			is_subject_of = FROM
+			FROM = {
+				has_government_mechanic = crusade_power_mechanic
+			}
+		}
+		FROM = {
+			add_government_power = {
+				mechanic_type = crusade_power_mechanic
+				power_type = crusade_power
+				value = 5
+			}
+		}
+	}
+}
+
+ge_country_peasant_council_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_peasant_council 
+			employed_advisor = {
+				category = ADM
+			}
+			employed_advisor = {
+				category = DIP
+			}
+			employed_advisor = {
+				category = MIL
+			}
+		}
+		add_country_modifier = {
+			name = "Peasant_Council"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Peasant_Council
+	}
+}
+
+ge_country_kingdom_of_brazil_update = {
+	if = {
+		limit = {
+			is_colonial_nation = yes
+			overlord = { has_government_attribute = enables_kingdom_of_brazil }
+			capital_scope = {
+				colonial_region = colonial_brazil
+			}
+		}
+		add_country_modifier = {
+			name = "Kingdom_Of_Brazil"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Kingdom_Of_Brazil
+	}
+}
+
+on_completed_agenda_effect_estate_nobles = {
+	if = {
+		limit = { has_government_attribute = enable_vladislavs_provincial_establishment }
+		add_stability_or_adm_power = yes
+	}
+}
+
+on_completed_agenda_effect = {
+	on_completed_agenda_effect_$estate$ = yes
+	if = {
+		limit = {
+			has_country_flag = BM_buffed_agendas_loyalty
+		}
+		add_estate_loyalty = {
+			estate = all
+			loyalty = 5
+		}
+	}
+	if = {
+		limit = { 
+			has_government_attribute = enable_diverse_estates_reform
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = czech
+					culture = czech_new
+					culture = hungarian
+					culture_group = germanic
+				}
+			}
+			add_random_development = 1
+		}
+	}
+	clr_auto_complete_flag = yes
+}
+
+ge_country_peasant_council_update = {
+	if = {
+		limit = {
+			has_government_attribute = enables_peasant_council 
+			employed_advisor = {
+				category = ADM
+			}
+			employed_advisor = {
+				category = DIP
+			}
+			employed_advisor = {
+				category = MIL
+			}
+		}
+		add_country_modifier = {
+			name = "Peasant_Council"
+			duration = -1
+		}
+	}
+	else = {
+		remove_country_modifier = Peasant_Council
+	}
+}

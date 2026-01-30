@@ -1,0 +1,16 @@
+owner = LEI
+controller = LEI
+capital = "Killarney"
+is_city = yes
+culture = irish
+religion = converted_dynamic_faith_170
+trade_goods = fish
+hre = yes
+base_tax = 4
+base_production = 4
+base_manpower = 4
+add_core = LEI
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

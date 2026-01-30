@@ -1,0 +1,169 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 105 106 182 }
+revolutionary_colors = { 8 5 8 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	religious_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	spy_ideas
+}
+historical_units = {
+	anglofrench_line
+	dutch_maurician
+	french_bluecoat
+	french_caracolle
+	french_cuirassier
+	french_dragoon
+	french_impulse
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adèla #0" = -1
+	"Albert #0" = 0
+	"Aton #0" = 0
+	"Bernat #1" = 10
+	"Bernat Rogier #1" = 10
+	"Ferrand #0" = 0
+	"Guigues #0" = 0
+	"Gábor #0" = 0
+	"Icterius #1" = 10
+	"Irén #0" = -1
+	"Judith #0" = -1
+	"Julian #1" = 10
+	"Laura #0" = -1
+	"Matias #0" = 0
+	"Pere #1" = 10
+	"Pèire-Bernat #1" = 10
+	"Raimon-Rogier #1" = 10
+	"Rogier #4" = 10
+	"Rogier-Bernat #1" = 10
+	"Toumas #0" = 0
+	"Zuhr #0" = 0
+}
+leader_names = {
+	"Des Nobles"
+	"Desclaux-Mesplès"
+	"Sahuguet de Termes"
+	"d'Abadie"
+	"d'Abidos"
+	"d'Aiguillon"
+	"d'Andurain"
+	"d'Aressy"
+	"d'Aspet"
+	"d'Espalungue"
+	"d'Esquiules"
+	"d'Etchegoyen"
+	"d'Irumberry"
+	"d'Oreix"
+	"d'Urtubie"
+	"de Baillenx"
+	"de Balagué"
+	"de Baradat"
+	"de Barbasan"
+	"de Baylens"
+	"de Benque"
+	"de Broca"
+	"de Burosse"
+	"de Casaubon"
+	"de Castelbajac"
+	"de Castelbon"
+	"de Courèges"
+	"de Doat"
+	"de Fréchac"
+	"de Galard de Béarn"
+	"de Gramont"
+	"de La Barthe"
+	"de Labastide-Montréjeau"
+	"de Lasserre"
+	"de Lescun"
+	"de Licerasse"
+	"de Lissalde"
+	"de Lordat"
+	"de Mauléon"
+	"de Mongaston"
+	"de Mosqueros"
+	"de Navailles"
+	"de Peyrelongue"
+	"de Puivert"
+	"de Ruthie"
+	"de Rébénac"
+	"de Susbielle"
+	"de Tersac"
+	"du Lion"
+	"du Pouey"
+}
+ship_names = {
+	"Adour"
+	"Albret"
+	"Anie"
+	"Ansabère"
+	"Arlas"
+	"Arrens"
+	"Arriel"
+	"Arros"
+	"Aspe"
+	"Aspin"
+	"Aure"
+	"Ayous"
+	"Balaïtous"
+	"Barétous"
+	"Bigorre"
+	"Béarn"
+	"Carrau"
+	"Castelbon"
+	"Cauteret"
+	"Chaussenque"
+	"Comminges"
+	"Couserans"
+	"Estats"
+	"Foix"
+	"Gavarnie"
+	"Ger"
+	"Grand Tapou"
+	"Labourd"
+	"Midi d'Ossau"
+	"Moncade"
+	"Montcalm"
+	"Montferrat"
+	"Montvallier"
+	"Navarre"
+	"Néouvielle"
+	"Oloron"
+	"Orhy"
+	"Palas"
+	"Pique Longue"
+	"Rieutort"
+	"Sabine"
+	"Sesques"
+	"Soule"
+	"Soulorn"
+	"Thoumasset"
+	"Tourmalet"
+	"Trois Seigneurs"
+	"Vic-Bilh"
+	"Vic-Montaner"
+	"Vignemale"
+}
+army_names = {
+	"Armée d'Andorre"
+	"Armée de $PROVINCE$"
+	"Armée de Bigorre"
+	"Armée de Comminges"
+	"Armée de Foix-Béarn"
+	"Armée de Foix-Castelbon"
+	"Armée du Couserans"
+	"Armée du Donnezan"
+	"Armée du Nébouzan"
+}

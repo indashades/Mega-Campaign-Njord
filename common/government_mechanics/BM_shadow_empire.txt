@@ -1,0 +1,41 @@
+shadow_empire_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	available = {
+		TAG = POR
+		has_reform = portuguese_overseas_administration_reform 
+	}
+
+	powers = {
+		portuguese_decadence = {
+			gui = end_time_gov_mech
+			max = 100
+			min = 0
+			reset_on_new_ruler = no
+			base_monthly_growth = 0
+			is_good = no
+			
+			scaled_modifier = {
+				modifier = {
+					max_absolutism = -50
+					liberty_desire_from_subject_development = 1
+					min_autonomy_in_territories = 0.5
+					trade_steering = -0.75
+					reduced_trade_penalty_on_non_main_tradenode = -0.5
+					global_tariffs = -1
+					treasure_fleet_income = -1
+					years_of_nationalism = 10
+				}				
+			}
+			reverse_scaled_modifier = {
+				modifier = {
+					prestige = 1
+					monthly_splendor = 1
+					legitimacy = 1
+					yearly_absolutism = 1
+				}
+				start_value = 0
+				end_value = 50
+			}			
+		}
+	}
+}

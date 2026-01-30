@@ -1,0 +1,106 @@
+add_navy_tradition_or_dip_power = {
+	[[amount]
+		tooltip = {
+			add_navy_tradition = $amount$
+		}
+		custom_tooltip = ME_ADD_NAVY_TRADITION_OR_DIP_POWER
+		hidden_effect = {
+			for = {
+				amount = $amount$
+				effect = "
+					if = {
+						limit = {
+							NOT = { navy_tradition = 99.9 }
+						}
+						add_navy_tradition = 1
+					}
+					else = {
+						add_dip_power = 3
+					}
+				"
+			}
+		}
+	]
+	
+	[[value]
+		tooltip = {
+			add_navy_tradition = $value$
+		}
+		custom_tooltip = ME_ADD_NAVY_TRADITION_OR_DIP_POWER
+		hidden_effect = {
+			for = {
+				amount = $value$
+				effect = "
+					if = {
+						limit = {
+							NOT = { navy_tradition = 99.9 }
+						}
+						add_navy_tradition = 1
+					}
+					else = {
+						add_dip_power = 3
+					}
+				"
+			}
+		}
+	]
+}
+
+remove_all_age_of_discovery_modifiers = {
+	if = {
+		limit = {
+			NOT = { current_age = age_of_discovery }
+		}
+		if = {
+			limit = { 
+				has_country_modifier = MEGA_all_the_hordes_must_kill_each_other_modifier
+			}
+			remove_country_modifier = MEGA_all_the_hordes_must_kill_each_other_modifier
+		}
+	}
+	if = {
+		limit = {
+			NOT = { current_age = age_of_reformation }
+		}
+		if = {
+			limit = { 
+				has_country_modifier = MEGA_tolerance_in_the_empire
+			}
+			remove_country_modifier = MEGA_tolerance_in_the_empire
+		}
+		if = {
+			limit = { 
+				has_country_modifier = MEGA_convert_the_empire
+			}
+			remove_country_modifier = MEGA_convert_the_empire
+		}
+		if = {
+			limit = { 
+				has_country_modifier = MEGA_CCP_the_great_leap_forward
+			}
+			remove_country_modifier = MEGA_CCP_the_great_leap_forward
+		}
+	}
+}
+
+writers_painters_guild = {
+	if = {
+		limit = {
+			owner = {
+				has_government_attribute = enables_writers_painters_guild
+			}
+			region = low_countries_region
+			OR = {
+				trade_goods = cloth
+				trade_goods = paper
+			}
+		}
+		add_province_modifier = {
+			name = MEGA_The_painters_writers_guild
+			duration = -1
+		}
+	}
+	else = {
+		remove_province_modifier = MEGA_The_painters_writers_guild
+	}
+}

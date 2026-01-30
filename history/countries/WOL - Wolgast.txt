@@ -1,0 +1,43 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = pommeranian
+capital = 2994
+fixed_capital = 2994
+add_accepted_culture = old_pommeranian
+1444.11.11= {
+	monarch = {
+		name = "Irmeltrud"
+		dynasty = "von Aargau"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1423.8.27
+		female = yes
+		religion = catholic
+		culture = pommeranian
+	}
+	add_ruler_personality = free_thinker_personality
+	add_ruler_personality = martial_educator_personality
+	heir = {
+		name = "Folmar"
+		monarch_name = "Folmar"
+		dynasty = "von Hohenstaufen"
+		adm = 5
+		dip = 6
+		mil = 6
+		birth_date = 1416.1.23
+		death_date = 1481.1.23
+		claim = 89
+		religion = catholic
+		culture = dynamic-greek-culture-num1
+	}
+	add_heir_personality = intricate_web_weaver_personality
+	add_heir_personality = tactical_genius_personality
+}
+1444.11.11= {
+	add_prestige = 54
+	add_treasury = 54
+}

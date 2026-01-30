@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "privilege_mercantilism"
+		texturefile = "gfx/interface/privileges/privilege_mercantilism.dds"
+	}
+}

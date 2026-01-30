@@ -1,0 +1,37 @@
+converted_fur_pagan = {
+	converted_fur_pagan = {
+		color = { 69 108 108 }
+		icon =  181
+		country = {
+ 
+		land_morale = 0.1
+	
+
+		defensiveness = 0.10
+	
+
+		land_attrition = -0.2
+	
+
+		heir_chance = 1
+	
+}
+		country_as_secondary = {
+ 
+		land_morale = 0.1
+	
+
+		defensiveness = 0.10
+	
+}
+		province = {
+ 
+		local_missionary_strength = 0.01
+	
+
+		local_missionary_strength = 0.02
+	
+}
+	}
+}
+

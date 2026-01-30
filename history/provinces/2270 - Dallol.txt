@@ -1,0 +1,13 @@
+owner = Z1O
+controller = Z1O
+capital = "Say"
+is_city = yes
+culture = mossi
+religion = sunni
+trade_goods = grain
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = MSI
+add_core = Z1O
+discovered_by = sub_saharan

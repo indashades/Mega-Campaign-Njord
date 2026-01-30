@@ -1,19 +1,16 @@
-#Hälsingland-Gästrikland-Medelpad, from Gävle to Näs
-
-add_core = SWE
-owner = SWE
-controller = SWE
-culture = swedish
-religion = catholic
-hre = no
-base_tax = 2 
-base_production = 1
-trade_goods = fish
-base_manpower = 1
+owner = Z3Z
+controller = Z3Z
 capital = "Gävle"
 is_city = yes
+culture = swedish
+religion = catholic
+trade_goods = fish
+fort_15th = yes
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = Z3Z
+add_permanent_claim = SWE
+add_permanent_claim = Z3Z
 discovered_by = eastern
 discovered_by = western
-
-
-1527.6.1 = { religion = protestant}

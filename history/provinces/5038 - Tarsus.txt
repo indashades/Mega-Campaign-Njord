@@ -1,7 +1,7 @@
 #2313 - Antioch
 
-owner = RAM
-controller = RAM
+owner = RUM
+controller = RUM
 culture = turkish
 religion = sunni
 capital = "Tarsus"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = RAM
+add_core = RUM
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western

@@ -1,0 +1,15 @@
+dependency = {
+	subject_type = mongol_brother_realm
+	first = Z07
+	second = Z4T
+	start_date = 1200.1.1
+	end_date = 1821.1.1
+}
+
+dependency = {
+	subject_type = mongol_brother_realm
+	first = Z07
+	second = ILK
+	start_date = 1200.1.1
+	end_date = 1821.1.1
+}

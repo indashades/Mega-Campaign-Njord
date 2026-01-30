@@ -1,0 +1,10 @@
+indian_feudalism = {
+	local_development_cost = -0.1
+	local_core_creation = 0.5
+	local_governing_cost = 0.25
+	local_governing_cost_increase = 5
+	local_culture_conversion_cost = 0.5
+	local_years_of_nationalism = 10
+	min_local_autonomy = 10
+	local_warscore_cost_modifier = 0.15
+}

@@ -1,0 +1,113 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 232 79 142 }
+revolutionary_colors = { 0 10 0 }
+historical_idea_groups = {
+	offensive_ideas
+	administrative_ideas
+	economic_ideas
+	defensive_ideas
+	humanist_ideas
+	aristocracy_ideas
+	diplomatic_ideas
+	trade_ideas
+}
+historical_units = {
+	bhonsle_infantry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_shock_cavalry
+	maharathan_guerilla_warfare
+	mughal_mansabdar
+	rajput_hill_fighters
+	reformed_mughal_musketeer
+	sikh_rifle
+	south_indian_musketeer
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Ahavamalla #4" = 10
+	"Akkadevi #0" = -1
+	"Amoghavarsha #3" = 10
+	"Bijjala #1" = 10
+	"Bijjama #0" = 0
+	"Chandrabbalabbe #0" = -1
+	"Chavundaraya #0" = 0
+	"Dantidurga #1" = 10
+	"Dhruva #1" = 10
+	"Ereyanga #0" = 0
+	"Gamakamba #0" = -1
+	"Gangaraja #0" = 0
+	"Govinda #3" = 10
+	"Iakobos #0" = 0
+	"Indra #2" = 10
+	"Jagadhekamalla #1" = 10
+	"Jamshid #0" = 0
+	"Jaspal #0" = 0
+	"Jayasimha #1" = 10
+	"Kannama #0" = 0
+	"Karka #1" = 10
+	"Khottiga #1" = 10
+	"Kiriyasaga #0" = 0
+	"Kirtivarman #2" = 10
+	"Krishna #3" = 10
+	"Madhava #0" = 0
+	"Mandukhai #0" = -1
+	"Mangalesa #1" = 10
+	"Mayanalladevi #0" = -1
+	"Paramardideva #0" = 0
+	"Prabhavatigupta #0" = -1
+	"Pulakesi #2" = 10
+	"Rajkunvarbai #0" = -1
+	"Rudramadevi #0" = -1
+	"Sankama #1" = 10
+	"Satyasraya #1" = 10
+	"Shrimitradevi #0" = -1
+	"Somesvara #3" = 10
+	"Sovideva #1" = 10
+	"Subhatavarman #0" = 0
+	"Tailapa #2" = 10
+	"Thimma #0" = 0
+	"Vasumati #0" = -1
+	"Vijayaditya #1" = 10
+	"Vikramaditya #4" = 10
+	"Vinayaditya #1" = 10
+	"Viravijaya #1" = 10
+}
+leader_names = {
+	"Bahadur"
+	"Chetty"
+	"Khader"
+	"Khan"
+	"Khan Wallajah"
+	"Mudaliar"
+	"Rajapopalachari"
+	"Reddy"
+	"Saluva"
+	"Sastri"
+	"Thondaiman"
+	"ul Umra"
+}
+ship_names = {
+	"Chambal"
+	"Devi"
+	"Durga"
+	"Ganga"
+	"Gayatri"
+	"Jalsena"
+	"Kala Jahazi"
+	"Lakshmi"
+	"Lal Jahazi"
+	"Nausena"
+	"Nav ka Yudh"
+	"Nila Jahazi"
+	"Parvati"
+	"Radha"
+	"Ratri"
+	"Sagar"
+	"Sarasvati"
+	"Sita"
+	"Spiti"
+	"Yamuna"
+}

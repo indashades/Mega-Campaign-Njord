@@ -1,0 +1,22 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 145 56 151 }
+monarch_names = {
+	"Agne #1" = -1
+	"Andronikos #1" = 10
+	"Antipatra #1" = -1
+	"Ayan #1" = 10
+	"Bady-Drozhu #0" = 0
+	"Basillike #0" = -1
+	"Belgünütei #1" = 10
+	"Damianos #0" = 0
+	"Hudbad #0" = 0
+	"Ioannes #1" = 10
+	"Kaadyr-ool #0" = 0
+	"Kaigal-ool #0" = 0
+	"Konstantinos #1" = 10
+	"Romane #0" = -1
+	"Romanos #0" = 0
+	"Theodotos #1" = 10
+	"Uin-ool #0" = 0
+}

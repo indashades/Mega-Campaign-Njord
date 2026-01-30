@@ -1,0 +1,17 @@
+owner = GUG
+controller = GUG
+capital = "Bhilwara"
+is_city = yes
+culture = dhundari
+religion = sunni
+trade_goods = grain
+base_tax = 5
+base_production = 4
+base_manpower = 3
+add_core = DHU
+add_core = GUG
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = nomad_group
+discovered_by = ottoman

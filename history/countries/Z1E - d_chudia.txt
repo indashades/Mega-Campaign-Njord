@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = dynamic-samoyed-culture-num1
+capital = 1958
+add_accepted_culture = vepsian
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Nimburgus"
+		dynasty = "Of Ni"
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 1424.4.7
+		religion = orthodox
+		culture = dynamic-samoyed-culture-num1
+	}
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = kind_hearted_personality
+	queen = {
+		name = "Yevdokia"
+		dynasty = "Of Ni"
+		adm = 4
+		dip = 4
+		mil = 5
+		country_of_origin = Z1E
+		birth_date = 1415.11.14
+		death_date = 1475.11.14
+		female = yes
+		religion = orthodox
+		culture = russian_culture
+	}
+	add_queen_personality = conqueror_personality
+	add_queen_personality = expansionist_personality
+	heir = {
+		name = "Ilme"
+		monarch_name = "Ilme"
+		dynasty = "Of Ni"
+		adm = 0
+		dip = 0
+		mil = 0
+		birth_date = 1443.2.28
+		death_date = 1508.2.28
+		female = yes
+		claim = 89
+		religion = orthodox
+		culture = dynamic-samoyed-culture-num1
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 65
+	add_treasury = 57
+}

@@ -1,0 +1,15 @@
+owner = Z00
+controller = Z00
+capital = "Kobbe"
+is_city = yes
+culture = nubian
+religion = coptic
+trade_goods = unknown
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = NUB
+add_core = Z00
+native_size = 50
+native_ferocity = 4
+native_hostileness = 9

@@ -1,10 +1,10 @@
 
-owner = LIT
-controller = LIT
-add_core = LIT
+owner = Y1T
+controller = Y1T
+add_core = Y1T
 culture = polish
 religion = catholic
-hre = no
+hre = yes
 base_tax = 1 
 base_production = 1
 trade_goods = livestock

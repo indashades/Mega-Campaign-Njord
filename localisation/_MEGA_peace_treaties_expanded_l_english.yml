@@ -1,0 +1,21 @@
+﻿l_english:
+
+ # Casus Bellis:
+ cb_pte_protect_religious_bretheren: "Protect Our Religious Bretheren"
+ cb_pte_protect_religious_bretheren_desc: "They are heretics who have begun surpressing our brethren in faith. We need to put a stop to this."
+
+ cb_pte_liberation: "Liberation"
+ cb_pte_liberation_desc: "They are an aggressive power that has supressed their subjects people long enough, we must liberate them ourselves."
+
+ # Peace Treaties:
+ pte_army_disarmament_desc: "@[From.GetTag] §Y[From.GetName]§! gains §R2.5§! war exhaustion and gets '§YArmy Disarmament Treaty§!' for §Y10 years§!, which has the following effects: \n   [land_forcelimit_modifier]: §R-33.0%§! \n   [global_regiment_cost]: §R+10.0%§! \n   [land_maintenance_modifier]: §R+15.0%§!"
+ CB_ALLOWED_pte_army_disarmament: "Army Disarmament"
+ PEACE_pte_army_disarmament: "Army Disarmament"
+ pte_fleet_disarmament_desc: "@[From.GetTag] §Y[From.GetName]§! gains §R2.5§! war exhaustion and gets '§YNaval Disarmament Treaty§!' for §Y10 years§!, which has the following effects: \n   [naval_forcelimit_modifier]: §R-50.0%§! \n   [global_ship_cost]: §R+10.0%§! \n   [naval_maintenance_modifier]: §R+10.0%§!"
+ CB_ALLOWED_pte_fleet_disarmament: "Fleet Disarmament"
+ PEACE_pte_fleet_disarmament: "Fleet Disarmament"
+
+ # Modifiers:
+ pte_fleet_disarmament_modifier: "Naval Disarmament Treaty"
+ pte_army_disarmament_modifier: "Army Disarmament Treaty"
+ pte_protect_religious_bretheren_modifier: "Enforced Protection of Heretics"

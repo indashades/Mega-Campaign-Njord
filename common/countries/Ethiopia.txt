@@ -1,0 +1,96 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 56 120 191 }
+revolutionary_colors = { 9 8 5 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	influence_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	quality_ideas
+}
+historical_units = {
+	african_abyssinian_cavalry
+	african_abyssinian_light_cavalry
+	african_dragoon
+	african_hussar
+	african_mossi_horsemen
+	african_somali_cavalry
+	african_spearmen
+	bantu_tribal_warfare
+	ethiopian_guerilla_warfare
+	ethiopian_gunpowder_warfare
+	ethiopian_mountain_warfare
+	westernized_ethiopian
+}
+monarch_names = {
+	"Aggestotil #0" = 0
+	"Anbasa Wedem #1" = 10
+	"Arus #0" = 0
+	"Asgwomgum #1" = 10
+	"Ayzur #1" = 10
+	"Bahr Ikela #1" = 10
+	"Barakat #0" = 0
+	"Dedem #1" = 10
+	"Degna Djan #1" = 10
+	"Degna Mikael #1" = 10
+	"Desse #1" = -1
+	"Dhidhin #0" = 0
+	"Dil Na'od #1" = 10
+	"Dilla #0" = -1
+	"Elisabeth #0" = -1
+	"German Seyum #1" = 10
+	"Gum #1" = 10
+	"Gölnaz #0" = -1
+	"Hagos #1" = 10
+	"Harbay #1" = 10
+	"Iesou #0" = 0
+	"Jan Seyum #1" = 10
+	"Lalibela #1" = 10
+	"Letem #1" = 10
+	"Magdala #1" = -1
+	"Mara Takla Haymanot #1" = 10
+	"Mariam #0" = -1
+	"Na'akuelo La'ab #1" = 10
+	"Nyala #0" = -1
+	"Oda Gosh #1" = 10
+	"Rema Armah #1" = 10
+	"Semhar #0" = -1
+	"Sárra #0" = 0
+	"Talatem #1" = 10
+	"Tapara #0" = 0
+	"Tatadim #1" = 10
+	"Wededem #1" = 10
+	"Wedem Asfare #1" = 10
+	"Yehudit #1" = -1
+	"Yemrehana Krestos #1" = 10
+	"Zakariyah #0" = 0
+}
+leader_names = {
+	"Ambo"
+	"Asfaw"
+	"Asres"
+	"Bayisa"
+	"Degife"
+	"Dereje"
+	"Eshete"
+	"Eyob"
+	"Ezana"
+	"Wami"
+}
+ship_names = {
+	"Kedus Harbe"
+	"Lalibela"
+	"Mara Takla"
+	"Na'akueto La'ab"
+	"Seyum"
+	"Shewa"
+	"Tatadum"
+	"Tigray"
+	"Yekuno Amlak"
+	"Yetbarak"
+	"Yodit"
+}

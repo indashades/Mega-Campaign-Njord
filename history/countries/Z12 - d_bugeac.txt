@@ -1,0 +1,13 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = nomad_group
+religion = orthodox
+primary_culture = mishary
+capital = 1756
+add_accepted_culture = romanian
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	add_prestige = 31
+	add_treasury = 37
+}

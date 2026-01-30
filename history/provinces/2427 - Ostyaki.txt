@@ -1,0 +1,13 @@
+capital = "Beloyarskiy"
+owner = Z61
+controller = Z61
+culture = nogaybak
+religion = siberian_pagan
+trade_goods = fur
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = NOG
+add_core = Z61
+add_core = Z65
+discovered_by = nomad_group

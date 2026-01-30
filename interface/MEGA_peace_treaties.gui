@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_cb_pte_protect_religious_bretheren"
+		texturefile = "gfx/interface/casus_bellis/cb_crusade.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_cb_pte_liberation"
+		texturefile = "gfx/interface/casus_bellis/cb_liberation.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_cb_pte_anti_coalition"
+		texturefile = "gfx/interface/casus_bellis/cb_super_badboy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_cb_pte_force_convert_heathen"
+		texturefile = "gfx/interface/casus_bellis/cb_crusade.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

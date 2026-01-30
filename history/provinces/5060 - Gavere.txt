@@ -1,10 +1,10 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Gavere
-add_core = BYZ
-owner = BYZ
-controller = BYZ
+add_core = BRB
+owner = BRB
+controller = BRB
 culture = flemish
-religion = orthodox
+religion = norse_pagan
 hre = no
 base_tax = 2
 base_production = 6

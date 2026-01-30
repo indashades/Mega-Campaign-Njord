@@ -1,0 +1,28 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 147 214 90 }
+revolutionary_colors = { 11 8 15 }
+historical_idea_groups = {
+	trade_ideas
+	economic_ideas
+	quality_ideas
+	spy_ideas
+	defensive_ideas
+	administrative_ideas
+	diplomatic_ideas
+	quantity_ideas
+}
+monarch_names = {
+	"Andrei #0" = 0
+	"Fevronia #0" = -1
+	"Hasaba #1" = 10
+	"Iacob #0" = 0
+	"Irina #0" = -1
+	"Karhu #1" = 10
+	"Lale #0" = -1
+	"Liubava #0" = -1
+	"NI #0" = -1
+	"Rurik #1" = 10
+	"Ulyana #0" = -1
+	"Vladimir #1" = 10
+}

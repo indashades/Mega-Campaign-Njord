@@ -1,0 +1,56 @@
+florentine_republic = {
+	icon = florentine_republic
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = florentine_republic
+			is_or_was_tag = { tag = LAN }
+			is_or_was_tag = { tag = TUS }
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	modifiers = {
+		all_estate_influence_modifier = 0.1
+		trade_efficiency = 0.1
+		max_absolutism = -30
+	}
+	boost_income = yes
+	duration = 6
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		#can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		trade_city_reform = trading_city
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		has_candidate_bonus = yes
+		enables_aristocratic_idea_group = no
+	}
+	government_abilities = {
+		corruption_mechanic
+	}
+}

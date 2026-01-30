@@ -1,0 +1,15 @@
+owner = TGT
+controller = TGT
+capital = "Biskra"
+is_city = yes
+culture = algerian
+religion = catholic
+trade_goods = wool
+base_tax = 1
+base_production = 2
+base_manpower = 1
+add_core = TGT
+discovered_by = TUR
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

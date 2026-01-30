@@ -1,0 +1,7 @@
+
+
+************ -= The Paradox Game Converters Group =- *****************
+* Converter version 0.16P "Pagan"
+* Compatible with CK3 [v1.16-v1.17] and EU4 [v1.37]
+* Built on Sun Sep 14 18:23:03 2025
+*************************** + CK3 To EU4 + ***************************

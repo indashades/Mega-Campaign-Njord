@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = english
+capital = 4368
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "William"
+		dynasty = "Blois-Pockington"
+		adm = 5
+		dip = 3
+		mil = 4
+		birth_date = 1403.9.25
+		religion = catholic
+		culture = english
+	}
+	add_ruler_personality = entrepreneur_personality
+	add_ruler_personality = tolerant_personality
+	queen = {
+		name = "Ela"
+		dynasty = "de Châtillon"
+		adm = 4
+		dip = 4
+		mil = 5
+		country_of_origin = Z6H
+		birth_date = 1408.8.4
+		death_date = 1468.8.4
+		female = yes
+		religion = converted_dynamic_faith_170
+		culture = english
+	}
+	add_queen_personality = fierce_negotiator_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Godfrey"
+		monarch_name = "Godfrey"
+		dynasty = "Blois-Pockington"
+		adm = 6
+		dip = 5
+		mil = 6
+		birth_date = 1424.2.6
+		death_date = 1489.2.6
+		claim = 89
+		religion = catholic
+		culture = english
+	}
+	add_heir_personality = drunkard_personality
+	add_heir_personality = greedy_personality
+}
+1444.11.11= {
+	add_prestige = 88
+	add_treasury = 80
+}

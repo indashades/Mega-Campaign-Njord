@@ -1,0 +1,40 @@
+christian = {
+	converted_dynamic_faith_170 = {
+		color = { 163 86 106 }
+		icon =  182
+		country = {
+ 
+		warscore_cost_vs_other_religion = -0.25
+		tolerance_heathen = -1
+		tolerance_heretic = -1
+	
+
+		land_attrition = -0.2
+	
+
+		spy_offence = 0.5
+	
+
+		heir_chance = 0.25
+	
+}
+		country_as_secondary = {
+ 	
+
+		land_attrition = -0.2
+	
+}
+		province = {
+ 
+		local_missionary_strength = -0.02
+	
+}
+		
+		fervor = yes
+	
+		
+	heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
+
+	}
+}
+

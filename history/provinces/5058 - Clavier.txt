@@ -1,11 +1,11 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Clavier
-add_core = BYZ
-owner = BYZ
-controller = BYZ
-culture = flemish
-religion = orthodox
-hre = no
+add_core = FRI
+owner = FRI
+controller = FRI
+culture = frisian
+religion = norse_pagan
+hre = yes
 base_tax = 5
 base_production = 4
 trade_goods = cloth

@@ -1,0 +1,15 @@
+owner = MOS
+controller = MOS
+capital = "Bezhetsk"
+is_city = yes
+culture = russian
+religion = orthodox
+trade_goods = naval_supplies
+fort_15th = yes
+base_tax = 1
+base_production = 2
+base_manpower = 1
+add_core = VPS
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

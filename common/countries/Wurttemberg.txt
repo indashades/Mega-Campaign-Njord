@@ -1,0 +1,91 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 111 162 128 }
+revolutionary_colors = { 1 16 1 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	spy_ideas
+	offensive_ideas
+	quality_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	halberd_infantry
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	swiss_landsknechten
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adolf #0" = 0
+	"Amadeus #0" = 0
+	"Baldarich #1" = 10
+	"Boudewijn #1" = 10
+	"Burchard #1" = 10
+	"Dyre #0" = 0
+	"Eberhard #1" = 10
+	"Eleanor #0" = -1
+	"Friedrich #3" = 10
+	"Gerhild #1" = -1
+	"Hruta #1" = 10
+	"Manegold #0" = 0
+	"Mélisende #1" = -1
+	"Ojír #1" = 10
+	"Radbot #0" = 0
+	"Sieghard #4" = 10
+	"Zdislav #0" = 0
+	"Zoltána #0" = -1
+	"Cenek #1" = 10
+}
+leader_names = {
+	"Breitmayer"
+	"Danhauser"
+	"Gohl"
+	"Gute"
+	"Helber"
+	"Henke"
+	"Kircher"
+	"Klein"
+	"Knapp"
+	"Kopp"
+	"Meck"
+	"Roether"
+	"Schupp"
+	"Stütz"
+	"Sülzle"
+	"Veit"
+	"Vietz"
+	"Vogel"
+	"Weber"
+	"Wieland"
+	"Wurst"
+}
+ship_names = {
+	"Balingen"
+	"Graf Eberhard III"
+	"Graf Ulrich I"
+	"Graf Ulrich III"
+	"Gräfin Henriette"
+	"Gräfin Mechthild"
+	"Konrad Wirtemberg"
+	"Marbach"
+	"Mömpelgard"
+	"Neuffen"
+	"Stuttgart"
+	"Wirtemberg"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+}

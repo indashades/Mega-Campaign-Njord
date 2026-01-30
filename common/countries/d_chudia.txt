@@ -1,0 +1,12 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 70 138 101 }
+monarch_names = {
+	"Atpälha #0" = -1
+	"Ilme #0" = -1
+	"NIckolas #1" = 10
+	"Nimburgus #1" = 10
+	"Urnyay #0" = 0
+	"Yevdokia #0" = -1
+	"no #1" = 10
+}

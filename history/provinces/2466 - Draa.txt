@@ -1,0 +1,17 @@
+owner = SOS
+controller = SOS
+capital = "Tagmadert"
+is_city = yes
+culture = moroccan
+religion = catholic
+trade_goods = spices
+base_tax = 1
+base_production = 1
+base_manpower = 1
+extra_cost = 8
+center_of_trade = 1
+add_core = SOS
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = sub_saharan
+discovered_by = western

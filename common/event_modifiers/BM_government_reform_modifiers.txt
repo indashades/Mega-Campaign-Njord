@@ -1,0 +1,299 @@
+BM_immigrant_settlements = {
+	local_build_cost = -0.15
+	local_governing_cost = -0.10
+}
+
+
+BM_slave_settlements_modifier = {
+	local_unrest = 1
+	local_tax_modifier = -0.4
+	trade_goods_size_modifier = 0.1
+}
+
+farari_commanders_modifier = {
+	can_recruit_cossacks = yes
+	cossacks_loyalty_modifier = 0.05
+}
+
+
+BM_magdeburg_rights = {
+	local_development_cost = -0.1
+	trade_goods_size_modifier = 0.1
+	province_trade_power_modifier = 0.1
+}
+
+
+BM_house_of_knights_ruker_modifier1 = { #Backed by the Estates
+	all_estate_loyalty_equilibrium = 0.1
+	all_estate_influence_modifier = 0.05
+}
+
+BM_house_of_knights_ruker_modifier2 = { #Personal Connections
+	same_culture_advisor_cost = -0.1
+	advisor_pool = 1
+}
+
+
+BM_house_of_knights_ruker_modifier3 = { #Wealthy
+	global_tax_modifier = 0.25
+}
+
+
+BM_house_of_knights_ruker_modifier4 = { #Warrior
+	land_morale = 0.05
+	recover_army_morale_speed = 0.1
+}
+
+
+BM_house_of_knights_ruker_modifier5 = { #Scientific
+	technology_cost = -0.05
+	idea_cost = -0.05
+}
+
+
+BM_military_exports_barracks_modifier = { #Barracks
+	local_production_efficiency = 0.075
+}
+
+BM_military_exports_training_fields_modifier = { #Training Fields
+	local_production_efficiency = 0.15
+}
+
+BM_military_exports_regimental_camp_modifier = { #Regimental Camps
+	local_defensiveness = 0.15
+}
+
+BM_military_exports_conscription_center_modifier = { #Conscription Centers
+	local_defensiveness = 0.3
+}
+
+BM_military_exports_soldiers_households_modifier = { #Soldiers Households
+	local_regiment_cost = -0.15
+}
+
+
+constitutio_valdemariana_modifier = {
+	local_unrest = -1
+	trade_goods_size_modifier = 0.1
+	local_development_cost = -0.1
+}
+
+Home_Market_1 = {
+	trade_efficiency = 0.015
+}
+Home_Market_2 = {
+	trade_efficiency = 0.03
+}
+Home_Market_3 = {
+	trade_efficiency = 0.045
+}
+Home_Market_4 = {
+	trade_efficiency = 0.06
+}
+Home_Market_5 = {
+	trade_efficiency = 0.075
+}
+Home_Market_6 = {
+	trade_efficiency = 0.09
+}
+Home_Market_7 = {
+	trade_efficiency = 0.105
+}
+Home_Market_8 = {
+	trade_efficiency = 0.12
+}
+Home_Market_9 = {
+	trade_efficiency = 0.135
+}
+Home_Market_10 = {
+	trade_efficiency = 0.15
+}
+
+
+#Cortez
+Cortes_Piety = {
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+}
+Cortes_Discipline = {
+	discipline = 0.025
+}
+Cortes_Morale = {
+	land_morale = 0.05
+}
+Cortes_Manpower = {
+	global_manpower_modifier = 0.1
+	reinforce_speed = 0.1
+}
+Cortes_Goods = {
+	global_trade_goods_size_modifier = 0.1
+}
+Cortes_Trade = {
+	trade_efficiency = 0.1
+	trade_range_modifier = 0.25
+}
+Cortes_Navy = {
+	global_ship_trade_power = 0.25
+	naval_maintenance_modifier = -0.1
+}
+
+
+# PORTUGAL
+BM_portugese_marines_modifier = {
+	shock_damage_received = -0.05
+	fire_damage_received = -0.05
+	is_marine_modifier = yes
+}
+
+BM_portugese_marines_barracks_modifier = {
+	local_sailors_modifier = 0.25
+}
+
+BM_portugese_marines_training_fields_modifier = {
+	local_sailors_modifier = 0.5
+}
+
+Kingdom_Of_Brazil = {
+	land_forcelimit_modifier = 1
+}
+
+
+# FRANCE
+french_court = {
+	prestige = 1
+}
+society_of_agriculture_grain = {
+	local_production_efficiency = 0.4
+	province_trade_power_value = 2
+}
+society_of_agriculture_wine_livestock = {
+	local_production_efficiency = 0.25
+}
+
+
+# NAPLES
+GE_Mary_Of_The_Purity_1 = {
+	yearly_corruption = -0.05
+}
+GE_Mary_Of_The_Purity_2 = {
+	yearly_corruption = -0.1
+}
+GE_Mary_Of_The_Purity_3 = {
+	yearly_corruption = -0.15
+}
+GE_Mary_Of_The_Purity_4 = {
+	yearly_corruption = -0.2
+}
+
+GE_Customs_House = {
+	trade_goods_size_modifier = 0.25
+	local_governing_cost = -0.25
+}
+
+
+
+# Byzantium
+GE_Fortified_Settlement = {
+	local_development_cost = -0.05
+	local_manpower_modifier = 0.15
+}
+
+
+#North Africa
+GE_Caravanserai = {
+	local_development_cost = -0.1
+	province_trade_power_value = 5
+}
+
+# OMAN / ARABIAN MERCHANTS
+Foreign_Artists_1 = {
+	prestige = 0.1
+}
+Foreign_Artists_2 = {
+	prestige = 0.2
+}
+Foreign_Artists_3 = {
+	prestige = 0.3
+}
+Foreign_Artists_4 = {
+	prestige = 0.4
+}
+Foreign_Artists_5 = {
+	prestige = 0.5
+}
+Foreign_Artists_6 = {
+	prestige = 0.6
+}
+Foreign_Artists_7 = {
+	prestige = 0.7
+}
+Foreign_Artists_8 = {
+	prestige = 0.8
+}
+Foreign_Artists_9 = {
+	prestige = 0.9
+}
+Foreign_Artists_10 = {
+	prestige = 1
+}
+
+
+#BENGAL
+Mint_Towns = {
+	local_state_maintenance_modifier = -0.25
+	local_production_efficiency = 0.1
+}
+
+
+
+#SWISS
+BM_mountain_town_hill_modifier = {
+	local_development_cost = -0.125
+}
+BM_mountain_town_highlands_modifier = {
+	local_development_cost = -0.1
+}
+BM_mountain_town_mountain_modifier = {
+	local_development_cost = -0.175
+}
+
+#RAJPUT
+rajput_princedom_paidalsena_modifier = {
+	global_regiment_cost = -0.1
+}
+rajput_princedom_cavalry_raids_modifier = {
+	loot_amount = 0.15
+}
+rajput_princedom_road_and_transport_modifier = {
+	manpower_recovery_speed = 0.10
+}
+
+
+#ARAGON
+BM_crown_of_aragon_aragon_area_modifier = {
+	local_manpower_modifier = 0.25
+}
+BM_crown_of_aragon_catalonia_area_modifier = {
+	province_trade_power_modifier = 0.25
+}
+BM_crown_of_aragon_valencia_area_modifier = {
+	trade_goods_size_modifier = 0.25
+}
+BM_crown_of_aragon_corsica_sardinia_area_modifier = {
+	local_sailors_modifier = 0.25
+}
+BM_crown_of_aragon_sicily_area_modifier = {
+	local_tax_modifier = 0.25
+}
+
+# Legitimation through Representation
+legitimation_through_representation_mechanic_renovate_the_palace_modifier = {
+	monthly_legitimation_through_representation_power = 0.5
+	legitimation_through_representation_power_gain_modifier = 0.5
+}
+
+# Peasant
+Peasant_Council = {
+	candidate_random_bonus = 1
+	monthly_reform_progress_modifier = 0.1
+}

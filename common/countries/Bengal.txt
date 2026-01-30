@@ -1,0 +1,132 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 36 109 194 }
+revolutionary_colors = { 9 5 9 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	humanist_ideas
+	quantity_ideas
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	quality_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Adakkamalla #0" = 0
+	"Ballalsen #1" = 10
+	"Devabhuti #0" = 0
+	"Devapala #1" = 10
+	"Devavati #0" = -1
+	"Dharmapala #1" = 10
+	"Eufroysina #0" = -1
+	"Gongzim #0" = 0
+	"Gopala #3" = 10
+	"Harendranarayan #1" = 10
+	"Hira #0" = -1
+	"Hnin #0" = -1
+	"Kamalnarayan #0" = 0
+	"Keeratdeva #0" = 0
+	"Keshabsen #0" = 0
+	"Kirti Singh #0" = 0
+	"Kumarapala #1" = 10
+	"Laksmana #1" = 10
+	"Mahendrapala #1" = 10
+	"Mahipala #2" = 10
+	"Malavyadevi #0" = -1
+	"Narayanapala #1" = 10
+	"Nayapala #1" = 10
+	"Prasadhanadevi #0" = -1
+	"Pratapnarayanroy #0" = 0
+	"Rajyapala #1" = 10
+	"Ramapala #1" = 10
+	"Roopnarayan #0" = 0
+	"Surapala #1" = 10
+	"Suvrata #0" = -1
+	"Udirnakhadga #0" = 0
+	"Valla #1" = 10
+	"Vallal Sen #0" = 0
+	"Vasumitra #0" = 0
+	"Vigrahapala #3" = 10
+	"Vijay #1" = 10
+	"Visvarupa #1" = 10
+}
+leader_names = {
+	"Azad"
+	"Bose"
+	"Chodhury"
+	"Das"
+	"Debshikdar"
+	"Ganesha"
+	"Ganguly"
+	"Ghosh"
+	"Karani"
+	"Khan"
+	"Majumdar"
+	"Mukerjhee"
+	"Pal"
+	"Roy"
+	"Saraswoti"
+	"Sarkar"
+	"Sen"
+	"Shahi"
+	"Shaikh"
+	"Suri"
+	"Thakur"
+	"Waddedar"
+	"Zamindar"
+	"ad-Daula"
+}
+ship_names = {
+	"Abu Bakr"
+	"Ali Khan"
+	"Bhagirathi"
+	"Brahmaputra"
+	"Chingri Mach"
+	"Chittagong"
+	"Durbar"
+	"Durdasha"
+	"Fatima"
+	"Ganga"
+	"Hilsa Mach"
+	"Hooghly"
+	"Ilish Mach"
+	"Jalangi"
+	"Jasmine"
+	"Kali Meghana"
+	"Kali Nauk"
+	"Kolkata"
+	"Lal Nauk"
+	"Machli"
+	"Malda"
+	"Meghna"
+	"Mongla"
+	"Murshidabad"
+	"Nauk-i-Islam"
+	"Nawaber Nauk"
+	"Nil Nauk"
+	"Nil Sagor"
+	"Osman"
+	"Padma"
+	"Rui Mach"
+	"Sagorer Bahini"
+	"Shaheed"
+	"Sheikher Nauk"
+	"Sonar Bangladesh"
+	"Sunderboner Bahini"
+	"Sunderboner Nauk"
+	"Tasleema"
+}

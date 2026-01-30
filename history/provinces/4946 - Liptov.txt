@@ -1,7 +1,7 @@
 #154 - Hont (Hont + Bars + Ersekujvar)
 
-owner = HUN
-controller = HUN 
+owner = SLO
+controller = SLO
 culture = slovak
 religion = catholic
 capital = "Liptószentmiklós"

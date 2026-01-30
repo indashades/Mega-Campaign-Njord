@@ -1,0 +1,56 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+technology_group = nomad_group
+religion = mahayana
+primary_culture = mongol
+capital = 2077
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Ukhuna"
+		dynasty = "Khorchi"
+		adm = 3
+		dip = 2
+		mil = 4
+		birth_date = 1413.8.2
+		religion = mahayana
+		culture = mongol
+	}
+	add_ruler_personality = fertile_personality
+	add_ruler_personality = intricate_web_weaver_personality
+	queen = {
+		name = "Çiçek"
+		dynasty = "Menkid"
+		adm = 4
+		dip = 5
+		mil = 3
+		country_of_origin = Z48
+		birth_date = 1412.12.15
+		death_date = 1472.12.15
+		female = yes
+		religion = mahayana
+		culture = nogaybak
+	}
+	add_queen_personality = greedy_personality
+	add_queen_personality = intricate_web_weaver_personality
+	heir = {
+		name = "Guyug"
+		monarch_name = "Guyug"
+		dynasty = "Khorchi"
+		adm = 0
+		dip = 0
+		mil = 0
+		birth_date = 1444.3.21
+		death_date = 1509.3.21
+		claim = 89
+		religion = mahayana
+		culture = mongol
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 38
+	add_treasury = 75
+}

@@ -1,0 +1,160 @@
+office_of_lord_regent_reform = {
+	icon = sten_sture
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			primary_culture = swedish
+			has_reform = office_of_lord_regent_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = swedish
+			has_reform = office_of_lord_regent_reform
+		}
+	}
+	modifiers = {
+		legitimacy = 0.5
+		war_exhaustion = -0.03
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+house_of_knights_reform = {
+	icon = house_of_knights
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = swedish 
+			has_reform = house_of_knights_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = swedish 
+			has_reform = house_of_knights_reform
+		}
+	}
+	modifiers = {
+		prestige = 0.5
+		global_manpower_modifier = 0.1
+		nobles_influence_modifier = 0.1
+		nobles_loyalty_modifier = 0.05
+	}
+	custom_attributes = {
+		BM_house_of_knights = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+the_red_book_reform = {
+	icon = swedish_church_ordinance
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = swedish
+			has_reform = the_red_book_reform 
+		}
+	}
+	trigger = {
+		NOT = { religion = catholic }
+	}
+	modifiers = {
+		religious_unity = 0.25
+		tolerance_heretic = 2
+		church_loyalty_modifier = 0.05
+	}
+	custom_attributes = {
+		seizing_land_no_rebels_from_estate_church = yes
+		improved_defender_of_faith = yes	#Being Defender of Faith increases Dip Rep, Tolerance and Morale
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+gustavan_artillery_reform = {
+	icon = gustavan_artillery
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = swedish
+			has_reform = gustavan_artillery_reform 
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = swedish
+			has_reform = gustavan_artillery_reform 
+		}
+	}
+	modifiers = {
+		movement_speed = 0.1
+		artillery_power = 0.1
+	}
+	custom_attributes = {
+		BM_gustavan_artillery_reform = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+parliamentary_order_reform = {
+	icon = parliament_highlighted
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = swedish
+			has_reform = parliamentary_order_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = swedish
+			has_reform = parliamentary_order_reform
+		}
+	}
+	modifiers = {
+		stability_cost_modifier = -0.10
+	}
+	custom_attributes = {
+		enable_vladislavs_provincial_establishment = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+the_judicature_ordinance_reform = {
+	icon = gustavus_adolphus
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = swedish 
+			has_reform = the_judicature_ordinance_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = swedish 
+			has_reform = the_judicature_ordinance_reform
+		}
+	}
+	modifiers = {
+		reform_progress_growth = 0.1
+		same_culture_advisor_cost = -0.1
+		all_estate_influence_modifier = -0.1
+	}
+	custom_attributes = {
+		seizing_land_no_rebels_from_estate_nobles = yes
+	}
+	ai = {
+		factor = 100
+	}
+}

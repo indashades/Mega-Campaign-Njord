@@ -1,0 +1,14 @@
+owner = CHR
+controller = CHR
+capital = "Trubchevsk"
+is_city = yes
+culture = ryazanian
+religion = orthodox
+trade_goods = grain
+base_tax = 5
+base_production = 4
+base_manpower = 3
+add_core = CHR
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

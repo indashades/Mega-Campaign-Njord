@@ -1,10 +1,10 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Wolfsburg
-add_core = BYZ
-owner = BYZ
-controller = BYZ
+add_core = Z45
+owner = Z45
+controller = Z45
 culture = lower_saxon
-religion = orthodox
+religion = catholic
 hre = yes
 base_tax = 1
 base_production = 1

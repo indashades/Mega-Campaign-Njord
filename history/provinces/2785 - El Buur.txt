@@ -1,0 +1,17 @@
+owner = YEM
+controller = YEM
+capital = "El Buur"
+is_city = yes
+culture = somali
+religion = sunni
+trade_goods = iron
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = ADA
+add_core = AJU
+add_core = YEM
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman

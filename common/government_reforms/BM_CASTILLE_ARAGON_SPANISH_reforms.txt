@@ -1,0 +1,101 @@
+kingdom_of_castille_and_leon = {
+	icon = castille_leon
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = CAS
+			tag = LON
+			has_reform = kingdom_of_castille_and_leon
+		}
+	}
+	trigger = {
+		has_reform = kingdom_of_castille_and_leon
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		global_heathen_missionary_strength = 0.005
+		global_trade_goods_size_modifier = -0.05
+		nobles_influence_modifier = 0.05
+	}
+	ai = {
+		factor = 100
+	}
+	custom_attributes = {
+		enable_militant_orders = yes
+	}
+}
+
+ARA_crown_of_aragon = {
+	icon = "crown_highlighted"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	potential = {
+		has_reform = ARA_crown_of_aragon
+	}
+	trigger = {
+		has_reform = ARA_crown_of_aragon
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		naval_forcelimit_modifier = 0.1
+		trade_efficiency = 0.05
+		min_autonomy = 10
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+	effect = {
+		BM_enable_crown_of_aragon_province_update = yes
+	}
+	removed_effect = {
+		BM_enable_crown_of_aragon_province_update = yes
+	}
+	boost_income = yes
+	custom_attributes = {
+		BM_enable_crown_of_aragon = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+jinetes_reform = {
+	icon = spain_jinite
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = kingdom_of_castille_and_leon
+			tag = CAS
+		}
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = kingdom_of_castille_and_leon
+			tag = CAS
+		}
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+	}
+	modifiers = {
+		cavalry_power = 0.1
+		manpower_in_true_faith_provinces = 0.1
+		cavalry_cost = -0.1
+	}
+	custom_attributes = {
+		army_tradition_on_stackwipe = yes
+	}
+	ai = {
+		factor = 100
+	}
+}

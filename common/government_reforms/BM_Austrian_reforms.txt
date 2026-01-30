@@ -1,0 +1,162 @@
+albertine_line_reform = {
+	icon = ladislaus_posthumous
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = austrian
+			has_reform = albertine_line_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = austrian
+			has_reform = albertine_line_reform
+		}
+	}
+	modifiers = {
+		nobles_influence_modifier = 0.1
+		global_manpower_modifier = 0.1
+		imperial_authority_value = 0.05
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+imperial_inquisition_reform = {
+	icon = imperial_inquisition
+	allow_normal_conversion = yes
+	potential = {
+		religion = catholic
+		OR = {
+			has_reform = imperial_inquisition_reform
+			primary_culture = austrian
+		}
+	}
+	trigger = {
+		religion = catholic
+		OR = {
+			has_reform = imperial_inquisition_reform
+			primary_culture = austrian
+		}
+	}
+	modifiers = {
+		missionary_maintenance_cost = -0.1
+		papal_influence = 1
+		spy_offence = 0.25
+		church_influence_modifier = 0.1
+	}
+	effect = {
+		hidden_effect = {
+			add_opinion = {
+				who = PAP
+				modifier = papal_embassy
+			}
+			reverse_add_opinion = {
+				who = PAP
+				modifier = papal_embassy
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_opinion = {
+				who = PAP
+				modifier = papal_embassy
+			}
+			reverse_remove_opinion = {
+				who = PAP
+				modifier = papal_embassy
+			}
+		}
+	}
+	custom_attributes = {
+		improved_opinion_of_pope = yes	#Popesman has +25 opinion of you
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+reorganize_the_imperial_army = {
+	icon = austrian_army
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = austrian
+			has_reform = reorganize_the_imperial_army
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = austrian
+			has_reform = reorganize_the_imperial_army
+		}
+	}
+	modifiers = {
+		global_regiment_cost = -0.15
+		loot_amount = 0.25
+		war_taxes_cost_modifier = -0.5
+	}
+	custom_attributes = {
+		enables_reorganize_the_imperial_army = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+diverse_estates_reform = {
+	icon = diverse_estates
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = austrian
+			has_reform = diverse_estates_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = austrian
+			has_reform = diverse_estates_reform
+		}
+	}
+	modifiers = {
+		diplomatic_reputation = 1
+		diplomats = 1
+		all_estate_loyalty_equilibrium = 0.05
+	}
+	custom_attributes = {
+		diet_increases_not_influence = yes
+		enable_diverse_estates_reform = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+declario_ferdinandei_reform = {
+	icon = ferdinants_declaration
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = austrian
+			has_reform = declario_ferdinandei_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = austrian
+			has_reform = declario_ferdinandei_reform
+		}
+	}
+	modifiers = {
+		same_culture_advisor_cost = -0.1
+		religious_unity = 0.2
+		imperial_authority = 0.05
+	}
+	ai = {
+		factor = 100
+	}
+}

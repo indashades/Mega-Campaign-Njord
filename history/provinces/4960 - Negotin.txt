@@ -1,7 +1,7 @@
 #1772 - Pozsony
 
-owner = TUR
-controller = TUR
+owner = Z62
+controller = Z62
 culture = serbian
 religion = orthodox
 capital = "Negotin"
@@ -11,8 +11,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = SER
-add_core = TUR
+add_core = Z62
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

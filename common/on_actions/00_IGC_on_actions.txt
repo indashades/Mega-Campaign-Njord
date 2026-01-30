@@ -1,0 +1,12 @@
+# country
+on_startup = {
+	events = {
+		IndiaGC_events.2
+	}
+}
+
+on_country_released = {
+	events = {
+		IndiaGC_events.6
+	}
+}

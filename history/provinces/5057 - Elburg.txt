@@ -1,11 +1,11 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Elburg
-add_core = BYZ
-owner = BYZ
-controller = BYZ
+add_core = FLA
+owner = FLA
+controller = FLA
 culture = flemish
-religion = orthodox
-hre = no
+religion = norse_pagan
+hre = yes
 base_tax = 4
 base_production = 3
 trade_goods = cloth

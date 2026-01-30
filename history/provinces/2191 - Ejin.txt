@@ -1,0 +1,15 @@
+owner = Z08
+controller = Z08
+capital = "Ejin"
+is_city = yes
+culture = tangut
+religion = vajrayana
+trade_goods = livestock
+fort_15th = yes
+base_tax = 4
+base_production = 3
+base_manpower = 1
+add_core = TAU
+add_core = Z08
+discovered_by = chinese
+discovered_by = nomad_group

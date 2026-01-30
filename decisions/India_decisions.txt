@@ -1,0 +1,99 @@
+country_decisions = {
+	
+	Overrule_European_Meddling = {
+		major = yes
+		
+		potential = {
+			capital_scope = { superregion = india_superregion }
+			not = { has_global_flag = european_meddling_overruled }
+		}
+		
+		allow = {
+			is_great_power = yes
+			dip_tech = 15
+			all_country = { 
+				OR = {
+					NOT = { capital_scope = { continent = europe } }
+					NOT = {	full_idea_group = exploration_ideas }
+					NOT = {
+					any_owned_province = { superregion = india_superregion  }
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = No_Europe_in_india
+				}
+			}			
+		}
+		
+		provinces_to_highlight = {
+			AND = {
+				owner = {
+					capital_scope = { continent = europe }
+				}
+				superregion = india_superregion
+			}
+		}
+		
+		effect = {
+			add_prestige_or_monarch_power = { amount = 100 }
+			every_country = {
+				limit = { capital_scope = { continent = europe } full_idea_group = exploration_ideas }
+				every_claimed_province = { limit = { superregion = india_superregion } remove_claim = PREV }
+			}
+			custom_tooltip = remove_all_european_influences
+			set_global_flag = european_meddling_overruled
+		}
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	
+	
+	Declare_Absolute_Rule_Of_India = {
+		major = yes
+		
+		potential = {
+			capital_scope = { superregion = india_superregion }
+			not = { has_country_flag = has_declared_absolute_rule }
+		}
+		
+		allow = {
+			is_great_power = yes
+			absolutism = 80
+			crown_land_share = 75
+			num_of_owned_provinces_with = {
+				value = 150
+				or ={
+					culture_group = central_indic
+					culture_group = eastern_aryan
+					culture_group = hindusthani
+					culture_group = western_aryan
+					culture_group = dravidian
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige_or_monarch_power = { amount = 100 }
+			set_country_flag = has_declared_absolute_rule
+			set_government_rank = 3
+			every_country = {
+				limit = {
+					or ={
+						culture_group = central_indic
+						culture_group = eastern_aryan
+						culture_group = hindusthani
+						culture_group = western_aryan
+						culture_group = dravidian
+					}
+				}
+				every_core_province = {
+					remove_province_modifier = indian_feudalism
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 400
+		}
+	}
+}

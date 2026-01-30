@@ -1,0 +1,13 @@
+frostpunk_emergency_shift_active = {
+	
+}
+
+frostpunk_emergency_shift_active_fake_tooltip = {
+	land_forcelimit_modifier = 0.5
+	land_maintenance_modifier = -0.4
+	development_cost = -0.1
+	reinforce_speed = -0.05
+	global_tax_modifier = 0.5
+	production_efficiency = 0.5
+	global_unrest = 2
+}

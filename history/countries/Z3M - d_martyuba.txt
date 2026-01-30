@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = nomad_group
+religion = orthodox
+primary_culture = mishary
+capital = 1083
+add_accepted_culture = uralic
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Sondoke"
+		dynasty = "Tigheci"
+		adm = 3
+		dip = 5
+		mil = 4
+		birth_date = 1388.6.30
+		religion = orthodox
+		culture = mishary
+	}
+	add_ruler_personality = intricate_web_weaver_personality
+	add_ruler_personality = martial_educator_personality
+	queen = {
+		name = "Esin"
+		dynasty = "Beley"
+		adm = 4
+		dip = 4
+		mil = 4
+		country_of_origin = Z3M
+		birth_date = 1394.9.16
+		death_date = 1454.9.16
+		female = yes
+		religion = orthodox
+		culture = bolghar
+	}
+	add_queen_personality = drunkard_personality
+	add_queen_personality = intricate_web_weaver_personality
+	heir = {
+		name = "Okhsun"
+		monarch_name = "Okhsun"
+		dynasty = "Tigheci"
+		adm = 4
+		dip = 5
+		mil = 4
+		birth_date = 1414.9.3
+		death_date = 1479.9.3
+		claim = 89
+		religion = orthodox
+		culture = bolghar
+	}
+	add_heir_personality = greedy_personality
+	add_heir_personality = intricate_web_weaver_personality
+}
+1444.11.11= {
+	add_prestige = 31
+	add_treasury = 37
+}

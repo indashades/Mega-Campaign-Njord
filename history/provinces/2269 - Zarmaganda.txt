@@ -1,0 +1,16 @@
+owner = Z1O
+controller = Z1O
+capital = "Ouallam"
+is_city = yes
+culture = mossi
+religion = sunni
+trade_goods = wool
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = MSI
+add_core = Z1O
+discovered_by = sub_saharan
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9

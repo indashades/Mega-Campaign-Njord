@@ -1,0 +1,83 @@
+szlachta_authority_reform = {
+	icon = szlachta_noble_1
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = POL
+			tag = PLC
+			primary_culture = polish
+		}
+	}
+	trigger = { 
+		OR = {
+			tag = POL
+			tag = PLC
+			primary_culture = polish
+		}
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.15
+		nobles_loyalty_modifier = 0.05
+		nobles_influence_modifier = 0.05
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+re_enforce_magdeburg_rights_reform = {
+	icon = magdeburg_rights
+	allow_normal_conversion = yes
+	effect = {
+		BM_magedburg_rights_province_update = yes
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					owner = {
+						has_government_attribute = enables_town_rights
+					}
+					superregion = eastern_europe_superregion
+					OR = {
+						province_has_center_of_trade_of_level = 2
+						has_river_estuary_trigger = yes
+						development = 25
+					}
+				}
+				add_province_modifier = {
+					name = BM_magdeburg_rights
+					duration = -1
+				}
+			}
+		}
+	}
+	removed_effect = {
+		every_owned_province = {
+			remove_province_modifier = BM_magdeburg_rights
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = polish
+			has_reform = re_enforce_magdeburg_rights_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = polish
+			has_reform = re_enforce_magdeburg_rights_reform
+		}
+	}
+	modifiers = {
+		trade_efficiency = 0.1
+		burghers_privilege_slots = 1
+		burghers_influence_modifier = 0.05
+		burghers_loyalty_modifier = 0.05
+	}
+	custom_attributes = {
+		enables_town_rights = yes
+	}
+	ai = {
+		factor = 100
+	}
+}

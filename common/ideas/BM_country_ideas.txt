@@ -1,0 +1,89 @@
+NGF_ideas = {
+	start = {
+		global_manpower_modifier = 0.25
+		infantry_power = 0.15
+	}
+	
+	bonus = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+	}	
+
+	trigger = {
+		tag = NGF
+	}
+	free = yes
+	
+	NGF_idea_1 = {
+		ae_impact = -0.15
+		governing_capacity_modifier = 0.1
+	}
+	ger_junkers = {
+		army_tradition = 0.5
+	}
+	ger_reichsheer = {
+		discipline = 0.05
+	}
+	NGF_idea_4 = {
+		tolerance_heretic = 2
+		development_cost = -0.05
+	}
+	army_professionalism = {
+		land_morale = 0.2
+	}
+	NGF_german_confederation = {
+		global_unrest = -2
+		global_regiment_recruit_speed = -0.15
+	}
+	ger_german_universities = {
+		technology_cost = -0.1
+	}
+}
+
+
+SGF_ideas = {
+	start = {
+		global_manpower_modifier = 0.25
+		land_morale = 0.15
+	}
+	
+	bonus = {
+		prestige = 1
+	}	
+
+	trigger = {
+		tag = SGF
+	}
+	free = yes
+	
+	SGF_ideas_1 = {
+		ae_impact = -0.15
+		papal_influence = 2
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 1
+	}
+	SGF_ideas_2 = {
+		discipline = 0.05
+	}
+	SGF_ideas_3 = {
+		development_cost = -0.05
+		production_efficiency = 0.2
+	}
+	SGF_ideas_4 = {
+		inflation_reduction = 0.05
+		interest = -0.5
+	}
+	SGF_ideas_5 = {
+		state_governing_cost = -0.1
+		state_maintenance_modifier = -0.25
+	}
+	SGF_ideas_6 = {
+		global_prov_trade_power_modifier = 0.25
+	}
+	SGF_ideas_7 = {
+		idea_cost = -0.1
+	}
+}

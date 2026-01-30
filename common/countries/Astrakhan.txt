@@ -1,0 +1,94 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 26 27 154 }
+revolutionary_colors = { 15 8 15 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	administrative_ideas
+	religious_ideas
+	economic_ideas
+}
+historical_units = {
+	reformed_steppe_rifles
+	steppe_cavalry
+	steppe_footmen
+	steppe_infantry
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_musketeers
+	steppe_raiders
+	steppe_riders
+	steppe_rifles
+	steppe_uhlans
+}
+monarch_names = {
+	"Aaron #2" = 10
+	"Abd al-0amid #0" = 0
+	"Atrak #0" = 0
+	"Baghatur #1" = 10
+	"Banafsheh #0" = -1
+	"Barjik #1" = 10
+	"Belgünütei #0" = 0
+	"Benjamin #1" = 10
+	"Bihar #1" = 10
+	"Blush #1" = 10
+	"Bukhatu Salji #0" = 0
+	"Bulan #1" = 10
+	"Busir #1" = 10
+	"Bönek #0" = 0
+	"David #1" = 10
+	"Eltut #0" = 0
+	"Georgios #1" = 10
+	"Hanukkah #1" = 10
+	"Hezekiah #1" = 10
+	"Ilkay #1" = -1
+	"Ioseph #1" = 10
+	"Isaac #2" = 10
+	"Karacik #1" = -1
+	"Lavor #0" = 0
+	"Manasseh #2" = 10
+	"Mehmed #0" = 0
+	"Menahem #1" = 10
+	"Nisi #1" = 10
+	"Obadiah #1" = 10
+	"Oghul #0" = -1
+	"Patiyer #1" = -1
+	"Sartäç #1" = 10
+	"Suthoi #0" = 0
+	"Temur #2" = 10
+	"Tugor #0" = 0
+	"Tura #1" = -1
+	"Vlur #1" = 10
+	"Zebulun #1" = 10
+}
+leader_names = {
+	"Arigh Gal"
+	"Arighteni"
+	"Burilgigene"
+	"Delger Qyugun"
+	"Koke Erdene"
+	"Qadandei"
+	"Qara Chinua"
+	"Qorchigge"
+	"Suren Unegen"
+	"Surenqai"
+	"Tegus Enq"
+	"Yekecher"
+}
+ship_names = {
+	"Actarxan"
+	"Chinggis Khan"
+	"Gitorkhan"
+	"Hadzhy-Tarkhan"
+	"Khadjitarkhan"
+	"Kuchuk"
+	"Sarai Batu"
+	"Tsitrokhan"
+	"Volga"
+	"Xacitarxan"
+	"Ästerxan"
+}

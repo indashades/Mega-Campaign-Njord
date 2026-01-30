@@ -1,7 +1,7 @@
 #147 - Salonica
 
-owner = ATH
-controller = ATH
+owner = BYZ
+controller = BYZ
 culture = greek
 religion = orthodox
 capital = "Thíva"

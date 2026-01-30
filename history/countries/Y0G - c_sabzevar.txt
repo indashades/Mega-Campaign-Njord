@@ -1,0 +1,13 @@
+government = monarchy
+add_government_reform = nayankara_reform
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = kannada
+capital = 2224
+fixed_capital = 2224
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	add_prestige = 62
+	add_treasury = 72
+}

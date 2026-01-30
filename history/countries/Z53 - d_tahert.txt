@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = muslim
+religion = catholic
+primary_culture = moroccan
+capital = 2463
+add_accepted_culture = algerian
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Asmuna"
+		dynasty = "Mu'minid"
+		adm = 1
+		dip = 6
+		mil = 3
+		birth_date = 1416.3.31
+		female = yes
+		religion = catholic
+		culture = moroccan
+	}
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Gunnare"
+		dynasty = "de Castro"
+		adm = 5
+		dip = 2
+		mil = 4
+		country_of_origin = Z53
+		birth_date = 1427.1.17
+		death_date = 1487.1.17
+		religion = catholic
+		culture = sardinian
+	}
+	add_queen_personality = fierce_negotiator_personality
+	add_queen_personality = well_connected_personality
+	heir = {
+		name = "Ayyub"
+		monarch_name = "Ayyub"
+		dynasty = "Mu'minid"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1408.12.6
+		death_date = 1473.12.6
+		claim = 89
+		religion = catholic
+		culture = moroccan
+	}
+	add_heir_personality = righteous_personality
+	add_heir_personality = strict_personality
+}
+1444.11.11= {
+	add_prestige = 69
+	add_treasury = 0
+}

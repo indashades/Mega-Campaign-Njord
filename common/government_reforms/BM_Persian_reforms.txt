@@ -1,0 +1,184 @@
+
+ #TIER 2
+turkic_qasilbash_heirs_reform = {
+	icon = persia_qizilbash
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = iranian
+			tag = PER
+			have_had_reform = turkic_qasilbash_heirs_reform
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = iranian
+			tag = PER
+			have_had_reform = turkic_qasilbash_heirs_reform
+		}
+	}
+	modifiers = {
+		global_heretic_missionary_strength = 0.01
+		manpower_in_true_faith_provinces = 0.1
+		cav_to_inf_ratio = 0.1
+		qizilbash_loyalty_modifier = 0.1
+		qizilbash_influence_modifier = 0.1
+	}
+	custom_attributes = {
+		enables_qizilbash_company = yes #unlocks qizilbash mercenaries
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+ #TIER 3
+tajik_administration_reform = {
+	icon = iranian_bureaucracy
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = iranian
+			accepted_culture = azerbaijani
+			tag = PER
+			have_had_reform = tajik_administration_reform
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = iranian
+			accepted_culture = azerbaijani
+			tag = PER
+			have_had_reform = tajik_administration_reform
+		}
+	}
+	modifiers = {
+		governing_capacity = 100
+		core_creation = -0.05
+		num_accepted_cultures = 1
+		nobles_influence_modifier = -0.1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+ #TIER 6
+ghulam_governates_reform = {
+	icon = mamluk_veteran
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = ghulam_governates_reform
+			culture_group = iranian
+			tag = PER
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = ghulam_governates_reform
+			culture_group = iranian
+			tag = PER
+		}
+	}
+	modifiers = {
+		max_absolutism = 5
+		yearly_absolutism = 0.5
+		ghulams_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		enables_ghulam_governors = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+ #TIER 8
+armenian_silk_traders_reform = {
+	icon = GE_trader
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = armenian_silk_traders_reform
+			culture_group = iranian
+			tag = PER
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = armenian_silk_traders_reform
+			culture_group = iranian
+			tag = PER
+		}
+	}
+	modifiers = {
+		build_cost = -0.1
+		caravan_power = 0.25
+	}
+	custom_attributes = {
+		enables_silk_traders = yes #15% trade efficiency if trading in silk
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+ #TIER 9
+foreign_ghulams_reform = {
+	icon = mamluk_noble
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = iranian
+			tag = PER
+			have_had_reform = foreign_ghulams_reform
+		}
+	}
+	trigger = {
+		OR = {
+			culture_group = iranian
+			tag = PER
+			have_had_reform = foreign_ghulams_reform
+		}
+		has_estate = estate_ghulams
+	}
+	modifiers = {
+		advisor_pool = 1
+		
+		ghulams_influence_modifier = 0.1
+		ghulams_loyalty_modifier = 0.05
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+ #TIER 10
+principle_of_fiqh_reform = {
+	icon = noble_muslim
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = principle_of_fiqh_reform
+			culture_group = iranian
+			tag = PER
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = principle_of_fiqh_reform
+			culture_group = iranian
+			tag = PER
+		}
+	}
+	modifiers = {
+		all_estate_influence_modifier = 0.1
+		global_unrest = -1
+		tolerance_own = 1
+		max_absolutism = 10
+	}
+	ai = {
+		factor = 100
+	}
+}

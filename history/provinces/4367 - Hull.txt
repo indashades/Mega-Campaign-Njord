@@ -1,0 +1,17 @@
+owner = Z6H
+controller = Z6H
+capital = "Hull"
+is_city = yes
+culture = english
+religion = catholic
+trade_goods = naval_supplies
+hre = yes
+base_tax = 4
+base_production = 3
+base_manpower = 2
+add_core = ENG
+add_core = Z6H
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

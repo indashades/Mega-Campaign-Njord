@@ -1,0 +1,14 @@
+owner = Z08
+controller = Z08
+capital = "Alxa"
+is_city = yes
+culture = tangut
+religion = vajrayana
+trade_goods = gems
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = TAU
+add_core = Z08
+discovered_by = chinese
+discovered_by = nomad_group

@@ -1,0 +1,15 @@
+owner = AVA
+controller = AVA
+capital = "Pagan"
+is_city = yes
+culture = burmese
+religion = buddhism
+trade_goods = tropical_wood
+fort_15th = yes
+base_tax = 7
+base_production = 4
+base_manpower = 6
+add_core = AVA
+add_core = TAU
+discovered_by = chinese
+discovered_by = indian

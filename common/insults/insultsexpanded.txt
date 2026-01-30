@@ -1,0 +1,165 @@
+	insult_techwoke = {
+		trigger = {
+			always = yes
+		}
+	}
+
+	insult_dont_be_humble = {
+		trigger = {
+			always = yes
+		}
+	}
+
+	insult_pepe = {
+		trigger = {
+			always = yes
+		}
+	}
+
+
+	more_insults_1 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_2 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_3 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_4 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_5 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_6 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_7 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_8 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_9 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_10 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_11 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_10 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_12 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_13 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_14 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_15 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_16 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_17 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_18 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_19 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}
+	
+	more_insults_20 = {
+		trigger = {
+			ai = no
+			FROM = { ai = no }
+		}
+	}

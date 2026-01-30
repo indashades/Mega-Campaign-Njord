@@ -1,0 +1,14 @@
+owner = UTS
+controller = UTS
+capital = "Nyingchi"
+is_city = yes
+culture = dynamic-tibetan-culture-num3
+religion = vajrayana
+trade_goods = grain
+base_tax = 5
+base_production = 3
+base_manpower = 1
+add_core = UTS
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

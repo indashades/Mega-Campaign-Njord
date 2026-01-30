@@ -1,0 +1,58 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 230 26 23 }
+revolutionary_colors = { 5 8 5 }
+historical_idea_groups = {
+	exploration_ideas
+	defensive_ideas
+	expansion_ideas
+	offensive_ideas
+	maritime_ideas
+	naval_ideas
+	trade_ideas
+	economic_ideas
+}
+historical_units = {
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_frederickian
+	prussian_uhlan
+	swedish_arme_blanche
+	swedish_caroline
+	swedish_gallop
+	swedish_gustavian
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Alfred #1" = 10
+	"Aubrey #1" = 10
+	"Cynewulf #1" = 10
+	"Eadward #1" = 10
+	"Ecgberht #1" = 10
+	"Ela #1" = -1
+	"Eleanor #0" = -1
+	"Gausfred #0" = 0
+	"Gerard #1" = 10
+	"Gilbert #0" = 0
+	"Gotthard #0" = 0
+	"Jordan #1" = 10
+	"Nicholas #0" = 0
+	"Peter #0" = 0
+	"Petronilla #1" = -1
+	"Ponç Hug #0" = 0
+	"Richard #1" = 10
+	"Robert #1" = 10
+	"Thomas #0" = 0
+	"William #0" = 0
+	"Æthelbald #1" = 10
+	"Æthelbert #1" = 10
+	"Æthelred #1" = 10
+	"Æthelstan #1" = 10
+	"Æthelwulf #1" = 10
+}

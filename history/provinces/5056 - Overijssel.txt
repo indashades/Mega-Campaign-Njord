@@ -1,11 +1,11 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Overijssel
-add_core = BYZ
-owner = BYZ
-controller = BYZ
-culture = flemish
-religion = orthodox
-hre = no
+add_core = UTR
+owner = UTR
+controller = UTR
+culture = dutch
+religion = norse_pagan
+hre = yes
 base_tax = 3
 base_production = 6
 trade_goods = cloth

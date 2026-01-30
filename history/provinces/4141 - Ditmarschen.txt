@@ -1,0 +1,17 @@
+owner = SHL
+controller = SHL
+capital = "Meldorf"
+is_city = yes
+culture = lower_saxon
+religion = catholic
+trade_goods = grain
+hre = yes
+base_tax = 3
+base_production = 4
+base_manpower = 3
+add_core = HAN
+add_core = SHL
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

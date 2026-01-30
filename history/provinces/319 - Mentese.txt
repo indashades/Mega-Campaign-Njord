@@ -1,0 +1,16 @@
+owner = Z1G
+controller = Z1G
+capital = "Mughla"
+is_city = yes
+culture = dynamic-greek-culture-num1
+religion = mahayana
+trade_goods = salt
+base_tax = 5
+base_production = 4
+base_manpower = 3
+add_core = Z1G
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = nomad_group
+discovered_by = ottoman
+discovered_by = western

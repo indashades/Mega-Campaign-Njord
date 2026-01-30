@@ -1,0 +1,17 @@
+owner = SPI
+controller = SPI
+capital = "Novara"
+is_city = yes
+culture = lombard
+religion = catholic
+trade_goods = grain
+fort_15th = yes
+hre = yes
+base_tax = 5
+base_production = 4
+base_manpower = 3
+add_core = SPI
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

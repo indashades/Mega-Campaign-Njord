@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = austrian
+capital = 128
+add_accepted_culture = slovene
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Peter"
+		dynasty = "von Sponheim"
+		adm = 3
+		dip = 5
+		mil = 3
+		birth_date = 1413.6.27
+		religion = catholic
+		culture = austrian
+	}
+	add_ruler_personality = malevolent_personality
+	add_ruler_personality = obsessive_perfectionist_personality
+	queen = {
+		name = "Bia"
+		dynasty = "von Krainburg"
+		adm = 3
+		dip = 4
+		mil = 4
+		country_of_origin = Z18
+		birth_date = 1405.8.28
+		death_date = 1465.8.28
+		female = yes
+		religion = catholic
+		culture = saxon
+	}
+	add_queen_personality = scholar_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Heilwig"
+		monarch_name = "Heilwig"
+		dynasty = "von Sponheim"
+		adm = 3
+		dip = 4
+		mil = 4
+		birth_date = 1432.5.19
+		death_date = 1497.5.19
+		female = yes
+		claim = 89
+		religion = catholic
+		culture = saxon
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = well_connected_personality
+}
+1444.11.11= {
+	add_prestige = 69
+	add_treasury = 72
+}

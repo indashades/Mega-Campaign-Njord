@@ -1,0 +1,13 @@
+owner = ASH
+controller = ASH
+capital = "Bono Manso"
+is_city = yes
+culture = aka
+religion = masmudi
+trade_goods = tropical_wood
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = ASH
+add_core = KNG
+discovered_by = sub_saharan

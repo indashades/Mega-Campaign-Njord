@@ -1,7 +1,7 @@
 #147 - Salonica
 
-owner = TUR
-controller = TUR
+owner = Z4C
+controller = Z4C
 culture = bulgarian
 religion = orthodox
 capital = "Kircaali"
@@ -12,7 +12,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = BUL
-add_core = TUR
+add_core = Z4C
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

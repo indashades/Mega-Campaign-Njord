@@ -1,0 +1,90 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 81 58 223 }
+revolutionary_colors = { 1 0 1 }
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	religious_ideas
+	quantity_ideas
+	offensive_ideas
+	spy_ideas
+	economic_ideas
+	quality_ideas
+}
+historical_units = {
+	adal_guerilla_warfare
+	adal_gunpowder_warfare
+	african_abyssinian_cavalry
+	african_abyssinian_light_cavalry
+	african_dragoon
+	african_hill_warfare
+	african_hussar
+	african_somali_cavalry
+	african_spearmen
+	bantu_tribal_warfare
+	westernized_adal
+}
+monarch_names = {
+	"Abraham #1" = 10
+	"Amira #0" = -1
+	"Angelosinkouda #0" = 0
+	"Basil #2" = 10
+	"Basima #0" = -1
+	"Chael #1" = 10
+	"Dauid #1" = 10
+	"Gabrielinkouda #2" = 10
+	"Genseoua #0" = -1
+	"Georgios #5" = 10
+	"Ioannes #1" = 10
+	"Iordanes #1" = 10
+	"Jamileh #0" = -1
+	"Kabil #1" = 10
+	"Karama #0" = 0
+	"Kyriakos #1" = 10
+	"Makarios #1" = 10
+	"Marios #0" = 0
+	"Markos #1" = 10
+	"Merkourios #1" = 10
+	"Mikhal #0" = -1
+	"Moses Georgios #1" = 10
+	"Mouses #0" = 0
+	"Nonnen #0" = -1
+	"Qalidurut #1" = 10
+	"Raphael #1" = 10
+	"Sieghard #0" = 0
+	"Simon #1" = 10
+	"Solomon #1" = 10
+	"Stephanos #1" = 10
+	"Tazdayt #0" = -1
+	"Thabitah #0" = 0
+	"Theodosia #0" = -1
+	"Theophilia #0" = -1
+	"Zacharias #5" = 10
+	"Zula #0" = 0
+}
+leader_names = {
+	"Abboud"
+	"Fung"
+	"Garang"
+	"Kayra"
+	"Keira"
+	"Kelueljang"
+	"Lugor"
+	"Nuer"
+	"Shol"
+	"Taha"
+}
+ship_names = {
+	"Amenirdis"
+	"Amon"
+	"Apedemak"
+	"Arensnuphis"
+	"Bes"
+	"Dedwen"
+	"Khnum"
+	"Mandulis"
+	"Mut"
+	"Taweret"
+	"Tefnut"
+}

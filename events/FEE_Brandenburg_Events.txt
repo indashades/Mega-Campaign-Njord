@@ -1,0 +1,1874 @@
+#Jay DoubleU
+namespace = FEE_Brandenburg_Events
+
+#Brandenburg #Wine Customs for Albrecht Achilles 1470
+country_event = {
+	id = FEE_Brandenburg_Events.31
+	title = FEE_Brandenburg_Events.31.T
+	desc = FEE_Brandenburg_Events.31.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1470
+		NOT = { is_year = 1480 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.31.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_ruler_modifier = {
+			name = fee_bran_wine_customs
+			duration = -1
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -5
+		}
+	}
+	option = {
+		name = FEE_Brandenburg_Events.31.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 5
+			}
+		}
+		else = {
+			add_dip_power = 25
+		}
+	}
+}
+
+#Brandenburg #Beer Excise for Johan Cicero 1488
+country_event = {
+	id = FEE_Brandenburg_Events.32
+	title = FEE_Brandenburg_Events.32.T
+	desc = FEE_Brandenburg_Events.32.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1488
+		NOT = { is_year = 1500 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.32.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_ruler_modifier = {
+			name = fee_bran_beer_excise
+			duration = -1
+		}
+		if = {
+			limit = {
+				owns = 2964
+			}
+			2964 = {
+				random = {
+					chance = 25
+					spawn_rebels = {
+						size = 1
+						type = anti_tax_rebels
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.32.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 5
+			}
+		}
+		else = {
+			add_dip_power = 25
+		}
+	}
+}
+
+#Brandenburg #Desecration of the Host 1510 #Expell the Jews
+country_event = {
+	id = FEE_Brandenburg_Events.33
+	title = FEE_Brandenburg_Events.33.T
+	desc = FEE_Brandenburg_Events.33.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1510
+		NOT = { is_year = 1520}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.33.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		set_country_flag = fee_bran_expelled_the_jews
+		random_owned_province = {
+			add_base_tax = -1
+		}
+		random_owned_province = {
+			add_base_manpower = -1
+		}
+		random_owned_province = {
+			add_base_production = -1
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+	}
+	option = {
+		name = FEE_Brandenburg_Events.33.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+	}
+}
+
+#Brandenburg #Furstentag of 1539 1539 #Un-Expell the Jews
+country_event = {
+	id = FEE_Brandenburg_Events.34
+	title = FEE_Brandenburg_Events.34.T
+	desc = FEE_Brandenburg_Events.34.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1539
+		NOT = { is_year = 1550 }
+		has_country_flag = fee_bran_expelled_the_jews
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.34.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		clr_country_flag = fee_bran_expelled_the_jews
+		set_country_flag = fee_bran_un_expelled_the_jews
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_manpower = 1
+		}
+		random_owned_province = {
+			add_base_production = 1
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+	}
+	option = {
+		name = FEE_Brandenburg_Events.34.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+	}
+}
+
+#Brandenburg #Upcoming Disaster, 1525
+country_event = {
+	id = FEE_Brandenburg_Events.37
+	title = FEE_Brandenburg_Events.37.T
+	desc = FEE_Brandenburg_Events.37.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1525
+		NOT = { is_year = 1535 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.37.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_prestige = -25
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -13 }
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.37.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		tooltip = {
+			random = {
+				chance = 25
+				kill_ruler = yes
+				capital_scope = {
+					add_base_tax = -3
+					add_base_production = -3
+					add_base_manpower = -3
+				}
+			}
+		}
+	}
+}
+
+#Brandenburg #Alma Mater Viadrina, 1506
+country_event = {
+	id = FEE_Brandenburg_Events.38
+	title = FEE_Brandenburg_Events.38.T
+	desc = FEE_Brandenburg_Events.38.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1506
+		NOT = { is_year = 1516 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.38.OPT1
+
+		add_innovativeness_or_monarch_power = {
+			amount = 2
+			adm = 20
+			dip = 20
+			mil = 20
+		}
+	}
+}
+
+#Brandenburg #GruneWalt Hunting Lodge, 1542
+country_event = {
+	id = FEE_Brandenburg_Events.44
+	title = FEE_Brandenburg_Events.44.T
+	desc = FEE_Brandenburg_Events.44.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1542
+		NOT = { is_year = 1550 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.44.OPT1
+
+		set_ruler_flag = fee_bran_hunting_lodge
+		if = {
+			limit = {
+				ai = no
+			}
+			add_treasury = -700
+		}
+		add_ruler_modifier = {
+			name = fee_bran_lover_of_the_hunt #-25% State Maintenance, -5% estate Loyalty
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.44.OPT2
+
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -13 }
+		change_adm = -1
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_ruler_modifier = {
+			name = fee_bran_lover_of_the_hunt #-25% State Maintenance, -5% estate Loyalty
+			duration = -1
+		}
+	}
+}
+
+#Brandenburg #Accident at the Lodge, 1551
+country_event = {
+	id = FEE_Brandenburg_Events.45
+	title = FEE_Brandenburg_Events.45.T
+	desc = FEE_Brandenburg_Events.45.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1551
+		NOT = { is_year = 1560 }
+		has_ruler_flag = fee_bran_hunting_lodge
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.45.OPT1
+
+		clr_ruler_flag = fee_bran_hunting_lodge
+		add_prestige = -15
+		add_ruler_modifier = {
+			name = fee_bran_beautiful_foundress #-0.5 Legitimacy
+			duration = -1
+		}
+	}
+}
+
+#Brandenburg #Accident at the Lodge, 1543
+country_event = {
+	id = FEE_Brandenburg_Events.46
+	title = FEE_Brandenburg_Events.46.T
+	desc = FEE_Brandenburg_Events.46.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1543
+		NOT = { is_year = 1570 }
+		has_ruler_flag = fee_bran_hunting_lodge
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.46.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_country_modifier = {
+			name = fee_bran_jewish_tax
+			duration = 7300
+		}
+		2969 = {
+			add_base_tax = 2
+			add_base_production= 1
+		}
+	}
+	option = {
+		name = FEE_Brandenburg_Events.46.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
+		else = {
+			add_adm_power = 25
+		}
+	}
+}
+
+#Brandenburg #Introduction of the Reformation, 1539
+country_event = {
+	id = FEE_Brandenburg_Events.47
+	title = FEE_Brandenburg_Events.47.T
+	desc = FEE_Brandenburg_Events.47.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		OR = {
+			AND = {
+				is_year = 1525
+				religion = catholic
+			}
+			AND = {
+				num_of_owned_provinces_with = {
+					value = 3
+					religion = protestant
+				}
+				NOT = { religion = protestant }
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.47.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_ruler_modifier = {
+			name = fee_bran_religious_pragmatism
+			duration = -1
+		}
+	}
+}
+
+#Brandenburg #Secularization of the Monasteries, 1545
+country_event = {
+	id = FEE_Brandenburg_Events.48
+	title = FEE_Brandenburg_Events.48.T
+	desc = FEE_Brandenburg_Events.48.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		OR = {
+			religion = protestant
+			religion = reformed
+			AND = {
+				religion = catholic
+				has_ruler_modifier = fee_bran_religious_pragmatism
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.48.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_years_of_income = 0.5
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.48.OPT2
+		ai_chance = {
+			factor = 1
+		}
+
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+	}
+}
+
+#Brandenburg #Lippold Ben Chluchim, 1549
+country_event = {
+	id = FEE_Brandenburg_Events.49
+	title = FEE_Brandenburg_Events.49.T
+	desc = FEE_Brandenburg_Events.49.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1549
+		NOT = { is_year = 1560 }
+		NOT = {
+			has_country_flag = fee_bran_expelled_the_jews
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.49.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		define_advisor = {
+			type = treasurer
+			name = "Lippold Ben Chluchim"
+			skill = 2
+			discount = yes
+			culture = hebrew
+			religion = jewish
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.49.OPT2
+		ai_chance = {
+			factor = 1
+		}
+
+		add_ruler_modifier = {
+			name = fee_bran_lippold_ben_chluchim
+			duration = -1
+		}
+	}
+}
+
+#Brandenburg #Devaluation of the Mint, 1550
+country_event = {
+	id = FEE_Brandenburg_Events.50
+	title = FEE_Brandenburg_Events.50.T
+	desc = FEE_Brandenburg_Events.50.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1550
+		NOT = { is_year = 1575 }
+		num_of_loans = 1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.50.OPT1
+		ai_chance = {
+			factor = 0
+		}
+
+		add_years_of_income = 1
+		add_inflation = 3
+		custom_tooltip = fee_brandenburg_could_lead_economic_collapse_tt
+		hidden_effect = {
+			country_event = {
+				id = FEE_Brandenburg_Events.51
+				days = 1825
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.50.OPT2
+		ai_chance = {
+			factor = 1
+		}
+
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
+	}
+}
+
+#Brandenburg #Illegal Foreign Mints, 1555
+country_event = {
+	id = FEE_Brandenburg_Events.51
+	title = FEE_Brandenburg_Events.51.T
+	desc = FEE_Brandenburg_Events.51.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = FEE_Brandenburg_Events.51.OPT1
+		ai_chance = {
+			factor = 0
+		}
+
+		add_years_of_income = 1
+		add_inflation = 3
+		custom_tooltip = fee_brandenburg_could_lead_economic_collapse_tt
+		hidden_effect = {
+			country_event = {
+				id = FEE_Brandenburg_Events.52
+				days = 1825
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.51.OPT2
+		ai_chance = {
+			factor = 1
+		}
+
+		add_country_modifier = {
+			name = fee_bran_economic_downturn
+			duration = 3650
+		}
+	}
+}
+
+#Brandenburg #Economic Collapse, 1560
+country_event = {
+	id = FEE_Brandenburg_Events.52
+	title = FEE_Brandenburg_Events.52.T
+	desc = FEE_Brandenburg_Events.52.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = FEE_Brandenburg_Events.52.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_country_modifier = {
+			name = fee_bran_economic_collapse
+			duration = 7300
+		}
+	}
+}
+
+#Brandenburg #Pogrom of 1571, 1571
+country_event = {
+	id = FEE_Brandenburg_Events.53
+	title = FEE_Brandenburg_Events.53.T
+	desc = FEE_Brandenburg_Events.53.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1571
+		NOT = { is_year = 1600 }
+		NOT = {
+			has_country_flag = fee_bran_expelled_the_jews
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.53.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_years_of_income = 0.5
+		add_ruler_modifier = {
+			name = fee_bran_jewish_assets_seized
+			duration = -1
+		}
+		set_country_flag = fee_bran_expelled_the_jews
+		clr_country_flag = fee_bran_un_expelled_the_jews
+		hidden_effect = {
+			if = {
+				limit = {
+					has_advisor = yes
+				}
+				country_event = {
+					id = FEE_Brandenburg_Events.54
+					days = 30
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.53.OPT2
+		ai_chance = {
+			factor = 1
+		}
+
+		add_years_of_income = -0.25
+		set_country_flag = fee_bran_expelled_the_jews
+		clr_country_flag = fee_bran_un_expelled_the_jews
+		hidden_effect = {
+			if = {
+				limit = {
+					has_advisor = yes
+				}
+				country_event = {
+					id = FEE_Brandenburg_Events.54
+					days = 30
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.53.OPT3
+		ai_chance = {
+			factor = 0
+		}
+
+		add_stability = -1
+		add_ruler_modifier = {
+			name = fee_bran_restored_jewish_privileges
+			duration = -1
+		}
+	}
+}
+
+#Brandenburg #The Arrest of Lippold Ben Chluchim, 1571
+country_event = {
+	id = FEE_Brandenburg_Events.54
+	title = FEE_Brandenburg_Events.54.T
+	desc = FEE_Brandenburg_Events.54.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = FEE_Brandenburg_Events.54.OPT1
+
+		add_prestige = -10
+		kill_advisor_by_category_effect = {
+			adm = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.54.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		country_event = {
+			id = FEE_Brandenburg_Events.55
+			days = 30
+		}
+	}
+}
+
+#Brandenburg #The Arrest of Lippold Ben Chluchim, 1571
+country_event = {
+	id = FEE_Brandenburg_Events.55
+	title = FEE_Brandenburg_Events.55.T
+	desc = FEE_Brandenburg_Events.55.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = FEE_Brandenburg_Events.55.OPT1
+		ai_chance = {
+			factor = 0
+		}
+
+		add_stability = -1
+		kill_advisor_by_category_effect = {
+			adm = yes
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.55.OPT2
+		ai_chance = {
+			factor = 1
+		}
+
+		add_years_of_income = -0.1
+		add_prestige = -25
+		kill_advisor_by_category_effect = {
+			adm = yes
+		}
+	}
+	option = {
+		name = FEE_Brandenburg_Events.55.OPT3
+		trigger = {
+			has_ruler_modifier = fee_bran_restored_jewish_privileges
+		}
+		ai_chance = {
+			factor = 10
+		}
+
+		add_years_of_income = -0.1
+		add_prestige = -15
+	}
+}
+
+#Brandenburg #The Order of St John, 1460
+country_event = {
+	id = FEE_Brandenburg_Events.56
+	title = FEE_Brandenburg_Events.56.T
+	desc = FEE_Brandenburg_Events.56.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1460
+		NOT = { is_year = 1470 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.56.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_ruler_modifier = {
+			name = fee_bran_elector_order_john
+			duration = -1
+		}
+	}
+}
+
+#Brandenburg #The Conversion of The Order of St John, 1538
+country_event = {
+	id = FEE_Brandenburg_Events.57
+	title = FEE_Brandenburg_Events.57.T
+	desc = FEE_Brandenburg_Events.57.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1538
+		NOT = { is_year = 1550 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.57.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_country_modifier = {
+			name = fee_bran_knights_order_john
+			duration = 36500
+		}
+	}
+}
+
+#Brandenburg #The Secularization of the Order of St John, 1650
+country_event = {
+	id = FEE_Brandenburg_Events.58
+	title = FEE_Brandenburg_Events.58.T
+	desc = FEE_Brandenburg_Events.58.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1650
+		NOT = { is_year = 1660 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.58.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		remove_country_modifier = fee_bran_knights_order_john
+		every_country = {
+			limit = {
+				culture_group = germanic
+				religion = protestant
+			}
+			country_event = {
+				id = FEE_Brandenburg_Events.59
+			}
+		}
+		random_owned_province = {
+			add_base_manpower = 1
+		}
+		random_owned_province = {
+			add_base_manpower = 1
+		}
+		random_owned_province = {
+			add_base_manpower = 1
+		}
+	}
+}
+
+#Brandenburg #Secularization of the Order of St John, 1650
+country_event = {
+	id = FEE_Brandenburg_Events.59
+	title = FEE_Brandenburg_Events.59.T
+	desc = FEE_Brandenburg_Events.59.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = FEE_Brandenburg_Events.59.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_country_modifier = {
+			name = fee_bran_secularization_john
+			duration = 3650
+		}
+		capital_scope = {
+			add_base_manpower = 1
+		}
+	}
+}
+
+#Brandenburg #The Bishop Investiture, 1451
+country_event = {
+	id = FEE_Brandenburg_Events.60
+	title = FEE_Brandenburg_Events.60.T
+	desc = FEE_Brandenburg_Events.60.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		tag = BRA
+		papal_influence = 10
+		is_year = 1451
+		NOT = { is_year = 1470 }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = FEE_Brandenburg_Events.60.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_country_modifier = {
+			name = fee_bran_favors_called_in
+			duration = 3650
+		}
+		4748 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_bran_margrave_dues
+					duration = 3650
+				}
+			}
+		}
+		50 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_bran_margrave_dues
+					duration = 3650
+				}
+			}
+		}
+	}
+	option = {
+		name = FEE_Brandenburg_Events.60.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige_or_monarch_power = { amount = 5 }
+	}
+}
+
+#Brandenburg #Berliner Dom, 1465
+country_event = {
+	id = FEE_Brandenburg_Events.61
+	title = FEE_Brandenburg_Events.61.T
+	desc = FEE_Brandenburg_Events.61.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		tag = BRA
+		50 = {
+			has_building = temple
+		}
+		is_year = 1465
+		NOT = { is_year = 1490 }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = FEE_Brandenburg_Events.61.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_country_modifier = {
+			name = fee_bran_berliner_singing_boys
+			duration = 3650
+		}
+	}
+}
+
+#Brandenburg #Dutch Settlement of Prussia, 1646
+country_event = {
+	id = FEE_Brandenburg_Events.62
+	title = FEE_Brandenburg_Events.62.T
+	desc = FEE_Brandenburg_Events.62.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1646
+		NOT = { is_year = 1676 }
+		owns = 50
+		owns = 1759
+		any_country = {
+			primary_culture = dutch
+			OR = {
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+				reverse_has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = FEE_Brandenburg_Events.62.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_adm_power = -50
+		add_country_modifier = {
+			name = fee_bran_dutch_agriculture_architecture
+			duration = 3650
+		}
+		50 = { add_base_tax = 1 }
+		1759 = { add_base_production = 1 }
+	}
+	option = {
+		name = FEE_Brandenburg_Events.62.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_manpower = 1
+	}
+}
+
+#Brandenburg #The Priegnitzer Lands, 1482
+country_event = {
+	id = FEE_Brandenburg_Events.63
+	title = FEE_Brandenburg_Events.63.T
+	desc = FEE_Brandenburg_Events.63.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1480
+		NOT = { is_year = 1500 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 700
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.63.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+		}
+		else = {
+			add_mil_power = 25
+		}
+		4786 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				spawn_rebels = {
+					type = anti_tax_rebels
+					size = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = FEE_Brandenburg_Events.63.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_manpower = 0.5
+		add_years_of_income = -0.1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+	}
+}
+
+#Brandenburg #The Pommeranian Revolt, 1470-1490
+country_event = {
+	id = FEE_Brandenburg_Events.64
+	title = FEE_Brandenburg_Events.64.T
+	desc = FEE_Brandenburg_Events.64.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1470
+		NOT = { is_year = 1490 }
+		num_of_owned_provinces_with = {
+			value = 4
+			OR = {
+				area = vorpommern_area
+				area = hinter_pommern_area
+			}
+		}
+		is_at_war = yes
+		any_neighbor_country = {
+			war_score_against = {
+				who = BRA
+				value = 50
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 700
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.64.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		random_owned_province = {
+			limit = {
+				culture = pommeranian
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.64.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_war_exhaustion = -2
+		custom_tooltip = fee_brandenburg_release_pomerania_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = vorpommern_area
+						area = hinter_pommern_area
+					}
+				}
+				cede_province = POM
+			}
+			POM = {
+				join_all_offensive_wars_of = BRA
+				join_all_defensive_wars_of = BRA
+			}
+		}
+	}
+}
+
+#### EDICT OF POTSDAM
+
+# Edict de Fontainebleau (FRA)
+country_event = {
+	id = FEE_Brandenburg_Events.100
+	title = FEE_Brandenburg_Events.100.T
+	desc = FEE_Brandenburg_Events.100.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1685
+		tag = FRA
+		FRA = {
+			OR = {
+				has_country_modifier = edict_de_nantes
+				has_country_flag = revoked_the_edict_of_nantes
+			}
+		}
+		OR = {
+			exists = PRU
+			exists = BRA
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.100.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_prestige_or_monarch_power = { amount = 10 }
+		if = {
+			limit = {
+				has_country_modifier = edict_de_nantes
+			}
+			remove_country_modifier = edict_de_nantes
+			set_country_flag = revoked_the_edict_of_nantes
+		}
+		custom_tooltip = fee_edict_potsdam_hugenots_outside_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = PRU
+				}
+				PRU = {
+					country_event = {
+						id = FEE_Brandenburg_Events.101
+						days = 1
+					}
+				}
+			}
+			else = {
+				BRA = {
+					country_event = {
+						id = FEE_Brandenburg_Events.101
+						days = 1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.100.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_stability = -2
+	}
+}
+
+# Edict de Fontainebleau (PRU/BRA)
+country_event = {
+	id = FEE_Brandenburg_Events.101
+	title = FEE_Brandenburg_Events.101.T
+	desc = FEE_Brandenburg_Events.101.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Brandenburg_Events.101.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_years_of_income = -0.2
+		set_country_flag = fee_edict_potsdam_huguenots_invited
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.101.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -10
+	}
+}
+
+# French Exodus (FRA)
+country_event = {
+	id = FEE_Brandenburg_Events.102
+	title = FEE_Brandenburg_Events.102.T
+	desc = FEE_Brandenburg_Events.102.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		OR = {
+			PRU = {
+				has_country_flag = fee_edict_potsdam_huguenots_invited
+			}
+			BRA = {
+				has_country_flag = fee_edict_potsdam_huguenots_invited
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	immediate = {
+		hidden_effect = {
+			export_to_variable = {
+				which = 5_percent_of_development
+				value = trigger_value:total_development
+			}
+			multiply_variable = {
+				which = 5_percent_of_development
+				value = 0.05
+			}
+			set_variable = {
+				which = 5_percent_of_development_truncated
+				which = 5_percent_of_development
+			}
+			divide_variable = {
+				which = 5_percent_of_development_truncated
+				value = 1000
+			}
+			multiply_variable = {
+				which = 5_percent_of_development_truncated
+				value = 1000
+			}
+			if = {
+				limit = {
+					exists = PRU
+				}
+				PRU = {
+					set_variable = {
+						which = 5_percent_of_development_truncated
+						which = PREV
+					}
+				}
+			}
+			else = {
+				BRA = {
+					set_variable = {
+						which = 5_percent_of_development_truncated
+						which = PREV
+					}
+				}
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = 5_percent_of_development
+						value = 1
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = france_region
+						development = 4
+					}
+					if = {
+						limit = {
+							base_tax = 2
+						}
+						add_base_tax = -1
+					}
+					else_if = {
+						limit = {
+							base_production = 2
+						}
+						add_base_production = -1
+					}
+					else = {
+						add_base_manpower = -1
+					}
+				}
+				subtract_variable = {
+					which = 5_percent_of_development
+					value = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.102.OPT1
+
+		custom_tooltip = fee_edict_potsdam_loses_5_percent_development_for_France_tt
+		set_country_flag = huguenots_left
+	}
+}
+
+# The Edict of Potsdam (PRU/BRA)
+country_event = {
+	id = FEE_Brandenburg_Events.103
+	title = FEE_Brandenburg_Events.103.T
+	desc = FEE_Brandenburg_Events.103.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		if = {
+			limit = {
+				exists = PRU
+			}
+			tag = PRU
+		}
+		else = {
+			tag = BRA
+		}
+		FRA = {
+			has_country_flag = huguenots_left
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = 50_percent_of_huguenots_dissidents_first_half
+				which = 5_percent_of_development_truncated
+			}
+			multiply_variable = {
+				which = 50_percent_of_huguenots_dissidents_first_half
+				value = 0.5
+			}
+			divide_variable = {
+				which = 50_percent_of_huguenots_dissidents_first_half
+				value = 1000
+			}
+			multiply_variable = {
+				which = 50_percent_of_huguenots_dissidents_first_half
+				value = 1000
+			}
+			set_variable = {
+				which = huguenots_arrived_in_capital
+				which = 50_percent_of_huguenots_dissidents_first_half
+			}
+			set_variable = {
+				which = 50_percent_of_huguenots_dissidents_second_half
+				which = 50_percent_of_huguenots_dissidents_first_half
+			}
+			capital_scope = {
+				export_to_variable = {
+					variable_name = PRU_BRA_capital_tax
+					value = trigger_value:base_tax
+				}
+				export_to_variable = {
+					variable_name = PRU_BRA_capital_production
+					value = trigger_value:base_production
+				}
+				export_to_variable = {
+					variable_name = PRU_BRA_capital_manpower
+					value = trigger_value:base_manpower
+				}
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = 50_percent_of_huguenots_dissidents_second_half
+						value = 1
+					}
+				}
+				random_country = {
+					limit = {
+						is_part_of_hre = yes
+						OR = {
+							religion = protestant
+							religion = reformed
+						}
+						if = {
+							limit = {
+								exists = PRU
+							}
+							NOT = {
+								total_development = PRU
+							}
+						}
+						else = {
+							NOT = {
+								total_development = BRA
+							}
+						}
+					}
+					country_event = {
+						id = FEE_Brandenburg_Events.104
+						days = 30
+					}
+				}
+				subtract_variable = {
+					which = 50_percent_of_huguenots_dissidents_second_half
+					value = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.103.OPT1
+
+		add_years_of_income = -1
+		custom_tooltip = fee_edict_potsdam_arrival_hugenots_tt
+		hidden_effect = {
+			while = {
+				limit = {
+					check_variable = {
+						which = 50_percent_of_huguenots_dissidents_first_half
+						value = 1
+					}
+				}
+				capital_scope = {
+					if = {
+						limit = {
+							NOT = {
+								AND = {
+									check_variable = {
+										which = PRU_BRA_capital_tax
+										which = PRU_BRA_capital_production
+									}
+									check_variable = {
+										which = PRU_BRA_capital_tax
+										which = PRU_BRA_capital_production
+									}
+								}
+							}
+						}
+						add_base_tax = 1
+					}
+					else_if = {
+						limit = {
+							NOT = {
+								check_variable = {
+									which = PRU_BRA_capital_production
+									which = PRU_BRA_capital_manpower
+								}
+							}
+						}
+						add_base_production = 1
+					}
+					else = {
+						add_base_manpower = 1
+					}
+					export_to_variable = {
+						which = PRU_BRA_capital_tax
+						value = trigger_value:base_tax
+					}
+					export_to_variable = {
+						which = PRU_BRA_capital_production
+						value = trigger_value:base_production
+					}
+					export_to_variable = {
+						which = PRU_BRA_capital_manpower
+						value = trigger_value:base_manpower
+					}
+				}
+				subtract_variable = {
+					which = 50_percent_of_huguenots_dissidents_first_half
+					value = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.103.OPT2
+		add_prestige = -10
+		while = {
+			limit = {
+				check_variable = {
+					which = 50_percent_of_huguenots_dissidents_first_half
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					is_part_of_hre = yes
+					OR = {
+						religion = protestant
+						religion = reformed
+					}
+					if = {
+						limit = {
+							exists = PRU
+						}
+						NOT = {
+							total_development = PRU
+						}
+					}
+					else = {
+						NOT = {
+							total_development = BRA
+						}
+					}
+				}
+				country_event = {
+					id = FEE_Brandenburg_Events.104
+					days = 30
+				}
+			}
+			subtract_variable = {
+				which = 50_percent_of_huguenots_dissidents_first_half
+				value = 1
+			}
+		}
+	}
+}
+
+# Huguenot Dissidents
+country_event = {
+	id = FEE_Brandenburg_Events.104
+	title = FEE_Brandenburg_Events.104.T
+	desc = FEE_Brandenburg_Events.104.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				export_to_variable = {
+					variable_name = CURRENT_capital_tax
+					value = trigger_value:base_tax
+				}
+				export_to_variable = {
+					variable_name = CURRENT_capital_production
+					value = trigger_value:base_production
+				}
+				export_to_variable = {
+					variable_name = CURRENT_capital_manpower
+					value = trigger_value:base_manpower
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.104.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_prestige_or_monarch_power = { amount = 5 }
+		add_years_of_income = -0.05
+		capital_scope = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							check_variable = {
+								which = CURRENT_capital_tax
+								which = CURRENT_capital_production
+							}
+							check_variable = {
+								which = CURRENT_capital_tax
+								which = CURRENT_capital_production
+							}
+						}
+					}
+				}
+				add_base_tax = 1
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						check_variable = {
+							which = CURRENT_capital_production
+							which = CURRENT_capital_manpower
+						}
+					}
+				}
+				add_base_production = 1
+			}
+			else = {
+				add_base_manpower = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.104.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_prestige = -1
+	}
+}

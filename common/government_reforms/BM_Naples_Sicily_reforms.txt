@@ -1,0 +1,315 @@
+kingdom_of_sicily_reform = {
+	icon = sicily_kingdom_of_sicily
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = kingdom_of_sicily_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = kingdom_of_sicily_reform
+		}
+	}
+	modifiers = {
+		max_absolutism = 5
+		global_autonomy = -0.025
+		nobles_loyalty_modifier = -0.05
+		development_cost_in_primary_culture = -0.05
+	}
+	government_abilities = {
+		sicilian_kingdom_mechanic
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+angevin_nobles_reform = {
+	icon = blood_tax
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = angevin_nobles_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = angevin_nobles_reform
+		}
+	}
+	modifiers = {
+		global_manpower_modifier = 0.05
+		state_maintenance_modifier = -0.25
+		nobles_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		enables_magnate_law = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+neapolitan_renaissance_reform = {
+	icon = aragon_alfonso
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = neapolitan_renaissance_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = neapolitan_renaissance_reform
+		}
+	}
+	modifiers = {
+		idea_cost = -0.1
+		global_institution_spread = 0.25
+	}
+	custom_attributes = {
+		monarch_power_on_institutions = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+theatines_reform = {
+	icon = theatines
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = theatines_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = theatines_reform
+		}
+	}
+	modifiers = {
+		church_loyalty_modifier = 0.1
+		church_influence_modifier = 0.05
+		papal_influence = 1
+		papal_influence_from_cardinals = 0.25
+		tolerance_own = 1
+	}
+	effect = {
+		hidden_effect = {
+			add_opinion = {
+				who = PAP
+				modifier = papal_embassy
+			}
+			reverse_add_opinion = {
+				who = PAP
+				modifier = papal_embassy
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_opinion = {
+				who = PAP
+				modifier = papal_embassy
+			}
+			reverse_remove_opinion = {
+				who = PAP
+				modifier = papal_embassy
+			}
+		}
+	}
+	custom_attributes = {
+		enables_mary_of_the_purity = yes # -0.025 corruption per year per tolerance of the true faith over 4
+		improved_opinion_of_pope = yes	#Popesman has +25 opinion of you
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = BM_government_reforms.9
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = GE_Mary_Of_The_Purity_1
+			remove_country_modifier = GE_Mary_Of_The_Purity_2
+			remove_country_modifier = GE_Mary_Of_The_Purity_3
+			remove_country_modifier = GE_Mary_Of_The_Purity_4
+		}
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+nunziatella_reform = {
+	icon = king
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_or_was_tag = { tag = TTS }
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = nunziatella_reform
+			AND = {
+				culture_group = latin
+				owns_core_province = 121
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			is_or_was_tag = { tag = TTS }
+			AND = {
+				OR = {
+					primary_culture = neapolitan
+					primary_culture = sicilian
+				}
+				absolutism = 50
+			}
+			AND = {
+				culture_group = latin
+				owns_core_province = 121
+			}
+			have_had_reform = nunziatella_reform
+		}
+	}
+	modifiers = {
+		artillery_cost = -0.1
+		artillery_power = 0.05
+		leader_siege = 1
+	}
+	custom_attributes = {
+		enables_artillery_academia = yes #+1 Artillery Shock
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+parliament_of_sicily_reform = {
+	icon = sicily_parliament_of_sicily
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = parliament_of_sicily_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = parliament_of_sicily_reform
+		}
+	}
+	modifiers = {
+		stability_cost_modifier = -0.15
+		nobles_influence_modifier = -0.1
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+customs_house_of_apena_sheep_reform = {
+	icon = dutch_architecture
+	allow_normal_conversion = yes
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_customs_house_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = GE_Customs_House
+			}
+		}
+	}
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = customs_house_of_apena_sheep_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = customs_house_of_apena_sheep_reform
+		}
+	}
+	modifiers = {
+		development_cost = -0.05
+		governing_capacity_modifier = 0.1
+	}
+	custom_attributes = {
+		enables_customs_house = yes #+25% Goods produced and -25% Governing Cost in Wool, Livestock and Cloth provinces
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+constitution_of_melfi_reform = {
+	icon = sicily_melfi
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = constitution_of_melfi_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = neapolitan
+			primary_culture = sicilian
+			have_had_reform = constitution_of_melfi_reform
+		}
+	}
+	modifiers = {
+		max_absolutism = 10
+		trade_efficiency = 0.05
+		all_estate_influence_modifier = -0.1
+	}
+	custom_attributes = {
+		enables_liber_augustalis = yes # +10% Estate Loyalty while you are over 90% Legitimacy
+	}
+	ai = {
+		factor = 100
+	}
+}

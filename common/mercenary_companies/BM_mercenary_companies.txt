@@ -1,0 +1,53 @@
+merc_local_imperial_knights_company = {
+    regiments_per_development = 0.025
+    cavalry_weight = 1
+    artillery_weight = 0.0
+	cavalry_cap = 14
+    trigger = {
+		reverse_has_opinion = {
+			who = emperor
+			value = 75
+		}
+		is_part_of_hre = yes
+	}
+	cost_modifier = 0.5
+	modifier = {
+		reinforce_speed = -0.33
+		cavalry_shock = 0.5
+	}
+}
+
+merc_garde_ecossaise_company = {
+    regiments_per_development = 0.02
+    cavalry_weight = 0.1
+    artillery_weight = 0.1
+	max_size = 30
+    trigger = {
+		OR = {
+			culture_group = french
+			culture_group = celts
+			culture_group = british
+		}
+	}
+	sprites = { sco_base_sprite_pack   }
+	cost_modifier = 0.25
+	modifier = {
+		reinforce_speed = 0.3
+		shock_damage_received = -0.1
+	}
+}
+
+merc_local_qizilbash_company = {
+    regiments_per_development = 0.050
+    cavalry_weight = 0.5
+    artillery_weight = 0.0
+    trigger = {
+		religion = shiite
+	}
+	cost_modifier = 0.50
+	modifier = {
+		cavalry_power = 0.2
+		movement_speed = 0.2
+		reinforce_speed = 0.25
+	}
+}

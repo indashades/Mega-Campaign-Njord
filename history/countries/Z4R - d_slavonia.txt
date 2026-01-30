@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = croatian
+capital = 131
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Koloman"
+		dynasty = "Gorjanski"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1395.11.11
+		religion = catholic
+		culture = croatian
+	}
+	add_ruler_personality = careful_personality
+	add_ruler_personality = infertile_personality
+	queen = {
+		name = "Alessandra"
+		dynasty = "di Castropola"
+		adm = 3
+		dip = 4
+		mil = 4
+		country_of_origin = Z4R
+		birth_date = 1398.9.10
+		death_date = 1458.9.10
+		female = yes
+		religion = catholic
+		culture = italian
+	}
+	add_queen_personality = fertile_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Helena"
+		monarch_name = "Helena"
+		dynasty = "Gorjanski"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1424.4.28
+		death_date = 1489.4.28
+		female = yes
+		claim = 89
+		religion = catholic
+		culture = croatian
+	}
+	add_heir_personality = drunkard_personality
+	add_heir_personality = greedy_personality
+}
+1444.11.11= {
+	add_prestige = 71
+	add_treasury = 73
+}

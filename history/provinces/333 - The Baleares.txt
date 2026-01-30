@@ -1,0 +1,19 @@
+owner = MJO
+controller = MJO
+capital = "Palma"
+is_city = yes
+culture = sephardi
+religion = jewish
+trade_goods = sugar
+hre = yes
+base_tax = 1
+base_production = 3
+base_manpower = 2
+add_core = MJO
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+add_permanent_province_modifier = {
+	name = MEGA_epstein_island_2_electric_boogaloo
+}

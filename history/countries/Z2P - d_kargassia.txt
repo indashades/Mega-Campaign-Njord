@@ -1,0 +1,42 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+technology_group = chinese
+religion = nestorian
+primary_culture = khalkha
+capital = 1065
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Bartan II"
+		dynasty = "Khentii"
+		adm = 3
+		dip = 2
+		mil = 4
+		birth_date = 1414.5.12
+		religion = nestorian
+		culture = khalkha
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = pious_personality
+	heir = {
+		name = "Khadagan"
+		monarch_name = "Khadagan"
+		dynasty = "Khentii"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 1436.2.27
+		death_date = 1501.2.27
+		female = yes
+		claim = 89
+		religion = nestorian
+		culture = mongol
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 72
+	add_treasury = 0
+}

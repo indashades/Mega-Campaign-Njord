@@ -1,0 +1,15 @@
+owner = Z9J
+controller = Z9J
+capital = "Usolye Kamskoye"
+is_city = yes
+culture = kirgiz
+religion = tengri_pagan
+trade_goods = salt
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = CHG
+add_core = Z9J
+add_permanent_claim = PRM
+discovered_by = eastern
+discovered_by = nomad_group

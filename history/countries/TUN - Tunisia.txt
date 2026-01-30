@@ -1,0 +1,37 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 1
+technology_group = muslim
+religion = catholic
+primary_culture = moroccan
+capital = 341
+mercantilism = 15
+add_accepted_culture = tunisian
+1444.11.11= {
+	monarch = {
+		name = "(Regency Council)"
+		adm = 0
+		dip = 1
+		mil = 0
+		birth_date = 1.1.1
+		regent = yes
+		religion = catholic
+		culture = moroccan
+	}
+	heir = {
+		name = "Urayb"
+		dynasty = "Mu'minid"
+		adm = 2
+		dip = 3
+		mil = 2
+		birth_date = 1439.8.4
+		death_date = 1504.8.4
+		claim = 89
+		religion = catholic
+		culture = moroccan
+	}
+}
+1444.11.11= {
+	add_prestige = 61
+	add_treasury = 65
+}

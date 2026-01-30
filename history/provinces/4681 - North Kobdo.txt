@@ -1,0 +1,15 @@
+owner = Z07
+controller = Z07
+capital = "Olgii"
+is_city = yes
+culture = khalkha
+religion = mahayana
+trade_goods = livestock
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = KLK
+add_core = Z0H
+add_core = Z07
+discovered_by = chinese
+discovered_by = nomad_group

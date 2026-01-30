@@ -1,0 +1,102 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 200 229 237 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	religious_ideas
+	spy_ideas
+	economic_ideas
+	quantity_ideas
+	aristocracy_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	reformed_mughal_mansabdar
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Ajayapala #1" = 10
+	"Alptigin #0" = 0
+	"Avanivarman #2" = 10
+	"Balavarman #2" = 10
+	"Bartan #1" = 10
+	"Bhima #2" = 10
+	"Boroghul #1" = 10
+	"Bugunutei #0" = 0
+	"Chagatai #1" = 10
+	"Chamundaraja #1" = 10
+	"Durlabharaja #1" = 10
+	"Guyug #0" = 0
+	"Jayasimha #1" = 10
+	"Kalla #1" = 10
+	"Karnadeva #1" = 10
+	"Kaytun #0" = 0
+	"Khulan #0" = -1
+	"Kumarapala #1" = 10
+	"Kumvarasimha #2" = 10
+	"Mahalla #1" = 10
+	"Mulraj #1" = 10
+	"Mulraja #2" = 10
+	"Orqina #0" = -1
+	"Ramapala #0" = 0
+	"Terutora #0" = 0
+	"Tumbinai Setsen #0" = 0
+	"Vahukadhavala #2" = 10
+	"Vallabharaja #1" = 10
+	"Yeke #0" = 0
+}
+leader_names = {
+	"Bhati"
+	"Chavda"
+	"Chudasama"
+	"Jadeja"
+	"Jethwa"
+	"Mulraj"
+	"Paramara"
+	"Pargir"
+	"Pratap"
+	"Raizada"
+	"Rathore"
+	"Sarvaiya"
+	"Savji"
+	"Shah"
+	"Singh"
+	"Sisodiya"
+	"Solanki"
+	"Soomrah"
+	"Vaghela"
+	"Valas"
+}
+ship_names = {
+	"Chambal"
+	"Devi"
+	"Durga"
+	"Gayatri"
+	"Ghaggar"
+	"Godwar"
+	"Jalsena"
+	"Kala Jahazi"
+	"Lakshmi"
+	"Lal Jahazi"
+	"Luni"
+	"Nausena"
+	"Nav ka Yudh"
+	"Nila Jahazi"
+	"Parvati"
+	"Radha"
+	"Rani"
+	"Ratri"
+	"Sagar"
+	"Sarasvati"
+	"Sekhawati"
+	"Sita"
+}

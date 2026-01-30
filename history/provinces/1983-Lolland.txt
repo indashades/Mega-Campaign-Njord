@@ -1,0 +1,17 @@
+owner = Z4Q
+controller = Z4Q
+capital = "Nykobing"
+is_city = yes
+culture = danish
+religion = catholic
+trade_goods = fish
+hre = yes
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = Z4Q
+add_permanent_claim = DAN
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

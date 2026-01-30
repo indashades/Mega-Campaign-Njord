@@ -1,8 +1,13 @@
 #4238 - Liegnitz (Liegnitz+Schweidnitz+Jauer+Glatz+Neisse+Münsterberg)
 
 #Coal
-owner = LIT
-controller = LIT
+<<<<<<< Updated upstream
+owner = CRI
+controller = CRI
+=======
+owner = Z4A
+controller = Z4A
+>>>>>>> Stashed changes
 culture = ruthenian
 religion = orthodox
 capital = "Kremenchuk"
@@ -12,7 +17,7 @@ base_tax = 2
 base_production = 1
 is_city = yes 
 base_manpower = 1
-add_core = LIT
+add_core = Z4A
 add_core = CHR
 discovered_by = KAZ
 discovered_by = CRI

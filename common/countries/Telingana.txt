@@ -1,0 +1,91 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 158 164 225 }
+historical_idea_groups = {
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	quantity_ideas
+	defensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	spy_ideas
+}
+historical_units = {
+	indian_archers
+	indian_arquebusier
+	indian_footsoldier
+	indian_rifle
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Amma #0" = 0
+	"Asaga #0" = 0
+	"Baladitya #0" = 0
+	"Beta #1" = 10
+	"Bijjama #0" = 0
+	"Bilge #0" = 0
+	"Bulughan #0" = 0
+	"Butuga #1" = 10
+	"Chandrabbalabbe #0" = -1
+	"Câramutaiyân #0" = 0
+	"Gurbesu #0" = -1
+	"Kamadeva #1" = 10
+	"Kanwar #0" = -1
+	"Katayavema #0" = 0
+	"Keyong #0" = 0
+	"Lakshmi #0" = -1
+	"Mahadeva #1" = 10
+	"Mahadevi #1" = -1
+	"Mushkara #0" = 0
+	"Nagipoti #0" = -1
+	"Narasimha #0" = 0
+	"Prola #0" = 0
+	"Prolayanayak #0" = 0
+	"Ramachandra #1" = 10
+	"Revakanimmadi #0" = -1
+	"Rudradeva #1" = 10
+	"Shivamara #0" = 0
+	"Tundaka #0" = -1
+	"Venkatadri #0" = 0
+	"Vishnuvardhana #0" = 0
+}
+leader_names = {
+	"Ambadeva"
+	"Damerla"
+	"Gannaiah"
+	"Gona"
+	"Jannigadeva"
+	"Malraju"
+	"Meka"
+	"Racha"
+	"Suryavamsa"
+	"Tripurar"
+	"Velugoti"
+}
+ship_names = {
+	"Anantavarman"
+	"Bishnupriya"
+	"Devarakonda"
+	"Godavari"
+	"Hidimba"
+	"Kataya"
+	"Konark"
+	"Krishnapriya"
+	"Kumar"
+	"Lakshmi"
+	"Masulipatnam"
+	"Naga"
+	"Paradeep"
+	"Parvati"
+	"Rachakonda"
+	"Radha"
+	"Rahu"
+	"Rajahmundry"
+	"Rakshasa"
+	"Sarasvati"
+	"Satapada"
+	"Vizianagaram"
+	"Warangal"
+}

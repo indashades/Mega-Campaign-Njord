@@ -1,0 +1,15 @@
+owner = PRM
+controller = PRM
+capital = "Hlynov"
+is_city = yes
+culture = uralic
+religion = sunni
+trade_goods = copper
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = PRM
+discovered_by = GOL
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

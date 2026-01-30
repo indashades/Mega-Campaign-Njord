@@ -1,8 +1,8 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Meissen
-add_core = BYZ
-owner = BYZ
-controller = BYZ
+add_core = MEI
+owner = MEI
+controller = MEI
 culture = saxon
 religion = catholic
 hre = yes

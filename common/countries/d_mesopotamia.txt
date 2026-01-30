@@ -1,0 +1,27 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 200 50 50 }
+monarch_names = {
+	"Abdallah #1" = 10
+	"Akgul #0" = -1
+	"Alkan #0" = 0
+	"Bozçin #0" = -1
+	"Davud #1" = 10
+	"Dukak #0" = 0
+	"Eustratios #0" = 0
+	"Giselher #1" = 10
+	"Hussayn #0" = 0
+	"Iancu #0" = 0
+	"Immed #0" = 0
+	"Javaneh #0" = -1
+	"Kara Arslan #1" = 10
+	"Marwan #1" = 10
+	"Mohammed #1" = 10
+	"Orhan #1" = 10
+	"Ridvan #1" = 10
+	"Saltuk #1" = 10
+	"Shoushanig #0" = -1
+	"Sokman #1" = 10
+	"Tolun #0" = 0
+	"Umar #1" = 10
+}

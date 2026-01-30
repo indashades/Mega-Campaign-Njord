@@ -1,0 +1,14 @@
+owner = AVA
+controller = AVA
+capital = "Sagaing"
+is_city = yes
+culture = burmese
+religion = buddhism
+trade_goods = cotton
+base_tax = 4
+base_production = 4
+base_manpower = 2
+add_core = AVA
+add_core = TAU
+discovered_by = chinese
+discovered_by = indian

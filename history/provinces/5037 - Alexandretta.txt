@@ -1,9 +1,9 @@
 #2313 - Antioch
 
-owner = MAM
-controller = MAM
+owner = Z0J
+controller = Z0J
 culture = al_suryah_arabic
-religion = sunni
+religion = monophysite
 capital = "al-Iskandarun"
 trade_goods = fish
 hre = no
@@ -12,7 +12,7 @@ base_production = 2
 base_manpower = 1
 is_city = yes
 add_core = SYR
-add_core = MAM
+add_core = Z0J
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western

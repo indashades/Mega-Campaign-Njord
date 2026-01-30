@@ -1,0 +1,16 @@
+owner = MTH
+controller = MTH
+capital = "Annaly"
+is_city = yes
+culture = dynamic-normand-culture-num1
+religion = converted_dynamic_faith_170
+trade_goods = livestock
+hre = yes
+base_tax = 5
+base_production = 1
+base_manpower = 2
+add_core = MTH
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

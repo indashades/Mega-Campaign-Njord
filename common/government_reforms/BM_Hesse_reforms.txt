@@ -1,0 +1,209 @@
+hessian_militarized_monarchy_reform = {
+	icon = hesse_monarchy
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	potential = {
+		OR = {
+			tag = HES
+			has_reform = hessian_militarized_monarchy_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = HES
+			has_reform = hessian_militarized_monarchy_reform
+		}
+	}
+	modifiers = {
+		discipline = 0.025
+		governing_capacity_modifier = -0.1
+		manpower_in_own_culture_provinces = 0.15
+		mercenary_discipline = -0.05
+		yearly_army_professionalism = 0.001
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+hessian_modern_militarized_monarchy_reform = {
+	icon = hesse_modern
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			tag = HES
+			has_reform = hessian_militarized_monarchy_reform
+			has_reform = hessian_modern_militarized_monarchy_reform
+		}
+	}
+	trigger = {
+		has_reform = hessian_modern_militarized_monarchy_reform
+	}
+	modifiers = {
+		discipline = 0.05
+		governing_capacity_modifier = -0.2
+		manpower_in_own_culture_provinces = 0.2
+		mercenary_discipline = -0.1
+		monarch_military_power = 1
+		yearly_army_professionalism = 0.002
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_1
+		}
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+hessian_elite_jaegers_reform = {
+	icon = hesse_jaegers
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = hessian_militarized_monarchy_reform
+			has_reform = hessian_modern_militarized_monarchy_reform
+			has_reform = hessian_elite_jaegers_reform 
+			tag = HES
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = hessian_militarized_monarchy_reform
+			has_reform = hessian_modern_militarized_monarchy_reform
+			has_reform = hessian_elite_jaegers_reform 
+			tag = HES
+		}
+	}
+	modifiers = {
+		fire_damage = 0.05
+		infantry_power = 0.1
+		infantry_cost = -0.15
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+found_the_rothschilds_reform = {
+	icon = hesse_rothschild
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = hessian_militarized_monarchy_reform
+			has_reform = found_the_rothschilds_reform 
+			tag = HES
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = hessian_militarized_monarchy_reform
+			has_reform = found_the_rothschilds_reform 
+			tag = HES
+		}
+	}
+	modifiers = {
+		advisor_cost = -0.05
+		inflation_reduction = 0.05
+		interest = -0.5
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+hessian_military_complex_reform = {
+	icon = hesse_military
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			tag = HES
+			has_reform = hessian_militarized_monarchy_reform
+			has_reform = hessian_military_complex_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = HES
+			has_reform = hessian_militarized_monarchy_reform
+			has_reform = hessian_military_complex_reform
+		}
+	}
+	modifiers = {
+		development_cost = -0.05
+		state_maintenance_modifier = -0.25
+	}
+	custom_attributes = {
+		enables_military_exports = yes #Barracks, Regimental Camps and Soldier Households are buffed 
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = { has_building = barracks }
+					add_province_modifier = {
+						name = BM_military_exports_barracks_modifier
+						duration = -1
+					}
+				}
+				if = {
+					limit = { has_building = training_fields }
+					add_province_modifier = {
+						name = BM_military_exports_training_fields_modifier
+						duration = -1
+					}
+				}
+				if = {
+					limit = { has_building = regimental_camp }
+					add_province_modifier = {
+						name = BM_military_exports_regimental_camp_modifier
+						duration = -1
+					}
+				}
+				if = {
+					limit = { has_building = conscription_center }
+					add_province_modifier = {
+						name = BM_military_exports_conscription_center_modifier
+						duration = -1
+					}
+				}
+				if = {
+					limit = { has_building = soldier_households }
+					add_province_modifier = {
+						name = BM_military_exports_soldiers_households_modifier
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = BM_military_exports_barracks_modifier
+						has_province_modifier = BM_military_exports_training_fields_modifier
+						has_province_modifier = BM_military_exports_regimental_camp_modifier
+						has_province_modifier = BM_military_exports_conscription_center_modifier
+						has_province_modifier = BM_military_exports_soldiers_households_modifier
+					}
+				}
+				remove_province_modifier = BM_military_exports_barracks_modifier
+				remove_province_modifier = BM_military_exports_training_fields_modifier
+				remove_province_modifier = BM_military_exports_regimental_camp_modifier
+				remove_province_modifier = BM_military_exports_conscription_center_modifier
+				remove_province_modifier = BM_military_exports_soldiers_households_modifier
+			}
+		}
+	}
+	ai = {
+		factor = 100
+	}
+}

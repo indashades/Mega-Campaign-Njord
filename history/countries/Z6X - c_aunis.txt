@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = occitain
+capital = 4111
+fixed_capital = 4111
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Guiraud"
+		dynasty = "Scot"
+		adm = 3
+		dip = 6
+		mil = 4
+		birth_date = 1413.6.27
+		religion = catholic
+		culture = occitain
+	}
+	add_ruler_personality = just_personality
+	add_ruler_personality = strict_personality
+	queen = {
+		name = "Alice"
+		dynasty = "de Bigod"
+		adm = 3
+		dip = 4
+		mil = 3
+		country_of_origin = Z6X
+		birth_date = 1422.12.18
+		death_date = 1482.12.18
+		female = yes
+		religion = catholic
+		culture = normand
+	}
+	add_queen_personality = conqueror_personality
+	add_queen_personality = expansionist_personality
+	heir = {
+		name = "Guiraud"
+		monarch_name = "Guiraud II"
+		dynasty = "Scot"
+		adm = 6
+		dip = 5
+		mil = 6
+		birth_date = 1432.2.18
+		death_date = 1497.2.18
+		claim = 89
+		religion = catholic
+		culture = occitain
+	}
+	add_heir_personality = careful_personality
+	add_heir_personality = cruel_personality
+}
+1444.11.11= {
+	add_prestige = 71
+	add_treasury = 59
+}

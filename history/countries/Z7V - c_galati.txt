@@ -1,0 +1,44 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = dynamic-hungarian-culture-num1
+capital = 4530
+fixed_capital = 4530
+add_accepted_culture = mongol
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Salamon"
+		dynasty = "Hajdú"
+		adm = 1
+		dip = 0
+		mil = 2
+		birth_date = 1403.2.1
+		religion = catholic
+		culture = dynamic-hungarian-culture-num1
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = industrious_personality
+	heir = {
+		name = "Júlia"
+		monarch_name = "Júlia"
+		dynasty = "Hajdú"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1436.1.21
+		death_date = 1501.1.21
+		female = yes
+		claim = 89
+		religion = catholic
+		culture = dynamic-hungarian-culture-num1
+	}
+	add_heir_personality = cruel_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 60
+	add_treasury = 50
+}

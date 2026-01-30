@@ -1,0 +1,19 @@
+owner = HAI
+controller = HAI
+capital = "Mons"
+is_city = yes
+culture = hessian
+religion = norse_pagan
+trade_goods = cloth
+hre = yes
+base_tax = 4
+base_production = 4
+base_manpower = 2
+add_core = HAI
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+latent_trade_goods = {
+	coal
+}

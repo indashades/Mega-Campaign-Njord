@@ -1,14 +1,11 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = tanistry_reform
 government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = irish
-capital = 5044	# Cork
-
-# Earls of Desmond
-
-1418.1.1 = {
+capital = 4118
+1418.1.1= {
 	monarch = {
 		name = "James"
 		dynasty = "FitzGerald"
@@ -21,8 +18,7 @@ capital = 5044	# Cork
 	add_ruler_personality = lawgiver_personality
 	add_ruler_personality = calm_personality
 }
-
-1430.1.1 = {
+1430.1.1= {
 	heir = {
 		name = "Thomas"
 		monarch_name = "Thomas"
@@ -35,8 +31,7 @@ capital = 5044	# Cork
 		mil = 2
 	}
 }
-
-1462.1.1 = {
+1462.1.1= {
 	monarch = {
 		name = "Thomas"
 		dynasty = "FitzGerald"
@@ -45,8 +40,7 @@ capital = 5044	# Cork
 		mil = 2
 	}
 }
-
-1462.1.1 = {
+1462.1.1= {
 	heir = {
 		name = "James"
 		monarch_name = "James"
@@ -59,8 +53,7 @@ capital = 5044	# Cork
 		mil = 1
 	}
 }
-
-1468.1.1 = {
+1468.1.1= {
 	monarch = {
 		name = "James"
 		dynasty = "FitzGerald"
@@ -69,10 +62,7 @@ capital = 5044	# Cork
 		mil = 1
 	}
 }
-
-#Murdered
-
-1487.1.1 = {
+1487.1.1= {
 	monarch = {
 		name = "Maurice"
 		dynasty = "FitzGerald"
@@ -81,8 +71,7 @@ capital = 5044	# Cork
 		mil = 3
 	}
 }
-
-1487.1.1 = {
+1487.1.1= {
 	heir = {
 		name = "James"
 		monarch_name = "James"
@@ -95,8 +84,7 @@ capital = 5044	# Cork
 		mil = 1
 	}
 }
-
-1520.1.1 = {
+1520.1.1= {
 	monarch = {
 		name = "James"
 		dynasty = "FitzGerald"
@@ -105,10 +93,7 @@ capital = 5044	# Cork
 		mil = 1
 	}
 }
-
-#Dies in Battle, succeded by his Uncle.
-
-1529.6.18 = {
+1529.6.18= {
 	monarch = {
 		name = "Thomas"
 		dynasty = "FitzGerald"
@@ -117,9 +102,7 @@ capital = 5044	# Cork
 		mil = 4
 	}
 }
-
-#Nicknamed "The Court Page, Grandson of Thomas, title also held by John brother of his grandfather.
-1534.1.1 = {
+1534.1.1= {
 	monarch = {
 		name = "Thomas"
 		dynasty = "FitzGerald"
@@ -128,10 +111,7 @@ capital = 5044	# Cork
 		mil = 0
 	}
 }
-
-#Murdered
-
-1536.1.1 = {
+1536.1.1= {
 	monarch = {
 		name = "James"
 		dynasty = "FitzGerald"
@@ -140,8 +120,7 @@ capital = 5044	# Cork
 		mil = 3
 	}
 }
-
-1536.1.1 = {
+1536.1.1= {
 	heir = {
 		name = "James"
 		monarch_name = "James"
@@ -154,8 +133,7 @@ capital = 5044	# Cork
 		mil = 5
 	}
 }
-
-1558.1.1 = {
+1558.1.1= {
 	monarch = {
 		name = "James"
 		dynasty = "FitzGerald"

@@ -1,8 +1,8 @@
 #4787 - Ribatejo
 
-owner = GRA
-controller = GRA
-culture = andalucian
+owner = EOM
+controller = EOM
+culture = moroccan
 religion = sunni
 capital = "Baza"
 trade_goods = livestock
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = GRA
+add_core = EOM
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

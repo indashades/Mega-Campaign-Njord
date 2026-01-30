@@ -1,0 +1,643 @@
+meroe_pyramids = {
+	start = 2797 #Shendy
+	date = 01.01.1
+	time = { months = 120 }
+	build_cost = 1000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture_group = sudanese
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = sudanese
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = sudanese
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			province_trade_power_value = 5
+		}
+		area_modifier = { }
+		region_modifier = { 
+			local_friendly_movement_speed = 0.15
+			supply_limit_modifier = 0.15
+		}
+		country_modifiers = {
+			tolerance_heathen = 0.5
+			tolerance_heretic = 0.5
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { 
+			province_trade_power_value = 10
+		}
+		area_modifier = { }
+		region_modifier = { 
+			local_friendly_movement_speed = 0.2
+			supply_limit_modifier = 0.25
+		}
+		country_modifiers = {
+			tolerance_heathen = 1
+			tolerance_heretic = 1
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { 
+			province_trade_power_value = 15
+		}
+		area_modifier = { }
+		region_modifier = { 
+			local_friendly_movement_speed = 0.25
+			supply_limit_modifier = 0.33
+		}
+		country_modifiers = {
+			tolerance_heathen = 2
+			tolerance_heretic = 2
+			global_prov_trade_power_modifier = 0.1
+		}
+		on_upgraded = { }
+	}
+}
+
+fu_axum_obelisk = {
+	start = 1227 #Aksum.
+	date = 01.01.350 #4th Century AD.
+	time = { months = 120 }
+	build_cost = 600
+	starting_tier = 2
+	type = monument
+	can_be_moved = yes
+	move_days_per_unit_distance = 8
+	build_trigger = {
+		culture_group = cushitic
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = cushitic
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = cushitic
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			same_religion_advisor_cost = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				add_prestige_or_monarch_power = { amount = 25 }
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			institution_spread_from_true_faith = 0.1
+			same_religion_advisor_cost = -0.15
+		}
+		on_upgraded = { 
+			owner = {
+				add_prestige_or_monarch_power = { amount = 50 }
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			institution_spread_from_true_faith = 0.2
+			prestige_per_development_from_conversion = 0.25
+			same_religion_advisor_cost = -0.2
+		}
+		on_upgraded = { 
+			owner = {
+				add_prestige_or_monarch_power = { amount = 100 }
+			}
+		}
+	}
+}
+
+mary_zion = {
+	start = 1227
+	date = 01.01.350
+	time = { months = 120 }
+	build_cost = 550
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			church_loyalty_modifier = 0.05
+			relation_with_same_religion = 10
+			reverse_relation_with_same_religion = 10
+		}
+		on_upgraded = {
+			
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			church_loyalty_modifier = 0.1
+			relation_with_same_religion = 20
+			reverse_relation_with_same_religion = 20
+		}
+		on_upgraded = {
+			
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			church_loyalty_modifier = 0.15
+			relation_with_same_religion = 30
+			reverse_relation_with_same_religion = 30
+			church_privilege_slots = 1
+		}
+		on_upgraded = {
+			custom_tooltip = MEGA_mary_zion_unique_TT
+		}
+	}
+}
+
+fasil_ghebbi = {
+	start = 1224 #Gonder.
+	date = 01.01.1645
+	time = { months = 120 }
+	build_cost = 500
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		culture_group = cushitic
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		culture_group = cushitic
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		culture_group = cushitic
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { }
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+		region_modifier = { }
+		country_modifiers = {
+			rival_change_cost = -0.25
+			power_projection_from_insults = 0.5
+			leader_siege = 1
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = fortification_expert
+					skill = 3
+					culture = amhara
+					religion = ROOT
+					cost_multiplier = 0.75
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = { }
+		area_modifier = {
+			local_defensiveness = 0.25
+		}
+		region_modifier = { }
+		country_modifiers = {
+			rival_change_cost = -0.33
+			power_projection_from_insults = 0.75
+			leader_siege = 1
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = fortification_expert
+					skill = 3
+					culture = amhara
+					religion = ROOT
+					cost_multiplier = 0.5
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = { }
+		area_modifier = {
+			local_defensiveness = 0.33
+		}
+		region_modifier = { }
+		country_modifiers = {
+			rival_change_cost = -0.5
+			power_projection_from_insults = 1
+			leader_siege = 2
+			max_general_siege = 1
+		}
+		on_upgraded = {
+			custom_tooltip = MEGA_fasil_ghebbi_unique_TT
+			owner = {
+				define_advisor = {
+					type = fortification_expert
+					skill = 3
+					culture = amhara
+					religion = ROOT
+					cost_multiplier = 0.25
+				}
+			}
+		}
+	}
+}
+
+stanne = {
+	start = 1234 #Faras.
+	date = 01.01.650
+	time = { months = 120 }
+	build_cost = 500
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 500 }
+		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			spy_offence = 0.1
+			global_spy_defence = 0.25
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = spymaster
+					culture = nubian
+					skill = 3
+					cost_multiplier = 0.75
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = { 
+			local_defender_dice_roll_bonus = 1
+		}
+		area_modifier = {
+		}
+		region_modifier = { }
+		country_modifiers = {
+			spy_offence = 0.25
+			global_spy_defence = 0.33
+			siege_ability = 0.1
+		}
+		on_upgraded = {
+			owner = {
+				define_advisor = {
+					type = spymaster
+					culture = nubian
+					skill = 3
+					cost_multiplier = 0.5
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 2000 }
+		province_modifiers = { 
+			local_defender_dice_roll_bonus = 1
+		}
+		area_modifier = { }
+		region_modifier = {
+		}
+		country_modifiers = {
+			spy_offence = 0.33
+			global_spy_defence = 0.5
+			siege_ability = 0.15
+		}
+		on_upgraded = {
+			custom_tooltip = MEGA_stanne_unique_TT
+			owner = {
+				define_advisor = {
+					type = spymaster
+					culture = nubian
+					skill = 3
+					cost_multiplier = 0.25
+				}
+			}
+		}
+	}
+}
+
+ambohimanga = { #Rova
+	start = 1792 #Merina.
+	date = 01.01.1444 #15th century.
+	time = { months = 120 }
+	build_cost = 500
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		OR = {
+			culture = madagascan
+			culture = madagasque
+		}
+		province_is_or_accepts_culture = yes
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		OR = {
+			culture = madagascan
+			culture = madagasque
+		}
+		province_is_or_accepts_culture = yes
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture = madagascan
+			culture = madagasque
+		}
+		province_is_or_accepts_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			local_defensiveness = 0.15
+			local_garrison_size = 0.25
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			native_uprising_chance = -0.25
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_garrison_size = 0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			native_uprising_chance = -0.5
+			native_assimilation = 0.25
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			local_garrison_damage = 0.25
+			local_defensiveness = 0.5
+			local_garrison_size = 0.5
+		}
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = {
+			native_uprising_chance = -0.5
+			native_assimilation = 0.5
+			colonist_placement_chance = 0.1
+		}
+		on_upgraded = { }
+	}
+}
+
+fu_toob_benadir = {
+	start = 1205
+	date = 01.01.1
+	time = { months = 0 }
+	build_cost = 1000
+	starting_tier = 1
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+		province_has_center_of_trade_of_level = 3 
+	}
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = { 
+		province_has_center_of_trade_of_level = 3 
+	}
+	can_upgrade_trigger = {
+		province_has_center_of_trade_of_level = 3 
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 1000 }
+		province_modifiers = {
+			trade_value = 1
+			local_prosperity_growth = 0.25
+		}
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+		region_modifier = { }
+		country_modifiers = {
+			trade_efficiency = 0.05
+		}
+		on_upgraded = { }
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 2500 }
+		province_modifiers = {
+			trade_value = 2
+			local_prosperity_growth = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.15
+		}
+		region_modifier = { }
+		country_modifiers = {
+			trade_efficiency = 0.05
+			merchants = 1
+		}
+		on_upgraded = { }
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 5000 }
+		province_modifiers = {
+			trade_value = 3
+			local_prosperity_growth = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.2
+		}
+		region_modifier = { }
+		country_modifiers = {
+			trade_efficiency = 0.1
+			merchants = 1
+		}
+		on_upgraded = { }
+	}
+}

@@ -1,0 +1,12 @@
+capital = "Awlil"
+is_city = yes
+culture = berber
+religion = catholic
+trade_goods = unknown
+base_tax = 3
+base_production = 2
+base_manpower = 1
+discovered_by = sub_saharan
+native_size = 50
+native_ferocity = 4
+native_hostileness = 9

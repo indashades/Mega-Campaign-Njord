@@ -1,0 +1,56 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+technology_group = nomad_group
+religion = mahayana
+primary_culture = mongol
+capital = 1064
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Yedi"
+		dynasty = "Yedi"
+		adm = 4
+		dip = 5
+		mil = 4
+		birth_date = 1419.2.10
+		religion = mahayana
+		culture = mongol
+	}
+	add_ruler_personality = fierce_negotiator_personality
+	add_ruler_personality = well_connected_personality
+	queen = {
+		name = "Sati"
+		dynasty = "al-Harrani"
+		adm = 3
+		dip = 4
+		mil = 5
+		country_of_origin = Z6G
+		birth_date = 1407.6.24
+		death_date = 1467.6.24
+		female = yes
+		religion = mahayana
+		culture = kirgiz
+	}
+	add_queen_personality = lawgiver_personality
+	add_queen_personality = strict_personality
+	heir = {
+		name = "Yedi"
+		monarch_name = "Yedi II"
+		dynasty = "Yedi"
+		adm = 2
+		dip = 2
+		mil = 4
+		birth_date = 1437.1.23
+		death_date = 1502.1.23
+		claim = 89
+		religion = mahayana
+		culture = mongol
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = kind_hearted_personality
+}
+1444.11.11= {
+	add_prestige = 51
+	add_treasury = 0
+}

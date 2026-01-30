@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = muslim
+religion = catholic
+primary_culture = berber
+capital = 2266
+add_accepted_culture = mali
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Zahida"
+		dynasty = "Kerajid"
+		adm = 4
+		dip = 5
+		mil = 3
+		birth_date = 1419.5.10
+		female = yes
+		religion = catholic
+		culture = berber
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = cruel_personality
+	queen = {
+		name = "Ghaysan"
+		dynasty = "Tasneemid"
+		adm = 4
+		dip = 3
+		mil = 6
+		country_of_origin = Z3H
+		birth_date = 1419.9.23
+		death_date = 1479.9.23
+		religion = catholic
+		culture = berber
+	}
+	add_queen_personality = fierce_negotiator_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Tanest"
+		monarch_name = "Tanest"
+		dynasty = "Tasneemid"
+		adm = 2
+		dip = 2
+		mil = 1
+		birth_date = 1436.11.5
+		death_date = 1501.11.5
+		female = yes
+		claim = 89
+		religion = catholic
+		culture = berber
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 74
+	add_treasury = 49
+}

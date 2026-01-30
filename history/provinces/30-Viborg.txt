@@ -1,0 +1,14 @@
+owner = UKR
+controller = UKR
+capital = "Viborg"
+is_city = yes
+culture = finnish
+religion = catholic
+trade_goods = fur
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = UKR
+add_permanent_claim = FIN
+discovered_by = eastern
+discovered_by = western

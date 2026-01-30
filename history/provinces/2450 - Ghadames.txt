@@ -1,0 +1,15 @@
+owner = TUN
+controller = TUN
+capital = "Ghadames"
+is_city = yes
+culture = berber
+religion = catholic
+trade_goods = spices
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = TUN
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

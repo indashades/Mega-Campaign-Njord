@@ -1,0 +1,97 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 43 141 172 }
+revolutionary_colors = { 1 8 5 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	administrative_ideas
+	maritime_ideas
+	innovativeness_ideas
+	offensive_ideas
+	exploration_ideas
+	economic_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_tercio
+	dutch_maurician
+	french_bluecoat
+	french_dragoon
+	french_impulse
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Aliken #0" = -1
+	"Arnulf #3" = 10
+	"Asbjörn #0" = 0
+	"Bartolomeus #0" = 0
+	"Benoît #0" = 0
+	"Bibai #0" = 0
+	"Boudewijn #7" = 10
+	"Dietrich #1" = 10
+	"Eilward #0" = 0
+	"Emma #0" = -1
+	"Furuzan #0" = -1
+	"Haziga #0" = -1
+	"Hupold #0" = 0
+	"Ide #0" = -1
+	"Karl #1" = 10
+	"Katrien #0" = -1
+	"Ludewijn #0" = 0
+	"Milobrat #0" = 0
+	"Philippe #2" = 10
+	"Robrecht #3" = 10
+	"William #1" = 10
+	"Yasar #0" = 0
+	"Yonefij #0" = -1
+}
+leader_names = {
+	"Dampierre"
+	"Deconinck"
+	"Goethals"
+	"Nevers"
+	"Penen"
+	"Van Bellegem"
+	"Van Gulik"
+	"Van Herstal"
+	"Van Leeuwergem"
+	"Van Lichtervelde"
+	"Van Nieuwland"
+	"Van Oudenaarde"
+	"Van Petershem"
+	"Van Raveschoot"
+	"Van Renesse"
+}
+ship_names = {
+	"Antwerpen"
+	"Boudewijn I"
+	"Brugge"
+	"De Vlaamse leeuw"
+	"Gent"
+	"Guldensporenslag"
+	"Gwijde van Dampierre"
+	"Hasselt"
+	"Jacob van Artevelde"
+	"Karel de Goede"
+	"Kerel van Vlaanderen"
+	"Leuven"
+	"Manneken Pis"
+	"Mechelen"
+	"Pieter de Coninck"
+	"Schelde"
+	"Tijl Uilenspiegel"
+	"Vlaanderen"
+}
+army_names = {
+	"Leger van $PROVINCE$"
+}
+fleet_names = {
+	"Vloot van $PROVINCE$"
+}

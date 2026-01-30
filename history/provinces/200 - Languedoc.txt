@@ -1,0 +1,16 @@
+owner = Z9P
+controller = Z9P
+capital = "Montpellier"
+is_city = yes
+culture = occitain
+religion = catholic
+trade_goods = cloth
+hre = yes
+base_tax = 3
+base_production = 4
+base_manpower = 5
+add_core = Z9P
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

@@ -1,0 +1,12 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = dynamic-greek-culture-num1
+capital = 43
+add_accepted_culture = old_pommeranian
+1444.11.11= {
+	add_prestige = 72
+	add_treasury = 0
+}

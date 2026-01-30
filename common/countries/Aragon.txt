@@ -1,0 +1,169 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 166 68 72 }
+revolutionary_colors = { 4 8 4 }
+historical_idea_groups = {
+	maritime_ideas
+	quantity_ideas
+	religious_ideas
+	trade_ideas
+	naval_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	french_caracolle
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	spanish_tercio
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Abd al-Malik #2" = 10
+	"Abd al-Rahman #3" = 10
+	"Abdallah #1" = 10
+	"Abu-Bakr #1" = 10
+	"Ahmad #2" = 10
+	"Alionor #0" = -1
+	"Ambroz #1" = 10
+	"Ansgar #0" = 0
+	"Artal #0" = 0
+	"Bahlul #1" = 10
+	"Chaime #2" = 10
+	"Chuana #0" = -1
+	"Cyprian #0" = 0
+	"Diago #0" = 0
+	"Eilo #0" = -1
+	"Ermesinda #0" = -1
+	"Frederico #0" = 0
+	"García #0" = 0
+	"Glum #0" = 0
+	"Hashim #1" = 10
+	"Husayn #1" = 10
+	"Isra #0" = -1
+	"Juries #0" = 0
+	"Lope #0" = 0
+	"Manrique #0" = 0
+	"Matruh #1" = 10
+	"Miraglia #1" = -1
+	"Mohamed #1" = 10
+	"Muhammad #5" = 10
+	"Mundir #2" = 10
+	"Muza #2" = 10
+	"Othelindis #0" = -1
+	"Peironela #1" = -1
+	"Pere #1" = 10
+	"Ramon Berenguer #1" = 10
+	"Reinbern #0" = 0
+	"Remiro #1" = 10
+	"Rodrigo #0" = 0
+	"Sancho #0" = 0
+	"Suleyman #1" = 10
+	"Urraca #0" = -1
+	"Violant #0" = -1
+	"Ximena #0" = -1
+	"Ximén #0" = 0
+	"Yahya #3" = 10
+	"Yusuf #1" = 10
+	"Érrard #0" = 0
+	"Ismail #1" = 10
+}
+leader_names = {
+	"Amic"
+	"Arbués"
+	"Balaguer"
+	"Barceló"
+	"Berguedà"
+	"Bielsa"
+	"Cajal"
+	"Colom"
+	"Domènec"
+	"Fernández de Hijar"
+	"Ferrer"
+	"Folc de Cardona"
+	"Franco"
+	"Galindo"
+	"Gil de Biedma"
+	"Gisbert"
+	"Loaisa"
+	"Martorell"
+	"Monteagudo"
+	"Muntaner"
+	"Oliva"
+	"Ordovás"
+	"Peña"
+	"Piquer"
+	"Pérez de Coloma"
+	"Ripoll"
+	"Sastre"
+	"Vallès"
+	"Veldrán"
+	"Vilamarí"
+	"Villarroya"
+	"d'Aragó"
+	"d'Empúries"
+	"d'Ixer"
+	"d'Ors"
+	"d'Urgell"
+	"d'Àustria"
+	"de Alagón"
+	"de Ayerbe"
+	"de Belchite"
+	"de Borja"
+	"de Cabrera"
+	"de Gotor"
+	"de Guimerà"
+	"de Gurrea"
+	"de Luna"
+	"de Montcada"
+	"de Requesens"
+	"de Ripperdá"
+	"de Zaporta"
+	"de la Riba"
+}
+ship_names = {
+	"Blanca Aurora"
+	"Falcó"
+	"Flama"
+	"La Bonaventura"
+	"La Garsa"
+	"La Gasela"
+	"La Reial"
+	"Lleona"
+	"Magnana"
+	"Sant Ambrós"
+	"Sant Antoni"
+	"Sant Bernat"
+	"Sant Climent"
+	"Sant Francesc"
+	"Sant Gabriel"
+	"Sant Jacob"
+	"Sant Joan Evangelista"
+	"Sant Jordi"
+	"Sant Miquel"
+	"Sant Pere de Roma"
+	"Sant Víctor"
+	"Santa Bàrbara"
+	"Santa Caterina"
+	"Santa Coloma"
+	"Santa Creu"
+	"Santa Eulàlia"
+	"Santa Magdalena"
+	"Santa Maria"
+	"Santa Ventura"
+	"Santa Ágata"
+	"Trinitat"
+}
+army_names = {
+	"Terç de $PROVINCE$"
+}

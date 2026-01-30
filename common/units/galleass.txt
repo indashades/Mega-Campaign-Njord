@@ -1,0 +1,12 @@
+#Galleas
+type = galley
+
+hull_size = 15
+base_cannons = 20
+blockade = 8
+
+sailors = 90
+
+sail_speed = 4.5
+
+sprite_level = 3

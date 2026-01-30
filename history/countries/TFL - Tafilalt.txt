@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 1
+technology_group = muslim
+religion = catholic
+primary_culture = moroccan
+capital = 2460
+mercantilism = 15
+1444.11.11= {
+	monarch = {
+		name = "Azenkwed"
+		dynasty = "Hintata"
+		adm = 3
+		dip = 4
+		mil = 4
+		birth_date = 1410.4.2
+		religion = catholic
+		culture = moroccan
+	}
+	add_ruler_personality = obsessive_perfectionist_personality
+	add_ruler_personality = strict_personality
+	queen = {
+		name = "Hind"
+		dynasty = "Mu'minid"
+		adm = 4
+		dip = 6
+		mil = 2
+		country_of_origin = TFL
+		birth_date = 1395.11.26
+		death_date = 1455.11.26
+		female = yes
+		religion = catholic
+		culture = moroccan
+	}
+	add_queen_personality = drunkard_personality
+	add_queen_personality = righteous_personality
+	heir = {
+		name = "Ahmad"
+		monarch_name = "Ahmad III"
+		dynasty = "Hintata"
+		adm = 5
+		dip = 6
+		mil = 4
+		birth_date = 1427.9.2
+		death_date = 1492.9.2
+		claim = 89
+		religion = catholic
+		culture = moroccan
+	}
+	add_heir_personality = loose_lips_personality
+	add_heir_personality = righteous_personality
+}
+1444.11.11= {
+	add_prestige = 75
+	add_treasury = 46
+}

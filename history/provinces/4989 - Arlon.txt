@@ -1,18 +1,18 @@
 # 94 Luxembourg - Principal cities: Luxembourg
 
-owner = BUR
-controller = BUR
+owner = BAR
+controller = BAR
 capital = "Arlon"
 is_city = yes
-culture = wallonian
+culture = hessian
 religion = catholic 
-hre = no
+hre = yes
 base_tax = 2
 base_production = 2
 trade_goods = grain
 base_manpower = 1
 add_core = LUX
-add_core = BUR
+add_core = BAR
 
 1814.8.30 = {
 	owner = LUX

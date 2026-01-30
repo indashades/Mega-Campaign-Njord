@@ -1,0 +1,106 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 157 51 167 }
+revolutionary_colors = { 8 1 8 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	trade_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_uhlan
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adelheid #1" = -1
+	"Agnerald #1" = 10
+	"Aliken #0" = -1
+	"Asbjörn #0" = 0
+	"Bartolomeus #0" = 0
+	"Benoît #0" = 0
+	"Bibai #0" = 0
+	"Bruno #1" = 10
+	"Charles #1" = 10
+	"Eberhard #1" = 10
+	"Eilward #0" = 0
+	"Emma #0" = -1
+	"Erenfried #1" = 10
+	"Friedrich #2" = 10
+	"Furuzan #0" = -1
+	"Gebhard #1" = 10
+	"Gerhard #4" = 10
+	"Giselbert #1" = 10
+	"Gottfried #2" = 10
+	"Haziga #0" = -1
+	"Heinrich #1" = 10
+	"Hupold #0" = 0
+	"Ide #0" = -1
+	"Katrien #0" = -1
+	"Konrad #2" = 10
+	"Lothaire #1" = 10
+	"Ludewijn #0" = 0
+	"Milobrat #0" = 0
+	"Reginar #1" = 10
+	"Richar #1" = 10
+	"Robrecht #1" = 10
+	"Yasar #0" = 0
+	"Yonefij #0" = -1
+}
+leader_names = {
+	"Adenau"
+	"Ansembourg"
+	"Bensenraede"
+	"Blittersdorf"
+	"Cölln"
+	"Dammerscheidt"
+	"Elmpt"
+	"Falkenberg"
+	"Gruithausen"
+	"Hillensberg"
+	"Hohenfeld"
+	"Naxleden"
+	"Schaluyn"
+	"Zebnitsch"
+	"von Clausbruch"
+	"von Dieblich"
+	"von Gelnhausen"
+	"von Leyen"
+	"von Namedy"
+	"von Schöneck"
+}
+ship_names = {
+	"Deidesheim"
+	"Elmstein"
+	"Hochspeyer"
+	"Kaiserslautern"
+	"Landstuhl"
+	"Neunkirchen"
+	"Neustadt"
+	"Rhodt"
+	"Winnweiler"
+	"Wolfstein"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+}
+fleet_names = {
+	"Stadtflotte"
+}

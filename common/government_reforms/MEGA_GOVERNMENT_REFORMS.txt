@@ -1,0 +1,366 @@
+#hansa gov
+trade_confederation_reform = {
+	icon = "free_city"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = merchant_republic
+	potential = {
+		has_reform = trade_confederation_reform
+	}
+	trigger = {
+		has_reform = trade_confederation_reform
+	}
+	boost_income = yes
+	duration = 4
+	factions = {
+		mr_traders
+		mr_aristocrats
+		mr_guilds
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+			NOT = { has_dlc = "Res Publica" }
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+	modifiers = {
+		max_absolutism = -10
+		merchants = 1
+	}
+	custom_attributes = {
+		is_merchant_republic = yes
+		extra_trade_goods_from_naval_supplies = yes
+		enable_mercantilism_bonuses = yes
+		elections_increase_factions_influence = yes
+		locked_government_type = yes
+	}
+}
+
+
+#Dragonborn Larp
+last_expedition_reform = {
+	icon = "free_city"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = NED
+			has_reform = last_expedition_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = NED
+			has_reform = last_expedition_reform
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = MEGA_the_last_expedition
+			duration = -1 
+		}
+		add_country_modifier = {
+			name = fra_vanguard_guard_modifier
+			duration = -1 
+		}
+	}
+	removed_effect = {
+		remove_country_modifier = MEGA_the_last_expedition
+		remove_country_modifier = fra_vanguard_guard_modifier
+	}
+	modifiers = {
+		can_recruit_revolutionary_guards = yes
+		allowed_rev_guard_fraction = 0.2
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+#Dragonborn Larp
+lumiere_admin_reform = {
+	icon = economy_industry
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = NED
+			has_reform = lumiere_admin_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = NED
+			has_reform = lumiere_admin_reform
+		}
+	}
+	modifiers = {
+		development_cost = -0.05
+		
+	}
+	custom_attributes = {
+		enables_writers_painters_guild = yes
+	}
+
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				writers_painters_guild = yes
+			}
+		}
+	}
+
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				writers_painters_guild = yes
+			}
+		}
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+
+#Dutch
+korps_mariniers_reform = {
+	icon = dutch_guilds
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			has_reform = korps_mariniers_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			has_reform = korps_mariniers_reform
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = MEGA_the_korps_mariniers
+			duration = -1 
+		}
+	}
+	removed_effect = {
+		remove_country_modifier = MEGA_the_korps_mariniers
+	}
+	modifiers = {
+		sailors_recovery_speed = 0.33
+	}
+	custom_attributes = {
+		marine_buff = yes	#Marines -20% Manpower Usage
+	}
+	ai = {
+		factor = 1
+	}
+}
+#Frankonian gov
+frankonian_kingdom = {
+	icon = "apostolic_kingdom"
+	allow_normal_conversion = yes
+	potential = {
+		religion_group = christian
+		OR = {
+			tag = FKN
+			was_tag = FKN
+		}
+	}
+	legacy_equivalent = feudal_monarchy
+	valid_for_nation_designer = no
+
+	nation_designer_trigger = {
+		primary_culture = franconian
+		religion_group = christian
+	}
+
+	modifiers = {
+		manpower_in_true_faith_provinces = 0.1
+		monthly_splendor = 1
+		prestige = 0.5
+	}
+
+	custom_attributes = {
+		GER_taking_age_rewards_gives_stability = yes
+	}
+
+	conditional = {
+		allow = { 
+			has_dlc = "Winds of Change" 
+			has_dlc = "Golden Century"
+		}
+		custom_attributes = {
+			order_of_the_dragon_unlocked = yes
+		}
+	}
+}
+
+ccp_secretariat = {
+	icon = "ccp"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		tag = CCP
+	}
+	trigger = {
+		tag = CCP
+	}
+
+	fixed_rank = 1
+
+	maintain_dynasty = yes
+
+	custom_attributes = {
+		has_unify_china_cb = yes
+	}
+
+	modifiers = {
+		manpower_recovery_speed = 0.33
+		morale_damage_received = -0.05
+		land_attrition = -0.2
+		governing_capacity = 750
+	}
+}
+prc_juche = {
+	icon = "prc"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		tag = PRC
+	}
+	trigger = {
+		tag = PRC
+	}
+
+	fixed_rank = 3
+
+	maintain_dynasty = yes
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+		factions = {}
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		has_unify_china_cb = yes
+	}
+
+	modifiers = {
+		global_manpower_modifier = 0.15
+		morale_damage_received = -0.1
+		governing_capacity = 500
+		meritocracy = 0.5
+	}
+}
+
+MEGA_trojan_kingdom = {
+	icon = "ottoman_government"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			tag = Z43
+			was_tag = Z43
+		}
+	}
+	trigger = {
+		OR = {
+			tag = Z43
+			was_tag = Z43
+		}
+		has_reform = MEGA_trojan_kingdom
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		increase_nobles_loyalty_per_culture_conversion = yes
+		recruiting_general_gives_army_tradition = yes
+	}
+
+	effect = {
+		add_country_modifier = {
+			name = MEGA_troy_may_recruit_mamluks
+			duration = -1
+		}
+	}
+
+	removed_effect = {
+		remove_country_modifier = MEGA_troy_may_recruit_mamluks
+	}
+
+	modifiers = {
+		overextension_impact_modifier = -0.25
+		governing_capacity = 100
+		culture_conversion_time = -0.15
+		culture_conversion_cost = -0.15
+	}
+}
+
+MEGA_elite_trojan_guards = {
+	icon = "modernized_furusiyya_reform"
+	potential = {
+		OR = {
+			tag = Z43
+			was_tag = Z43
+		}
+		has_reform = MEGA_trojan_kingdom
+	}
+	trigger = {
+		OR = {
+			tag = Z43
+			was_tag = Z43
+		}
+	}
+
+	custom_attributes = {
+		recruiting_general_gives_army_tradition = yes
+		can_raise_manpower_from_home_region = yes
+	}
+
+	effect = {
+		custom_tooltip = mams_disc_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = mam_disc_troops_modifier
+				duration = -1 
+				hidden = yes 
+			}
+		}
+	}
+
+	removed_effect = {
+		remove_country_modifier = mam_disc_troops_modifier
+	}
+
+	modifiers = {
+		drill_decay_modifier = -0.33
+		drill_gain_modifier = 0.33
+		allowed_mamluks_fraction = 0.2
+	}
+}

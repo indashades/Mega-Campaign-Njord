@@ -334,7 +334,7 @@ lorraine_area = { #4
 	187 188 189 4766
 }
 
-picardy_area = { #4
+picardy_area = { 5074  #4
 	87 88 89 1743
 }
 

@@ -1,0 +1,16 @@
+owner = FLA
+controller = FLA
+capital = "Utrecht"
+is_city = yes
+culture = flemish
+religion = norse_pagan
+trade_goods = cloth
+hre = yes
+base_tax = 2
+base_production = 6
+base_manpower = 3
+add_core = FLA
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

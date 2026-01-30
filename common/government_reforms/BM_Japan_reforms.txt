@@ -1,0 +1,114 @@
+
+
+ # TIER 3
+kyoho_reforms_reform = {
+	icon = "peasants"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = japanese_g
+	}
+	trigger = {
+		culture_group = japanese_g
+	}
+	modifiers = {
+		global_tax_modifier = 0.1
+		trade_efficiency = 0.05
+		burghers_loyalty_modifier = 0.05
+		burghers_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		BM_buff_merchant_guild_commercial_advisory_board = yes
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+
+metsuke_system_reform = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = metsuke_system_reform
+			has_reform = shogunate
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = metsuke_system_reform
+			has_reform = shogunate
+		}
+	}
+	modifiers = {
+		spy_offence = 0.35
+		diplomats = 1
+	}
+	custom_attributes = {
+		BM_buff_spymaster_advisor = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+
+ #TIER 5
+ashigaru_generals_reform = {
+	icon = daimyo
+	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Noble_Influence
+			value = -1
+		}
+	}
+	potential = {
+		OR = {
+			has_reform = ashigaru_generals_reform
+			culture_group = japanese_g
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = ashigaru_generals_reform
+			culture_group = japanese_g
+		}
+	}
+	modifiers = {
+		fire_damage = 0.05
+		fire_damage_received = -0.05
+		mil_tech_cost_modifier = -0.05
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+ #TIER 7
+reestablish_the_kuge_reform = {
+	icon = asian_scripture
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = japanese_g
+	}
+	trigger = {
+		culture_group = japanese_g
+	}
+	modifiers = {
+		all_estate_loyalty_equilibrium = 0.05
+		all_estate_possible_privileges = 1
+	}
+	custom_attributes = {
+		diet_increases_not_influence = yes
+	}
+	ai = {
+		factor = 10
+	}
+}

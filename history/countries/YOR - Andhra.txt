@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = nayankara_reform
+government_rank = 2
+technology_group = indian
+religion = hinduism
+primary_culture = telegu
+capital = 4419
+add_accepted_culture = tamil
+1444.11.11= {
+	monarch = {
+		name = "Rudradeva II"
+		dynasty = "Velanati Choda"
+		adm = 3
+		dip = 4
+		mil = 4
+		birth_date = 1395.1.25
+		religion = hinduism
+		culture = telegu
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = drunkard_personality
+	queen = {
+		name = "Dandimahadevi"
+		dynasty = "Kalinga Ganga"
+		adm = 5
+		dip = 5
+		mil = 5
+		country_of_origin = YOR
+		birth_date = 1395.8.25
+		death_date = 1455.8.25
+		female = yes
+		religion = hinduism
+		culture = oriya
+	}
+	add_queen_personality = pious_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Kaapayanayaka"
+		monarch_name = "Kaapayanayaka"
+		dynasty = "Velanati Choda"
+		adm = 3
+		dip = 6
+		mil = 2
+		birth_date = 1433.11.13
+		death_date = 1498.11.13
+		claim = 89
+		religion = hinduism
+		culture = telegu
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 80
+	add_treasury = 69
+}

@@ -1,0 +1,102 @@
+vladislavs_provincial_establishment_reform = {
+	icon = szlachta
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = dynamic-hungarian-culture-num1
+			has_reform = vladislavs_provincial_establishment_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = dynamic-hungarian-culture-num1
+			has_reform = vladislavs_provincial_establishment_reform
+		}
+	}
+	modifiers = {
+		state_maintenance_modifier = -0.33
+		global_unrest = -1
+		nobles_loyalty_modifier = 0.05
+		nobles_influence_modifier = 0.10
+	}
+	custom_attributes = {
+		enable_vladislavs_provincial_establishment = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+restored_land_establishment_reform = {
+	icon = szlachta_noble_1
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = dynamic-hungarian-culture-num1
+			has_reform = restored_land_establishment_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = dynamic-hungarian-culture-num1
+			has_reform = restored_land_establishment_reform
+		}
+		NOT = {
+			has_reform = superiority_of_the_state_reform
+		}
+	}
+	modifiers = {
+		max_absolutism = 15
+		global_autonomy = -0.03
+		nobles_influence_modifier = -0.1
+	}
+	custom_attributes = {
+		can_sell_crownland_to_single_estates = yes
+		can_seize_crownland_of_single_estates = yes
+		seizing_land_no_rebels = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+german_aristocracy_reform = {
+	icon = szlachta_noble_2
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = dynamic-hungarian-culture-num1
+			has_reform = german_aristocracy_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = czech
+			primary_culture = czech_new
+			primary_culture = dynamic-hungarian-culture-num1
+			has_reform = german_aristocracy_reform
+		}
+	}
+	modifiers = {
+		manpower_in_accepted_culture_provinces = 0.1
+		ae_impact = -0.1
+		nobles_influence_modifier = 0.1
+	}
+	ai = {
+		factor = 100
+	}
+}

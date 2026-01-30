@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = kingdom_of_sicily_reform
+government_rank = 2
+technology_group = western
+religion = catholic
+primary_culture = sardinian
+capital = 2986
+historical_rival = BYZ
+historical_rival = LEI
+1444.11.11= {
+	monarch = {
+		name = "Eva"
+		dynasty = "Spanu"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1414.1.10
+		female = yes
+		religion = catholic
+		culture = sardinian
+	}
+	add_ruler_personality = free_thinker_personality
+	add_ruler_personality = infertile_personality
+	queen = {
+		name = "Lucidio"
+		dynasty = "Fróilaz-Traba"
+		adm = 6
+		dip = 6
+		mil = 5
+		country_of_origin = SAR
+		birth_date = 1424.6.6
+		death_date = 1484.6.6
+		religion = catholic
+		culture = galician
+	}
+	add_queen_personality = conqueror_personality
+	add_queen_personality = tactical_genius_personality
+	heir = {
+		name = "Grigòriu"
+		monarch_name = "Grigòriu"
+		dynasty = "Spanu"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1440.1.2
+		death_date = 1509.1.2
+		claim = 89
+		religion = catholic
+		culture = sardinian
+	}
+	add_heir_personality = free_thinker_personality
+	add_heir_personality = tactical_genius_personality
+}
+1444.11.11= {
+	add_prestige = 93
+	add_treasury = 0
+}

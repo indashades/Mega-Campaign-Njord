@@ -1,0 +1,22 @@
+country_decisions = {
+
+	eng_corps_boost = {
+		potential = {
+			has_idea_group = defensive_ideas
+			NOT = { has_country_modifier = improved_fort_defense }
+		}
+		allow = {
+			years_of_income = 0.25
+		}
+		effect = {
+			add_years_of_income = -0.25
+			add_country_modifier = {
+				name = "improved_fort_defense"
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

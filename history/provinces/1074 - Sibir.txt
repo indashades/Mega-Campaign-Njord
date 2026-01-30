@@ -1,0 +1,13 @@
+capital = "Qashliq"
+culture = ostyaki
+religion = siberian_pagan
+trade_goods = fur
+base_tax = 1
+owner = Z61
+controller = Z61
+base_production = 1
+base_manpower = 2
+add_core = YUG
+add_core = Z2F
+add_core = Z61
+discovered_by = nomad_group

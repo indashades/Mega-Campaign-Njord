@@ -1,0 +1,14 @@
+owner = Z28
+controller = Z28
+capital = "Hoboksar"
+is_city = yes
+culture = dynamic-uyghur-culture-num1
+religion = vajrayana
+trade_goods = livestock
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = Z28
+discovered_by = CHG
+discovered_by = chinese
+discovered_by = nomad_group

@@ -1,7 +1,7 @@
 #279 - Volhynia
 
-owner = GOL
-controller = GOL
+owner = Z3B
+controller = Z3B
 culture = mishary
 religion = sunni
 hre = no
@@ -11,7 +11,7 @@ trade_goods = livestock
 base_manpower = 1
 capital = "Bielska Sloboda"
 is_city = yes
-add_core = GOL
+add_core = Z3B
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

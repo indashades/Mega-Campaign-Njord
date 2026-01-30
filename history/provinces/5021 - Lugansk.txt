@@ -1,7 +1,7 @@
 #279 - Volhynia
 
-owner = CRI
-controller = CRI
+owner = Z4H
+controller = Z4H
 culture = crimean
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = livestock
 base_manpower = 1
 capital = "Lugansk"
 is_city = yes
-add_core = CRI
+add_core = Z4H
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

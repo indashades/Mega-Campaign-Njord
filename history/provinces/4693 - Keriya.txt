@@ -1,0 +1,13 @@
+owner = Z2X
+controller = Z2X
+capital = "Keriya"
+is_city = yes
+culture = dynamic-uyghur-culture-num2
+religion = mahayana
+trade_goods = wool
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = Z2X
+discovered_by = chinese
+discovered_by = nomad_group

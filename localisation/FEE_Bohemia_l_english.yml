@@ -1,0 +1,31 @@
+﻿l_english:
+ FEE_Bohemia_Events.11.T: "Thaler Coinage"
+ FEE_Bohemia_Events.11.D: "Shortly after a rich deposit of silver was found in Joachimsthal, the Crown of Bohemia gave control of the mines to the wealthiest noble family in Bohemia, the Counts von Schlick. They began minting a new large silver coin, giving the name of the town to the new coin - the Thaler. This would go on to become the first truly standardized coinage across the Holy Roman Empire, and would become the ancestor of the British silver crown, the Dutch rijksdaalder, and even the US dollar.\n\nThis large, reliable coin filled the void as a reliable standard of exchange between the regions of Europe, especially in the prosperous but divided principalities of the Holy Roman Empire, where the coin received Imperial approval."
+ FEE_Bohemia_Events.11.OPT1: "Wonderful news!"
+ FEE_Bohemia_Events.11.OPT2: "Yes yes, very nice, but what's in it for me?"
+
+ FEE_Bohemia_Events.13.T: "Sack of Prague"
+ FEE_Bohemia_Events.13.D: "Disaster has befallen us! Prague, once one of the great cultural and economic centers, has fallen to the invading enemy! We can only curse the foolishness of our rulers who, scorning the example of past rulers, sought peace with enemies on the field rather than through a siege of their capital city. A full quarter of the city has been levelled and even the great cathedral has suffered damage."
+ FEE_Bohemia_Events.13.OPT1: "Will we ever recover?"
+
+ #Modifiers
+ fee_boh_infertility: "Infertility"
+ fee_boh_noble_concesions: "Noble Concessions"
+ fee_boh_hussite_ingenuity: "Hussite Ingenuity"
+ boh_coinage_pioneer: "Coinage Pioneer"
+ fee_boh_thaler: "Thaler"
+ fee_boh_greedy_rulership: "Greedy Rulership"
+ fee_boh_religion_enforced: "Religion Enforced"
+
+ fee_boh_defenestration_prague: "Defenestration of Prague"
+ fee_boh_charter_universal_peace_union_rivals: "Charter of a Universal Peace Union"
+ fee_boh_charter_universal_peace_union: "Charter of a Universal Peace Union"
+ fee_boh_charter_universal_peace_union_france: "Charter of a Universal Peace Union"
+
+ #Opinion
+ fee_boh_linked_thrones: "Linked Thrones"
+ fee_boh_claiming_thrones: "Claimed Thrones"
+
+ #Tooltips
+
+ fee_boh_thaler_princes_tt: "§YAll princes in the Holy Roman Empire will receive a bonus of §!§G+5%§!§Y trade efficiency for 20 years.§!"

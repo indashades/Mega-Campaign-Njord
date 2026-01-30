@@ -1,0 +1,201 @@
+# TIER 2
+blood_tax_reform = {
+	icon = blood_tax
+	allow_normal_conversion = yes
+	effect = {
+	}
+	removed_effect = {
+	}
+	potential = {
+		OR = {
+			culture_group = french
+			has_reform = blood_tax_reform
+		}
+	}
+	trigger = {
+		government_rank = 2
+		NOT = { has_reform = absolutist_france_reform }
+	}
+	modifiers = {
+		mil_advisor_cost = -0.1
+		vassal_manpower_bonus = 0.33
+	}
+	custom_attributes = {
+		enables_blood_tax = yes #Vassals, Marches and Appanages gain +25% Manpower Modifier and -15% Regiment Cost
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+noblesse_d_epee_reform = {
+	icon = soldiers
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = french
+			has_reform = noblesse_d_epee_reform
+		}
+	}
+	trigger = {
+		has_reform = absolutist_france_reform
+	}
+	modifiers = {
+		army_tradition = 0.5
+		global_manpower_modifier = 0.1
+	}
+	custom_attributes = {
+		enables_officers_of_the_sword = yes #1 prestige if over 50 AT
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+# TIER 3
+generalites_reform = {
+	icon = french_provinces
+	allow_normal_conversion = no
+	effect = {
+	}
+	removed_effect = {
+	}
+	potential = {
+		OR = {
+			culture_group = french
+			has_reform = generalites_reform
+		}
+	}
+	trigger = {
+		has_reform = absolutist_france_reform
+	}
+	modifiers = {
+		global_autonomy = -0.025
+		centralize_state_cost = -0.25
+		global_tax_modifier = 0.1
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Leviathan"
+		}
+		custom_attributes = {
+			centralize_state_half_refund = yes
+		}
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+# TIER 6
+bourgeoisie_aristocracy_reform = {
+	icon = regents
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = french
+			has_reform = absolutist_france_reform
+		}
+	}
+	trigger = {
+		has_reform = absolutist_france_reform
+	}
+	modifiers = {
+		burghers_loyalty_modifier = 0.05
+		burghers_influence_modifier = 0.1
+		production_efficiency = 0.05
+		burghers_privilege_slots = 1
+	}
+	custom_attributes = {
+		BM_french_buff_merchant_guild_financial_aid = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+# TIER 7
+parisian_court_reform = {
+	icon = conseil_du_roi
+	allow_normal_conversion = yes
+	effect = {
+		hidden_effect = {
+			ge_country_french_court_update = yes
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = French_Court
+		}
+	}
+	potential = {
+		OR = {
+			culture_group = french
+			has_reform = parisian_court_reform
+		}
+	}
+	trigger = {
+		has_reform = absolutist_france_reform
+	}
+	modifiers = {
+		diplomatic_reputation = 1
+		advisor_pool = 1
+		same_culture_advisor_cost = -0.15
+	}
+	custom_attributes = {
+		enables_french_court = yes #1 Prestige while all french court
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+# TIER 8
+society_of_agriculture_reform = {
+	icon = french_grain
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = french
+			has_reform = society_of_agriculture_reform
+		}
+	}
+	trigger = {
+		has_reform = absolutist_france_reform
+	}
+	modifiers = {
+		global_trade_goods_size_modifier = 0.05
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_society_of_agriculture_province_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = society_of_agriculture_grain
+				}
+				remove_province_modifier = society_of_agriculture_grain
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = society_of_agriculture_wine_livestock
+				}
+				remove_province_modifier = society_of_agriculture_wine_livestock
+			}
+		}
+	}
+	custom_attributes = {
+		enables_society_of_agriculture = yes #+2 Trade Power Value and +40% Production Efficiency in Grain provines, +25% Production Efficiency in Livestock and Wine
+	}
+	ai = {
+		factor = 100
+	}
+}

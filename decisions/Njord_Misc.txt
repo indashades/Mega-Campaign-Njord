@@ -1,0 +1,452 @@
+country_decisions = {
+	FKN_oktoberfest = {
+
+		major = yes
+
+		potential = {
+			tag = FKN
+			4718 = {
+				NOT = {
+					province_has_center_of_trade_of_level = 1
+				}
+			}
+		}
+
+		allow = {
+			dip_tech = 4
+			treasury = 150
+			prestige = 25
+		}
+		effect = {
+			add_treasury = -150
+			every_owned_province = {
+				limit = {
+					NOT = {
+						province_id = 4718
+					}
+					has_province_modifier = bav_established_oktoberfest
+				}
+				remove_province_modifier = bav_established_oktoberfest
+			}
+			4718 = {
+				center_of_trade = 1
+				add_province_modifier = {
+					name = bav_established_oktoberfest
+					duration = -1
+				}
+			}
+			add_prestige = 5
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	EOM_invite_orthodox_settlers = {
+
+		major = yes
+
+		potential = {
+			tag = EOM
+			NOT = { religion = orthodox }
+		}
+
+		allow = {
+			treasury = 25
+			NOT = { has_country_modifier = recent_orthodox_settlement }
+		}
+
+		effect = {
+			add_treasury = -25
+			add_country_modifier = {
+				name = recent_orthodox_settlement
+				duration = 365
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { religion = orthodox }
+				}
+				change_religion = orthodox
+			}
+			if = {
+				limit = {
+					dominant_religion = orthodox
+				}
+				add_stability = -2
+				add_prestige = -15
+				change_religion = orthodox
+				add_country_modifier = {
+					name = orthodoxy_established
+					duration = 3650
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	Z43_rebuild_troy = {
+
+		major = yes
+
+		potential = {
+			tag = Z43
+			2296 = {
+				owned_by = Z43
+				NOT = {
+					has_great_project = {
+						type = troy
+						tier = 2
+					}
+				}
+			}
+		}
+
+		allow = {
+			is_at_war = no
+			treasury = 200
+			stability = 1
+		}
+		effect = {
+			add_treasury = -250
+			2296 = {
+				add_latest_building = {
+					builder = ROOT
+					fort = yes
+				}
+			}
+			if = {
+				limit = {
+					2296 = {
+						has_great_project = {
+							type = troy
+							tier = 1
+						}
+					}
+				}
+				2296 = {
+					add_great_project_tier = {
+						type = troy
+						tier = 1
+					}
+				}
+			}
+			else = {
+				2296 = {
+					add_great_project_tier = {
+						type = troy
+						tier = 2
+					}
+				}
+			}
+
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	Z43_oracles = {
+
+		major = yes
+
+		potential = {
+			tag = Z43
+			NOT = { has_country_modifier = heeded_oracles }
+		}
+
+		allow = {
+			dip_power = 50
+		}
+		effect = {
+			add_dip_power = -50
+			add_patriarch_authority = 0.10
+			add_prestige = 10
+			add_papal_influence = 15
+			add_war_exhaustion = -2
+			add_country_modifier = {
+				name = heeded_oracles
+				duration = 7000
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	Z43_orthodox = {
+
+		major = yes
+
+		potential = {
+			tag = Z43
+			has_institution = printing_press
+			NOT = { has_institution = enlightenment }
+			religion = orthodox
+		}
+
+		allow = {
+			NOT = {
+				has_country_modifier = Z43_orthodoxy2
+			}
+			treasury = 50
+		}
+		effect = {
+			add_treasury = -50
+			add_patriarch_authority = 5
+			add_country_modifier = {
+				name = Z43_orthodoxy
+				duration = 3650
+			}
+			add_country_modifier = {
+				name = Z43_orthodoxy2
+				duration = 7000
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	Z43_form_trojan_kingdom = {
+
+		major = yes
+
+		potential = {
+			tag = Z43
+			AND = {
+				has_country_flag = TROIA_formed_troy_kingdom_flag
+				NOT = {
+					has_reform = MEGA_trojan_kingdom
+				}
+			}
+		}
+
+		allow = {
+			development_in_provinces = {
+				value = 500
+			}
+			NOT = {
+				average_autonomy = 10
+			}
+			stability = 2
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.15
+			}
+		}
+		effect = {
+			add_government_reform = MEGA_trojan_kingdom
+			hidden_effect = {
+				set_country_flag = TROIA_formed_troy_kingdom_flag
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	AMG_BUR_form = {
+
+		major = yes
+
+		potential = {
+			tag = AMG
+		}
+
+		allow = {
+			owns_core_province = 192
+			owns_core_province = 204
+			owns_core_province = 4719
+			owns_core_province = 202
+		}
+		effect = {
+			change_tag = BUR
+			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			add_prestige = 10
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	CCP_PRC_form = {
+
+		major = yes
+
+		potential = {
+			tag = CCP
+		}
+
+		allow = {
+			num_of_owned_provinces_with = {
+				OR = {
+					region = north_china_region
+					region = south_china_region
+					region = xinan_region
+				}
+				value = 75
+			}
+			OR = {
+				is_emperor_of_china = yes
+				NOT = {
+					any_country = {
+						is_emperor_of_china = yes
+					}
+				}
+			}
+		}
+		effect = {
+			change_tag = PRC
+			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
+			add_government_reform = prc_juche
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			add_prestige = 10
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	CCP_sabotage = {
+
+		major = yes
+
+		potential = {
+			tag = CCP
+		}
+
+		allow = {
+			treasury = 50
+			NOT = {
+				has_country_modifier = recently_spawned_rebels
+			}
+			any_neighbor_country = {
+				is_emperor_of_china = yes
+			}
+		}
+
+		effect = {
+			add_treasury = -50
+			add_country_modifier = {
+				name = recently_spawned_rebels
+				duration = 3650
+			}
+			random_neighbor_country = {
+				limit = {
+					is_emperor_of_china = yes
+				}
+				add_country_modifier = {
+					name = MEGA_peasant_rebels_spawned
+					duration = 3650
+				}
+				random_owned_province = {
+					spawn_rebels = {
+						size = 2
+						type = leadered_peasant_rebels
+						win = yes
+						friend = CCP
+					}
+				}
+				random_owned_province = {
+					spawn_rebels = {
+						size = 2
+						type = leadered_peasant_rebels
+						win = yes
+						friend = CCP
+					}
+				}
+				random_owned_province = {
+					spawn_rebels = {
+						size = 2
+						type = leadered_peasant_rebels
+						win = yes
+						friend = CCP
+					}
+				}
+			}
+		}
+	}
+
+	HUN_a_radical_new_direction = {
+
+		major = yes
+
+		potential = {
+			OR = {
+				tag = Z5J
+				was_tag = Z5J
+			}
+			NOT = {
+				has_country_flag = HUN_a_radical_new_direction_flag
+			}
+		}
+
+		allow = {
+			always = yes
+			is_at_war = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = HUN_a_radical_new_direction
+				duration = 7300
+			}
+			hidden_effect = {
+				set_country_flag = HUN_a_radical_new_direction_flag
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	NIGGER_DECISION = {
+
+		major = yes
+
+		potential = {
+			TAG = POL
+		}
+
+		allow = {
+			always = yes
+		}
+		effect = {
+			clr_country_flag = has_custom_ideas
+			clr_country_flag = is_playing_custom_nation
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

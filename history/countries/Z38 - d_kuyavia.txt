@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = eastern
+religion = catholic
+primary_culture = polish
+capital = 257
+elector = yes
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Robrecht"
+		dynasty = "Dessendre"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1414.11.18
+		religion = catholic
+		culture = flemish
+	}
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = lawgiver_personality
+	queen = {
+		name = "Signý"
+		dynasty = "de Bourg"
+		adm = 4
+		dip = 3
+		mil = 2
+		country_of_origin = Z38
+		birth_date = 1408.7.17
+		death_date = 1468.7.17
+		female = yes
+		religion = norse_pagan
+		culture = norwegian
+	}
+	add_queen_personality = malevolent_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Ludewijn"
+		monarch_name = "Ludewijn"
+		dynasty = "Dessendre"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1440.11.28
+		death_date = 1494.11.28
+		claim = 89
+		religion = norse_pagan
+		culture = flemish
+	}
+	add_heir_personality = free_thinker_personality
+	add_heir_personality = tolerant_personality
+}
+1444.11.11= {
+	add_prestige = 68
+	add_treasury = 0
+}

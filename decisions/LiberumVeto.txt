@@ -1,0 +1,33 @@
+country_decisions = {
+
+	liberum_veto = {
+		potential = {
+			NOT = { has_country_flag = librium_veto }
+			religion_group = christian
+			government = monarchy
+		}
+		allow = {
+			aristocracy_ideas = 1
+			is_at_war = yes
+			war_exhaustion = 8
+			num_of_cities = 6
+		}
+		effect = {
+			set_country_flag = librium_veto
+			add_war_exhaustion = -10
+			add_army_tradition = 30
+			add_mil_power = 100
+			random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				build_to_forcelimit = {
+					infantry = 0.8
+					cavalry = 0.2
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

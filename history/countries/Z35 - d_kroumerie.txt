@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = muslim
+religion = catholic
+primary_culture = moroccan
+capital = 340
+add_accepted_culture = algerian
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Mula III"
+		dynasty = "Mu'minid"
+		adm = 5
+		dip = 3
+		mil = 5
+		birth_date = 1402.12.17
+		religion = catholic
+		culture = moroccan
+	}
+	add_ruler_personality = just_personality
+	add_ruler_personality = righteous_personality
+	queen = {
+		name = "Amat al-Wahhab"
+		dynasty = "Mu'minid"
+		adm = 3
+		dip = 4
+		mil = 4
+		country_of_origin = Z35
+		birth_date = 1399.10.22
+		death_date = 1459.10.22
+		female = yes
+		religion = catholic
+		culture = moroccan
+	}
+	add_queen_personality = righteous_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Mula"
+		monarch_name = "Mula IV"
+		dynasty = "Mu'minid"
+		adm = 1
+		dip = 2
+		mil = 1
+		birth_date = 1441.3.4
+		death_date = 1506.3.4
+		claim = 89
+		religion = catholic
+		culture = moroccan
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 82
+	add_treasury = 0
+}

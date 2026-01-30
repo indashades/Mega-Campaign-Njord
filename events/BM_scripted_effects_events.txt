@@ -1,0 +1,27 @@
+namespace = BM_scripted_effect_event
+
+country_event = {
+	id = BM_scripted_effect_event.1
+	title = BM_scripted_effect_event.1.t
+	desc = BM_scripted_effect_event.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { 
+				has_idea = BM_integrated_elites
+			}
+			change_estate_land_share = {
+				estate = all
+				share = -5
+			}
+		}
+	}
+	
+	option = {
+		name = BM_scripted_effect_event.1.a
+	}
+}

@@ -1,0 +1,1718 @@
+namespace = IndiaGC_events
+
+# 1753 
+country_event = {
+	id = IndiaGC_events.1
+	title = IndiaGC_events.1.t
+	desc = IndiaGC_events.1.d
+	picture = BARBARY_PIRATES_eventPicture
+	
+	trigger = {
+		is_year = 1550
+		full_idea_group = exploration_ideas
+		capital_scope = { continent = europe }
+		any_owned_province = {
+			continent = asia
+		}
+		NOT = { has_country_flag = has_gained_india_claims }
+		NOT = { has_global_flag = european_meddling_overruled }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = IndiaGC_events.1.a
+		set_country_flag = has_gained_india_claims
+		india_superregion = {  
+			limit = { has_port = yes } add_permanent_claim = ROOT
+		}
+	}
+}
+	
+	
+# Start of Game 2
+country_event = {
+	id = IndiaGC_events.2
+	title = IndiaGC_events.2.t
+	desc = IndiaGC_events.2.d
+	
+	trigger = {
+		not = { has_country_flag = provinces_have_effect_already }
+		has_game_started = yes
+		or ={
+			culture_group = central_indic
+			culture_group = eastern_aryan
+			culture_group = hindusthani
+			culture_group = western_aryan
+			culture_group = dravidian
+		}
+	}
+	
+	option = {
+		name = IndiaGC_events.2.a
+		every_core_province = {
+			add_permanent_province_modifier = { 
+				name = indian_feudalism
+				duration = -1  
+				desc = indian_feudalism_tt
+			}
+		}
+		set_country_flag = provinces_have_effect_already
+	}
+}	# Start of Game 2
+country_event = {
+	id = IndiaGC_events.2
+	title = IndiaGC_events.2.t
+	desc = IndiaGC_events.2.d
+	
+	trigger = {
+		not = { has_country_flag = provinces_have_effect_already }
+		has_game_started = yes
+		or ={
+			culture_group = central_indic
+			culture_group = eastern_aryan
+			culture_group = hindusthani
+			culture_group = western_aryan
+			culture_group = dravidian
+		}
+	}
+	
+	option = {
+		name = IndiaGC_events.2.a
+		every_core_province = {
+			add_permanent_province_modifier = { 
+				name = indian_feudalism
+				duration = -1  
+				desc = indian_feudalism_tt
+			}
+		}
+		set_country_flag = provinces_have_effect_already
+	}
+}	
+
+# Vassalize a random Nation
+country_event = {
+	id = IndiaGC_events.3
+	title = IndiaGC_events.3.t
+	desc = IndiaGC_events.3.d
+	
+	trigger = {
+		not = { has_country_flag = has_declared_absolute_rule }
+		not = { crown_land_share = 75 }
+		or ={
+			culture_group = central_indic
+			culture_group = eastern_aryan
+			culture_group = hindusthani
+			culture_group = western_aryan
+			culture_group = dravidian
+		}
+		or = {
+			estate_influence = {
+				estate = estate_maratha
+				influence = 50
+			}	
+			estate_influence = {
+				estate = estate_rajput
+				influence = 50
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+
+		modifier = {
+			factor = 2
+			NOT = {
+				estate_loyalty = {
+					estate = estate_maratha
+					loyalty = 0.5
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			legitimacy = 50
+		}
+		modifier = {
+			factor = 1.5
+			crown_land_share = 20
+		}
+		modifier = {
+			factor = 1.5
+			crown_land_share = 30
+		}
+		modifier = {
+			factor = 1.5
+			crown_land_share = 40
+		}
+		modifier = {
+			factor = 1.5
+			crown_land_share = 50
+		}
+		modifier = {
+			factor = 1.5
+			crown_land_share = 60
+		}
+		modifier = {
+			factor = 1.5
+			crown_land_share = 70
+		}
+		modifier = {
+			factor = 1.5
+			crown_land_share = 80
+		}
+	}	
+
+	option = {
+		name = IndiaGC_events.3.a
+		add_estate_influence_modifier = {
+			estate = estate_maratha
+			desc = EST_VAL_SATISFIED_WITH_AUTONOMY_GAIN
+			influence = -5
+			duration = 1500
+		}
+		add_estate_influence_modifier = {
+			estate = estate_rajput
+			desc = EST_VAL_SATISFIED_WITH_AUTONOMY_GAIN
+			influence = -5
+			duration = 1500
+		}
+		random_list = {
+			100 = {
+				1947 = { cede_province = GNG }
+				vassalize = GNG
+				modifier = { 
+					factor = 0
+					NOT = { owns = 1947 }
+				}
+			}
+			100 = {
+				2084 = { cede_province = YOR }
+				vassalize = YOR
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2084 }
+				}
+			}
+			100 = {
+				4420 = { cede_province = KRK }
+				vassalize = KRK
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4420 }
+				}
+			}
+			100 = {
+				565 = { cede_province = VIJ }
+				vassalize = VIJ
+				modifier = { 
+					factor = 0
+					NOT = { owns = 565 }
+				}
+			}
+			100 = {
+				2026 = { cede_province = TNJ }
+				vassalize = TNJ
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2026 }
+				}
+			}
+			100 = {
+				2032 = { cede_province = KLN }
+				vassalize = TNJ
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2032 }
+				}
+			}
+			100 = {
+				4408 = { cede_province = CEY }
+				vassalize = CEY
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4408 }
+				}
+			}
+			100 = {
+				2099 = { cede_province = KND }
+				vassalize = KND
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2099 }
+				}
+			}
+			100 = {
+				2100 = { cede_province = JFN }
+				vassalize = JFN
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2100 }
+				}
+			}
+			100 = {
+				2101 = { cede_province = MAD }
+				vassalize = MAD
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2101 }
+				}
+			}
+			100 = {
+				537 = { cede_province = VND }
+				vassalize = VND
+				modifier = { 
+					factor = 0
+					NOT = { owns = 537 }
+				}
+			}
+			100 = {
+				535 = { cede_province = KOC }
+				vassalize = KOC
+				modifier = { 
+					factor = 0
+					NOT = { owns = 535 }
+				}
+			}
+			100 = {
+				534 = { cede_province = MAB }
+				vassalize = MAB
+				modifier = { 
+					factor = 0
+					NOT = { owns = 534 }
+				}
+			}
+			100 = {
+				533 = { cede_province = MYS }
+				vassalize = MYS
+				modifier = { 
+					factor = 0
+					NOT = { owns = 533 }
+				}
+			}
+			100 = {
+				4439 = { cede_province = TLG }
+				vassalize = TLG
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4439 }
+				}
+			}
+			100 = {
+				1948 = { cede_province = BAH }
+				vassalize = BAH
+				modifier = { 
+					factor = 0
+					NOT = { owns = 1948 }
+				}
+			}
+			100 = {
+				544 = { cede_province = AHM }
+				vassalize = AHM
+				modifier = { 
+					factor = 0
+					NOT = { owns = 544 }
+				}
+			}
+			100 = {
+				548 = { cede_province = BRR }
+				vassalize = BRR
+				modifier = { 
+					factor = 0
+					NOT = { owns = 548 }
+				}
+			}
+			100 = {
+				542 = { cede_province = GOC }
+				vassalize = GOC
+				modifier = { 
+					factor = 0
+					NOT = { owns = 542 }
+				}
+			}
+			100 = {
+				569 = { cede_province = BIJ }
+				vassalize = BIJ
+				modifier = { 
+					factor = 0
+					NOT = { owns = 569 }
+				}
+			}
+			100 = {
+				527 = { cede_province = KHD }
+				vassalize = KHD
+				modifier = { 
+					factor = 0
+					NOT = { owns = 527 }
+				}
+			}
+			100 = {
+				619 = { cede_province = BGA }
+				vassalize = BGA
+				modifier = { 
+					factor = 0
+					NOT = { owns = 619 }
+				}
+			}
+			100 = {
+				2050 = { cede_province = CHD }
+				vassalize = CHD
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2050 }
+				}
+			}
+			100 = {
+				595 = { cede_province = BST }
+				vassalize = BST
+				modifier = { 
+					factor = 0
+					NOT = { owns = 595 }
+				}
+			}
+			100 = {
+				2048 = { cede_province = JPR }
+				vassalize = JPR
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2048 }
+				}
+			}
+			100 = {
+				4452 = { cede_province = RTT }
+				vassalize = RTT
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4452 }
+				}	
+			}
+			100 = {
+				4448 = { cede_province = PRD }
+				vassalize = PRD
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4448 }
+				}
+			}
+			100 = {
+				2056 = { cede_province = CMP }
+				vassalize = CMP
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2056 }
+				}
+			}
+			100 = {
+				4480 = { cede_province = IDR }
+				vassalize = IDR
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4480 }
+				}
+			}
+			100 = {
+				2049 = { cede_province = GRJ }
+				vassalize = GRJ
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2049 }
+				}
+			}
+			100 = {
+				4450 = { cede_province = KJH }
+				vassalize = KJH
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4450 }
+				}
+			}
+			100 = {
+				553 = { cede_province = SBP }
+				vassalize = SBP
+				modifier = { 
+					factor = 0
+					NOT = { owns = 553 }
+				}
+			}
+			100 = {
+				4447 = { cede_province = PTT }
+				vassalize = PTT
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4447 }
+				}
+			}
+			100 = {
+				623 = { cede_province = YOR }
+				vassalize = YOR
+				modifier = { 
+					factor = 0
+					NOT = { owns = 623 }
+				}
+			}
+			100 = {
+				552 = { cede_province = ORI }
+				vassalize = ORI
+				modifier = { 
+					factor = 0
+					NOT = { owns = 552 }
+				}
+			}
+			100 = {
+				529 = { cede_province = ORI }
+				vassalize = ORI
+				modifier = { 
+					factor = 0
+					NOT = { owns = 529 }
+				}
+			}
+			100 = {
+				568 = { cede_province = GUJ }
+				vassalize = GUJ
+				modifier = { 
+					factor = 0
+					NOT = { owns = 568 }
+				}
+			}
+			100 = {
+				4456 = { cede_province = JLV }
+				vassalize = JLV
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4456 }
+				}
+			}
+			100 = {
+				4454 = { cede_province = PRB }
+				vassalize = PRB
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4454 }
+				}
+			}
+			100 = {
+				2051 = { cede_province = PTL }
+				vassalize = PTL
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2051 }
+				}
+			}
+			100 = {
+				515 = { cede_province = JGD }
+				vassalize = JGD
+				modifier = { 
+					factor = 0
+					NOT = { owns = 515 }
+				}
+			}
+			100 = {
+				521 = { cede_province = RJK }
+				vassalize = RJK
+				modifier = { 
+					factor = 0
+					NOT = { owns = 521 }
+				}
+			}
+			100 = {
+				2052 = { cede_province = NVR }
+				vassalize = NVR
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2052 }
+				}
+			}
+			100 = {
+				503 = { cede_province = KAT }
+				vassalize = KAT
+				modifier = { 
+					factor = 0
+					NOT = { owns = 503 }
+				}
+			}
+			100 = {
+				550 = { cede_province = GDW }
+				vassalize = GDW
+				modifier = { 
+					factor = 0
+					NOT = { owns = 550 }
+				}
+			}
+			100 = {
+				2098 = { cede_province = SRG }
+				vassalize = SRG
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2098 }
+				}
+			}
+			100 = {
+				560 = { cede_province = NGP }
+				vassalize = NGP
+				modifier = { 
+					factor = 0
+					NOT = { owns = 560 }
+				}
+			}
+			100 = {
+				2097 = { cede_province = BGL }
+				vassalize = BGL
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2097 }
+				}
+			}
+			100 = {
+				4467 = { cede_province = PAN }
+				vassalize = PAN
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4467 }
+				}
+			}
+			100 = {
+				4466 = { cede_province = BND }
+				vassalize = BND
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4466 }
+				}
+			}
+			100 = {
+				2059 = { cede_province = KLP }
+				vassalize = KLP
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2059 }
+				}
+			}
+			100 = {
+				525 = { cede_province = GWA }
+				vassalize = GWA
+				modifier = { 
+					factor = 0
+					NOT = { owns = 525 }
+				}
+			}
+			100 = {
+				528 = { cede_province = HAD }
+				vassalize = HAD
+				modifier = { 
+					factor = 0
+					NOT = { owns = 528 }
+				}
+			}
+			100 = {
+				4465 = { cede_province = MER }
+				vassalize = MER
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4465 }
+				}
+			}
+			100 = {
+				504 = { cede_province = SND }
+				vassalize = SND
+				modifier = { 
+					factor = 0
+					NOT = { owns = 504 }
+				}
+			}
+			100 = {
+				513 = { cede_province = JSL }
+				vassalize = JSL
+				modifier = { 
+					factor = 0
+					NOT = { owns = 513 }
+				}
+			}
+			100 = {
+				2066 = { cede_province = NGA }
+				vassalize = NGA
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2066 }
+				}
+			}
+			100 = {
+				519 = { cede_province = DHU }
+				vassalize = DHU
+				modifier = { 
+					factor = 0
+					NOT = { owns = 519 }
+				}
+			}
+			100 = {
+				520 = { cede_province = MEW }
+				vassalize = MEW
+				modifier = { 
+					factor = 0
+					NOT = { owns = 520 }
+				}
+			}
+			100 = {
+				512 = { cede_province = JAN }
+				vassalize = JAN
+				modifier = { 
+					factor = 0
+					NOT = { owns = 512 }
+				}
+			}
+			100 = {
+				2078 = { cede_province = PUN }
+				vassalize = PUN
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2078 }
+				}
+			}
+			100 = {
+				506 = { cede_province = MUL }
+				vassalize = MUL
+				modifier = { 
+					factor = 0
+					NOT = { owns = 506 }
+				}
+			}
+			100 = {
+				522 = { cede_province = DLH }
+				vassalize = DLH
+				modifier = { 
+					factor = 0
+					NOT = { owns = 522 }
+				}
+			}
+			100 = {
+				4471 = { cede_province = MBL }
+				vassalize = MBL
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4471 }
+				}
+			}
+			100 = {
+				556 = { cede_province = BNG }
+				vassalize = BNG
+				modifier = { 
+					factor = 0
+					NOT = { owns = 556 }
+				}
+			}
+			100 = {
+				555 = { cede_province = JNP }
+				vassalize = JNP
+				modifier = { 
+					factor = 0
+					NOT = { owns = 555 }
+				}
+			}
+			100 = {
+				590 = { cede_province = ODH }
+				vassalize = ODH
+				modifier = { 
+					factor = 0
+					NOT = { owns = 590 }
+				}
+			}
+			100 = {
+				2061 = { cede_province = RMP }
+				vassalize = RMP
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2061 }
+				}
+			}
+			100 = {
+				2047 = { cede_province = TRT }
+				vassalize = TRT
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2047 }
+				}
+			}
+			100 = {
+				4491 = { cede_province = DNG }
+				vassalize = DNG
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4491 }
+				}
+			}
+			100 = {
+				554 = { cede_province = JML }
+				vassalize = JML
+				modifier = { 
+					factor = 0
+					NOT = { owns = 554 }
+				}
+			}
+			100 = {
+				4492 = { cede_province = DTI }
+				vassalize = DTI
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4492 }
+				}
+			}
+			100 = {
+				523 = { cede_province = ODH }
+				vassalize = ODH
+				modifier = { 
+					factor = 0
+					NOT = { owns = 523 }
+				}
+			}
+			100 = {
+				2069 = { cede_province = KMN }
+				vassalize = KMN
+				modifier = { 
+					factor = 0
+					NOT = { owns = 2069 }
+				}
+			}
+			100 = {
+				511 = { cede_province = GHR }
+				vassalize = GHR
+				modifier = { 
+					factor = 0
+					NOT = { owns = 511 }
+				}
+			}
+			100 = {
+				4493 = { cede_province = SRM }
+				vassalize = SRM
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4493 }
+				}
+			}
+			100 = {
+				557 = { cede_province = KTU }
+				vassalize = KTU
+				modifier = { 
+					factor = 0
+					NOT = { owns = 557 }
+				}
+			}
+			100 = {
+				4485 = { cede_province = GRK }
+				vassalize = GRK
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4485 }
+				}
+			}
+			100 = {
+				4483 = { cede_province = LWA }
+				vassalize = LWA
+				modifier = { 
+					factor = 0
+					NOT = { owns = 4483 }
+				}
+			}
+			100 = {
+				562 = { cede_province = KMT }
+				vassalize = KMT
+				modifier = { 
+					factor = 0
+					NOT = { owns = 562 }
+				}
+			}
+			100 = {
+				509 = { cede_province = KGR }
+				vassalize = KGR
+				modifier = { 
+					factor = 0
+					NOT = { owns = 509 }
+				}
+			}
+			100 = {
+				507 = { cede_province = SRH }
+				vassalize = SRH
+				modifier = { 
+					factor = 0
+					NOT = { owns = 507 }
+				}
+			}
+			100 = {
+				508 = { cede_province = KSH }
+				vassalize = KSH
+				modifier = { 
+					factor = 0
+					NOT = { owns = 508 }
+				}
+			}	
+		}
+		ai_chance = { factor = 75 }
+	}
+	
+	option = {
+		name = IndiaGC_events.3.b
+		add_estate_loyalty = {
+			estate = estate_rajput
+			loyalty = -10
+		}		
+		add_estate_loyalty = {
+			estate = estate_maratha
+			loyalty = -10
+		}
+		every_subject_country = {
+			add_liberty_desire = 15
+		}
+		ai_chance = { 
+			factor = 25
+			modifier = {
+				factor = 2
+				num_of_free_diplomatic_relations = 0
+			}			
+		}
+	}
+}
+
+
+country_event = {
+	id = IndiaGC_events.4
+	title = IndiaGC_events.4.t
+	desc = IndiaGC_events.4.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = IndiaGC_events.4.a
+		add_stability = -2
+		add_war_exhaustion = 5
+		custom_tooltip = all_indian_nations_become_vassals
+		hidden_effect = {
+			if = {
+				limit = { owns = 1947 }
+				# 1947 = { cede_province = GNG }
+				# vassalize = GNG
+				create_vassal = GNG
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = GNG
+				}
+			}
+			if = {
+				limit = { owns = 4420 }
+				# 4420 = { cede_province = KRK }
+				# vassalize = KRK
+				create_vassal = KRK
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KRK
+				}
+			}		
+			if = {
+				limit = { owns = 565 }
+				# 565 = { cede_province = VIJ }
+				# vassalize = VIJ
+				create_vassal = VIJ
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = VIJ
+				}
+			}		
+			if = {
+				limit = { owns = 2026 }
+				# 2026 = { cede_province = TNJ }
+				# vassalize = TNJ
+				create_vassal = TNJ
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = TNJ
+				}
+			}			
+			if = {
+				limit = { owns = 2032 }
+				# 2032 = { cede_province = KLN }
+				# vassalize = KLN
+				create_vassal = KLN
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KLN
+				}
+			}			
+			if = {
+				limit = { owns = 4408 }
+				# 4408 = { cede_province = CEY }
+				# vassalize = CEY
+				create_vassal = CEY
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = CEY
+				}
+			}		
+			if = {
+				limit = { owns = 2099 }
+				# 2099 = { cede_province = KND }
+				# vassalize = KND
+				create_vassal = KND
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KND
+				}
+			}		
+			if = {
+				limit = { owns = 2100 }
+				# 2100 = { cede_province = JFN }
+				# vassalize = JFN
+				create_vassal = JFN
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = JFN
+				}
+			}		
+			if = {
+				limit = { owns = 2101 }
+				# 2101 = { cede_province = MAD }
+				# vassalize = MAD
+				create_vassal = MAD
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = MAD
+				}
+			}		
+			if = {
+				limit = { owns = 537 }
+				# 537 = { cede_province = VND }
+				# vassalize = VND
+				create_vassal = VND
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = VND
+				}
+			}		
+			if = {
+				limit = { owns = 535 }
+				# 535 = { cede_province = KOC }
+				# vassalize = KOC
+				create_vassal = KOC
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KOC
+				}
+			}		
+			if = {
+				limit = { owns = 534 }
+				# 534 = { cede_province = MAB }
+				# vassalize = MAB
+				create_vassal = MAB
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = MAB
+				}
+			}		
+			if = {
+				limit = { owns = 533 }
+				# 533 = { cede_province = MYS }
+				# vassalize = MYS
+				create_vassal = MYS
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = MYS
+				}
+			}		
+			if = {
+				limit = { owns = 4439 }
+				# 4439 = { cede_province = TLG }
+				# vassalize = TLG
+				create_vassal = TLG
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = TLG
+				}
+			}			
+			if = {
+				limit = { owns = 1948 }
+				# 1948 = { cede_province = BAH }
+				# vassalize = BAH
+				create_vassal = BAH
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = BAH
+				}
+			}			
+			if = {
+				limit = { owns = 544 }
+				# 544 = { cede_province = AHM }
+				# vassalize = AHM
+				create_vassal = AHM
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = AHM
+				}
+			}			
+			if = {
+				limit = { owns = 548 }
+				# 548 = { cede_province = BRR }
+				# vassalize = BRR
+				create_vassal = BRR
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = BRR
+				}
+			}		
+			if = {
+				limit = { owns = 542 }
+				# 542 = { cede_province = GOC }
+				# vassalize = GOC
+				create_vassal = GOC
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = GOC
+				}
+			}		
+			if = {
+				limit = { owns = 569 }
+				# 569 = { cede_province = BIJ }
+				# vassalize = BIJ
+				create_vassal = BIJ
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = BIJ
+				}
+			}		
+			if = {
+				limit = { owns = 527 }
+				# 527 = { cede_province = KHD }
+				# vassalize = KHD
+				create_vassal = KHD
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KHD
+				}
+			}			
+			if = {
+				limit = { owns = 619 }
+				# 619 = { cede_province = BGA }
+				# vassalize = BGA
+				create_vassal = BGA
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = BGA
+				}
+			}				
+			if = {
+				limit = { owns = 2050 }
+				# 2050 = { cede_province = CHD }
+				# vassalize = CHD
+				create_vassal = CHD
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = CHD
+				}
+			}				
+			if = {
+				limit = { owns = 595 }
+				# 595 = { cede_province = BST }
+				# vassalize = BST
+				create_vassal = BST
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = BST
+				}
+			}					
+			if = {
+				limit = { owns = 2048 }
+				# 2048 = { cede_province = JPR }
+				# vassalize = JPR
+				create_vassal = JPR
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = JPR
+				}
+			}													
+			if = {
+				limit = { owns = 4452 }
+				# 4452 = { cede_province = RTT }
+				# vassalize = RTT
+				create_vassal = RTT
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = RTT
+				}
+			}								
+			if = {
+				limit = { owns = 4448 }
+				# 4448 = { cede_province = PRD }
+				# vassalize = PRD
+				create_vassal = PRD
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = PRD
+				}
+			}								
+			if = {
+				limit = { owns = 2056 }
+				# 2056 = { cede_province = CMP }
+				# vassalize = CMP
+				create_vassal = CMP
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = CMP
+				}
+			}								
+			if = {
+				limit = { owns = 4480 }
+				# 4480 = { cede_province = IDR }
+				# vassalize = IDR
+				create_vassal = IDR
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = IDR
+				}
+			}		
+			if = {
+				limit = { owns = 2049 }
+				# 2049 = { cede_province = GRJ }
+				# vassalize = GRJ
+				create_vassal = GRJ
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = GRJ
+				}
+			}		
+			if = {
+				limit = { owns = 4450 }
+				# 4450 = { cede_province = KJH }
+				# vassalize = KJH
+				create_vassal = KJH
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KJH
+				}
+			}			
+			if = {
+				limit = { owns = 553 }
+				# 553 = { cede_province = SBP }
+				# vassalize = SBP
+				create_vassal = SBP
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = SBP
+				}
+			}				
+			if = {
+				limit = { owns = 4447 }
+				# 4447 = { cede_province = PTT }
+				# vassalize = PTT
+				create_vassal = PTT
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = PTT
+				}
+			}					
+			if = {
+				limit = { owns = 623 }
+				# 623 = { cede_province = YOR }
+				# vassalize = YOR
+				create_vassal = YOR
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = YOR
+				}
+			}					
+			if = {
+				limit = { owns = 552 }
+				# 552 = { cede_province = ORI }
+				# vassalize = ORI
+				create_vassal = ORI
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = ORI
+				}
+			}					
+			if = {
+				limit = { owns = 568 }
+				# 568 = { cede_province = GUJ }
+				# vassalize = GUJ
+				create_vassal = GUJ
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = GUJ
+				}
+			}					
+			if = {
+				limit = { owns = 4456 }
+				# 4456 = { cede_province = JLV }
+				# vassalize = JLV
+				create_vassal = JLV
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = JLV
+				}
+			}						
+			if = {
+				limit = { owns = 4454 }
+				# 4454 = { cede_province = PRB }
+				# vassalize = PRB
+				create_vassal = PRB
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = PRB
+				}
+			}							
+			if = {
+				limit = { owns = 2051 }
+				# 2051 = { cede_province = PTL }
+				# vassalize = PTL
+				create_vassal = PTL
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = PTL
+				}
+			}								
+			if = {
+				limit = { owns = 515 }
+				# 515 = { cede_province = JGD }
+				# vassalize = JGD
+				create_vassal = JGD
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = JGD
+				}
+			}								
+			if = {
+				limit = { owns = 521 }
+				# 521 = { cede_province = RJK }
+				# vassalize = RJK
+				create_vassal = RJK
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = RJK
+				}
+			}								
+			if = {
+				limit = { owns = 2052 }
+				# 2052 = { cede_province = NVR }
+				# vassalize = NVR
+				create_vassal = NVR
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = NVR
+				}
+			}								
+			if = {
+				limit = { owns = 503 }
+				# 503 = { cede_province = KAT }
+				# vassalize = KAT
+				create_vassal = KAT
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KAT
+				}
+			}																	
+			if = {
+				limit = { owns = 550 }
+				# 550 = { cede_province = GDW }
+				# vassalize = GDW
+				create_vassal = GDW
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = GDW
+				}
+			}										
+			if = {
+				limit = { owns = 2098 }
+				# 2098 = { cede_province = SRG }
+				# vassalize = SRG
+				create_vassal = SRG
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = SRG
+				}
+			}											
+			if = {
+				limit = { or = { owns = 560 owns = 2096 } }
+				# 560 = { cede_province = NGP }
+				# vassalize = NGP
+				create_vassal = NGP
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = NGP
+				}
+			}											
+			if = {
+				limit = { owns = 2097 }
+				# 2097 = { cede_province = BGL }
+				# vassalize = BGL
+				create_vassal = BGL
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = BGL
+				}
+			}											
+			if = {
+				limit = { owns = 4467 }
+				# 4467 = { cede_province = PAN }
+				# vassalize = PAN
+				create_vassal = PAN
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = PAN
+				}
+			}											
+			if = {
+				limit = { owns = 4466 }
+				# 4466 = { cede_province = BND }
+				# vassalize = BND
+				create_vassal = BND
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = BND
+				}
+			}											
+			if = {
+				limit = { owns = 2059 }
+				# 2059 = { cede_province = KLP }
+				# vassalize = KLP
+				create_vassal = KLP
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KLP
+				}
+			}									
+			if = {
+				limit = { owns = 525 }
+				# 525 = { cede_province = GWA }
+				# vassalize = GWA
+				create_vassal = GWA
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = GWA
+				}
+			}													
+			if = {
+				limit = { owns = 528 }
+				# 528 = { cede_province = HAD }
+				# vassalize = HAD
+				create_vassal = HAD
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = HAD
+				}
+			}										
+			if = {
+				limit = { owns = 4465 }
+				# 4465 = { cede_province = MER }
+				# vassalize = MER
+				create_vassal = MER
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = MER
+				}
+			}															
+			if = {
+				limit = { owns = 504 }
+				# 504 = { cede_province = SND }
+				# vassalize = SND
+				create_vassal = SND
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = SND
+				}
+			}														
+			if = {
+				limit = { owns = 513 }
+				# 513 = { cede_province = JSL }
+				# vassalize = JSL
+				create_vassal = JSL
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = JSL
+				}
+			}															
+			if = {
+				limit = { owns = 2066 }
+				# 2066 = { cede_province = NGA }
+				# vassalize = NGA
+				create_vassal = NGA
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = NGA
+				}
+			}														
+			if = {
+				limit = { owns = 519 }
+				# 519 = { cede_province = DHU }
+				# vassalize = DHU
+				create_vassal = DHU
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = DHU
+				}
+			}														
+			if = {
+				limit = { owns = 520 }
+				# 520 = { cede_province = MEW }
+				# vassalize = MEW
+				create_vassal = MEW
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = MEW
+				}
+			}															
+			if = {
+				limit = { owns = 512 }
+				# 512 = { cede_province = JAN }
+				# vassalize = JAN
+				create_vassal = JAN
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = JAN
+				}
+			}																
+			if = {
+				limit = { owns = 2078 }
+				# 2078 = { cede_province = PUN }
+				# vassalize = PUN
+				create_vassal = PUN
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = PUN
+				}
+			}																	
+			if = {
+				limit = { owns = 506 }
+				# 506 = { cede_province = MUL }
+				# vassalize = MUL
+				create_vassal = MUL
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = MUL
+				}
+			}																	
+			if = {
+				limit = { owns = 522 }
+				# 522 = { cede_province = DLH }
+				# vassalize = DLH
+				create_vassal = DLH
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = DLH
+				}
+			}																		
+			if = {
+				limit = { owns = 4471 }
+				# 4471 = { cede_province = MBL }
+				# vassalize = MBL
+				create_vassal = MBL
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = MBL
+				}
+			}																		
+			if = {
+				limit = { owns = 556 }
+				# 556 = { cede_province = BNG }
+				# vassalize = BNG
+				create_vassal = BNG
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = BNG
+				}
+			}																			
+			if = {
+				limit = { owns = 555 }
+				# 555 = { cede_province = JNP }
+				# vassalize = JNP
+				create_vassal = JNP
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = JNP
+				}
+			}																			
+			if = {
+				limit = { owns = 590 }
+				# 590 = { cede_province = ODH }
+				# vassalize = ODH
+				create_vassal = ODH
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = ODH
+				}
+			}																			
+			if = {
+				limit = { owns = 2061 }
+				# 2061 = { cede_province = RMP }
+				# vassalize = RMP
+				create_vassal = RMP
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = RMP
+				}
+			}																			
+			if = {
+				limit = { owns = 2047 }
+				# 2047 = { cede_province = TRT }
+				# vassalize = TRT
+				create_vassal = TRT
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = TRT
+				}
+			}																			
+			if = {
+				limit = { owns = 4491 }
+				# 4491 = { cede_province = DNG }
+				# vassalize = DNG
+				create_vassal = DNG
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = DNG
+				}
+			}																			
+			if = {
+				limit = { owns = 554 }
+				# 554 = { cede_province = JML }
+				# vassalize = JML
+				create_vassal = JML
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = JML
+				}
+			}																			
+			if = {
+				limit = { owns = 4492 }
+				# 4492 = { cede_province = DTI }
+				# vassalize = DTI
+				create_vassal = DTI
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = DTI
+				}
+			}																			
+			if = {
+				limit = { owns = 2069 }
+				# 2069 = { cede_province = KMN }
+				# vassalize = KMN
+				create_vassal = KMN
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KMN
+				}
+			}																			
+			if = {
+				limit = { owns = 511 }
+				# 511 = { cede_province = GHR }
+				# vassalize = GHR
+				create_vassal = GHR
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = GHR
+				}
+			}																			
+			if = {
+				limit = { owns = 4493 }
+				# 4493 = { cede_province = SRM }
+				# vassalize = SRM
+				create_vassal = SRM
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = SRM
+				}
+			}																			
+			if = {
+				limit = { owns = 557 }
+				# 557 = { cede_province = KTU }
+				# vassalize = KTU
+				create_vassal = KTU
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KTU
+				}
+			}																			
+			if = {
+				limit = { owns = 4485 }
+				# 4485 = { cede_province = GRK }
+				# vassalize = GRK
+				create_vassal = GRK
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = GRK
+				}
+			}																			
+			if = {
+				limit = { owns = 4483 }
+				# 4483 = { cede_province = LWA }
+				# vassalize = LWA
+				create_vassal = LWA
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = LWA
+				}
+			}																			
+			if = {
+				limit = { owns = 562 }
+				# 562 = { cede_province = KMT }
+				# vassalize = KMT
+				create_vassal = KMT
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KMT
+				}
+			}																			
+			if = {
+				limit = { owns = 509 }
+				# 509 = { cede_province = KGR }
+				# vassalize = KGR
+				create_vassal = KGR
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KGR
+				}
+			}		
+			if = {
+				limit = { owns = 523 }
+				# 523 = { cede_province = ODH }
+				# vassalize = ODH
+				create_vassal = ODH
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = ODH
+				}
+			}																			
+			if = {
+				limit = { owns = 507 }
+				# 507 = { cede_province = SRH }
+				# vassalize = SRH
+				create_vassal = SRH
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = SRH
+				}
+			}																			
+			if = {
+				limit = { owns = 508 }
+				# 508 = { cede_province = KSH }
+				# vassalize = KSH
+				create_vassal = KSH
+				create_subject = {
+					subject_type = zamidar_vassal
+					subject = KSH
+				}
+			}		
+		}
+	}
+
+}	
+
+# Start of Game 2
+country_event = {
+	id = IndiaGC_events.5
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		not = { capital_scope = { religion = ROOT } }
+	}
+	
+	option = {
+		name = IndiaGC_events.5.a
+		change_religion = capital
+	}
+}

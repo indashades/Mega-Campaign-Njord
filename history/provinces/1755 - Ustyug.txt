@@ -1,0 +1,15 @@
+owner = VPS
+controller = VPS
+capital = "Ustyug"
+is_city = yes
+culture = vepsian
+religion = orthodox
+trade_goods = fur
+base_tax = 2
+base_production = 1
+base_manpower = 2
+add_core = VPS
+add_core = VPS
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = western

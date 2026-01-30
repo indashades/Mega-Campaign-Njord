@@ -1,0 +1,14 @@
+owner = UTS
+controller = UTS
+capital = "Sakya"
+is_city = yes
+culture = nepali
+religion = hinduism
+trade_goods = livestock
+base_tax = 3
+base_production = 2
+base_manpower = 1
+add_core = UTS
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

@@ -1,0 +1,16 @@
+owner = SDY
+controller = SDY
+capital = "Koliabar"
+is_city = yes
+culture = assamese
+religion = vajrayana
+trade_goods = silk
+fort_15th = yes
+base_tax = 4
+base_production = 3
+base_manpower = 2
+add_core = SDY
+add_permanent_claim = ASS
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

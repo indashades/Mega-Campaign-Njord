@@ -1,7 +1,7 @@
 # 94 Luxembourg - Principal cities: Luxembourg
 
-owner = ENG
-controller = ENG
+owner = NRM
+controller = NRM
 capital = "St. Pierre Port"
 is_city = yes
 culture = normand
@@ -12,8 +12,6 @@ base_production = 1
 trade_goods = fish
 base_manpower = 1
 add_core = NRM
-add_core = ENG
-add_core = FRA
 
 
 discovered_by = eastern

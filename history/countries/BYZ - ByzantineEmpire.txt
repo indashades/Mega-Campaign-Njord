@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 3
+technology_group = eastern
+religion = orthodox
+primary_culture = greek
+capital = 151
+historical_rival = SAR
+1444.11.11= {
+	monarch = {
+		name = "Paul"
+		dynasty = "Atreus"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1414.11.14
+		religion = orthodox
+		culture = greek
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = midas_touched_personality
+	queen = {
+		name = "Olga"
+		dynasty = "Of Ni"
+		adm = 4
+		dip = 3
+		mil = 4
+		country_of_origin = THR
+		birth_date = 1394.2.1
+		death_date = 1454.2.1
+		female = yes
+		religion = orthodox
+		culture = russian_culture
+	}
+	add_queen_personality = drunkard_personality
+	add_queen_personality = righteous_personality
+	heir = {
+		name = "Georgius"
+		monarch_name = "Georgius"
+		dynasty = "Pachymeres"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1440.11.14
+		claim = 89
+		religion = orthodox
+		culture = greek
+	}
+	add_heir_personality = entrepreneur_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 74
+	add_treasury = 92
+}

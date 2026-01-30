@@ -1,0 +1,44 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 3
+technology_group = muslim
+religion = sunni
+primary_culture = uzbehk
+capital = 446
+add_accepted_culture = persian
+add_army_professionalism = 0.1
+1444.1.1 = {
+	monarch = {
+		name = Boroghual  
+		dynasty = Borjigin 
+		adm = 4  
+		dip = 3 
+		mil = 6 
+		birth_date = 1398.1.1 #OLD!!!
+		religion = tengri_pagan 
+		culture = uzbehk        # The culture of the ruler
+		
+		# Makes the defined ruler a leader
+		leader = {
+			name = "Boroghual 'the Skull Reaver' Borjigin" 
+			type = general
+			fire = 3
+			shock = 6
+			manuever = 5
+			siege = 4
+		}
+	}
+
+	# Defines a heir for the country. Normally used within a history entry
+	heir = {
+		name = Jinong            # Name of heir
+		dynasty = Borjigin          # Dynasty of heir
+		birth_date = 1421.1.1        # Used to set the age of the heir. Derived from the date of the history entry the monarch scope is found in.
+		claim = 0
+		adm = 1                # ADM skill of the heir
+		dip = 0                # DIP skill of the heir
+		mil = 1               # MIL skill of the heir             # Whether the heir is female
+		religion = tengri_pagan       # The religion of the heir
+		culture = uzbehk        # The culture of the heir
+	}
+}

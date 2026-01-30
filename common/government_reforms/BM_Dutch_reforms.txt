@@ -1,0 +1,182 @@
+# TIER 2
+guild_dominance_reform = {
+	icon = dutch_guilds
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			has_reform = guild_dominance_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			has_reform = guild_dominance_reform
+		}
+	}
+	modifiers = {
+		global_prov_trade_power_modifier = 0.2
+		republican_tradition = 0.1
+		burghers_loyalty_modifier = 0.1
+		burghers_influence_modifier = 0.1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+# TIER 3
+moedernegotie_reform = {
+	icon = hansa_trade
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			has_reform = moedernegotie_reform
+		}
+	}
+	modifiers = {
+		global_prov_trade_power_modifier = 0.2
+		navy_tradition = 0.5
+		burghers_influence_modifier = 0.1
+		burghers_loyalty_modifier = 0.05
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+vroedschappen_reform = {
+	icon = vroedschap
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			has_reform = vroedschappen_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = -1
+		}
+	}
+	modifiers = {
+		candidate_random_bonus = 2
+		stability_cost_modifier = -0.10
+	}
+	ai = {
+		factor = 100
+	}
+	#10% Burgher Influence
+}
+
+reforms_of_william_3_reform = {
+	icon = william_3
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			has_reform = reforms_of_william_3_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = -1
+		}
+	}
+	modifiers = {
+		mercenary_discipline = 0.05
+		reinforce_speed = 0.25
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+
+united_indian_companies_reform = {
+	icon = voc_ship
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			has_reform = united_indian_companies_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = -1
+		}
+	}
+	modifiers = {
+		global_prov_trade_power_modifier = 0.20
+		trade_company_investment_cost = -0.25
+	}
+	ai = {
+		factor = 100
+	}
+	#10% Burgher Loyalty
+}
+
+ware_vrijheid_reform = {
+	icon = dutch_tulip_field
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			primary_culture  = dutch
+			primary_culture  = flemish
+			has_reform = ware_vrijheid_reform
+		}
+		NOT = {
+			has_reform = pirate_republic_reform
+		}
+	}
+	effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = -1
+		}
+	}
+	modifiers = {
+		republican_tradition = 0.25
+		reform_progress_growth = 0.15
+	}
+	ai = {
+		factor = 100
+	}
+	#-10 Noble Influence, -10% Noble Loyalty
+}

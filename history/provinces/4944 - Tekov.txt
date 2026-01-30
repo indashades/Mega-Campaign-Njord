@@ -1,11 +1,11 @@
 #154 - Hont (Hont + Bars + Ersekujvar)
 
-owner = HUN
-controller = HUN 
+owner = SLO
+controller = SLO
 culture = slovak
 religion = catholic
 capital = "Körmöcbánya"
-trade_goods = gold #Schemnitz / Banská Štiavnica
+trade_goods = naval_supplies #Schemnitz / Banská Štiavnica
 hre = no
 base_tax = 2
 base_production = 3

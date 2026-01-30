@@ -1,0 +1,206 @@
+portuguese_cortes_reform = {
+	icon = assembly_hall
+	allow_normal_conversion = yes
+	effect = {
+		if = {
+			limit = { 
+				has_estate_privilege = estate_nobles_supremacy_over_crown
+			}
+			country_event = { id = BM_government_reforms.7 }
+		}
+	}
+	removed_effect = {
+	}
+	potential = {
+		OR = {
+			tag = POR
+			primary_culture = portugese
+			has_reform = portuguese_cortes_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = POR
+			primary_culture = portugese
+			has_reform = portuguese_cortes_reform
+		}
+	}
+	effect = {
+		hidden_effect = {
+			country_event = {
+				id = BM_government_reforms.7
+			}
+		}
+	}
+	modifiers = {
+		legitimacy = 0.5
+		all_estate_loyalty_equilibrium = 0.05
+		all_estate_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		enables_cortes = yes 
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+portuguese_empire_reform = {
+	icon = portuguese_thassalocracy
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = portuguese_empire_reform
+	}
+	trigger = {
+		has_reform = portuguese_empire_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+	modifiers = {
+		trade_efficiency = 0.10
+		max_absolutism = 10
+		trade_company_investment_cost = -0.25
+		navy_tradition = 1
+	}
+	custom_attributes = {
+		enables_kingdom_of_brazil = yes
+	}
+	effect = {
+		hidden_effect = {
+			every_subject_country = {
+				ge_country_kingdom_of_brazil_update = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_subject_country = {
+				remove_country_modifier = Kingdom_Of_Brazil
+			}
+		}
+	}
+	ai = {
+		factor = 102
+	}
+}
+
+
+portugese_marines_reform = {
+	icon = "landing_marines"
+	allow_normal_conversion = yes
+	effect = {
+		add_country_modifier = {
+			name = BM_portugese_marines_modifier
+			duration = -1
+		}
+	}
+	removed_effect = {
+		remove_country_modifier = BM_portugese_marines_modifier
+	}
+	
+	potential = {
+		OR = {
+			primary_culture = portugese
+			has_reform = portugese_marines_reform
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = portugese
+			primary_culture = brazilian
+			has_reform = portugese_marines_reform
+		}
+	}
+	modifiers = {
+		sailors_recovery_speed = 0.33
+		allowed_marine_fraction = 0.2
+	}
+	custom_attributes = {
+		marine_buff = yes	#Marines -20% Manpower Usage
+		enable_portugese_marines = yes # Baracks and Training Fields +25% / +50% Local Sailors modifier
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+viceroyalty_government_reform = {
+	icon = "assembly_hall"
+	potential = {
+		is_subject_of_type = viceroyalty
+	}
+	allow_normal_conversion = no
+	modifiers = {
+		all_estate_influence_modifier = 0.1
+		tolerance_heathen = 1
+		tolerance_of_heathens_capacity = 1
+		global_trade_goods_size_modifier = 0.1
+		global_manpower_modifier = 0.1
+		naval_forcelimit_modifier = 0.1
+	}
+	custom_attributes = {
+		has_ruler_election = yes
+		locked_government_type = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+portuguese_overseas_administration_reform = {
+	icon = "man_and_children"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes	
+	potential = {
+		tag = POR
+	}
+	trigger = {
+		mission_completed = gc_por_establishes_foothold_brazil
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		all_estate_loyalty_equilibrium = 0.05
+		all_estate_influence_modifier = 0.05
+	}
+	government_abilities = {
+		shadow_empire_mechanic
+	}
+	effect = {
+		custom_tooltip = "Allows the creation of overseas States."
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+
+casa_de_india_reform = {
+	icon = casa_de_india
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = casa_de_india_reform
+			primary_culture = portugese
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = casa_de_india_reform
+			primary_culture = portugese
+		}
+	}
+	modifiers = {
+		navy_tradition = 0.5
+		global_prov_trade_power_modifier = 0.25
+		merchants = 1
+	}
+	custom_attributes = {
+		can_use_trade_post = yes
+		can_establish_trade_protectorates = yes
+	}
+	ai = {
+		factor = 100
+	}
+}
+

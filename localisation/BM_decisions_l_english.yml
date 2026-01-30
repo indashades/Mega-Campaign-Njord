@@ -1,0 +1,217 @@
+﻿l_english:
+
+ BM_cossack_buff: "Has Cossacks"
+
+
+ #EXPLORERS + COLONIZATION
+ BM_hire_explorer_title: "Hire A Foreign Explorer"
+ BM_hire_explorer_desc: "The recent discovery of the New World has led to a rush to explore, discover, and establish new trade routes in the virgin lands. We must ensure that we are among the first to establish colonies in these new lands before anyone else. By hiring foreing explorers we can avoid having to establish our own exploration bureau."
+ BM_hire_conquistador_title: "Hire A Foreign Conquistador"
+ BM_hire_conquistador_desc: "The recent discovery of the New World has led to a rush to explore, discover, and establish new trade routes in the virgin lands. We must ensure that we are among the first to establish colonies in these new lands before anyone else. By hiring foreing conquistadors we can avoid having to establish our own exploration bureau."
+ BM_free_colonist_title: "Establishing a Colonization Bureau"
+ BM_free_colonist_desc: "The recent discovery of the New World has led to a rush to explore, discover, and establish new trade routes in the virgin lands. We must ensure that we are among the first to establish colonies in these new lands before anyone else. By establishing our own colonization-bureau we can also start colonising."
+
+
+ BM_free_colonist: "Colonial Bureau"
+ desc_BM_free_colonist: ""
+
+ #ECONOMIC GOLDEN AGE
+ BM_economic_golden_era_title: "Enter Military Golden Era"
+ BM_economic_golden_era_desc: ""
+ BM_in_economic_golden_era: "Military Golden Era"
+ desc_BM_in_economic_golden_era: ""
+
+
+ #DISINHERIT HEIRS / RULERS
+ BM_disinherit_heir_title: "'Disinherit Heir'"
+ BM_disinherit_heir_desc: "Your current heir has proven to be a complete incompetent buffoon, jeopardizing the stability and secure rule of your future realm. During a grand banquet at your royal estate, you notice your heir standing awfully close to the edge of a staircase."
+ BM_disinherit_heir_TT: "A simple push will do...\n"
+
+ BM_disinherit_ruler_title: "'Abdicate Ruler'"
+ BM_disinherit_ruler_desc: "Our current ruler has proven to be a complete incompetent buffoon, jeopardizing the stability and secure rule of our future realm. It is best we harshly 'persuade' our ruler that they are unfit and should reserve thesmelves to their country estate to take an extended break from managing our realm."
+ BM_disinherit_ruler_TT: "Just make sure they stay there, forever...\n"
+
+
+ #HESSE MONARCHY 
+ BM_modernize_hesse_monarchy_title: "Modernize Hesse"
+ BM_modernize_hesse_monarchy_desc: "It is high time that we fully modernize our already quite militarized state. By adopting a government similar to that of the Prussians we can further proffessionalize our armies."
+
+
+ #CALIPHAL ACTIONS
+ BM_permit_taqiyya_title: "£muslim_school_button£ Permit Taqiyya"
+ BM_permit_taqiyya_desc: "Taqiyya is the islamic concept that allows for the denial of faith and beliefs in face of persecution. Many of our brethren live under severe persecution. If we are to allow Taqiyya, any efforts to oppress them will be made more difficult."
+ BM_permit_taqiyya_caliph_TT: "Every §YMuslim§! province that is not owned by a nation of the §YMuslim§! faith:"
+ BM_permit_taqiyya_modifier: "Taqiyya"
+ desc_BM_permit_taqiyya_modifier: ""
+
+ BM_promote_our_maddhab_title: "£muslim_school_button£ Promote Our Maddhab"
+ BM_promote_our_maddhab_desc: "All Islam denomination can be divided into Religious Schools, all promoting their view on jurispudence. Enacting this fatwa will result in the superiority of the Caliph's religious school in the eyes of everyone."
+ BM_promote_our_maddhab_trigger_TT_yes: "§G3§! §Y[Root.Religion.GetName]§! nations with the same §YReligious School§!has at least §G150.0§! opinion of us."
+ BM_promote_our_maddhab_TT: "Every §YMuslim§! nation that has the same §YReligious School§! as the §YCaliph§! gains §G+50.0%§! of their §YReligious School§!'s effect, or in the case of §YShafii§!, §G+5.0%§! Trade Efficiency, for §Y20§! years."
+ BM_promote_our_maddhab_trigger_TT_no: "£no£ §G3§! §Y[Root.Religion.GetName]§! nations with the same §YReligious School§! has at least §G150.0§! opinion of us."
+ BM_promote_our_maddhab_hanafi: "Promoted Maddhab"
+ BM_promote_our_maddhab_hanafi: "Promoted Maddhab"
+ BM_promote_our_maddhab_hanbali: "Promoted Maddhab"
+ BM_promote_our_maddhab_maliki: "Promoted Maddhab"
+ BM_promote_our_maddhab_shafii: "Promoted Maddhab"
+ BM_promote_our_maddhab_ismaili_school: "Promoted Maddhab"
+ BM_promote_our_maddhab_ismaili_jafari: "Promoted Maddhab"
+ BM_promote_our_maddhab_ismaili_zaidi: "Promoted Maddhab"
+
+ BM_promote_religious_exchange_title: "£muslim_school_button£ Promote Religious Exchange"
+ BM_promote_religious_exchange_desc: "Relations between many Maddhabs can often be quite heated. It does not have to be this way, by allowing the Caliph to promote peaceful exchange between our schools, we can calm their differences."
+ BM_promote_religious_exchange_TT: "Every §YMuslim§! nation will no longer be required to have §G150.0§! Opinion and be §YAllied§! to the nation from whom they want to §YInvite Scholar§!."
+ BM_promote_religious_exchange_modifier: "Caliphal Diplomacy"
+ desc_BM_promote_religious_exchange_modifier: ""
+
+ BM_inspire_religious_fervor_title: "£muslim_school_button£ Inspire Religious Fervor"
+ BM_inspire_religious_fervor_desc: "In these uncertain times, a strong base of followers ready to fight the Holy War is of utmost necessity. Let us release a ruling calling all faithful to war for their beliefs!"
+ BM_inspire_religious_fervor_TT: "Gain §G+100§!£icon_manpower£ for every §Y[Root.Religion.GetName]§! province that is owned by a nation of §Y[Root.Religion.GetName]§! religion. \n \nEvery country of §Y[Root.Religion.GetName]§! religion:"
+ BM_inspire_religious_fervor_modifier: "Religious Fervor"
+ desc_BM_inspire_religious_fervor_modifier: ""
+
+ BM_permit_sufi_teachings_title: "£muslim_school_button£ Permit Sufi Teachings"
+ BM_permit_sufi_teachings_desc: "Many jurists tend to disregard the influence of the Sufis, considering their mystical traditions heretical and their lodges deserving of scolding. The Caliph could stand in defence of these belifs."
+ BM_permit_sufi_teachings_TT: "Every country of §Y[Root.Religion.GetName]§! religion will have '§YClerical Education§!' also give §G-10.0%§! Advisor Cost and §G-0.1%§! Piety"
+ BM_permit_sufi_teachings_modifier: "Permit Sufi Teachings"
+ desc_BM_permit_sufi_teachings_modifier: ""
+
+ BM_relax_sharia_title: "£muslim_school_button£ Relax Sharia"
+ BM_relax_sharia_desc: "Sometimes the Sharia law tends to be too harsh, especially for the Dhimmi living in our realm. Let us tone down the strict requirements it places on everyone."
+ BM_relax_sharia_TT: "Every country of §Y[Root.Religion.GetName]§! religion will gain:"
+ BM_relax_sharia_TT2: "Up to §Y3§! random owned provinces of §YHeathen§! faith will gain §G+1§! Base Production and §G+1§! Base Tax"
+ BM_relax_sharia_modifier: "Relaxed Sharia"
+ desc_BM_relax_sharia_modifier: ""
+
+ BM_endorse_literature_title: "£muslim_school_button£ Endorse Literature"
+ BM_endorse_literature_desc: "One of the most glorious ways of praising God is simply through creation. Creation of literacy, works of art and architecture that showcase the beautiful world that we have been gifted."
+ BM_endorse_literature_TT: "Every country of §Y[Root.Religion.GetName]§! religion will gain:"
+ BM_endorse_literature_modifier: "Endorse Literature"
+ desc_BM_endorse_literature_modifier: ""
+
+ BM_selected_caliphal_action_TT: "Has not selected a £muslim_school_button£ §YFatwa§! in the last §Y15§! Years."
+
+ sea_remove_state_edicts_flag_tt: "Wait for a month tick to enact State Edict."
+ sea_state_edicts_decision_title: "£sea_edict_logo£State Edict: §YSeaStateEdictName§!"
+ sea_state_edicts_decision_desc: "Choose which edict to set for all states."
+ sea_state_edicts_decision_ttt: "Always\nHighlights all the provinces with State Edicts."
+ sea_state_edicts_decision_tt: "Selected State Edict will be shown in Decision's name."
+ sea_state_edicts_decision_edict_advancement_effort: "Advancement Effort"
+ sea_state_edicts_decision_edict_centralization_effort: "Centralization Effort"
+ sea_state_edicts_decision_edict_defensive_edict: "Defensive Edict"
+ sea_state_edicts_decision_edict_of_absolutism: "Edict of Absolutism"
+ sea_state_edicts_decision_edict_of_governance: "Edict of Governance"
+ sea_state_edicts_decision_edict_encourage_development: "Encourage Development"
+ sea_state_edicts_decision_edict_feudal_de_jure_law: "Feudal De Jure Law"
+ sea_state_edicts_decision_french_infrastructure_network: "French Infrastructure Network"
+ sea_state_edicts_decision_edict_promote_military_recruitment: "Increased Enlistment"
+ sea_state_edicts_decision_edict_protect_trade: "Protect Trade"
+ sea_state_edicts_decision_protect_trade_empowered: "Promote Trade"
+ sea_state_edicts_decision_edict_religion_enforced: "Religion Enforced"
+ sea_state_edicts_decision_edict_religious_unity: "Enforce Religious Unity"
+ sea_state_edicts_decision_chinese_industrialization: "Rapid Industrialization"
+ sea_state_edicts_decision_feudal_taxes_state_edict: "Feudal Taxes Edict"
+ sea_state_edicts_decision_religious_tolerance_state_edict: "Religious Tolerance Edict"
+ sea_state_edicts_decision_state_integration_state_edict: "State Integration Edict"
+ sea_state_edicts_decision_urbanization_state_edict: "Urbanization Edict"
+ sea_state_edicts_decision_no_edict: "No Edicts"
+ sealand_events.28.t: "Enact State Edict"
+ sealand_events.28.d: "We have option to choose which state edict to set for all of our states."
+ sealand_events.28.0: "Never Mind."
+ sealand_events.28.00: "Clear All State Edicts."
+ sealand_events.28.00.tt: "Current Edicts that are enabled, will be disabled on a month tick."
+ sealand_events.28.1: "Enable §YAdvancement Effort§! State Edict."
+ sealand_events.28.2: "Enable §YCentralization Effort§! State Edict."
+ sealand_events.28.3: "Enable §YDefensive Edict§! State Edict."
+ sealand_events.28.4: "Enable §YEdict of Absolutism§! State Edict."
+ sealand_events.28.5: "Enable §YEdict of Governance§! State Edict."
+ sealand_events.28.6: "Enable §YEncourage Development§! State Edict."
+ sealand_events.28.7: "Enable §YFeudal De Jure Law§! State Edict."
+ sealand_events.28.8: "Enable §YFrench Infrastructure Network§! State Edict."
+ sealand_events.28.9: "Enable §YIncreased Enlistment§! State Edict."
+ sealand_events.28.10: "Enable §YProtect Trade§! State Edict."
+ sealand_events.28.11: "Enable §YPromote Trade§! State Edict."
+ sealand_events.28.12: "Enable §YReligion Enforced§! State Edict."
+ sealand_events.28.13: "Enable §YEnforce Religious Unity§! State Edict."
+ sealand_events.28.14: "Enable §YRapid Industrialization§! State Edict."
+ sealand_events.28.15: "Enable §YFeudal Taxes Edict§! State Edict."
+ sealand_events.28.16: "Enable §YReligious Tolerance Edict§! State Edict."
+ sealand_events.28.17: "Enable §YState Integration Edict§! State Edict."
+ sealand_events.28.18: "Enable §YUrbanization Edict§! State Edict."
+
+ # Advisor: # Couldn't think of better names for advisors, pls no judge.
+ #Decision/events:
+ BM_get_specific_advisor_title: "£sea_advisor_logo£Recruit Specific Advisor"
+ BM_get_specific_advisor_desc: "No one reads this anyway."
+ sea_advisor_event.0.t: "Recruit Specific Advisor"
+ sea_advisor_event.0.d: "Don't want to risk losing too much cash to RNG? Then you came to the right place. We got wide range of advisors to hire, all in their own categories. Go ahead, see what you like. And if you can't find anything good, you can always return for next time. The doors are open as long as you have the ducats."
+ sea_advisor_event.0.0: "Perhaps another time."
+ sea_advisor_event.0.01: "Go Back."
+ sea_advisor_event.0.a: "Check Administrative Advisors."
+ sea_advisor_event.0.b: "Check Diplomatic Advisors."
+ sea_advisor_event.0.c: "Check Military Advisors."
+ sea_advisor_event.1.t: "Administrative Advisors"
+ sea_advisor_event.2.t: "Diplomatic Advisors"
+ sea_advisor_event.3.t: "Military Advisors"
+ sea_advisor_event.1.d: "Keep in mind that the advisors will be low skilled, since they're somewhat new for the job, so if you want to up their skill, you have to pay from your own pockets."
+ # Events: ADM
+ sealand_events.1.t: "Administrative Advisors"
+ sealand_events.1.3: "£sea_prestige£Yearly Prestige: §G+1.00§!"
+ sealand_events.1.12: "£sea_stability_cost_modifier£ Stability Cost Modifier: §G-10.0%§!"
+ sealand_events.1.14: "£sea_inflation_reduction£ Yearly Inflation Reduction: §G+0.10§!"
+ sealand_events.1.15: "£sea_global_tax_modifier£ National Tax Modifier: §G+10.0%§!"
+ sealand_events.1.16: "£sea_production_efficiency£ Production Efficiency: §G+10.0%§!"
+ sealand_events.1.17: "£sea_global_unrest£ National Unrest: §G-2.00§!"
+ sealand_events.1.18: "£sea_global_missionary_strength£ Missionary Strength: §G+2.0§!"
+ # Events: DIP
+ sealand_events.2.t: "Diplomatic Advisors"
+ sealand_events.2.5: "£sea_diplomatic_reputation£ Diplomatic Reputation: §G+1.00§!"
+ sealand_events.2.6: "£sea_improve_relation_modifier£ Improve Relations: §G+20.0%§!"
+ sealand_events.2.8: "£sea_spy_offence£ Spy Network Construction: §G+25.%§!"
+ sealand_events.2.11: "£sea_trade_efficiency£ Trade Efficiency: §G+10.0%§!"
+ sealand_events.2.12: "£sea_global_tariffs£ Global Tariffs: §G+10.0%§!"
+ sealand_events.2.13: "£sea_range£ Colonial Range: §G+20.0%§!"
+ sealand_events.2.15: "£sea_naval_morale£ Morale of Navies: §G+10.0%§!"
+ # Events: MIL
+ sealand_events.3.t: "Military Advisors"
+ sealand_events.3.2: "£sea_land_morale£ Morale of Armies: §G+10.0%§!"
+ sealand_events.3.3: "£sea_discipline£ Discipline: §G+5.0%§!"
+ sealand_events.3.13: "£sea_reinforce_speed£ Reinforce Speed: §G+33.0%§!"
+ sealand_events.3.14: "£sea_global_manpower_modifier£ National Manpower Modifier: §G+10.0%§!"
+ sealand_events.3.15: "£sea_land_forcelimit_modifier£ Land Force Limit Modifier: §G+10.0%§!"
+ sealand_events.3.16: "£sea_land_maintenance_modifier£ Land Maintenance Modifier: §G-10.0%§!"
+ sealand_events.3.20: "£sea_defensiveness£ Fort Defence: §G+20.0%§!"
+
+
+ #BUILDING MENU
+ #Events
+ building.1.t: "Building Menu"
+ building.1.d: "Choose a building to remove from your every province. The buildings are grouped by their type. The event will call itself again unless you choose the Exit option."
+
+ building.1.remove_all_unnecessary: "Remove All Unnecessary Buildings"
+ building_remove_all_unnecessary_TT: "§RWarning!§! This option will remove §YAll§! of the following buildings:\nTax Buildings, Naval Batteries, Docks, and Shipyards." 
+
+ building.1.1.t: "Manufactory Removal"
+ building.1.1.d: "Choose a manufactory to remove from your every province. The event will call the general version of itself again unless you choose the Exit option. A tip for State House enjoyers: alongside other trade goods, Trade Station uses Gems, Glass, Ceramics and Marble; Textile Manufactory uses Paper and Carpet."
+ building.1.1.every_manufactory: "§REvery Manufactory§!"
+ building.1.general_buildings: "Go Back To General Buildings"
+ building.1.manufactories: "List of Manufactories"
+ building.1.exit: "Exit"
+
+ building_tax_all: "Delete Tax Buildings"
+ building_tax_all_TT: "This will destroy all tax buildings regardless."
+ building_tax_efficient: "Delete Tax Buildings (Efficiently)"
+ building_tax_efficient_TT: "This will destroy all tax buildings in provinces that have been developed (11 or more manpower development)"
+
+ building_coastal_defence_all: "Delete Coastal/Naval Defences"
+ building_coastal_defence_all_TT: "This will destroy all Coastal Defences and Naval Batteries."
+
+ building_shipyard_all: "Delete Shipyards"
+ building_shipyard_all_TT: "This will destroy all Shipyards and Grand Shipyards."
+
+ building_dock_all: "Delete Docks"
+ building_dock_all_TT: "This will destroy all Docks and Drydocks."
+
+ #Decisions
+ buildings_decision_title: "Building Menu"
+ buildings_decision_desc: "An event will pop up that allows you to use the macro-builder."

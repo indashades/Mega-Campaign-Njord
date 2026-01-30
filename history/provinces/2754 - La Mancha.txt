@@ -1,0 +1,17 @@
+owner = EOM
+controller = EOM
+capital = "Ciudad Real"
+is_city = yes
+culture = andalucian
+religion = catholic
+trade_goods = gold
+base_tax = 5
+base_production = 4
+base_manpower = 3
+add_core = GRA
+add_core = EOM
+add_core = MOR
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

@@ -1,0 +1,88 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 93 180 76 }
+revolutionary_colors = { 8 0 6 }
+historical_idea_groups = {
+	religious_ideas
+	economic_ideas
+	defensive_ideas
+	offensive_ideas
+	administrative_ideas
+	trade_ideas
+	diplomatic_ideas
+	spy_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Anil #1" = 10
+	"Champo #1" = 10
+	"Chime #0" = -1
+	"Chomo #1" = -1
+	"Dache #1" = 10
+	"Dhargey #1" = 10
+	"Dhondup #1" = 10
+	"Gangzur #0" = 0
+	"Gyaltsen #1" = 10
+	"Jinpa #1" = 10
+	"Kanchani #0" = -1
+	"Kundun #1" = 10
+	"Michewa Torma #0" = 0
+	"Minjur #0" = 0
+	"Nima Assam #1" = 10
+	"Norbu #1" = 10
+	"Palden #1" = 10
+	"Passang #0" = -1
+	"Pemba Goba #1" = 10
+	"Popo #1" = 10
+	"Purandelapala #1" = 10
+	"Rinzen #1" = 10
+	"Sindhu #1" = 10
+	"Sonam #1" = 10
+	"Susthitavarman #0" = 0
+	"Suvrata #0" = -1
+	"Thubten Zonpa #1" = 10
+	"Trakthung #0" = -1
+	"Tsenang #1" = 10
+	"Tshering #0" = 0
+	"Tsundo #0" = -1
+	"Vijnanavati #0" = -1
+	"Vijnayavati #0" = -1
+	"Wangyal #0" = 0
+	"Yeshey #0" = 0
+	"Zigsa #1" = 10
+}
+leader_names = {
+	"Chomphel"
+	"Gyaltshen"
+	"Gyamtsho"
+	"Lhopi"
+	"Peljor"
+	"Phuntsho"
+	"Rabgye"
+	"Tshering"
+	"Wangchuk"
+	"Wangpo"
+}
+ship_names = {
+	"Chhu"
+	"Dng Chu"
+	"Manas Chu"
+	"Mangde Chu"
+	"Mo Chu"
+	"Pa Chu"
+	"Pho Chu"
+	"Punaka"
+	"Sangkosh"
+	"Thimbu"
+	"Tongsa Chu"
+	"Towang Chu"
+}

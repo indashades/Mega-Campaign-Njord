@@ -1,0 +1,388 @@
+namespace = MEGA_misc
+
+country_event = {	#AI fix
+	id = MEGA_misc.1
+	title = MEGA_misc.1.t
+	desc = MEGA_misc.1.d
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		NOT = {
+			manpower_percentage = 0.5
+		}
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		years = 10
+	}
+	
+	option = {
+		name = MEGA_misc.1.a
+		add_yearly_manpower = 0.1
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.2
+	title = MEGA_misc.2.t
+	desc = MEGA_misc.2.d
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		adm_tech = 4
+		ai = yes
+		NOT = {
+			all_owned_province = {
+				has_tax_building_trigger = yes
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 20
+	}
+	
+	option = {
+		name = MEGA_misc.2.a
+		random_owned_province = {
+			limit = {
+				NOT = {
+					has_tax_building_trigger = yes
+				}
+			}
+			add_or_upgrade_tax_building = yes
+		}
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.3
+	title = MEGA_misc.3.t
+	desc = MEGA_misc.3.d
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		adm_tech = 6
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		years = 20
+	}
+	
+	option = {
+		name = MEGA_misc.2.a
+		random_owned_province = {
+			limit = {
+				has_farm_trade_goods = yes
+				NOT = {
+					has_building = farm_estate
+				}
+			}
+			add_building = farm_estate
+		}
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.4
+	title = MEGA_misc.4.t
+	desc = MEGA_misc.4.d
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		ai = yes
+		adm_tech = 8
+		NOT = {
+			all_owned_province = {
+				has_courthouse_building_trigger = yes
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 20
+	}
+	
+	option = {
+		name = MEGA_misc.2.a
+		random_owned_province = {
+			limit = {
+				NOT = {
+					has_courthouse_building_trigger = yes
+				}
+			}
+			if = {
+				limit = { 
+					owner = {
+						adm_tech = 22
+					}
+				}
+				add_building = town_hall
+			}
+			else = {
+				add_building = courthouse
+			}
+		}
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.5
+	title = MEGA_misc.5.t
+	desc = MEGA_misc.5.d
+	picture = TRADEGOODS_eventPicture
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			change_government_reform_progress = 25
+		}
+	}
+	
+	option = {
+		name = MEGA_misc.5.a
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.6
+	title = MEGA_misc.6.t
+	desc = MEGA_misc.6.d
+	picture = TRADEGOODS_eventPicture
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				has_reform = free_city
+			}
+			capital = {
+				add_or_upgrade_courthouse_building = yes
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_misc.6.a
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.7
+	title = MEGA_misc.7.t
+	desc = MEGA_misc.7.d
+	picture = TRADEGOODS_eventPicture
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			add_stability_or_adm_power = yes
+		}
+	}
+	
+	option = {
+		name = MEGA_misc.7.a
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.8
+	title = MEGA_misc.8.t
+	desc = MEGA_misc.8.d
+	picture = TRADEGOODS_eventPicture
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				NOT = {
+					is_emperor = yes
+				}
+			}
+			emperor = {
+				add_treasury = 10
+			}
+			every_elector = {
+				add_treasury = 5
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_misc.5.a
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.9
+	title = MEGA_misc.9.t
+	desc = MEGA_misc.9.d
+	picture = TRADEGOODS_eventPicture
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			change_government_reform_progress = 25
+		}
+	}
+	
+	option = {
+		name = MEGA_misc.9.a
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.9
+	title = MEGA_misc.9.t
+	desc = MEGA_misc.9.d
+	picture = TRADEGOODS_eventPicture
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			create_general_scaling_with_tradition_and_pips = yes
+			add_army_professionalism = 0.05
+		}
+	}
+	
+	option = {
+		name = MEGA_misc.9.a
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.10
+	title = MEGA_misc.10.t
+	desc = MEGA_misc.10.d
+	picture = TRADEGOODS_eventPicture
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			capital = {
+				add_or_upgrade_courthouse_building = yes
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_misc.10.a
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.11
+	title = MEGA_misc.11.t
+	desc = MEGA_misc.11.d
+	picture = TRADEGOODS_eventPicture
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = FLA
+	}
+
+	immediate = {
+		change_statists_vs_orangists = 0.33
+	}
+	
+	option = {
+		name = MEGA_misc.11.a
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.12
+	title = MEGA_misc.12.t
+	desc = MEGA_misc.12.d
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		years = 20
+	}
+	
+	option = {
+		name = MEGA_misc.2.a
+		random_owned_province = {
+			limit = {
+				base_tax = 10
+			}
+			add_base_tax = -2
+		}
+		add_adm_power = 50
+		add_treasury = 50
+	}
+}
+
+country_event = {	#AI fix
+	id = MEGA_misc.13
+	title = MEGA_misc.13.t
+	desc = MEGA_misc.13.d
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		years = 20
+	}
+	
+	option = {
+		name = MEGA_misc.2.a
+		random_owned_province = {
+			limit = {
+				base_production = 10
+			}
+			add_base_production = -2
+		}
+		add_dip_power = 50
+		add_treasury = 50
+	}
+}

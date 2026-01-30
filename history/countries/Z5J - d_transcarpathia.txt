@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = eastern
+religion = orthodox
+primary_culture = transylvanian
+capital = 1952
+elector = yes
+add_accepted_culture = szekely
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Ádárn II"
+		dynasty = "Hunyadi"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1414.4.14
+		religion = orthodox
+		culture = dynamic-hungarian-culture-num1
+	}
+	add_ruler_personality = pious_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Stéphanie"
+		dynasty = "de Savoie"
+		adm = 3
+		dip = 3
+		mil = 5
+		country_of_origin = Z5J
+		birth_date = 1419.8.5
+		death_date = 1479.8.5
+		female = yes
+		religion = orthodox
+		culture = cosmopolitan_french
+	}
+	add_queen_personality = greedy_personality
+	add_queen_personality = tactical_genius_personality
+	heir = {
+		name = "Ádárn"
+		monarch_name = "Ádárn"
+		dynasty = "Hunyadi"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1440.11.14
+		claim = 89
+		religion = orthodox
+		culture = dynamic-hungarian-culture-num1
+	}
+	add_heir_personality = just_personality
+	add_heir_personality = naive_personality
+}
+1444.11.11= {
+	add_prestige = 73
+	add_treasury = 52
+}

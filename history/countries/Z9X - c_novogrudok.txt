@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = uparaja_reform
+government_rank = 1
+technology_group = eastern
+religion = mahayana
+primary_culture = ruthenian
+capital = 4537
+fixed_capital = 4537
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Blush"
+		dynasty = "Julymid"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1411.7.15
+		religion = mahayana
+		culture = ruthenian
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = righteous_personality
+	queen = {
+		name = "Altani"
+		dynasty = "Batu"
+		adm = 6
+		dip = 3
+		mil = 5
+		country_of_origin = Z9X
+		birth_date = 1406.6.19
+		death_date = 1466.6.19
+		female = yes
+		religion = mahayana
+		culture = mongol
+	}
+	add_queen_personality = obsessive_perfectionist_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Manas"
+		monarch_name = "Manas"
+		dynasty = "Julymid"
+		adm = 5
+		dip = 5
+		mil = 2
+		birth_date = 1431.7.22
+		death_date = 1496.7.22
+		claim = 89
+		religion = mahayana
+		culture = ruthenian
+	}
+	add_heir_personality = benevolent_personality
+	add_heir_personality = kind_hearted_personality
+}
+1444.11.11= {
+	add_prestige = 74
+	add_treasury = 52
+}

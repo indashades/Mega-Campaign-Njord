@@ -1,11 +1,11 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Bardowick
-add_core = BYZ
-owner = BYZ
-controller = BYZ
+add_core = Z45
+owner = Z45
+controller = Z45
 culture = lower_saxon
 religion = catholic
-hre = no
+hre = yes
 base_tax = 1
 base_production = 1
 trade_goods = salt

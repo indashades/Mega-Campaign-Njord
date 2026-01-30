@@ -1,17 +1,17 @@
 #4118 - Earldom of Desmond
 
-owner = DMS
-controller = DMS
+owner = LEI
+controller = LEI
 culture = irish
 religion = catholic
-hre = no
+hre = yes
 base_tax = 3
 base_production = 3
 trade_goods = copper
 base_manpower = 2
 capital = "Cork"
 is_city = yes
-add_core = DMS
+add_core = LEI
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

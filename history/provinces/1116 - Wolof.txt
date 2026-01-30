@@ -1,0 +1,13 @@
+owner = Z51
+controller = Z51
+capital = "Jowol"
+is_city = yes
+culture = senegambian
+religion = sunni
+trade_goods = slaves
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = JOL
+add_core = Z51
+discovered_by = sub_saharan

@@ -1,0 +1,14 @@
+owner = Z5T
+controller = Z5T
+capital = "Karabara"
+is_city = yes
+culture = songhai
+religion = catholic
+trade_goods = fish
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = SON
+add_core = Z5T
+add_permanent_claim = GUR
+discovered_by = sub_saharan

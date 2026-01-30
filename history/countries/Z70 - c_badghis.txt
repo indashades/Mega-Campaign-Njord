@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = nayankara_reform
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = kannada
+capital = 446
+fixed_capital = 446
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Narasanayaka"
+		dynasty = "Padukone"
+		adm = 1
+		dip = 5
+		mil = 3
+		birth_date = 1407.3.12
+		religion = hinduism
+		culture = kannada
+	}
+	add_ruler_personality = benevolent_personality
+	add_ruler_personality = pious_personality
+	queen = {
+		name = "Sahba"
+		dynasty = "al-Harrani"
+		adm = 4
+		dip = 1
+		mil = 2
+		country_of_origin = Z70
+		birth_date = 1405.4.1
+		death_date = 1465.4.1
+		female = yes
+		religion = hinduism
+		culture = tajik
+	}
+	add_queen_personality = drunkard_personality
+	add_queen_personality = embezzler_personality
+	heir = {
+		name = "Shantaladevi"
+		monarch_name = "Shantaladevi"
+		dynasty = "Padukone"
+		adm = 2
+		dip = 4
+		mil = 2
+		birth_date = 1434.2.14
+		death_date = 1499.2.14
+		female = yes
+		claim = 89
+		religion = hinduism
+		culture = kannada
+	}
+	add_heir_personality = pious_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 71
+	add_treasury = 53
+}

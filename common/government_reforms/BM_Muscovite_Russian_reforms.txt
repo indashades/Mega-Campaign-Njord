@@ -1,0 +1,31 @@
+
+ #TIER 2
+muscovite_manorialism_reform = {
+	icon = russian_noble
+	allow_normal_conversion = yes
+
+	potential = {
+		OR = {
+			tag = MOS
+			tag = RUS
+			primary_culture = russian
+			has_reform = muscovite_manorialism_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = MOS
+			tag = RUS
+			primary_culture = russian
+			has_reform = muscovite_manorialism_reform
+		}
+	}
+	modifiers = {
+		development_cost = -0.05
+		infantry_cost = -0.05
+		nobles_influence_modifier = -0.05
+	}
+	ai = {
+		factor = 100
+	}
+}

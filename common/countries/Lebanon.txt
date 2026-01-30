@@ -1,0 +1,80 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 225 110 25 }
+revolutionary_colors = { 5 10 5 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	economic_ideas
+}
+historical_units = {
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_dragoon
+	muslim_mass_infantry
+	persian_cavalry_charge
+	persian_footsoldier
+	persian_rifle
+	persian_shamshir
+	qizilbash_cavalry_unit
+	tofongchis_musketeer
+	topchis_artillery
+}
+monarch_names = {
+	"Abdallah #1" = 10
+	"Abdullah #2" = 10
+	"Ahmad #1" = 10
+	"Anfòs-Jordan #1" = 10
+	"Asid #1" = 10
+	"Aziz #0" = 0
+	"Bertrand #1" = 10
+	"Christine #0" = -1
+	"Duha #0" = -1
+	"Duran #1" = 10
+	"Gwejda #0" = -1
+	"Ibrahim #0" = 0
+	"Madiha #0" = -1
+	"Mahdi #0" = 0
+	"Murad #0" = 0
+	"Muzaffar #0" = 0
+	"Pons #1" = 10
+	"Radhi #1" = 10
+	"Raimon #6" = 10
+	"Rosa #1" = -1
+	"Sirhan #0" = 0
+	"Yazid #1" = 10
+	"Zafir #1" = 10
+}
+leader_names = {
+	"Damad"
+	"Esad"
+	"Farhad"
+	"Fazil"
+	"Hafiz"
+	"Ismail"
+	"Mehmed"
+	"Murad"
+	"Nasuh"
+	"Osman"
+	"Salih"
+	"Sinan"
+}
+ship_names = {
+	"Arif"
+	"Azmi"
+	"Dervish"
+	"Fuad"
+	"Haci"
+	"Haydar"
+	"Mulish"
+	"Nuri"
+	"Said"
+	"Salih"
+	"Sefveti"
+	"Shukri"
+}

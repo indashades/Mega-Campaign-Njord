@@ -1,0 +1,77 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 113 176 151 }
+revolutionary_colors = { 5 0 5 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	maritime_ideas
+	administrative_ideas
+	offensive_ideas
+	economic_ideas
+	expansion_ideas
+}
+historical_units = {
+	ali_bey_reformed_infantry
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_dragoon
+	muslim_mass_infantry
+}
+monarch_names = {
+	"Aban #0" = 0
+	"Abazza #0" = 0
+	"Adherbal #1" = 10
+	"Aheyyad #0" = 0
+	"Akoi #0" = 0
+	"Annaber #1" = 10
+	"Badda #0" = 0
+	"Buwayh #0" = 0
+	"Bâtin #0" = 0
+	"Faghissa #0" = -1
+	"Hawa' #1" = -1
+	"Ibiza #0" = 0
+	"Mez'yan #0" = 0
+	"Musa #1" = 10
+	"Muzaffaraddin #0" = 0
+	"Salla #0" = 0
+	"Thabitah #1" = 10
+	"Thomas #0" = 0
+	"Wenza #0" = -1
+}
+leader_names = {
+	"Adhoum"
+	"Akimi"
+	"Badra"
+	"Bassir"
+	"Dali"
+	"Hakimi"
+	"Naybet"
+	"Saber"
+	"Sassi"
+	"Taher"
+}
+ship_names = {
+	"Alim"
+	"Aziz"
+	"Bari"
+	"Fattah"
+	"Ghaffar"
+	"Jabbar"
+	"Khaliq"
+	"Malik"
+	"Mu'min"
+	"Muhaymin"
+	"Musawwir"
+	"Mutakabbir"
+	"Qahhar"
+	"Quddus"
+	"Rahim"
+	"Rahman"
+	"Razzaq"
+	"Salam"
+	"Wahhab"
+}

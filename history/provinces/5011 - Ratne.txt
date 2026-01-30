@@ -1,10 +1,10 @@
 
-owner = POL
-controller = POL
-add_core = POL
+owner = VOL
+controller = VOL
+add_core = VOL
 culture = ruthenian
 religion = orthodox
-hre = no
+hre = yes
 base_tax = 1 
 base_production = 1
 trade_goods = livestock

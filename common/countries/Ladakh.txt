@@ -1,0 +1,113 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 23 110 90 }
+revolutionary_colors = { 8 10 0 }
+historical_idea_groups = {
+	offensive_ideas
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	spy_ideas
+	religious_ideas
+	diplomatic_ideas
+	administrative_ideas
+}
+historical_units = {
+	indian_archers
+	indian_arquebusier
+	indian_footsoldier
+	indian_rifle
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Abagha #0" = 0
+	"Alchi #0" = 0
+	"Babur #0" = 0
+	"Bagaridai #0" = 0
+	"Basudevnayaran #0" = 0
+	"Begter #0" = 0
+	"Behrad #0" = 0
+	"Bulughan #0" = -1
+	"Bönek #0" = 0
+	"Chidukhul #0" = 0
+	"Chormakhan #0" = 0
+	"Daritai #0" = 0
+	"Dechen #1" = -1
+	"Deguang #0" = 0
+	"Girgen #0" = 0
+	"Gordiya #0" = 0
+	"Gundes #0" = -1
+	"Gyerme #1" = 10
+	"Göwar #1" = 10
+	"Hafez #0" = 0
+	"Hrido #1" = 10
+	"Jamhel #1" = 10
+	"Kadan #0" = 0
+	"Kantaar #1" = 10
+	"Kara-kat #0" = -1
+	"Khachigun #0" = 0
+	"Khadagan #0" = -1
+	"Khagatai #0" = 0
+	"Khojin #0" = -1
+	"Khutulan #0" = -1
+	"Kokochu #0" = 0
+	"Koza #0" = 0
+	"Kyeshe #1" = 10
+	"Kyile #1" = 10
+	"Le #1" = -1
+	"Lhachen 'Utpala #1" = 10
+	"Lhachen Byangchupsenpa #1" = 10
+	"Lhachen Drakpadé #1" = 10
+	"Lhachen Gyalpo #1" = 10
+	"Lhachen Gyebhe #1" = 10
+	"Lhachen Naglug #1" = 10
+	"Lhachen Pelgyigön #2" = 10
+	"Lhachen Takpa #1" = 10
+	"Mandukhai #0" = -1
+	"Martang #1" = -1
+	"Mongoljin #0" = -1
+	"Muwer #1" = 10
+	"Narin #0" = 0
+	"Nogai #0" = 0
+	"Parviz #0" = 0
+	"Pebon #1" = 10
+	"Ratnadevi #0" = -1
+	"Saghar #0" = -1
+	"Shebu #1" = 10
+	"Subetei #0" = 0
+	"Tekine #0" = -1
+	"Toghtoga #0" = 0
+	"Wal #1" = 10
+	"Wangmo #1" = -1
+	"Wushum #1" = 10
+	"Yesui #0" = -1
+	"Ökar #1" = 10
+}
+leader_names = {
+	"Balti"
+	"Heniskat"
+	"Kartse"
+	"Khaplu"
+	"Mulbek"
+	"Phokar"
+	"Purig"
+	"Rupshu"
+	"Shigar"
+	"Sot"
+	"Zanskar"
+}
+ship_names = {
+	"Balti"
+	"Heniskat"
+	"Kartse"
+	"Khaplu"
+	"Leh"
+	"Mulbek"
+	"Phokar"
+	"Purig"
+	"Rupshu"
+	"Shigar"
+	"Sot"
+	"Zanskar"
+}

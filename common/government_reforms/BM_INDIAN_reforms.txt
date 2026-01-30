@@ -1,0 +1,73 @@
+
+ # TIER 1 NEPAL
+gorkha_kingdom_reform = {
+	icon = crown
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			has_reform = gorkha_kingdom_reform
+			tag = GRK
+		}
+		NOT = { tag = NPL }
+	}
+	modifiers = {
+		war_exhaustion = -0.02
+		army_tradition_decay = -0.01
+		defensiveness = 0.1
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+maharajadhiraja_reform = {
+	icon = crown
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			has_reform = maharajadhiraja_reform
+			tag = NPL
+		}
+	}
+	modifiers = {
+		legitimacy = 0.25
+		global_autonomy = -0.025
+		army_tradition_decay = -0.02
+		yearly_absolutism = 0.25
+		max_absolutism = 10
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+ #TIER 2 NEPAL
+chhetri_clans_reform = {
+	icon = tribal_federation
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = chhetri_clans_reform
+			tag = NPL
+			primary_culture = nepali
+			accepted_culture = nepali
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = chhetri_clans_reform
+			tag = NPL
+			primary_culture = nepali
+			accepted_culture = nepali
+		}
+	}
+	modifiers = {
+		global_manpower_modifier = 0.1
+		leader_land_shock = 1
+	}
+	ai = {
+		factor = 100
+	}
+}

@@ -1,8 +1,8 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Prachen
-add_core = BYZ
-owner = BYZ
-controller = BYZ
+add_core = BOH
+owner = BOH
+controller = BOH
 culture = czech
 religion = catholic
 hre = yes

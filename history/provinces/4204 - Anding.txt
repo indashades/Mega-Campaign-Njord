@@ -1,0 +1,15 @@
+owner = Z08
+controller = Z08
+capital = "Anding"
+is_city = yes
+culture = tangut
+religion = vajrayana
+trade_goods = livestock
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = TAU
+add_core = Z08
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

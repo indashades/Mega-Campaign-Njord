@@ -1,17 +1,17 @@
 #5702 - Almach
 
-owner = TYR
-controller = TYR
+owner = TRY
+controller = TRY
 culture = irish
 religion = catholic
-hre = no
+hre = yes
 base_tax = 2
 base_production = 2
 trade_goods = wool
 base_manpower = 1
 capital = "Armagh"
 is_city = yes
-add_core = TYR
+add_core = TRY
 
 discovered_by = western
 discovered_by = muslim

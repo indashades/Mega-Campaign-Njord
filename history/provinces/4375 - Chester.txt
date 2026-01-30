@@ -1,0 +1,21 @@
+owner = Z6H
+controller = Z6H
+capital = "Chester"
+is_city = yes
+culture = english
+religion = catholic
+trade_goods = salt
+hre = yes
+base_tax = 4
+base_production = 3
+base_manpower = 2
+add_core = ENG
+add_core = Z6H
+add_permanent_claim = Z39
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+latent_trade_goods = {
+	coal
+}

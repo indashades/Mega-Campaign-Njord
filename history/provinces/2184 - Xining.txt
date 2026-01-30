@@ -1,0 +1,14 @@
+owner = Z08
+controller = Z08
+capital = "Xining"
+is_city = yes
+culture = xibei
+religion = vajrayana
+trade_goods = salt
+base_tax = 4
+base_production = 2
+base_manpower = 1
+add_core = CSH
+add_core = Z08
+discovered_by = chinese
+discovered_by = nomad_group

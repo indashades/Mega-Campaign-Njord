@@ -1,0 +1,16 @@
+owner = CRN
+controller = CRN
+capital = "Plymouth"
+is_city = yes
+culture = cornish
+religion = catholic
+trade_goods = wool
+hre = yes
+base_tax = 4
+base_production = 3
+base_manpower = 5
+add_core = CRN
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

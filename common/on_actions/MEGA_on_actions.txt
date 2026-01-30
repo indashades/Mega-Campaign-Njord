@@ -1,0 +1,307 @@
+on_expanded_infrastructure = {
+	if = {
+		limit = {
+			owner = { has_idea = BM_efficient_construction_plans }
+		}
+		random_list = {
+			33 = { add_base_tax = 1 }
+			33 = { add_base_production = 1 }
+			33 = { add_base_manpower = 1 }
+		}
+	}
+}
+
+#ROOT = province that was centralized in
+on_centralized_state = {
+	if = {
+		limit = {
+			owner = { has_idea = BM_centralization }
+		}
+		area = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_or_extend_province_modifier_effect = { MODIFIER = BM_admin_ideas_centralization_mechanic DURATION = 3650 }
+		}
+	}
+}
+
+on_diplomatic_annex = {
+	events = {
+		610
+		appanages_event.1
+		BM_scripted_effect_event.1
+	}
+	FRA = { 
+		if = {
+			limit = {
+				has_estate_privilege = estate_nobles_french_strong_duchies
+				NOT = { 
+					any_subject_country = {
+						capital_scope = { region = france_region }
+						culture_group = french
+					}
+				}
+			}
+			remove_estate_privilege = estate_nobles_french_strong_duchies
+		}
+	}
+}
+
+on_harmonized_buddhism = {
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+on_harmonized_christian = {
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+on_harmonized_dharmic = {
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+on_harmonized_jewish_group = {
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+on_harmonized_mahayana = {
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+on_harmonized_muslim = {
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+on_harmonized_pagan = {
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+on_harmonized_shinto = {
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+on_harmonized_vajrayana = {
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+on_harmonized_zoroastrian_group = {
+	if = {
+		limit = {
+			has_idea = BM_benevolence
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+
+on_startup = {
+	events = {
+		MEGA_events.3 #Indian Cores Fix
+		MEGA_events.2 #Mongol Empire xd xd
+		MEGA_misc.11 #Orangist Fix
+	}
+}
+
+on_admiral_recruited = {
+	if = {
+		limit = {
+			owns_core_province = 1874
+			1874 = {
+				has_great_project = {
+					type = fu_acemi_oglan
+					tier = 3
+				}
+			}
+		}
+		add_navy_tradition_or_dip_power = { amount = 10 }
+	}
+}
+
+on_admiral_recruited_effect = {
+	if = {
+		limit = {
+			owns_core_province = 1874
+			1874 = {
+				has_great_project = {
+					type = fu_acemi_oglan
+					tier = 3
+				}
+			}
+		}
+		add_navy_tradition_or_dip_power = { amount = 10 }
+	}
+}
+
+on_monarch_death = {
+	if = {
+		limit = {
+			has_country_flag = MEGA_when_dies_ruler_dies_kill_the_mongol_empire
+		}
+		country_event = {
+			id = MEGA_events.5
+		}
+	}
+}
+
+on_new_age = {
+	remove_all_age_of_discovery_modifiers = yes
+}
+
+on_center_of_trade_upgrade = {
+	BM_magedburg_rights_province_update = yes
+}
+
+
+on_adm_development = {
+	BM_magedburg_rights_province_update = yes
+	ge_mint_towns_province_update = yes
+	BM_immigrant_settlements_province_update = yes
+}
+
+on_dip_development = {
+	BM_magedburg_rights_province_update = yes
+	ge_mint_towns_province_update = yes
+	BM_immigrant_settlements_province_update = yes
+}
+
+on_mil_development = {
+	BM_magedburg_rights_province_update = yes
+	ge_mint_towns_province_update = yes
+	BM_immigrant_settlements_province_update = yes
+}
+
+on_transfer_development = {
+	BM_magedburg_rights_province_update = yes
+	ge_mint_towns_province_update = yes
+	BM_immigrant_settlements_province_update = yes
+}
+
+on_raze = {
+	BM_magedburg_rights_province_update = yes
+	ge_mint_towns_province_update = yes
+	BM_immigrant_settlements_province_update = yes
+}
+
+on_province_owner_change = {
+	BM_immigrant_settlements_province_update = yes
+	BM_enable_slave_settlements_province_update = yes
+	BM_magedburg_rights_province_update = yes
+	ge_society_of_agriculture_province_update = yes
+	ge_customs_house_province_update = yes
+	ge_fortified_settlements_province_update = yes
+	ge_caravanserai_province_update = yes
+	ge_mint_towns_province_update = yes
+	BM_enables_mountain_towns_province_update = yes
+	BM_enable_crown_of_aragon_province_update = yes
+	writers_painters_guild = yes
+}
+
+
+on_trade_good_changed = {
+	BM_enable_slave_settlements_province_update = yes
+	ge_society_of_agriculture_province_update = yes
+	ge_customs_house_province_update = yes
+	writers_painters_guild = yes
+}
+
+
+on_siege_won_country = {
+	if = {
+		limit = {
+			ROOT = {
+				has_government_attribute = BM_house_of_knights
+			}
+		}
+		BM_grant_manpower_from_besieging_fort = yes
+	}
+}
+
+on_new_monarch = {
+	if = {
+		limit = {
+			has_government_attribute = BM_house_of_knights
+		}
+		BM_house_of_knights_effect = yes
+	}
+}
+
+on_post_adm_advisor_fired = {
+	ge_country_peasant_council_update = yes
+	ge_country_french_court_update = yes
+}
+
+on_post_dip_advisor_fired = {
+	ge_country_peasant_council_update = yes
+	ge_country_french_court_update = yes
+}
+
+on_post_mil_advisor_fired = {
+	ge_country_peasant_council_update = yes
+	ge_country_french_court_update = yes
+}
+
+# country
+# root = winning country, from = loser country
+on_main_war_won = {
+	ge_on_main_war_won_effect = yes
+}
+
+#ROOT = converted country, FROM = country which force converts ROOT, on_action gets called on Force religion peace and Enforce Religion subject interaction
+on_force_conversion = {
+	ge_on_force_conversion_effect = yes
+}

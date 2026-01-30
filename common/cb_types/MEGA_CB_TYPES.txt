@@ -1,0 +1,138 @@
+# CB for vassalization missions
+cb_vassalize_indian_lord = {
+	valid_for_subject = no
+
+	prerequisites = {
+		FROM = { is_subject = no }
+		is_neighbor_of = FROM
+		ROOT = { capital_scope = { continent = europe } }
+		FROM = { capital_scope = { superregion = india_superregion } }
+		any_owned_province = { superregion = india_superregion  }
+		NOT = { has_global_flag = european_meddling_overruled }
+		FROM = { has_disaster = european_meddling }
+	}
+
+	war_goal = take_capital_vassalize
+}
+
+cb_pte_protect_religious_bretheren = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		is_defender_of_faith = yes
+	}
+
+	prerequisites = {
+		religion_group = FROM
+		NOT = { religion = FROM }
+		OR = {
+			is_neighbor_of = FROM
+			AND = {
+				ai = no
+				NOT = {
+					border_distance = {
+						who = FROM
+						distance = 500
+					}
+				}
+			}
+		}
+		FROM = {
+			any_owned_province = {
+				has_owner_religion = no
+				religion = ROOT
+				is_city = yes
+			}
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_form_personal_union
+		po_become_vassal
+		po_subjugate_vassal
+		po_transfer_vassals
+	}
+
+	war_goal = pte_protect_religious_bretheren_war_goal
+}
+
+cb_pte_liberation = {
+	valid_for_subject = no
+
+	prerequisites = {
+		OR = {
+			AND = {
+				OR = {
+					has_dlc = "Rights of Man"
+					has_dlc = "Emperor"
+				}
+				is_great_power = yes
+				FROM = {
+					is_great_power = yes
+				}
+				OR = {
+					ai = no
+					AND = {
+						is_neighbor_of = FROM
+						OR = {
+							is_rival = FROM
+							is_enemy = FROM
+							AND = {
+								has_opinion_modifier = {
+									who = FROM
+									modifier = aggressive_expansion
+								}
+								NOT = {
+									has_opinion_modifier = {
+										who = FROM
+										modifier = aggressive_expansion
+										value = -20
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			AND = {
+				has_opinion_modifier = {
+					who = FROM
+					modifier = aggressive_expansion
+				}
+				NOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = aggressive_expansion
+						value = -30
+					}
+				}
+				capital_scope = {
+					region_for_scope_province = {
+						is_capital_of = FROM
+					}
+				}
+			}
+		}
+		FROM = {
+			OR = {
+				num_of_subjects = 1
+				any_owned_province = {
+					any_core_country = {
+						NOT = { tag = FROM }
+					}
+				}
+			}
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_form_personal_union
+		po_become_vassal
+		po_subjugate_vassal
+		po_transfer_vassals
+	}
+
+	war_goal = pte_liberation_war_goal
+}

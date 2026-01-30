@@ -1,0 +1,14 @@
+owner = TRT
+controller = TRT
+is_city = yes
+culture = nepali
+religion = vajrayana
+trade_goods = wool
+base_tax = 2
+base_production = 2
+base_manpower = 1
+add_core = BHU
+add_core = TRT
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group

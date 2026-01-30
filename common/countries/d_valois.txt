@@ -1,0 +1,16 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 24 52 226 }
+monarch_names = {
+	"Archambaud #0" = 0
+	"Eve #0" = -1
+	"Eysteinn #0" = 0
+	"Folco #0" = 0
+	"Franciscu #0" = 0
+	"Giric #0" = 0
+	"Gunzelin #0" = 0
+	"Isabeau #1" = -1
+	"Philippe #1" = 10
+	"Pierre #1" = 10
+	"Étienne #0" = 0
+}

@@ -1,0 +1,76 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 245 200 30 }
+revolutionary_colors = { 8 0 16 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	spy_ideas
+	trade_ideas
+	maritime_ideas
+	economic_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	ottoman_lancer
+	ottoman_new_model
+	ottoman_nizami_cedid
+	ottoman_reformed_janissary
+	ottoman_reformed_spahi
+	ottoman_sekban
+	ottoman_spahi
+	ottoman_toprakli_dragoon
+	ottoman_toprakli_hit_and_run
+	slavic_stradioti
+}
+monarch_names = {
+	"Al-Alta #0" = -1
+	"Azadeh #0" = -1
+	"Chakha #0" = -1
+	"Farah #0" = -1
+	"Hulegu #0" = 0
+	"Ioannes #2" = 10
+	"Jurchedei #0" = 0
+	"Keeratdeva #0" = 0
+	"Khosrau #0" = 0
+	"Khutula #0" = 0
+	"Khutulun #0" = -1
+	"Maria #0" = -1
+	"Menggei #0" = 0
+	"Nomolun #0" = -1
+	"Sevindik #0" = -1
+	"Tanrivermis #0" = 0
+	"Todogen #1" = 10
+	"Yeke #0" = 0
+}
+leader_names = {
+	"Bragadin"
+	"Crispo"
+	"Doria"
+	"Fadrigue"
+	"Lusignans"
+	"Melissinos"
+	"Plethon"
+	"Rendis"
+	"Saraceno"
+	"Tocco"
+}
+ship_names = {
+	"Agios Georgios"
+	"Kato Yialla"
+	"Lachi"
+	"Leivadi"
+	"Lempa"
+	"Maa"
+	"Maurvoll"
+	"Pakhyammos"
+	"Pomos"
+	"Symvoulos"
+}

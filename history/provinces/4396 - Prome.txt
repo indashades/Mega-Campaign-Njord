@@ -1,0 +1,14 @@
+owner = AVA
+controller = AVA
+capital = "Prome"
+is_city = yes
+culture = burmese
+religion = buddhism
+trade_goods = ivory
+base_tax = 5
+base_production = 4
+base_manpower = 3
+add_core = AVA
+add_core = TAU
+discovered_by = chinese
+discovered_by = indian

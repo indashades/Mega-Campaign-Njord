@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mercantilism_text_icon"
+		texturefile = "gfx//BM_texticons//mercantilism_text_icon.dds"
+	}
+}

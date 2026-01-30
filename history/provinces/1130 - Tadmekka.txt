@@ -1,0 +1,12 @@
+owner = TMB
+controller = TMB
+capital = "Tadmekka al-Suq"
+is_city = yes
+culture = berber
+religion = catholic
+trade_goods = wool
+base_tax = 1
+base_production = 1
+base_manpower = 2
+add_core = TMB
+discovered_by = sub_saharan

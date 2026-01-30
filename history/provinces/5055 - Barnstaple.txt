@@ -1,10 +1,10 @@
 #5702 - Almach
 
-owner = ENG
-controller = ENG
-culture = english
+owner = CRN
+controller = CRN
+culture = cornish
 religion = catholic
-hre = no
+hre = yes
 base_tax = 2
 base_production = 1
 trade_goods = fish

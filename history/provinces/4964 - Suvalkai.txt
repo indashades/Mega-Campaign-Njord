@@ -1,7 +1,7 @@
 #1772 - Pozsony
 
-owner = LIT
-controller = LIT
+owner = TEU
+controller = TEU
 culture = lithuanian
 religion = catholic
 capital = "Suvalkai"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = LIT
+add_core = TEU
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -1,0 +1,269 @@
+namespace = sea_advisor_event
+
+country_event = {
+	id = sea_advisor_event.0
+	title = sea_advisor_event.0.t
+	desc = sea_advisor_event.0.d
+	picture = ADVISOR_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = sea_advisor_event.0.0
+		clr_country_flag = sea_get_specific_advisor_flag
+	}
+	option = {
+		name = sea_advisor_event.0.a
+		country_event = { id = sea_advisor_event.1 }
+	}
+	option = {
+		name = sea_advisor_event.0.b
+		country_event = { id = sea_advisor_event.2 }
+	}
+	option = {
+		name = sea_advisor_event.0.c
+		country_event = { id = sea_advisor_event.3 }
+	}
+}
+# Adm:
+country_event = {
+	id = sea_advisor_event.1
+	title = sea_advisor_event.1.t
+	desc = sea_advisor_event.1.d
+	picture = ADVISOR_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = sea_advisor_event.0.0
+		clr_country_flag = sea_get_specific_advisor_flag
+	}
+	option = {
+		name = sea_advisor_event.0.01
+		hidden_effect = { country_event = { id = sea_advisor_event.0 } }
+	}
+	option = {
+		name = sea_advisor_event.1.3
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = philosopher
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.1.12
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = artist
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.1.14
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = master_of_mint
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.1.15
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = treasurer
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.1.16
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = natural_scientist
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.1.17
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = theologian
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.1.18
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = inquisitor
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+}
+# Dip:
+country_event = {
+	id = sea_advisor_event.2
+	title = sea_advisor_event.2.t
+	desc = sea_advisor_event.1.d
+	picture = ADVISOR_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = sea_advisor_event.0.0
+		clr_country_flag = sea_get_specific_advisor_flag
+	}
+	option = {
+		name = sea_advisor_event.0.01
+		hidden_effect = { country_event = { id = sea_advisor_event.0 } }
+	}
+	option = {
+		name = sea_advisor_event.2.5
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = statesman
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.2.6
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = diplomat
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.2.8
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = spymaster
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.2.11
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = trader
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.2.12
+		clr_country_flag = sea_get_specific_advisor_flag
+		trigger = { num_of_colonists = 1 }
+		define_advisor = {
+			type = colonial_governor
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.2.13
+		clr_country_flag = sea_get_specific_advisor_flag
+		trigger = {
+			num_of_colonists = 1
+			is_colonial_nation = no
+			NOT = { has_reform = trade_company_government }
+		}
+		define_advisor = {
+			type = navigator
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.2.15
+		clr_country_flag = sea_get_specific_advisor_flag
+		trigger = { num_of_ports = 1 }
+		define_advisor = {
+			type = naval_reformer
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+}
+# Mil:
+country_event = {
+	id = sea_advisor_event.3
+	title = sea_advisor_event.3.t
+	desc = sea_advisor_event.1.d
+	picture = ADVISOR_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = sea_advisor_event.0.0
+		clr_country_flag = sea_get_specific_advisor_flag
+	}
+	option = {
+		name = sea_advisor_event.0.01
+		hidden_effect = { country_event = { id = sea_advisor_event.0 } }
+	}
+	option = {
+		name = sea_advisor_event.3.2
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = army_reformer
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.3.3
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = commandant
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.3.13
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = quartermaster
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.3.14
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = recruitmaster
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.3.15
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = army_organiser
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.3.16
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = grand_captain
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = sea_advisor_event.3.20
+		clr_country_flag = sea_get_specific_advisor_flag
+		define_advisor = {
+			type = fortification_expert
+			skill = 1
+		}
+		add_years_of_income = -0.33
+	}
+}

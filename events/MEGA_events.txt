@@ -1,0 +1,2574 @@
+namespace = MEGA_events
+
+country_event = {	#AI fix
+	id = MEGA_events.1
+	title = MEGA_events.1.t
+	desc = MEGA_events.1.d
+	picture = TRADEGOODS_eventPicture
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	trigger = {
+		tag = SHL
+	}
+
+	immediate = {
+		country_event = {
+			id = MEGA_events.3
+			days = 5
+		}
+		set_country_flag = MEGA_the_peasants_league_rallied
+	}
+	
+	option = {
+		name = MEGA_events.1.a
+		change_tag = HAM
+		on_change_tag_effect = yes
+		remove_non_electors_emperors_from_empire_effect = yes
+		if = {
+			limit = {
+				NOT = {
+					government_rank = 2
+				}
+			}
+			set_government_rank = 2
+		}
+		set_capital = 44
+		add_prestige_or_monarch_power = { amount = 10 }
+		change_government = republic
+		add_government_reform = peasants_republic
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		if = {
+			limit = {
+				NOT = { was_tag = HAM }
+			}
+			swap_non_generic_missions = yes
+		}
+	}
+}
+
+country_event = {	#Mong Empire Fix
+	id = MEGA_events.2
+	title = MEGA_events.2.t
+	desc = MEGA_events.2.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	trigger = {
+		tag = Z07
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = MEGA_when_dies_ruler_dies_kill_the_mongol_empire
+			change_tag = KHA
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
+			}
+			set_capital = 466
+			add_prestige_or_monarch_power = { amount = 100 }
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { was_tag = KHA }
+				}
+				swap_non_generic_missions = yes
+			}
+			add_country_modifier = {
+				name = MEGA_mongol_empire_still_standing
+				duration = -1
+			}
+			add_country_modifier = {
+				name = MEGA_HIDDEN_MONGOL_THINGY_LOL
+				duration = -1
+			}
+			every_subject_country = {
+				add_country_modifier_for_age = {
+					name = MEGA_all_the_hordes_must_kill_each_other_modifier
+					age = age_of_discovery
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.2.a
+		add_ruler_modifier = {
+			name = MEGA_great_khan_khubilai
+		}
+	}
+}
+
+country_event = {	#news event that the Hamburg League gains power in Holstein
+	id = MEGA_events.3
+	title = MEGA_events.3.t
+	desc = MEGA_events.3.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = HAM
+		NOT = {
+			has_country_flag = MEGA_GOTTEN_THIS_EVENT_ALREADY
+		}
+	}
+
+
+	immediate = {
+		set_country_flag = MEGA_GOTTEN_THIS_EVENT_ALREADY
+		add_government_reform = trade_confederation_reform
+		define_ruler = { #Same stats as my heir would have had
+			adm = 4
+			dip = 5
+			mil = 4
+			name = "Aedelbrecht"
+			dynasty = "von Hassel"
+			age = 12
+			culture = lower_saxon
+			force_republican_names = yes
+		}
+	}
+	
+	option = {
+		name = MEGA_events.3.a
+		add_ruler_modifier = {
+			name = MEGA_the_hamburg_league
+			duration = -1
+		}
+	}
+}
+
+
+country_event = {
+	id = MEGA_events.4
+	title = MEGA_events.4.t
+	desc = MEGA_events.4.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
+
+	trigger = {
+		has_government_attribute = enable_mercantilism_bonuses
+		OR = {
+			AND = {
+				NOT = { mercantilism = 10 }
+				OR = {
+					has_country_modifier = Home_Market_1
+					has_country_modifier = Home_Market_2
+					has_country_modifier = Home_Market_3
+					has_country_modifier = Home_Market_4
+					has_country_modifier = Home_Market_5
+					has_country_modifier = Home_Market_6
+					has_country_modifier = Home_Market_7
+					has_country_modifier = Home_Market_8
+					has_country_modifier = Home_Market_9
+					has_country_modifier = Home_Market_10
+				}
+			}
+			AND = {
+				mercantilism = 10
+				NOT = { mercantilism = 20 }
+				NOT = { has_country_modifier = Home_Market_1 }
+			}
+			AND = {
+				mercantilism = 20
+				NOT = { mercantilism = 30 }
+				NOT = { has_country_modifier = Home_Market_2 }
+			}
+			AND = {
+				mercantilism = 30
+				NOT = { mercantilism = 40 }
+				NOT = { has_country_modifier = Home_Market_3 }
+			}
+			AND = {
+				mercantilism = 40
+				NOT = { mercantilism = 50 }
+				NOT = { has_country_modifier = Home_Market_4 }
+			}
+			AND = {
+				mercantilism = 50
+				NOT = { mercantilism = 60 }
+				NOT = { has_country_modifier = Home_Market_5 }
+			}
+			AND = {
+				mercantilism = 60
+				NOT = { mercantilism = 70 }
+				NOT = { has_country_modifier = Home_Market_6 }
+			}
+			AND = {
+				mercantilism = 70
+				NOT = { mercantilism = 80 }
+				NOT = { has_country_modifier = Home_Market_7 }
+			}
+			AND = {
+				mercantilism = 80
+				NOT = { mercantilism = 90 }
+				NOT = { has_country_modifier = Home_Market_8 }
+			}
+			AND = {
+				mercantilism = 90
+				NOT = { mercantilism = 100 }
+				NOT = { has_country_modifier = Home_Market_9 }
+			}
+			AND = {
+				mercantilism = 100
+				NOT = { has_country_modifier = Home_Market_10 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { mercantilism = 10 }
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
+		}
+		else_if = {
+			limit = {
+				mercantilism = 10
+				NOT = { mercantilism = 20 }
+			}
+			add_country_modifier = {
+				name = Home_Market_1
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
+		}
+		else_if = {
+			limit = {
+				mercantilism = 20
+				NOT = { mercantilism = 30 }
+			}
+			add_country_modifier = {
+				name = Home_Market_2
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
+		}
+		else_if = {
+			limit = {
+				mercantilism = 30
+				NOT = { mercantilism = 40 }
+			}
+			add_country_modifier = {
+				name = Home_Market_3
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
+		}
+		else_if = {
+			limit = {
+				mercantilism = 40
+				NOT = { mercantilism = 50 }
+			}
+			add_country_modifier = {
+				name = Home_Market_4
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
+		}
+		else_if = {
+			limit = {
+				mercantilism = 50
+				NOT = { mercantilism = 60 }
+			}
+			add_country_modifier = {
+				name = Home_Market_5
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
+		}
+		else_if = {
+			limit = {
+				mercantilism = 60
+				NOT = { mercantilism = 70 }
+			}
+			add_country_modifier = {
+				name = Home_Market_6
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
+		}
+		else_if = {
+			limit = {
+				mercantilism = 70
+				NOT = { mercantilism = 80 }
+			}
+			add_country_modifier = {
+				name = Home_Market_7
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
+		}
+		else_if = {
+			limit = {
+				mercantilism = 80
+				NOT = { mercantilism = 90 }
+			}
+			add_country_modifier = {
+				name = Home_Market_8
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_9
+			remove_country_modifier = Home_Market_10
+		}
+		else_if = {
+			limit = {
+				mercantilism = 90
+				NOT = { mercantilism = 100 }
+			}
+			add_country_modifier = {
+				name = Home_Market_9
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_10
+		}
+		else_if = {
+			limit = {
+				mercantilism = 100
+			}
+			add_country_modifier = {
+				name = Home_Market_10
+				duration = -1
+			}
+			remove_country_modifier = Home_Market_1
+			remove_country_modifier = Home_Market_2
+			remove_country_modifier = Home_Market_3
+			remove_country_modifier = Home_Market_4
+			remove_country_modifier = Home_Market_5
+			remove_country_modifier = Home_Market_6
+			remove_country_modifier = Home_Market_7
+			remove_country_modifier = Home_Market_8
+			remove_country_modifier = Home_Market_9
+		}
+	}
+
+	option = {
+		name = BM_government_reforms.6.a
+
+	}
+}
+
+country_event = {	#Khubilai Khan dies and no one fucking likes his corrupt son who just killed a bunch of disloyal tribal leaders
+	id = MEGA_events.5
+	title = MEGA_events.5.t
+	desc = MEGA_events.5.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = KHA
+	}
+
+	immediate = {
+		clr_country_flag = MEGA_when_dies_ruler_dies_kill_the_mongol_empire #To prevent from events fucking
+		country_event = {
+			id = MEGA_events.6
+			days = 720
+		}
+	}
+	
+	option = {
+		name = MEGA_events.5.a
+		add_ruler_modifier = {
+			name = MEGA_weak_khan
+			duration = -1
+		}
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = -25
+		}
+	}
+}
+
+country_event = {	#Khubilai Khan dies and no one fucking likes his corrupt son
+	id = MEGA_events.6
+	title = MEGA_events.6.t
+	desc = MEGA_events.6.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = KHA
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				area = uliastai_area
+			}
+			spawn_rebels = {
+				size = 1
+				type = tribal_rebels
+				estate = estate_nomadic_tribes
+			}
+			add_unrest = 10
+		}
+		random_owned_province = {
+			limit = {
+				area = kazakhstan_area
+			}
+			spawn_rebels = {
+				size = 1
+				type = tribal_rebels
+				estate = estate_nomadic_tribes
+			}
+			add_unrest = 10
+		}
+		random_owned_province = {
+			limit = {
+				area = kazakhstan_area
+			}
+			spawn_rebels = {
+				size = 1
+				type = tribal_rebels
+				estate = estate_nomadic_tribes
+			}
+			add_unrest = 10
+		}
+		create_vassal = CHH
+		create_vassal = Z0V
+		create_vassal = Z0H
+		create_vassal = Z2Z
+		create_vassal = Z0W
+		create_vassal = Z71
+		create_vassal = Z8N
+		create_vassal = Z76
+		create_vassal = ZUN
+		create_vassal = Z7B
+		create_vassal = Z26
+		create_vassal = Z5P
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = xilin_gol_area
+					area = outer_mongolia_area
+					area = central_mongolia_area
+				}
+			}
+			add_core = OIR
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = xilin_gol_area
+					area = chahar_area
+					area = inner_mongolia_area
+				}
+			}
+			add_core = CHH
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = astrakhan_area
+					area = lower_yik_area
+				}
+			}
+			add_core = Z1T
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = nogai_area
+					area = bashkiria_area
+					area = volga_area
+					area = samara_area
+				}
+			}
+			add_core = GOL
+		}
+		country_event = {
+			id = MEGA_events.7 #Greater Usun Mongols unite into one
+			days = 240
+			random = 120
+		}
+		country_event = {
+			id = MEGA_events.8 #Chahar and Oirat annex eastern territories, war ensures between them both
+			days = 480
+			random = 120
+		}
+		country_event = {
+			id = MEGA_events.9 #Cumania Rises up, Khans "Golden Horde" fights them
+			days = 720
+			random = 120
+		}
+		country_event = {
+			id = MEGA_events.10 #Total collapse of the Mongol Empire
+			days = 960
+			random = 120
+		}
+	}
+	
+	option = {
+		name = MEGA_events.6.a
+		add_prestige = -25
+		hidden_effect = {
+			every_subject_country = {
+				add_manpower = 5
+				add_mil_power = 50
+				add_prestige = 25
+				add_liberty_desire = 25
+				add_opinion = {
+					who = KHA
+					modifier = executed_monarch
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.7 #Greater Usun Mongols unite into one
+	title = MEGA_events.7.t
+	desc = MEGA_events.7.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = KHA
+	}
+
+	immediate = {
+		Z5P = {
+			grant_independence = yes
+			inherit = Z0H
+			inherit = Z26
+			inherit = Z0Y
+			inherit = Z3T
+			inherit = Z28
+			inherit = Z58
+			inherit = Z2M
+			inherit = Z7B
+			add_treasury = 250
+			add_country_modifier_for_age = {
+				name = MEGA_all_the_hordes_must_kill_each_other_modifier
+				age = age_of_discovery
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.7.a
+		add_horde_unity = -10
+		add_manpower = -10
+		Z5P = {
+			add_manpower = 10
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.8 #Chahar and Oirat annex eastern territories, war ensures between them both
+	title = MEGA_events.8.t
+	desc = MEGA_events.8.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = KHA
+	}
+
+	major = yes
+	
+	immediate = {
+		create_vassal = OIR
+		OIR = {
+			grant_independence = yes
+			add_treasury = 150
+			capital = {
+				build_to_forcelimit = {
+					infantry = 0.2
+					cavalry = 0.8
+				}
+			}
+			add_country_modifier_for_age = {
+				name = MEGA_all_the_hordes_must_kill_each_other_modifier
+				age = age_of_discovery
+			}
+		}
+		CHH = {
+			grant_independence = yes
+			add_treasury = 150
+			capital = {
+				build_to_forcelimit = {
+					infantry = 0.2
+					cavalry = 0.8
+				}
+			}
+			add_country_modifier_for_age = {
+				name = MEGA_all_the_hordes_must_kill_each_other_modifier
+				age = age_of_discovery
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.8.a
+		add_horde_unity = -20
+		add_manpower = -15
+		CHH = {
+			add_manpower = 7.5
+		}
+		OIR = {
+			add_manpower = 7.5
+			declare_war_with_cb = {
+				casus_belli = cb_core
+				who = CHH
+				war_goal_province = 723
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.9 #Cumania Rises up, Khans "Golden Horde" fights them
+	title = MEGA_events.9.t
+	desc = MEGA_events.9.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = KHA
+	}
+
+	major = yes
+
+	immediate = {
+		set_capital = 1075
+		create_vassal = GOL
+	}
+	
+	option = {
+		name = MEGA_events.9.a
+		add_horde_unity = -30
+		add_stability = -1
+		add_manpower = -20
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = Z1T
+				}
+				cede_province = Z1T
+				remove_core = KHA
+			}
+			Z1T = {
+				grant_independence = yes
+				add_manpower = 10
+				add_treasury = 200
+				capital = {
+					build_to_forcelimit = {
+						infantry = 0.2
+						cavalry = 0.8
+					}
+				}
+				add_country_modifier_for_age = {
+					name = MEGA_all_the_hordes_must_kill_each_other_modifier
+					age = age_of_discovery
+				}
+			}
+			GOL = {
+				grant_independence = yes
+				add_manpower = 10
+				add_treasury = 200
+				capital = {
+					build_to_forcelimit = {
+						infantry = 0.2
+						cavalry = 0.8
+					}
+				}
+				add_country_modifier_for_age = {
+					name = MEGA_all_the_hordes_must_kill_each_other_modifier
+					age = age_of_discovery
+				}
+			}
+		}
+		GOL = {
+			declare_war_with_cb = {
+				casus_belli = cb_tribal_feud
+				who = Z1T
+				war_goal_province = 466
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.10 #Total collapse of the Mongol Empire
+	title = MEGA_events.10.t
+	desc = MEGA_events.10.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = KHA
+	}
+
+	major = yes
+
+	immediate = {
+		release_all_possible_countries = yes
+		every_subject_country = {
+			add_country_modifier_for_age = {
+				name = MEGA_all_the_hordes_must_kill_each_other_modifier
+				age = age_of_discovery
+			}
+			grant_independence = yes
+		}
+		every_core_province = {
+			limit = {
+				NOT = {
+					owned_by = root
+				}
+			}
+			remove_core = ROOT
+		}
+		remove_country_modifier = MEGA_HIDDEN_MONGOL_THINGY_LOL
+	}
+	
+	option = {
+		name = MEGA_events.10.a
+		add_horde_unity = -100
+		add_stability = -6
+		kill_ruler = yes
+		if = {
+			limit = { 
+				has_heir = yes
+			}
+			kill_heir = {
+				allow_new_heir = no
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.11 #The Reformation causes emergency Diet
+	title = MEGA_events.11.t
+	desc = MEGA_events.11.d
+	picture = EMPEROR_eventPicture
+
+	trigger = {
+		is_emperor = yes
+		is_year = 1500
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 100
+	}
+
+	major = yes
+	
+	option = {
+		name = MEGA_events.11.a
+		add_imperial_influence = 10
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_country_modifier = {
+			name = MEGA_emergency_diet
+			duration = 7300
+		}
+		custom_tooltip = MEGA_every_hre_country_gains_TT
+		tooltip = {
+			root = {
+				add_opinion = {
+					who = root
+					modifier = hab_peaceful_shadow_kingdom
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = hab_peaceful_shadow_kingdom
+				}
+			}
+			country_event = {
+				id = MEGA_events.12
+				days = 120
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.12 #Emergency diet invoked emergency powers in the emperor
+	title = MEGA_events.12.t
+	desc = MEGA_events.12.d
+	picture = EMPEROR_eventPicture
+
+	trigger = {
+		is_emperor = yes
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = MEGA_events.12.a
+		add_imperial_influence = 10
+		add_ruler_modifier = {
+			name = MEGA_emergency_empire_powers
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = MEGA_events.13
+				days = 60
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.13 #Emperor chooses between tolerance or conversion of the Empire
+	title = MEGA_events.13.t
+	desc = MEGA_events.13.d
+	picture = EMPEROR_eventPicture
+
+	trigger = {
+		is_emperor = yes
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = MEGA_events.13.a
+		add_imperial_influence = 20
+		add_country_modifier_for_age = {
+			name = MEGA_tolerance_in_the_empire
+			age = age_of_reformation
+		}
+	}
+
+	option = {
+		name = MEGA_events.13.b
+		add_imperial_influence = 20
+		add_country_modifier_for_age = {
+			name = MEGA_convert_the_empire
+			age = age_of_reformation
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.14 #Jerusalem Crusades Ayyubids
+	title = MEGA_events.14.t
+	desc = MEGA_events.14.d
+	picture = JERUSALEM_eventPicture
+
+	trigger = {
+		tag = KOJ
+		is_year = 1500
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	major = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			add_treasury = 7500
+			add_manpower = 40
+			add_mil_power = 300
+			syria_area = {
+				add_core = KOJ
+			}
+			trans_jordan_area = {
+				add_core = KOJ
+			}
+			syrian_desert_area = {
+				add_core = KOJ
+			}
+			aleppo_area = {
+				add_core = KOJ
+			}
+			ARB = {
+				add_stability = -6
+				add_yearly_manpower = -6
+				add_country_modifier = {
+					name = MEGA_crusader_invasion
+					duration = 7300
+				}
+			}
+		}
+		add_country_modifier_for_age = {
+			name = MEGA_jerusalem_crusades
+			age = age_of_reformation
+		}
+	}
+	
+	option = {
+		name = MEGA_events.14.a
+		add_prestige_or_monarch_power = { amount = 50 }
+		add_country_modifier_for_age = {
+			name = MEGA_jerusalem_crusades
+			age = age_of_reformation
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_crusade
+			who = ARB
+		}
+		hidden_effect = {
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.8
+					cavalry = 0.2
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						is_part_of_hre = yes
+						AND = {
+							is_great_power = yes
+							religion_group = christian
+						}
+					}
+				}
+				country_event = {
+					id = MEGA_events.15
+					days = 60
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.15 #Jerusalem asks for aid
+	title = MEGA_events.15.t
+	desc = MEGA_events.15.d
+	picture = JERUSALEM_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = MEGA_events.15.a
+		add_papal_influence = -5
+		add_prestige = -10
+	}
+
+	option = {
+		ai_chance = {
+			factor = 50
+		}
+		name = MEGA_events.15.b
+		add_papal_influence = 10
+		add_manpower = -3
+		add_treasury = -25
+		KOJ = {
+			add_manpower = 3
+			add_treasury = 25
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = 50
+		}
+		name = MEGA_events.15.c
+		add_papal_influence = 50
+		add_prestige_or_monarch_power = { amount = 25 }
+		join_all_offensive_wars_of = KOJ
+	}
+}
+
+country_event = { 
+	id = MEGA_events.16 #Expansion of the Great Wurzburg Fortress
+	title = MEGA_events.16.t
+	desc = MEGA_events.16.d
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	trigger = {
+		owns_core_province = 79
+		is_year = 1520
+	}
+	
+	option = {
+		name = MEGA_events.16.a
+		add_imperial_influence = 5
+		add_prestige_or_monarch_power = { amount = 15 }
+		if = {
+			limit = { 
+				79 = {
+					has_great_project = {
+						type = marienberg
+						tier = 3
+					}
+				}
+			}
+			add_or_upgrade_fort_building = yes
+		}
+		else = {
+			79 = {
+				add_great_project_tier = {
+					type = marienberg
+					tier = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.17 # The Diet of 1512
+	title = MEGA_events.17.t
+	desc = MEGA_events.17.d
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 360
+	}
+
+	trigger = {
+		is_emperor = yes
+		is_year = 1512
+	}
+	
+	option = {
+		name = MEGA_events.17.a
+		add_stability_or_adm_power = yes
+		add_imperial_influence = 15
+		capital_scope = {
+			add_or_upgrade_courthouse_building = yes
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.18 #
+	title = MEGA_events.18.t
+	desc = MEGA_events.18.d
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	trigger = {
+		1975 = {
+			is_strongest_trade_power = root
+		}
+		45 = {
+			is_strongest_trade_power = root
+		}
+		1926 = {
+			is_strongest_trade_power = root
+		}
+		is_year = 1530
+	}
+	
+	option = {
+		name = MEGA_events.18.a
+		add_country_modifier = {
+			name = MEGA_hansa_dominance
+			duration = 10950
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					capital_scope = {
+						OR = {
+							region = north_german_region
+							region = south_german_region
+							region = low_countries_region
+						} 
+					}
+				}
+				if = {
+					limit = { 
+						NOT = {
+							tag = ROOT
+						}
+					}
+					add_country_modifier = {
+						name = MEGA_hansa_dominance_brings_prosperity
+						duration = 10950
+					}
+				}
+				add_mercantilism_or_monarch_power = { amount = 1 }
+				every_owned_province = {
+					limit = {
+						province_has_center_of_trade_of_level = 1
+					}
+					add_base_production = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.19 # The Free City of Geneva
+	title = MEGA_events.19.t
+	desc = MEGA_events.19.d
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	immediate = {
+		4720 = {
+			cede_province = GNV
+			add_core = GNV
+			set_in_empire = yes
+		}
+	}
+
+	trigger = {
+		owns_core_province = 4720
+		is_year = 1515
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = MEGA_events.19.a
+		create_vassal = GNV
+		GNV = {
+			change_government = republic
+			add_government_reform = oligarchy_reform
+			set_in_empire = yes
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = MEGA_events.19.b
+		emperor = {
+			add_imperial_influence = 10
+		}
+		GNV = {
+			change_government = republic
+			add_government_reform = free_city
+			set_in_empire = yes
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.20 # Geats fading into history
+	title = MEGA_events.20.t
+	desc = MEGA_events.20.d
+	picture = VIKINGS_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+
+	trigger = {
+		is_year = 1550
+		OR = {
+			tag = SWE
+			is_or_was_tag = { tag = SWE }
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = MEGA_events.20.a
+		every_owned_province = {
+			limit = {
+				culture = geatish
+			}
+			add_province_modifier = {
+				name = MEGA_convert_the_geats
+				duration = 7300
+			}
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = MEGA_events.20.b
+		every_owned_province = {
+			limit = {
+				culture = geatish
+			}
+			add_province_modifier = {
+				name = MEGA_accept_the_geats
+				duration = 7300
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.21 #Diet of 1596
+	title = MEGA_events.21.t
+	desc = MEGA_events.21.d
+	picture = EMPEROR_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+
+	trigger = {
+		is_year = 1550
+		is_emperor = yes
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = MEGA_events.21.a
+		add_dip_power = 100
+		add_imperial_influence = 25
+		custom_tooltip = MEGA_every_hre_country_gains_TT
+		tooltip = {
+			add_stability_or_adm_power = yes
+			change_reform_progress_effect = { amount = 50 }
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				add_stability_or_adm_power = yes
+				change_reform_progress_effect = { amount = 50 }
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.22 #The Reformation forces further religous reforms in the HRE
+	title = MEGA_events.22.t
+	desc = MEGA_events.22.d
+	picture = REFORM_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+
+	trigger = {
+		is_year = 1530
+		is_emperor = yes
+	}
+	
+	option = {
+		name = MEGA_events.22.a
+		add_imperial_influence = 15
+		custom_tooltip = MEGA_every_hre_country_gains_TT
+		tooltip = {
+			capital_scope = {
+				add_province_modifier = {
+					name = MEGA_center_of_reformism
+					duration = 7300
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					religion_group = christian
+					NOT = {
+						religion = catholic
+					}
+				}
+				capital_scope = {
+					add_province_modifier = {
+						name = MEGA_center_of_reformism
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.23 #Ilkhanate Sultan is assassinated
+	title = MEGA_events.23.t
+	desc = MEGA_events.23.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+
+	trigger = {
+		is_year = 1520
+		current_age = age_of_reformation
+		tag = ILK
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = MEGA_events.24
+				days = 3650
+			}
+			every_subject_country = {
+				add_liberty_desire = 25
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.23.a
+		add_stability = -2
+		kill_ruler = yes
+		add_country_modifier = {
+			name = MEGA_ILK_fall_of_the_ilkhanate
+			duration = 7300
+		}
+		hidden_effect = {
+			add_yearly_manpower = -1
+			remove_accepted_culture = persian
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = luristan_area
+						area = khuzestan_area
+						area = basra_area
+						area = iraq_arabi_area
+						area = shahrizor_area
+					}
+				}
+				add_unrest = 5
+			}
+			random_owned_province = {
+				limit = {
+					area = luristan_area
+				}
+				spawn_rebels = {
+					size = 3
+					win = yes
+					type = nationalist_rebels
+					separatists_target = LRI
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = khuzestan_area
+				}
+				spawn_rebels = {
+					size = 3
+					win = yes
+					type = nationalist_rebels
+					separatists_target = LRI
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = basra_area
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = nationalist_rebels
+					separatists_target = Z0Q
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = iraq_arabi_area
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = nationalist_rebels
+					separatists_target = Z0Q
+				}
+			}
+			random_owned_province = {
+				limit = {
+					area = shahrizor_area
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = nationalist_rebels
+					separatists_target = Z4K
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.24 #Ilkhanate Sultan is assassinated, civil war
+	title = MEGA_events.24.t
+	desc = MEGA_events.24.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		current_age = age_of_reformation
+		tag = ILK
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_subject_country = {
+				add_liberty_desire = 25
+				add_treasury = 100
+				add_manpower = 10
+			}
+			random_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				change_religion = shiite
+			}
+			random_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				change_religion = shiite
+			}
+			random_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				change_religion = shiite
+			}
+			random_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				change_religion = shiite
+			}
+			random_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				change_religion = shiite
+			}
+			random_owned_province = {
+				limit = {
+					religion = sunni
+				}
+				change_religion = shiite
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.24.a
+		add_stability = -1
+		kill_ruler = yes
+		add_country_modifier = {
+			name = MEGA_ILK_religious_revolts
+			duration = 7300
+		}
+
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					religion = mahayana
+				}
+				spawn_rebels = {
+					size = 3
+					win = yes
+					type = mahayana_rebels
+				}
+			}
+			random_owned_province = {
+				limit = {
+					religion = mahayana
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = mahayana_rebels
+				}
+			}
+			random_owned_province = {
+				limit = {
+					religion = mahayana
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = mahayana_rebels
+				}
+			}
+			random_owned_province = {
+				limit = {
+					religion = kitebacilweism
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = kitebacilweism_rebels
+				}
+			}
+			random_owned_province = {
+				limit = {
+					religion = hinduism
+				}
+				spawn_rebels = {
+					size = 2
+					win = yes
+					type = hinduism_rebels
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.25 #Sorgy no starting coal for you <3
+	title = MEGA_events.25.t
+	desc = MEGA_events.25.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	trigger = {
+		tag = UKR
+		owns = 4258
+	}
+
+	immediate = {
+		hidden_effect = {
+			4258 = {
+				change_trade_goods = fur
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.25.a
+	}
+}
+
+country_event = { 
+	id = MEGA_events.26
+	title = MEGA_events.26.t
+	desc = MEGA_events.26.d
+	picture = CHINESE_GENERAL_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+    
+	trigger = {
+		tag = CCP
+		is_year = 1505
+	}
+	
+	option = {
+		name = MEGA_events.25.a
+		if = {
+			limit = { 
+				has_country_modifier = bankruptcy
+			}
+			remove_country_modifier = bankruptcy
+		}
+		add_corruption = -2
+		add_stability_or_adm_power_per_stab = { amount = 3 }
+		add_prestige_or_monarch_power = { amount = 100 }
+		add_legitimacy_or_mil_power = { amount = 100 }
+		add_army_tradition_or_mil_power = { amount = 100 }
+		add_adm_power = 500
+		add_dip_power = 500
+		add_mil_power = 500
+		add_treasury = 1500
+		add_adm_tech = 1
+		add_dip_tech = 1
+		add_mil_tech = 1
+		change_estate_land_share = {
+			estate = all
+			share = -30
+		}
+		add_country_modifier_for_age = {
+			name = MEGA_CCP_the_great_leap_forward
+			age = age_of_reformation
+		}
+		define_general = {
+			shock = 4
+			fire = 4
+			manuever = 3
+			siege = 3
+			name = "Great Chairman"
+			trait = master_of_arms_personality
+		}
+	}
+}
+
+country_event = { # Transcarpathia gets cool general
+	id = MEGA_events.27
+	title = MEGA_events.27.t
+	desc = MEGA_events.27.d
+	picture = HUSSARS_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+    
+	trigger = {
+		OR = {
+			was_tag = Z5J
+			tag = Z5J
+		}
+		is_year = 1500
+	}
+	
+	option = {
+		name = MEGA_events.27.a
+		add_army_tradition_or_mil_power = { amount = 25 }
+		define_advisor = {
+			type = army_reformer
+			skill = 2
+			cost_multiplier = 0.25
+		}
+	}
+
+	option = {
+		name = MEGA_events.27.b
+		add_army_tradition_or_mil_power = { amount = 25 }
+		define_general = {
+			shock = 5
+			fire = 5
+			manuever = 3
+			siege = 2
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.28
+	title = MEGA_events.28.t
+	desc = MEGA_events.28.d
+	picture = HUSSARS_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+    
+	trigger = {
+		tag = Z5N
+		is_free_or_tributary_trigger = yes
+		is_year = 1505
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				size = 3
+				should_take_capital = yes
+				win = yes
+				type = noble_rebels
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				size = 3
+				should_take_capital = yes
+				win = yes
+				type = noble_rebels
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.28.a
+		add_army_tradition_or_mil_power = { amount = 25 }
+		hidden_effect = {
+			Z5J = {
+				country_event = {
+					id = MEGA_events.29
+					days = 5
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.29
+	title = MEGA_events.29.t
+	desc = MEGA_events.29.d
+	picture = REVOLT_HUNGARIAN_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+    
+	trigger = {
+		tag = Z5J
+	}
+	
+	option = {
+		name = MEGA_events.29.a
+		add_legitimacy_or_mil_power = { amount = 10 }
+		add_prestige_or_monarch_power = { amount = 10 }
+		vassalize = Z5N
+	}
+
+	option = {
+		name = MEGA_events.29.a
+		add_legitimacy = -10
+		add_prestige = -10
+	}
+}
+
+country_event = { 
+	id = MEGA_events.30
+	title = MEGA_events.30.t
+	desc = MEGA_events.30.d
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+    
+	trigger = {
+		is_year = 1515
+		OR = {
+			was_tag = Z5J
+			tag = Z5J
+		}
+		owns_core_province = 4953
+	}
+	
+	option = {
+		name = MEGA_events.30.a
+		add_prestige_or_monarch_power = { amount = 15 }
+		if = {
+			limit = { 
+				4953 = {
+					has_great_project = {
+						type = visegrad_citadel
+						tier = 3
+					}
+				}
+			}
+			4953 = {
+				add_or_upgrade_fort_building = yes
+			}
+		}
+		else = {
+			4953 = {
+				add_or_upgrade_fort_building = yes
+				add_great_project_tier = {
+					type = visegrad_citadel
+					tier = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.31
+	title = MEGA_events.31.t
+	desc = MEGA_events.31.d
+	picture = CASTLE_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+    
+	trigger = {
+		is_year = 1510
+		OR = {
+			was_tag = Z5J
+			tag = Z5J
+		}
+		owns_core_province = 1951
+	}
+	
+	option = {
+		name = MEGA_events.31.a
+		set_capital = 1951
+		1951 = {
+			add_province_modifier = {
+				name = MEGA_house_of_corvin
+				duration = 7300
+			}
+		}
+		if = {
+			limit = { 
+				1951 = {
+					has_great_project = {
+						type = corvincastle
+						tier = 3
+					}
+				}
+			}
+			1951 = {
+				add_or_upgrade_fort_building = yes
+			}
+		}
+		else = {
+			1951 = {
+				add_or_upgrade_fort_building = yes
+				add_great_project_tier = {
+					type = corvincastle
+					tier = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = MEGA_events.31.b
+		capital_scope = {
+			add_province_modifier = {
+				name = MEGA_house_of_corvin
+				duration = 7300
+			}
+		}
+		if = {
+			limit = { 
+				1951 = {
+					has_great_project = {
+						type = corvincastle
+						tier = 3
+					}
+				}
+			}
+			1951 = {
+				add_or_upgrade_fort_building = yes
+			}
+		}
+		else = {
+			1951 = {
+				add_or_upgrade_fort_building = yes
+				add_great_project_tier = {
+					type = corvincastle
+					tier = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.32
+	title = MEGA_events.32.t
+	desc = MEGA_events.32.d
+	picture = INDIAN_WARS_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	major = yes
+    
+	trigger = {
+		is_year = 1508
+		tag = MAD
+	}
+	
+	option = {
+		name = MEGA_events.32.a
+		add_prestige = 25
+		change_tag = VIJ
+		remove_non_electors_emperors_from_empire_effect = yes
+		if = {
+			limit = { NOT = { government_rank = 2 } }
+			set_government_rank = 2
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = VIJ_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		set_country_flag = formed_vijayanagar_flag
+		if = {
+			limit = { has_dlc = "King of Kings" }
+			swap_non_generic_missions = yes
+		}
+		on_change_tag_effect = yes
+	}
+}
+
+country_event = { 
+	id = MEGA_events.33
+	title = MEGA_events.33.t
+	desc = MEGA_events.33.d
+	picture = INVENTION_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	major = yes
+    
+	trigger = {
+		is_year = 1515
+		OR = {
+			was_tag = Z5J
+			tag = Z5J
+		}
+	}
+	
+	option = {
+		name = MEGA_events.33.a
+		add_stability_or_adm_power = yes
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_innovativeness_or_monarch_power = { amount = 3 }
+		add_country_modifier = {
+			name = MEGA_hungarian_renaissance
+			duration = 7300
+		}
+	}
+}
+
+country_event = { 
+	id = MEGA_events.34
+	title = MEGA_events.34.t
+	desc = MEGA_events.34.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	major = yes
+    
+	trigger = {
+		is_year = 1512
+		OR = {
+			was_tag = LEI
+			tag = LEI
+		}
+	}
+	
+	option = {
+		name = MEGA_events.34.a
+		add_country_modifier = {
+			name = MEGA_hansa_aid
+			duration = 7300
+		}
+		add_mercantilism_or_monarch_power = { amount = 3 }
+		every_owned_province = {
+			limit = {
+				OR = {
+					has_river_estuary_trigger = yes
+					province_has_center_of_trade_of_level = 1
+				}
+			}
+			add_base_production = 1
+		}
+		custom_tooltip = empty_line_tt
+		1975 = {
+			add_trade_modifier = {
+				who = HAM
+				duration = 7300
+				power = 15
+				key = aju_trade_influence
+			}
+		}
+	}
+
+	option = {
+		name = MEGA_events.34.b
+		add_mercantilism_or_monarch_power = { amount = 1 }
+		capital_scope = {
+			add_base_tax = 2
+		}
+	}
+}
+
+
+country_event = {  
+	id = MEGA_events.35
+	title = MEGA_events.35.t
+	desc = MEGA_events.35.d
+	picture = CHINESE_GENERAL_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	immediate = {
+		country_event = {
+			id = MEGA_events.36
+			days = 50
+		}
+	}
+    
+	trigger = {
+		tag = CCP
+		QIN = {
+			exists = yes
+		}
+		has_country_modifier = MEGA_CCP_the_great_leap_forward
+	}
+	
+	option = {
+		name = MEGA_events.35.a
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_yearly_manpower = 2
+		inherit = QIN
+	}
+}
+
+
+country_event = { 
+	id = MEGA_events.36
+	title = MEGA_events.36.t
+	desc = MEGA_events.36.d
+	picture = CHINESE_GENERAL_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		country_event = {
+			id = MEGA_events.37
+			days = 50
+		}
+		KRC = {
+			remove_country_modifier = MEGA_all_the_hordes_must_kill_each_other_modifier
+		}
+	}
+    
+	trigger = {
+		tag = CCP
+		KRC = {
+			exists = yes
+		}
+		has_country_modifier = MEGA_CCP_the_great_leap_forward
+	}
+	
+	option = {
+		name = MEGA_events.36.a
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_yearly_manpower = 3
+		inherit = CSH
+	}
+}
+
+country_event = { 
+	id = MEGA_events.37
+	title = MEGA_events.37.t
+	desc = MEGA_events.37.d
+	picture = CHINESE_GENERAL_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		KRC = {
+			grant_independence = yes
+			every_ally = {
+				break_alliance = KRC
+			}
+			add_stability = -3
+			add_army_tradition = -100
+			add_horde_unity = -100
+			add_yearly_manpower = -5
+		}
+	}
+    
+	trigger = {
+		tag = CCP
+		KRC = {
+			exists = yes
+		}
+	}
+	
+	option = {
+		name = MEGA_events.37.a
+		add_country_modifier = {
+			name = MEGA_CCP_reconquest_of_korchin
+			duration = 3650
+		}
+		capital_scope = {
+			create_units_of_type_in_province = {
+				amount = 20
+				unit_type = infantry
+				who = root
+			}
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_chinese_unification
+			who = KRC
+		}
+	}
+}
+
+country_event = {  
+	id = MEGA_events.38
+	title = MEGA_events.38.t
+	desc = MEGA_events.38.d
+	picture = CHINESE_GENERAL_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 30
+	}
+    
+	trigger = {
+		tag = CCP
+		is_at_war = no
+		owns_all_provinces = {
+			area = shanxi_area
+		}
+		MNG = {
+			exists = yes
+		}
+		has_country_modifier = MEGA_CCP_the_great_leap_forward
+	}
+	
+	option = {
+		name = MEGA_events.38.a
+		add_prestige_or_monarch_power = { amount = 25 }
+		MNG = {
+			add_stability = -1
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = shandong_area
+						area = south_hebei_area
+						area = north_henan_area
+					}
+				}
+				cede_province = CCP
+			}
+		}
+	}
+}
+
+country_event = {  # The Council of Ulm
+	id = MEGA_events.39
+	title = MEGA_events.39.t
+	desc = MEGA_events.39.d
+	picture = COUNCIL_TRENT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 30
+	}
+    
+	trigger = {
+		is_emperor = yes
+		is_at_war = no
+		is_year = 1555
+	}
+	
+	option = {
+		name = MEGA_events.39.a
+		add_imperial_influence = 25
+		add_prestige_or_monarch_power = { amount = 25 }
+		custom_tooltip = empty_line_tt
+		add_country_modifier = {
+			name = MEGA_the_council_of_ulm
+			duration = 7300
+		}
+		custom_tooltip = empty_line_tt
+		1872 = {
+			if = {
+				limit = { 
+					NOT = {
+						religion = root
+					}
+				}
+				change_religion = root
+			}
+			add_great_project_tier = {
+				type = ulm_minster_great_project
+				tier = 1
+			}
+		}
+		custom_tooltip = empty_line_tt
+		custom_tooltip = MEGA_every_hre_country_gains_TT
+		tooltip = {
+			capital_scope = {
+				add_or_upgrade_tax_building = yes
+			}
+			add_opinion = {
+				who = root
+				modifier = eng_pro_catholicism
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				capital_scope = {
+					add_or_upgrade_tax_building = yes
+				}
+				add_opinion = {
+					who = root
+					modifier = eng_pro_catholicism
+				}
+			}
+		}
+	}
+}
+
+country_event = {	#Silly
+	id = MEGA_events.6767
+	title = MEGA_events.6767.t
+	desc = MEGA_events.6767.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		tag = BYZ
+		NOT = { has_country_flag = silly }
+	}
+
+	immediate = {
+		set_country_flag = silly
+		Z43 = {
+			country_event = {
+				id = MEGA_events.6767
+			}
+		}
+	}
+	
+	option = {
+		name = MEGA_events.6767.a
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			target = Z43
+			months = 120
+		}
+		Z43 = {
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				target = BYZ
+				months = 120
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MEGA_events.6768
+	title = MEGA_events.6768.t
+	desc = MEGA_events.6768.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		tag = Z43
+		2296 = {
+			owned_by = Z43
+			has_siege = yes
+			controlled_by = Z43
+		}
+		NOT = { has_country_flag = siege_of_troy }
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	option = {
+		name = MEGA_events.6768.a
+		set_country_flag = siege_of_troy
+		add_war_exhaustion = -5
+		add_manpower = 2.5
+	}
+}
+
+country_event = {
+	id = MEGA_events.6769
+	title = MEGA_events.6769.t
+	desc = MEGA_events.6769.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		tag = Z43
+		2296 = {
+			owned_by = Z43
+			NOT = { controlled_by = Z43 }
+		}
+		NOT = { has_country_flag = fall_of_troy }
+	}
+
+	option = {
+		name = MEGA_events.6769.a
+		clr_country_flag = siege_of_troy
+		set_country_flag = fall_of_troy
+		add_prestige = -15
+		2296 = {
+			add_great_project_tier = {
+				type = troy
+				tier = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MEGA_events.6770
+	title = MEGA_events.6770.t
+	desc = MEGA_events.6770.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		NOT = {tag = Z43}
+		owns = 2296
+		NOT = { has_country_flag = sack_of_troy }
+	}
+
+	option = {
+		name = MEGA_events.6770.a
+		set_country_flag = sack_of_troy
+		add_prestige = 15
+		add_splendor = 1000
+		add_treasury = 1000
+		2296 = {
+			add_devastation = 50
+			destroy_great_project = {
+				type = troy
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MEGA_events.6771
+	title = MEGA_events.6771.t
+	desc = MEGA_events.6771.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		tag = Z43
+		NOT = { has_country_flag = Z43_ortho_def }
+		religion = orthodox
+		is_defender_of_faith = yes
+	}
+
+	option = {
+		name = MEGA_events.6771.a
+		set_country_flag = Z43_ortho_def
+		add_patriarch_authority = 0.10
+		add_papal_influence = 10
+		add_prestige = 10
+	}
+}
+
+country_event = {
+	id = MEGA_events.6772
+	title = MEGA_events.6772.t
+	desc = MEGA_events.6772.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		tag = Z43
+		2296 = {
+			has_most_province_trade_power = Z43
+		}
+		NOT = { has_country_flag = aegean_trade }
+		dip_tech = 5
+	}
+
+	option = {
+		name = MEGA_events.6772.a
+		set_country_flag = aegean_trade
+		2296 = {
+			center_of_trade = 2
+		}
+		151 = {
+			add_trade_node_income = 12
+		}
+	}
+}
+
+

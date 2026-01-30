@@ -1,0 +1,15 @@
+owner = FLA
+controller = FLA
+capital = "Tenerife"
+is_city = yes
+culture = berber
+religion = norse_pagan
+trade_goods = unknown
+fort_15th = yes
+hre = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
+add_core = FLA
+native_size = 5
+native_ferocity = 1

@@ -1,0 +1,17 @@
+owner = Z8K
+controller = Z8K
+capital = "Worms"
+is_city = yes
+culture = hessian
+religion = catholic
+trade_goods = wine
+hre = yes
+base_tax = 7
+base_production = 3
+base_manpower = 5
+add_core = Z8K
+add_permanent_claim = PAL
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

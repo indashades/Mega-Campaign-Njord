@@ -1,0 +1,129 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 138 193 231 }
+revolutionary_colors = { 0 15 0 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	diplomatic_ideas
+	economic_ideas
+	spy_ideas
+	quality_ideas
+	religious_ideas
+}
+historical_units = {
+	bardiche_infantry
+	eastern_carabinier
+	eastern_knights
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	hungarian_hussar
+	polish_hussar
+	polish_musketeer
+	polish_tercio
+	polish_winged_hussar
+	russian_cuirassier
+	russian_lancer
+	russian_mass
+	slavic_stradioti
+}
+monarch_names = {
+	"Anastazja #0" = -1
+	"Berta #1" = -1
+	"Bogorchu #1" = 10
+	"Boguchwal #1" = 10
+	"Boleslaw #4" = 10
+	"Eljigedei #1" = 10
+	"Engeltraud #0" = -1
+	"Gauronas #0" = 0
+	"Kazimierz #2" = 10
+	"Krakus #1" = 10
+	"Lech #1" = 10
+	"Maria #1" = -1
+	"Mieszko #1" = 10
+	"No #0" = 0
+	"Sabina #0" = -1
+	"Salomea #0" = -1
+	"Stefan #0" = 0
+	"Usun #1" = 10
+	"Wanda #2" = -1
+	"Wladyslaw #2" = 10
+	"Yelisey #0" = 0
+	"Yelizaveta #0" = -1
+}
+leader_names = {
+	"Chrzan"
+	"Glegola"
+	"Jagnyziak"
+	"Jankowski"
+	"Jastrzebski"
+	"Lewczuk"
+	"Maciejewski"
+	"Nowak"
+	"Nowicki"
+	"Patoleta"
+	"Potapczyk"
+	"Starosz"
+	"Urban"
+	"Wyciszkiewicz"
+	"Zaszczynski"
+}
+ship_names = {
+	"Arka Noego"
+	"Belzkie"
+	"Bialy Lew"
+	"Bialy Orzel"
+	"Braclawskie"
+	"Brzesko-Kujawskie"
+	"Burza"
+	"Charitas"
+	"Chelminskie"
+	"Czarny Kruk"
+	"Czarny Orzel"
+	"Czernichowskie"
+	"Fortuna"
+	"Gnieznienskie"
+	"Gryf"
+	"Gwiazda"
+	"Inoworclawskie"
+	"Kaliskie"
+	"Kijowskie"
+	"Krakowskie"
+	"Kraków"
+	"Król Dawid"
+	"Latajacy Jelen'"
+	"Leczyckie"
+	"Lubelskie"
+	"Lublin"
+	"Lwów"
+	"Malborskie"
+	"Maly Bialy Orzel"
+	"Mazowieckie"
+	"Niewrazliwy"
+	"Nowy Czarny Orzel"
+	"Panna Wodna"
+	"Plockie"
+	"Plomien"
+	"Podlaskie"
+	"Podolskie"
+	"Poznanskie"
+	"Prorok Samuel"
+	"Rawskie"
+	"Ruskie"
+	"Rycerz Swiety Jerzy"
+	"Sandomierskie"
+	"Sieradzkie"
+	"Strzelec"
+	"Suwerenny"
+	"Swiety Kazimierz"
+	"Swiety Piotr"
+	"Warminskie"
+	"Warszawa"
+	"Wielkie Slonce"
+	"Wodnik"
+	"Wolynskie"
+	"Zwyciestwo"
+	"Zólty Lew"
+}

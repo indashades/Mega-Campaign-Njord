@@ -1,0 +1,25 @@
+owner = Z9W
+controller = Z9W
+capital = "Chotebuz"
+is_city = yes
+culture = dynamic-hungarian-culture-num1
+religion = catholic
+trade_goods = livestock
+hre = yes
+base_tax = 1
+base_production = 4
+base_manpower = 2
+add_core = Z9W
+add_permanent_claim = SOR
+discovered_by = AST
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = KAZ
+discovered_by = QAS
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+latent_trade_goods = {
+	coal
+}

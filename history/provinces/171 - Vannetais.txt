@@ -1,0 +1,17 @@
+owner = BRI
+controller = BRI
+capital = "Vannes"
+is_city = yes
+culture = breton
+religion = catholic
+trade_goods = fish
+fort_15th = yes
+hre = yes
+base_tax = 5
+base_production = 4
+base_manpower = 2
+add_core = BRI
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western

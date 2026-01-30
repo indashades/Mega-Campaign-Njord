@@ -1,0 +1,118 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 180 25 100 }
+revolutionary_colors = { 5 0 15 }
+historical_idea_groups = {
+	maritime_ideas
+	religious_ideas
+	defensive_ideas
+	administrative_ideas
+	trade_ideas
+	quality_ideas
+	innovativeness_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	ottoman_lancer
+	ottoman_new_model
+	ottoman_nizami_cedid
+	ottoman_reformed_janissary
+	ottoman_reformed_spahi
+	ottoman_sekban
+	ottoman_spahi
+	ottoman_toprakli_dragoon
+	ottoman_toprakli_hit_and_run
+	slavic_stradioti
+}
+monarch_names = {
+	"Agne #1" = -1
+	"Alexandros #1" = 10
+	"Alexios #1" = 10
+	"Anastasios #2" = 10
+	"Anna #0" = -1
+	"Arcadius #1" = 10
+	"Artavasdos #1" = 10
+	"Athanasios #0" = 0
+	"Basileios #2" = 10
+	"Basiliskos #1" = 10
+	"Berke #0" = 0
+	"Constans #1" = 10
+	"Constantine #2" = 10
+	"Constantius #2" = 10
+	"Eirene #1" = -1
+	"Eudokia #1" = -1
+	"Gjergj #0" = 0
+	"Gratian #1" = 10
+	"Helgi #0" = 0
+	"Herakleios #1" = 10
+	"Herakleonas #1" = 10
+	"Honorius #1" = 10
+	"Ioannes #2" = 10
+	"Ioustinianos #2" = 10
+	"Ioustinos #1" = 10
+	"Isaakios #1" = 10
+	"Jovian #1" = 10
+	"Julian #1" = 10
+	"Justin #1" = 10
+	"Justinian #1" = 10
+	"Konstantinos #10" = 10
+	"Konstas #1" = 10
+	"Leon #6" = 10
+	"Leontios #1" = 10
+	"Leto #1" = 10
+	"Manuel #1" = 10
+	"Marcian #1" = 10
+	"Maurikios #1" = 10
+	"Michael #7" = 10
+	"Nikephoros #3" = 10
+	"Nonna #0" = -1
+	"Olga #0" = -1
+	"Philippikos #1" = 10
+	"Phokas #1" = 10
+	"Pulcheria #1" = -1
+	"Romanos #4" = 10
+	"Stavrakios #1" = 10
+	"Stephanos #1" = 10
+	"Theodora #1" = -1
+	"Theodosios #1" = 10
+	"Theodosius #2" = 10
+	"Theodotos #0" = 0
+	"Theophilos #1" = 10
+	"Tiberios #2" = 10
+	"Valens #1" = 10
+	"Valentinian #1" = 10
+	"Zenon #2" = 10
+	"Zoe #1" = -1
+}
+leader_names = {
+	"Acciajuoli"
+	"Contarini"
+	"Crispo"
+	"Doria"
+	"Fadrigue"
+	"Melissinos"
+	"Palaeologus"
+	"Plethon"
+	"Rendis"
+	"Saraceno"
+	"Tocco"
+	"Zorzi"
+}
+ship_names = {
+	"Agios Thomas"
+	"Athena"
+	"Felves"
+	"Laouses"
+	"Makronisi"
+	"Patroklou"
+	"Petalioi"
+	"Salamina"
+	"Styra"
+	"Ypsili"
+}

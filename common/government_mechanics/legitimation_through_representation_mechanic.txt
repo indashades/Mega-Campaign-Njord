@@ -1,0 +1,168 @@
+legitimation_through_representation_mechanic = {
+	alert_icon_gfx = GFX_legitimation_through_representation_mechanic_alert_icon
+	alert_icon_index = 1
+	available = {
+		always = yes
+	}
+
+	powers = {
+		legitimation_through_representation_power = {
+			gui = legitimation_through_representation_mechanic_power
+			min = 0
+			max = 100
+			default = 0
+			scaled_modifier = {
+				start_value = 0
+				end_value = 100
+				modifier = {
+					prestige = 1
+					diplomatic_reputation = 1
+					max_absolutism = 20
+					max_absolutism_effect = 0.05
+					monthly_legitimation_through_representation_power = -0.5
+				}
+			}
+		}
+	}
+
+	interactions = {
+		legitimation_through_representation_mechanic_obtain_new_paintings = {
+			gui = legitimation_through_representation_mechanic_interaction
+			icon = GFX_legitimation_through_representation_mechanic_obtain_new_paintings_button
+			trigger = {
+				years_of_income = 0.25
+				adm_power_cost = 50
+				dip_power_cost = 50
+			}
+			effect = {
+				add_years_of_income = -0.25
+				adm_power_cost = -50
+				dip_power_cost = -50
+				add_prestige_or_monarch_power = { amount = 20 }
+				add_government_power = {
+					mechanic_type = legitimation_through_representation_mechanic
+					power_type = legitimation_through_representation_power
+					value = 10
+				}
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { years_of_income = 2 }
+				}
+				modifier = {
+					factor = 0
+					NOT = { adm_power = 700 }
+				}
+			}
+		}
+		legitimation_through_representation_mechanic_host_a_court_festival = {
+			gui = legitimation_through_representation_mechanic_interaction
+			icon = GFX_legitimation_through_representation_mechanic_host_a_court_festival_button
+			trigger = {
+				years_of_income = 0.25
+				adm_power_cost = 100
+			}
+			effect = {
+				add_years_of_income = -0.25
+				adm_power_cost = -100
+				add_legitimacy_or_mil_power = {
+					amount = 20
+				}
+				add_government_power = {
+					mechanic_type = legitimation_through_representation_mechanic
+					power_type = legitimation_through_representation_power
+					value = 10
+				}
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { years_of_income = 2 }
+				}
+				modifier = {
+					factor = 0
+					NOT = { dip_power = 700 }
+				}
+			}
+		}
+		legitimation_through_representation_mechanic_perform_an_opera = {
+			gui = legitimation_through_representation_mechanic_interaction
+			icon = GFX_legitimation_through_representation_mechanic_perform_an_opera_button
+			trigger = {
+				years_of_income = 0.25
+				dip_power_cost = 100
+			}
+			effect = {
+				add_years_of_income = -0.25
+				dip_power_cost = -100
+				add_splendor = 50
+				define_advisor = {
+					type = statesman
+					skill = 2
+					cost_multiplier = 0.33
+				}
+				add_government_power = {
+					mechanic_type = legitimation_through_representation_mechanic
+					power_type = legitimation_through_representation_power
+					value = 10
+				}
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { years_of_income = 2 }
+				}
+				modifier = {
+					factor = 0
+					NOT = { mil_power = 700 }
+				}
+			}
+		}
+		legitimation_through_representation_mechanic_renovate_the_palace = {
+			gui = legitimation_through_representation_mechanic_interaction2
+			icon = GFX_legitimation_through_representation_mechanic_renovate_the_palace_button
+			trigger = {
+				years_of_income = 1
+				adm_power_cost = 50
+				dip_power_cost = 50
+				mil_power_cost = 50
+			}
+			effect = {
+				add_years_of_income = -1
+				adm_power_cost = -50
+				dip_power_cost = -50
+				mil_power_cost = -50
+				capital_scope = {
+					add_random_development = 2
+				}
+				add_country_modifier = {
+					name = legitimation_through_representation_mechanic_renovate_the_palace_modifier
+					duration = 1825
+				}
+			}
+			cooldown_years = 20
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { years_of_income = 6 }
+				}
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { adm_power = 500 }
+						NOT = { dip_power = 500 }
+						NOT = { mil_power = 500 }
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,104 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 26 207 81 }
+revolutionary_colors = { 1 8 1 }
+historical_idea_groups = {
+	administrative_ideas
+	quantity_ideas
+	religious_ideas
+	defensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+}
+historical_units = {
+	bhonsle_infantry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_shock_cavalry
+	maharathan_cavalry
+	maharathan_guerilla_warfare
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	sikh_rifle
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Amoghavarsha #1" = 10
+	"Arikêcari #0" = 0
+	"Asa #0" = -1
+	"Bukka #2" = 10
+	"Chinnambike #0" = -1
+	"Dantidurga #1" = 10
+	"Dhruva #1" = 10
+	"Draktsubkye #0" = 0
+	"Govinda #2" = 10
+	"Indra #1" = 10
+	"Karka #0" = 0
+	"Khandro #0" = -1
+	"Kiriyasaga #0" = 0
+	"Krishna #2" = 10
+	"Kundakadevi #0" = -1
+	"Mailaladevi #0" = -1
+	"Narasanayaka #1" = 10
+	"Ranojirao #0" = 0
+	"Somalladevi #0" = -1
+	"Turgun #0" = 0
+	"Yachamanedu #0" = 0
+}
+leader_names = {
+	"Ardastani"
+	"Astarabadi"
+	"Badakshi"
+	"Banda"
+	"Basri"
+	"Bhosle"
+	"Bukhari"
+	"Changezi"
+	"Dakhni"
+	"Gilani"
+	"Hasanabadi"
+	"Jurjani"
+	"Kabuli"
+	"Khan"
+	"Kirmani"
+	"Kudha"
+	"Majmudar"
+	"Maloji"
+	"Munshi"
+	"Muzzafar"
+	"Parikh"
+	"Qummi"
+	"Shahji"
+	"Uzbek"
+}
+ship_names = {
+	"Alia"
+	"Arusa"
+	"Bori"
+	"Fatimah"
+	"Girna"
+	"Jalsena"
+	"Kala Jahazi"
+	"Khan"
+	"Lal Jahazi"
+	"Narmada"
+	"Nausena"
+	"Nav ka Yudh"
+	"Niknaz"
+	"Nila Jahazi"
+	"Niloufa"
+	"Noor"
+	"Panjhra"
+	"Sagar"
+	"Salima"
+	"Shameena"
+	"Suhalia"
+	"Tapi"
+	"Yasmine"
+	"Zahira"
+}

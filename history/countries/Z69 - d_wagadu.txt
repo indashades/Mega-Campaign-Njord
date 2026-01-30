@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = italian
+capital = 2246
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Joscella"
+		dynasty = "di Orvieto"
+		adm = 6
+		dip = 3
+		mil = 5
+		birth_date = 1421.2.17
+		female = yes
+		religion = catholic
+		culture = italian
+	}
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = martial_educator_personality
+	queen = {
+		name = "Ashhab"
+		dynasty = "banu Fätima"
+		adm = 4
+		dip = 3
+		mil = 3
+		country_of_origin = Z69
+		birth_date = 1423.9.8
+		death_date = 1483.9.8
+		religion = catholic
+		culture = moroccan
+	}
+	add_queen_personality = tactical_genius_personality
+	add_queen_personality = tolerant_personality
+	heir = {
+		name = "Halawa"
+		monarch_name = "Halawa"
+		dynasty = "banu Fätima"
+		adm = 1
+		dip = 0
+		mil = 1
+		birth_date = 1440.7.15
+		death_date = 1505.7.15
+		female = yes
+		claim = 89
+		religion = catholic
+		culture = moroccan
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 65
+	add_treasury = 61
+}

@@ -1,0 +1,13 @@
+owner = Z1O
+controller = Z1O
+capital = "Lulama"
+is_city = yes
+culture = bozo
+religion = catholic
+trade_goods = grain
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = Z1O
+add_permanent_claim = Z1O
+discovered_by = sub_saharan

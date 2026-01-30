@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = dynamic-greek-culture-num1
+capital = 6
+fixed_capital = 6
+add_accepted_culture = danish
+1444.11.11= {
+	monarch = {
+		name = "Eustratios"
+		dynasty = "of Göinge"
+		adm = 1
+		dip = 6
+		mil = 1
+		birth_date = 1409.1.28
+		religion = catholic
+		culture = dynamic-greek-culture-num1
+	}
+	add_ruler_personality = infertile_personality
+	add_ruler_personality = kind_hearted_personality
+	queen = {
+		name = "Feodosia"
+		dynasty = "Vsevolodovich"
+		adm = 4
+		dip = 4
+		mil = 3
+		country_of_origin = SCN
+		birth_date = 1412.3.7
+		death_date = 1472.3.7
+		female = yes
+		religion = orthodox
+		culture = dynamic-russian_culture-culture-num1
+	}
+	add_queen_personality = craven_personality
+	add_queen_personality = intricate_web_weaver_personality
+	heir = {
+		name = "Folmar"
+		monarch_name = "Folmar II"
+		dynasty = "von Hohenstaufen"
+		adm = 5
+		dip = 6
+		mil = 6
+		birth_date = 1416.1.23
+		death_date = 1481.1.23
+		claim = 89
+		religion = catholic
+		culture = dynamic-greek-culture-num1
+	}
+	add_heir_personality = intricate_web_weaver_personality
+	add_heir_personality = tactical_genius_personality
+}
+1444.11.11= {
+	add_prestige = 56
+	add_treasury = 50
+}
